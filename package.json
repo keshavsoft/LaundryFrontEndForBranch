@@ -8,7 +8,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "Today-Orders": "vite build --config src/Today/Orders/vite.config.js",
     "NewOrders": "vite build --config src/NewOrders/vite.config.js"
-
   },
   "author": "",
   "license": "ISC",
