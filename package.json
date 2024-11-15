@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "Branch-Today-Orders": "vite build --config src/Laundry/Branch/Today/Orders/vite.config.js"
+    "Today-Orders": "vite build --config src/Today/Orders/vite.config.js",
+    "NewOrders": "vite build --config src/NewOrders/vite.config.js"
+
   },
   "author": "",
   "license": "ISC",
