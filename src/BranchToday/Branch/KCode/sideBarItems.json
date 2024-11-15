@@ -1,0 +1,96 @@
+[
+    {
+        "name": "Today",
+        "isTitle": true
+    },
+    {
+        "name": "Home",
+        "icon": "bi bi-grid",
+        "url": "../../Branch/NewOrders/HtmlFiles/Customer.html"
+    },
+    {
+        "name": "QrRaise",
+        "key": "Qr",
+        "icon": "bi bi-qr-code",
+        "children": [
+            {
+                "name": "All",
+                "url": "QrRaiseAll.html",
+                "icon": "bi bi-plus-square-fill"
+            },
+            {
+                "name": "Pending",
+                "url": "QrPending.html",
+                "icon": "bi bi-plus-square-fill"
+            },
+            {
+                "name": "Raised",
+                "url": "QrRaised.html",
+                "icon": "bi bi-plus-square-fill"
+            }
+        ]
+    },
+    {
+        "name": "QrPrint",
+        "key": "PrintQr",
+        "icon": "bi bi-qr-code-scan",
+        "children": [
+            {
+                "name": "QRPrint",
+                "url": "PrintQr.html",
+                "icon": "bi bi-plus-square-fill"
+            }
+        ]
+    },
+    {
+        "name": "Bill",
+        "key": "Bill",
+        "icon": "bi bi-printer-fill",
+        "children": [
+            {
+                "name": "Print",
+                "url": "BillPrint.html",
+                "icon": "bi bi-plus-square-fill"
+            }
+        ]
+    },
+    {
+        "name": "Items",
+        "key": "Items",
+        "icon": "bi bi-diagram-2",
+        "children": [
+            {
+                "name": "Items",
+                "url": "Items.html",
+                "icon": "bi bi-plus-square-fill"
+            },
+            {
+                "name": "ItemsFilter",
+                "url": "ItemsFilter.html",
+                "icon": "bi bi-plus-square-fill"
+            }
+        ]
+    },
+    {
+        "name": "Reports",
+        "isHeading": true
+    },
+    {
+        "name": "Payments",
+        "key": "Reports",
+        "url": "../../TodayReports/HtmlFiles/",
+        "icon": "bi bi-currency-exchange"
+    },
+    {
+        "name": "Orders",
+        "key": "Orders",
+        "icon": "bi bi-border-style",
+        "url": "../../Branch/Today/TodayOrders/HtmlFiles/Orders.html"
+    },
+    {
+        "name": "QrCodes",
+        "key": "Today",
+        "url": "../../Branch/Pos/Today/QrCodes/HtmlFiles/",
+        "icon": "bi bi-upc-scan"
+    }
+]
