@@ -14,7 +14,7 @@ const __dirname = path.dirname(__filename);
 const SourceFolderName = "SourceCode";
 const SrcFolder = "src/BranchToday/Branch";
 
-const FrontEndDistFolder = "publicDir/Branch/BranchToday";
+const FrontEndDistFolder = "publicDir/BranchToday";
 
 const root = resolve(__dirname, `${SrcFolder}/${SourceFolderName}`);
 
