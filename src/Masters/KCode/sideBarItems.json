@@ -1,10 +1,8 @@
 [
-
-    
     {
         "name": "Home",
         "icon": "bi bi-grid",
-        "url": "/Laundry/Branch/NewOrders/HtmlFiles/Customer.html"
+        "url": "../../NewOrders/HtmlFiles/Customer.html"
     },
     {
         "name": "Customers",

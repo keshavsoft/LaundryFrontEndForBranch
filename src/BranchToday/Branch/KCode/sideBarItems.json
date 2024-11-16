@@ -6,7 +6,7 @@
     {
         "name": "Home",
         "icon": "bi bi-grid",
-        "url": "/Laundry/Branch/NewOrders/HtmlFiles/Customer.html"
+        "url": "../../NewOrders/HtmlFiles/Customer.html"
     },
     {
         "name": "QrRaise",
@@ -85,12 +85,12 @@
         "name": "Orders",
         "key": "Orders",
         "icon": "bi bi-border-style",
-        "url": "../../Branch/Today/TodayOrders/HtmlFiles/Orders.html"
+        "url": "../../Today-Orders/HtmlFiles/Orders.html"
     },
     {
         "name": "QrCodes",
         "key": "Today",
-        "url": "../../Branch/Pos/Today/QrCodes/HtmlFiles/",
+        "url": "../../Today-QrCodes/HtmlFiles/",
         "icon": "bi bi-upc-scan"
     }
 ]
