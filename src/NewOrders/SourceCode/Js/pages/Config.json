@@ -1,7 +1,7 @@
 {
     "urls":{
         "SaveButtonId":{
-            "redirectToUrl":"/Laundry/BranchToday/HtmlFiles/QrRaiseAll.html"
+            "redirectToUrl":"/Laundry/Branch/BranchToday/HtmlFiles/QrRaiseAll.html"
         }
     },
     "routePath": "binV3",
