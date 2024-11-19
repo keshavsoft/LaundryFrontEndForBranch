@@ -1,1 +1,4 @@
-{"routePath":"bin","tableName":"Openings"}
+{
+    "GetUrl": "/Custom/Cleaning/Dashboard/Admin/Reports/Pos/AllDays/QrCodes/BranchFilter/LeftInBranch",
+    "GetEndPoint": "LeftInBranch"
+}

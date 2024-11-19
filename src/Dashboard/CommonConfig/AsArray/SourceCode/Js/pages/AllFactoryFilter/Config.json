@@ -1,3 +1,4 @@
 {
-    "GetUrl": "/Custom/Cleaning/Dashboard/Admin/Reports/Pos/AllDays/BranchFilter/QrCodes"
-}   
+    "GetUrl": "/Custom/Cleaning/Dashboard/Admin/Reports/Pos/AllDays/QrCodes/BranchFilter/QrCodes",
+    "GetEndPoint": "QrCodes"
+}

@@ -1,11 +1,11 @@
 import ConfigJson from '../../../../Config.json' with {type: 'json'};
+import CommonConfig from '../../../../../CommonConfig.json' with {type: 'json'};
 
 let StartFunc = async () => {
-    let jVarLocalFetchUrl = ConfigJson.GetUrl;
-    let jVarLocalBranchName = getUrlQueryParams({ inGetKey: "BranchName" });
-
-
-    let response = await fetch(`${jVarLocalFetchUrl}/${jVarLocalBranchName}`);
+    let jVarLocalGetStartUrl = CommonConfig.GetStartUrl;
+    let jVarLocalGetEndPoint = ConfigJson.GetEndPoint;
+    let jVarLocalBranchName = localStorage.getItem("BranchName");
+    let response = await fetch(`${jVarLocalGetStartUrl}/${jVarLocalGetEndPoint}/${jVarLocalBranchName}`);
 
     return await response;
 };
@@ -16,5 +16,6 @@ let getUrlQueryParams = ({ inGetKey }) => {
     const value = parameters.get(inGetKey);
     return value;
 };
+
 export { StartFunc };
 
