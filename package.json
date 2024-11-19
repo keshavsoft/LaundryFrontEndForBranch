@@ -15,9 +15,6 @@
     "TodayReports": "vite build --config src/TodayReports/Branch/vite.config.js",
     "Today-QrCodes": "vite build --config src/Today/QrCodes/vite.config.js",
     "Dashboard-QrCodeWise-AsArray": "vite build --config src/Dashboard/QrCodeWise/AsArray/vite.config.js"
-
-
-
   },
   "author": "",
   "license": "ISC",
