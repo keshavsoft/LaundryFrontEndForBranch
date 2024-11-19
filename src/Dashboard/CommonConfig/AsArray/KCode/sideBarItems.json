@@ -5,6 +5,11 @@
         "url": "/laundryBranchDashboard.html"
     },
     {
+        "name": "Parent",
+        "icon": "bi bi-arrow-90deg-left",
+        "url": "../../../CommonConfig/Menu/HtmlFiles/"
+    },
+    {
         "name": "Simple",
         "key": "Simple",
         "icon": "bi bi-file-earmark",
