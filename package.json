@@ -13,7 +13,9 @@
     "CustomersToOrders": "vite build --config src/CustomersToOrders/vite.config.js",
     "ToFactory": "vite build --config src/ToFactory/vite.config.js",
     "TodayReports": "vite build --config src/TodayReports/Branch/vite.config.js",
-    "Today-QrCodes": "vite build --config src/Today/QrCodes/vite.config.js"
+    "Today-QrCodes": "vite build --config src/Today/QrCodes/vite.config.js",
+    "Dashboard-QrCodeWise-AsArray": "vite build --config src/Dashboard/QrCodeWise/AsArray/vite.config.js"
+
 
 
   },
