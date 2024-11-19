@@ -12,9 +12,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const SourceFolderName = "SourceCode";
-const SrcFolder = "src/Dashboard/CommonConfig/AsArray";
+const SrcFolder = "src/Dashboard/CommonConfig/Menu";
 
-const FrontEndDistFolder = "publicDir/Dashboard/CommonConfig/AsArray";
+const FrontEndDistFolder = "publicDir/Dashboard/CommonConfig/Menu";
 
 const root = resolve(__dirname, `${SrcFolder}/${SourceFolderName}`);
 
