@@ -14,7 +14,11 @@
     "ToFactory": "vite build --config src/ToFactory/vite.config.js",
     "TodayReports": "vite build --config src/TodayReports/Branch/vite.config.js",
     "Today-QrCodes": "vite build --config src/Today/QrCodes/vite.config.js",
-    "Dashboard-QrCodeWise-AsArray": "vite build --config src/Dashboard/QrCodeWise/AsArray/vite.config.js"
+    "Dashboard-QrCodeWise-AsArray": "vite build --config src/Dashboard/QrCodeWise/AsArray/vite.config.js",
+    "Menu": "vite build --config src/Dashboard/Menu/vite.config.js",
+    "Branch-CommonConfig-Menu": "vite build --config src/Dashboard/CommonConfig/Menu/vite.config.js",
+    "Dashboard-CommonConfig-AsArray": "vite build --config src/Dashboard/CommonConfig/AsArray/vite.config.js"
+
   },
   "author": "",
   "license": "ISC",
