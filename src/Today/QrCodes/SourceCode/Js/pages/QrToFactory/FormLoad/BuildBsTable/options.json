@@ -11,7 +11,7 @@
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": "jFLocalSerialColumn"
+            "formatter": ""
         },
         {
             "field": "QrCodeId",
@@ -31,7 +31,7 @@
         {
             "field": "OrderDateTime",
             "title": "Order DateTime",
-            "filtercontrol": "select"
+            "formatter":""
         },
         {
             "field": "DeliveryDateTime",
