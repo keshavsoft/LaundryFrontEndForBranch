@@ -5,7 +5,7 @@ let StartFunc = async () => {
     let jVarLocalGetStartUrl = CommonConfig.GetStartUrl;
     let jVarLocalGetEndPoint = ConfigJson.GetEndPoint;
     let jVarLocalBranchName = localStorage.getItem("BranchName");
-    let response = await fetch(`${jVarLocalGetStartUrl}/${jVarLocalGetEndPoint}/${jVarLocalBranchName}`);
+    let response = await fetch(`${jVarLocalGetStartUrl}/${jVarLocalGetEndPoint}`);
 
     return await response;
 };
