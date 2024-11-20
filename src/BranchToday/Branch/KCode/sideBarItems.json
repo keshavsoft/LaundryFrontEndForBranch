@@ -92,5 +92,10 @@
         "key": "Today",
         "url": "../../Today-QrCodes/HtmlFiles/",
         "icon": "bi bi-upc-scan"
+    },
+    {
+        "name": "ToFactory",
+        "key": "Today",
+        "url": "../../ToFactory/HtmlFiles/"
     }
 ]
