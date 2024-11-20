@@ -16,7 +16,7 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode"    
+            "title": "QrCode"
         },
         {
             "field": "ItemName",
@@ -36,7 +36,8 @@
         },
         {
             "field": "location",
-            "title": "DC Factory"        },
+            "title": "DC Factory"
+        },
         {
             "field": "Status",
             "title": "Status",
