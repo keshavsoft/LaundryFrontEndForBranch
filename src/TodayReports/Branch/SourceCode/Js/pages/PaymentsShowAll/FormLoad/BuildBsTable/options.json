@@ -4,6 +4,8 @@
     "searchable": "true",
     "idfield": "pk",
     "showFooter": "true",
+    "pagination": "true",
+    "filterControl": true,
     "data": [],
     "onClickRow": "",
     "columns": [
@@ -14,7 +16,8 @@
         },
         {
             "field": "UuId",
-            "title": "Order #"
+            "title": "Order #",
+            "filterControl": "select"
         },
         {
             "field": "CustomerData.CustomerName",

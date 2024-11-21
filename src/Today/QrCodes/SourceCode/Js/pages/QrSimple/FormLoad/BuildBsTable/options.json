@@ -4,6 +4,7 @@
     "searchable": "true",
     "idfield": "pk",
     "showFooter": "true",
+    "pagination":"true",
     "data": [],
     "onClickRow": "",
     "columns": [
@@ -25,7 +26,8 @@
         {
             "field": "Rate",
             "title": "Rate",
-            "filtercontrol": "select"
+            "filtercontrol": "select",
+            "footerFormatter": "totalFormatter"
         },
         {
             "field": "location",
