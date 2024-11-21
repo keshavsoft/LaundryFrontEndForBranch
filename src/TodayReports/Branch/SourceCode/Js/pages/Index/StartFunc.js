@@ -1,7 +1,10 @@
+import { StartFunc as StartFuncFormLoad } from "./FormLoad/StartFunc";
+
 const StartFunc = () => {
     let jVarLocalFromAdmin = true;
 
     if (jVarLocalFromAdmin) {
+        StartFuncFormLoad();
         jFLocalLeftSide();
     };
 };
