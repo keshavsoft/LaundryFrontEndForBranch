@@ -85,7 +85,7 @@
         var diffHrs = Math.floor((diffMs % 86400000) / 3600000); // hours
         var diffMins = Math.round(((diffMs % 86400000) % 3600000) / 60000); // minutes
 
-        return diffDays + " days, " + diffHrs + " hours, " + diffMins + " min";
+        return diffDays + " days, " + diffHrs + " hrs, " + diffMins + " min";
         // return new Date(row.DateTime).toLocaleDateString('en-GB');
     };
 
@@ -114,13 +114,13 @@
         const remainingMinutes = minutes % 60;
         let string = ""
         if (hours > 0) {
-            string += hours + " hours ";
+            string += hours + " hrs ";
         }
         if (remainingMinutes > 0) {
-            string += remainingMinutes + " minutes ";
+            string += remainingMinutes + " min ";
         }
         if (remainingSeconds > 0) {
-            string += remainingSeconds + " seconds ago";
+            string += remainingSeconds + " sec ago";
         }
         if (remainingSeconds === 0 && remainingMinutes === 0 && hours === 0) {
             string = "Just now";

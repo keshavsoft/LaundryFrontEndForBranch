@@ -8,6 +8,7 @@
     "onClickRow": "",
     "detailView": true,
     "onExpandRow": "",
+    "pagination": "true",
     "icons": "",
     "columns": [
         {
