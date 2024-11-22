@@ -24,6 +24,10 @@ let StartFunc = () => {
         return false;
     };
 
+    if ((jFTableFooterRateInputId()) === false) {
+        return false;
+    };
+
     return true;
 };
 
@@ -109,6 +113,22 @@ const jFTableFooterCategoryId = () => {
 
 const jFTableFooterdateInputId = () => {
     let jVarLocalFactory = document.getElementById('TableFooterdateInputId');
+
+    if (jVarLocalFactory.value === "") {
+        jVarLocalFactory.classList.add("is-invalid");
+        jVarLocalFactory.focus();
+        return false;
+    };
+
+    if ((jVarLocalFactory.value === "") === false) {
+        jVarLocalFactory.classList.remove("is-invalid");
+        return true;
+    };
+    return true;
+};
+
+const jFTableFooterRateInputId = () => {
+    let jVarLocalFactory = document.getElementById('TableFooterRateInputId');
 
     if (jVarLocalFactory.value === "") {
         jVarLocalFactory.classList.add("is-invalid");
