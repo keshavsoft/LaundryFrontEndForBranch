@@ -6,7 +6,7 @@ const StartFunc = async ({ inRowData }) => {
     let jVarLocalBranchName = localStorage.getItem("BranchName");
 
     // let jVarLocalFetchUrl = `/Custom/Clients/Washtex/Qrcodes/Table/${jVarLocalBranchName}/${LocalRowPk}`;
-    let jVarLocalFetchUrl = `/Custom/Clients/Laundry/Qrcodes/Generate/${jVarLocalBranchName}/${LocalRowPk}`;
+    let jVarLocalFetchUrl = `/Custom/Cleaning/Branch/Today/Orders/${jVarLocalBranchName}/${LocalRowPk}`;
 
 
     let response = await fetch(jVarLocalFetchUrl);
