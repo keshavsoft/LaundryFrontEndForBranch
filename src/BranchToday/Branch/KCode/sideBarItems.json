@@ -72,6 +72,20 @@
         ]
     },
     {
+        "name": "Orders",
+        "key": "DeleteOrder",
+        "icon": "bi bi-diagram-2",
+        "children": [
+            {
+                "name": "DeleteOrder",
+                "url": "DeleteOrder.html",
+                "icon": "bi bi-plus-square-fill"
+            }
+       ]
+    },
+ 
+
+    {
         "name": "Reports",
         "isHeading": true
     },
