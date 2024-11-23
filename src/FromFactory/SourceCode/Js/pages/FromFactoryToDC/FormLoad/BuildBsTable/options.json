@@ -6,11 +6,12 @@
     "showFooter": "true",
     "data": [],
     "onClickRow": "",
+    "pagination":"true",
     "columns": [
         {
             "field": "id",
             "title": "#",
-            "formatter": "jFGlobalSerialColumn"
+            "formatter": ""
         },
         {
             "field": "pk",
@@ -26,7 +27,8 @@
         },
         {
             "title": "Duration",
-            "formatter": "DateFormatter"
+            "field":"Duration",
+            "formatter": ""
         },
         {
             "title": "Description",
@@ -34,12 +36,14 @@
         },
         {
             "title": "Items",
-            "formatter": "ItemsFormatter",
-            "footerFormatter": "priceFormatter"
+            "field": "ItemDetails",
+            "formatter": "",
+            "footerFormatter": ""
         },
         {
             "title": "Scan",
-            "formatter": "QRCodeGenerate"
+            "field":"Scan",
+            "formatter": ""
         }
     ]
 }

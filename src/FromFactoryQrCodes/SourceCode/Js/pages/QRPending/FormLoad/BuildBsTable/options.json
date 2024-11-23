@@ -7,11 +7,12 @@
     "onClickRow": "",
     "responseHandler": "",
     "queryParams": "",
+    "pagination":"true",
     "columns": [
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": "jFLocalSerialColumn"
+            "formatter": ""
         },
         {
             "field": "OrderNumber",
@@ -38,7 +39,8 @@
         {
             "field": "Rate",
             "title": "Rate",
-            "filtercontrol": "select"
+            "filtercontrol": "select",
+            "footerFormatter":""
         },
         {
             "field": "VoucherNumber",

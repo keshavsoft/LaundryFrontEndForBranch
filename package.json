@@ -17,7 +17,10 @@
     "Dashboard-QrCodeWise-AsArray": "vite build --config src/Dashboard/QrCodeWise/AsArray/vite.config.js",
     "Menu": "vite build --config src/Dashboard/Menu/vite.config.js",
     "Branch-CommonConfig-Menu": "vite build --config src/Dashboard/CommonConfig/Menu/vite.config.js",
-    "Dashboard-CommonConfig-AsArray": "vite build --config src/Dashboard/CommonConfig/AsArray/vite.config.js"
+    "Dashboard-CommonConfig-AsArray": "vite build --config src/Dashboard/CommonConfig/AsArray/vite.config.js",
+    "FromFactory": "vite build --config src/FromFactory/vite.config.js",
+    "FromFactoryQrCodes": "vite build --config src/FromFactoryQrCodes/vite.config.js"
+
 
   },
   "author": "",
