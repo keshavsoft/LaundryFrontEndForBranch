@@ -7,8 +7,9 @@
     <nav class="d-none d-sm-block">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/Laundry/Branch/NewOrders/HtmlFiles/Customer.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="index.html">DeleteOrder</a></li>
-            <li class="breadcrumb-item active">Show</li>
+            <li class="breadcrumb-item"><a href="index.html">Today</a></li>
+            <li class="breadcrumb-item">Orders</li>
+            <li class="breadcrumb-item active">DeleteOrder</li>
         </ol>
     </nav>
 </div>
@@ -153,7 +154,7 @@
     };
     function jFLocalOptsForAddOnOnModalFormater(value, row, index) {
             return [
-                `<a href="#" class="btn btn-danger ">`,
+                `<a  href="#" class="btn btn-danger" title=" Delete ">`,
                 `<i class="bi bi-trash3"></i>`,
                 `</a>`
             ].join('');
