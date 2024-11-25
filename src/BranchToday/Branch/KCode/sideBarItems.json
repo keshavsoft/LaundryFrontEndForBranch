@@ -96,6 +96,7 @@
     {
         "name": "ToFactory",
         "key": "Today",
-        "url": "../../ToFactory/HtmlFiles/"
+        "url": "../../ToFactory/HtmlFiles/",
+        "icon": "bi bi-buildings-fill"
     }
 ]
