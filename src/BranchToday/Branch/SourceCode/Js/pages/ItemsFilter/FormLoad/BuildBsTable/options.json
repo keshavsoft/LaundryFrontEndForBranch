@@ -6,6 +6,7 @@
     "showFooter": "true",
     "filterControl": true,
     "pagination":"true",
+    "pageList":"[5,10, 25, 50, 100, all]",
     "data": [],
     "columns": [
         {

@@ -79,7 +79,7 @@
             {
                 "name": "DeleteOrder",
                 "url": "DeleteOrder.html",
-                "icon": "bi bi-plus-square-fill"
+                "icon": "bi bi-box-seam"
             }
        ]
     },
