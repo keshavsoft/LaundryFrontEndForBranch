@@ -25,7 +25,7 @@
                         <label class="col-md-4 col-form-label">Customer Name</label>
                         <div class="col-md-8">
                             <input name="CustomerName" type="text" class="form-control" autocomplete="off" required
-                                autofocus>
+                                autofocus  oninput="this.value = this.value.replace(/[^a-zA-Z0-9]/g, '')">
                             <div class="invalid-feedback">
                                 CustomerName Should not be empty!!
                             </div>

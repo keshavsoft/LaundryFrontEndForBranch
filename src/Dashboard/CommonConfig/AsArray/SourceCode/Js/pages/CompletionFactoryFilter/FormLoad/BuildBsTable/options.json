@@ -5,6 +5,8 @@
     "idfield": "pk",
     "pagination": "true",
     "filterControl": "true",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
     "showFooter": "true",
     "data": [],
     "onClickRow": "",

@@ -6,6 +6,8 @@
     "showFooter": "true",
     "data": [],
     "onClickRow": "",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
     "pagination": "true",
     "columns": [
         {

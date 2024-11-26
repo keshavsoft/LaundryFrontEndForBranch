@@ -24,14 +24,14 @@
                         <div class="row g-4">
                             <div class="col-md-6">
                                 <label class="form-label fw-semibold">Customer Name <i class="bi bi-person-fill text-primary"></i></label>
-                                <input name="CustomerName" type="text" class="form-control border border-info shadow-sm rounded-4" autocomplete="off" required autofocus>
+                                <input name="CustomerName" type="text" class="form-control border border-info shadow-sm rounded-4" autocomplete="off" oninput="this.value = this.value.replace(/[^a-zA-Z0-9]/g, '')" required autofocus>
                                 <div class="invalid-feedback">
                                     Customer Name should not be empty!
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label fw-semibold">Mobile <i class="bi bi-telephone-fill text-primary"></i></label>
-                                <input name="Mobile" type="number" class="form-control border border-info shadow-sm rounded-4" autocomplete="off" required>
+                                <input name="Mobile" type="number" class="form-control border border-info shadow-sm rounded-4" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)" autocomplete="off" required >
                                 <div class="invalid-feedback" id="MobileClass">
                                     Mobile should not be empty!
                                 </div>
