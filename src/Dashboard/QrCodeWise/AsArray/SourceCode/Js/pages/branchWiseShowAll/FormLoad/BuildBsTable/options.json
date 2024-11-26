@@ -5,6 +5,9 @@
     "idfield": "pk",
     "showFooter": "true",
     "data": [],
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
+    "pagination": "true",
     "onClickRow": "",
     "filterControl": true,
     "columns": [
@@ -24,6 +27,7 @@
         {
             "field": "Rate",
             "title": "Rate",
+            "align":"right",
             "footerFormatter": ""
         },
         {
