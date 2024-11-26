@@ -4,6 +4,8 @@
     "searchable": "true",
     "idfield": "pk",
     "pagination": "true",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
     "showFooter": "true",
     "data": [],
     "onClickRow": "",
@@ -24,6 +26,7 @@
         {
             "field": "Rate",
             "title": "Rate",
+            "align":"right",
             "footerFormatter": ""
         },
         {
