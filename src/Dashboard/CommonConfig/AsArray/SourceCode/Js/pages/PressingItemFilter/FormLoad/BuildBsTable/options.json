@@ -27,7 +27,8 @@
         },
         {
             "field": "Rate",
-            "title": "Rate",
+            "title": "Rate",           
+            "align":"right",
             "footerFormatter": ""
         },
         {
