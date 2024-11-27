@@ -17,7 +17,11 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode"
+            "title": "QrCode"    
+        },
+        {
+            "field": "OrderNo",
+            "title": "Order#"
         },
         {
             "field": "ItemName",
