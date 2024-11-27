@@ -11,15 +11,17 @@
     "BranchToday": "vite build --config src/BranchToday/Branch/vite.config.js",
     "Masters": "vite build --config src/Masters/vite.config.js",
     "CustomersToOrders": "vite build --config src/CustomersToOrders/vite.config.js",
-    "ToFactory": "vite build --config src/ToFactory/vite.config.js",
+    "Factory-ToFactory": "vite build --config src/Factory/ToFactory/vite.config.js",
     "TodayReports": "vite build --config src/TodayReports/Branch/vite.config.js",
     "Today-QrCodes": "vite build --config src/Today/QrCodes/vite.config.js",
     "Dashboard-QrCodeWise-AsArray": "vite build --config src/Dashboard/QrCodeWise/AsArray/vite.config.js",
     "Menu": "vite build --config src/Dashboard/Menu/vite.config.js",
     "Branch-CommonConfig-Menu": "vite build --config src/Dashboard/CommonConfig/Menu/vite.config.js",
     "Dashboard-CommonConfig-AsArray": "vite build --config src/Dashboard/CommonConfig/AsArray/vite.config.js",
-    "FromFactory": "vite build --config src/FromFactory/vite.config.js",
-    "FromFactoryQrCodes": "vite build --config src/FromFactoryQrCodes/vite.config.js"
+    "Factory-FromFactory": "vite build --config src/Factory/FromFactory/vite.config.js",
+    "FromFactoryQrCodes": "vite build --config src/FromFactoryQrCodes/vite.config.js",
+    "FactoryMenu": "vite build --config src/Factory/Menu/vite.config.js"
+
 
 
   },

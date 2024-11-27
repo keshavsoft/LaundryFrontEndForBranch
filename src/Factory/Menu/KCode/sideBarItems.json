@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Home",
+        "icon": "bi bi-grid",
+        "url": "../../../NewOrders/HtmlFiles/Customer.html"
+    },
+    {
+        "name": "Factory",
+        "key": "Simple",
+        "icon": "bi bi-file-earmark",
+        "children": [
+            {
+                "name": "ToFactory",
+                "url": "../../ToFactory/HtmlFiles/",
+                "icon": "bi bi-list"
+            },
+            {
+                "name": "FromFactory",
+                "url": "../../FromFactory/HtmlFiles/",
+                "icon": "bi bi-list"
+            }
+        ]
+    }
+]
