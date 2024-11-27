@@ -20,6 +20,10 @@
             "title": "QrCode"    
         },
         {
+            "field": "OrderNo",
+            "title": "Order#"
+        },
+        {
             "field": "ItemName",
             "title": "ItemName",
             "filterControl": "select"
