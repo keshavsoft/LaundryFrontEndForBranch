@@ -1,0 +1,37 @@
+[
+    {
+        "name": "FromFactory"
+    },
+    {
+        "name": "Home",
+        "icon": "bi bi-grid",
+        "url": "../../../NewOrders/HtmlFiles/Customer.html"
+    },
+    {
+        "name": "Parent",
+        "icon": "bi bi-arrow-90deg-left",
+        "url": "../../Menu/HtmlFiles/"
+    },
+    {
+        "name": "Insert",
+        "key": "FromFactory",
+        "icon": "bi bi-people-fill",
+        "children": [
+            {
+                "name": "To-DC",
+                "url": "FromFactoryToDC.html",
+                "icon": "bi bi-plus-square-fill"
+            },
+            {
+                "name": "ToReturn-DC",
+                "url": "FromFactoryToReturnDC.html",
+                "icon": "bi bi-plus-square-fill"
+            }
+        ]
+    },
+    {
+        "name": "Report",
+        "icon": "bi bi-qr-code",
+        "url": "../../../FromFactoryQrCodes/HtmlFiles/"
+    }
+]
