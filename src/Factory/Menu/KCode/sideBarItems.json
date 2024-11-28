@@ -11,7 +11,24 @@
     },
     {
         "name": "FromFactory",
-        "url": "../../FromFactory/HtmlFiles/",
-        "icon": "bi bi-list"
+        "key": "QrSimple",
+        "icon": "bi bi-slash-circle",
+        "children": [
+            {
+                "name": "CompletionReturn",
+                "url": "../../FromFactory/Completion/HtmlFiles/",
+                "icon": "bi bi-circle"
+            },
+            {
+                "name": "EntryReturn",
+                "url": "../../FromFactory/EntryReturn/HtmlFiles/",
+                "icon": "bi bi-circle"
+            },
+            {
+                "name": "WashingReturn",
+                "url": "../../FromFactory/WashingReturn/HtmlFiles/",
+                "icon": "bi bi-circle"
+            }
+        ]
     }
 ]

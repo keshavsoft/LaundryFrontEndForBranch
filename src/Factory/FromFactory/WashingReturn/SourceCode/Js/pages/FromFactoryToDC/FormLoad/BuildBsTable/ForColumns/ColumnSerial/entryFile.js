@@ -1,8 +1,8 @@
 let StartFunc = ({ inFindColumn }) => {
-    inFindColumn.formatter = jVarLocalFormatterFunc;
+    inFindColumn.formatter = jFGlobalSerialColumn;
 };
 
-let jVarLocalFormatterFunc = (value, row, index) => {
+function jFGlobalSerialColumn(value, row, index) {
     return index + 1;
 };
 
