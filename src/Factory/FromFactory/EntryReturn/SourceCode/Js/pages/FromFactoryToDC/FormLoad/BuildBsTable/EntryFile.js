@@ -12,11 +12,11 @@ const StartFunc = () => {
     optionsJson.queryParams = queryParams;
     optionsJson.responseHandler = responseHandler;
 
-    let LocalFactoryName = localStorage.getItem("FactoryName");
+    let LocalBranchName = localStorage.getItem("BranchName");
 
     ForColumns({ inColumns: optionsJson.columns });
 
-    optionsJson.url = optionsJson.url.replace("$FactoryName", LocalFactoryName);
+    optionsJson.url = optionsJson.url.replace("$BranchName", LocalBranchName);
 
     $table.bootstrapTable(optionsJson);
 };
