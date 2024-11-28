@@ -1,5 +1,5 @@
-let StartFunc = async ({ inFetchResonse }) => {
-    let jVarLocalResponseData = await inFetchResonse;
+let StartFunc = ({ inFetchResonse }) => {
+    let jVarLocalResponseData = inFetchResonse;
 
     if (Object.values(jVarLocalResponseData).length > 0) {
         let jVarLocalFetchData = jVarLocalResponseData;
@@ -9,16 +9,8 @@ let StartFunc = async ({ inFetchResonse }) => {
         jFLocalToInputInputProductNameId({ inInputProductNameId: jVarLocalFetchData.ItemName });
         jFLocalToInputInputSalePriceId({ inInputSalePriceId: jVarLocalFetchData.Rate });
         jFLocalToInputFactorySelectedId({ inInputFactorySelectedId: jVarLocalFetchData.location });
-
-        jFLocalRunSaveClick();
     };
 };
-
-let jFLocalRunSaveClick = () => {
-    let jVarLocalHtmlId = 'ButtonSaveId';
-    let jVarLocalButtonSaveId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalButtonSaveId.click();
-}
 
 let jFLocalToInputInputProductNameId = ({ inInputProductNameId }) => {
     let jVarLocalHtmlId = 'InputProductNameId';

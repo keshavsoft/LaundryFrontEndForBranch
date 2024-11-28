@@ -5,14 +5,13 @@
     "searchHighlight": true,
     "data": [],
     "onClickRow": "",
-    "pagination":"true",
-    "pageList":"[5,10, 25, 50, 100, all]",
+    "pageList": "[5,10, 25, 50, 100, all]",
     "responseHandler": "responseHandler",
     "queryParams": "queryParams",
     "rowStyle": "rowStyle",
-    "filterControl":true,
-    "pagination":"true",
-    "url": "/Custom/Cleaning/Factory/V1/Inward/Scan/Voucher/QrStatus/$FactoryName",
+    "filterControl": true,
+    "pagination": "true",
+    "url": "/Custom/Cleaning/Branch/Factory/FromFactory/EntryReturn/Voucher/QrStatus/$BranchName",
     "columns": [
         {
             "field": "KS-Serial",
@@ -22,17 +21,16 @@
         {
             "field": "pk",
             "title": "DC",
-            "filtercontrol": "input"
+            "filterControl": "input"
         },
         {
             "field": "Date",
-            "title": "Date",
-            "filtercontrol": "select"
+            "title": "Date"
         },
         {
-            "field": "BranchName",
-            "title": "BranchName",
-            "filterControl":"select"
+            "field": "FactoryName",
+            "title": "Factory",
+            "filterControl": "select"
         },
         {
             "field": "TimeSpan",
@@ -40,36 +38,30 @@
         },
         {
             "field": "Description",
-            "title": "Description",
-            "filtercontrol": "select"
+            "title": "Description"
         },
-        
         {
             "title": "Scan",
             "field": "operate",
             "formatter": ""
         },
         {
-            "title": "Sent From Branch",
+            "title": "Sent From Factory",
             "formatter": "",
             "field": "Sent",
             "footerFormatter": ""
         },
         {
             "title": "Scanned",
-            "field":"scanned",
+            "field": "scanned",
             "formatter": "",
             "footerFormatter": ""
         },
         {
             "title": "Pending",
             "field": "Pending",
-            "formatter":"",
+            "formatter": "",
             "footerFormatter": ""
-        },
-        {
-            "title": "EntryCancel",
-            "field": "EntryCancel"
         }
     ]
 }

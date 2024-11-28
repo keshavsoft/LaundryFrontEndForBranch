@@ -1,6 +1,18 @@
 let StartFunc = async ({ inFetchResonse }) => {
-    let jVarLocalResponseData = await inFetchResonse;
+    if (inFetchResonse.status === 500) {
+        let jVarLocalResponseData = await inFetchResonse.text();
 
+        Swal.fire({
+            icon: "error",
+            title: "Error",
+            text: `${jVarLocalResponseData}`
+        });
+
+        return;
+    };
+
+    let jVarLocalResponseData = await inFetchResonse.json();
+    
     if (Object.values(jVarLocalResponseData).length > 0) {
         let jVarLocalFetchData = jVarLocalResponseData;
         jVarGlobalPresentViewData2 = jVarLocalFetchData;
@@ -8,8 +20,7 @@ let StartFunc = async ({ inFetchResonse }) => {
         jFLocalToInputInputPkId({ inInputPkId: jVarLocalFetchData.pk });
         jFLocalToInputInputProductNameId({ inInputProductNameId: jVarLocalFetchData.ItemName });
         jFLocalToInputInputSalePriceId({ inInputSalePriceId: jVarLocalFetchData.Rate });
-        jFLocalToInputFactorySelectedId({ inInputFactorySelectedId: jVarLocalFetchData.location });
-
+        jFLocalToInputFactorySelectedId({ inInputFactorySelectedId: jVarLocalFetchData.location })
         jFLocalRunSaveClick();
     };
 };
