@@ -24,7 +24,6 @@
     "FromFactory-Completion": "vite build --config src/Factory/FromFactory/Completion/vite.config.js",
     "FromFactory-EntryReturn": "vite build --config src/Factory/FromFactory/EntryReturn/vite.config.js",
     "FromFactory-WashingReturn": "vite build --config src/Factory/FromFactory/WashingReturn/vite.config.js"
-
   },
   "author": "",
   "license": "ISC",

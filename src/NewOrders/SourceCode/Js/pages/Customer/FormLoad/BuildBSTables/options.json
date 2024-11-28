@@ -5,8 +5,8 @@
     "data": [],
     "detailView": true,
     "onClickRow": "",
-    "onExpandRow":"",
-    "icons":"",
+    "onExpandRow": "",
+    "icons": "",
     "columns": [
         {
             "field": "pk",
@@ -15,12 +15,13 @@
         {
             "field": "OrderData.Currentdateandtime",
             "title": "Date",
-            "formatter":"LocalDate"
+            "formatter": "LocalDate",
+            "visible": false
         },
         {
             "field": "DateTime",
             "title": "Time Span",
-            "formatter":"TimeDiff"
+            "formatter": "TimeDiff"
         },
         {
             "field": "AggValues.ItemDetails",
@@ -36,7 +37,7 @@
         },
         {
             "title": "Opts.",
-            "formatter":"jFLocalOptsFormater"
+            "formatter": "jFLocalOptsFormater"
         }
     ]
 }
