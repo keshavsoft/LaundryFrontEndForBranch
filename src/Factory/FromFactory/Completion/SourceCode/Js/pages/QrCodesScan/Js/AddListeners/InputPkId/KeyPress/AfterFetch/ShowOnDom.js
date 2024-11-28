@@ -8,7 +8,8 @@ let StartFunc = async ({ inFetchResonse }) => {
         jFLocalToInputInputPkId({ inInputPkId: jVarLocalFetchData.pk });
         jFLocalToInputInputProductNameId({ inInputProductNameId: jVarLocalFetchData.ItemName });
         jFLocalToInputInputSalePriceId({ inInputSalePriceId: jVarLocalFetchData.Rate });
-        jFLocalToInputFactorySelectedId({ inInputFactorySelectedId: jVarLocalFetchData.location })
+        jFLocalToInputFactorySelectedId({ inInputFactorySelectedId: jVarLocalFetchData.location });
+
         jFLocalRunSaveClick();
     };
 };

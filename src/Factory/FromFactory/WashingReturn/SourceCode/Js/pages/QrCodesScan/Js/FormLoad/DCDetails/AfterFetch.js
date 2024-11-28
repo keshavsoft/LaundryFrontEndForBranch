@@ -1,25 +1,17 @@
 let StartFunc = ({ inDataToShow }) => {
-    
-    let jVarLocalData = inDataToShow[0];
+    let jVarLocalData = inDataToShow.AsIs;
 
-    // jFLocalToInnerHtmlpkTextId({ inpkTextId: jVarLocalData.pk });
     jFLocalToInnerHtmlVoucherNumberTextId({ inVoucherNumberTextId: jVarLocalData.pk })
     jFLocalToInnerHtmlDescriptionTextId({ inDescriptionTextId: jVarLocalData.Description });
     jFLocalToInnerHtmlDateTextId({ inDateTextId: jVarLocalData.Date });
     jFLocalToInnerHtmlFactoryTextId({ inFactoryTextId: jVarLocalData.Factory });
-
     jFLocalToInputpkDCDetailsTextId({ inpkDCDetailsTextId: jVarLocalData.pk });
     jFLocalToInputVoucherNumberDCDetailsTextId({ inVoucherNumberDCDetailsTextId: jVarLocalData.pk });
     jFLocalToInputDateTextDCDetailsId({ inDateTextDCDetailsId: jVarLocalData.Date });
     jFLocalToInputDescriptionTextDCDetailsId({ inDescriptionTextDCDetailsId: jVarLocalData.Description });
     jFLocalToInputDCFactoryDCDetailsTextId({ inDCFactoryDCDetailsTextId: jVarLocalData.Factory });
     jFLocalToInputDCBranchNameDCDetailsTextId({ inDCBranchNameDCDetailsTextId: jVarLocalData.BranchName });
-};
-
-let jFLocalToInnerHtmlpkTextId = ({ inpkTextId }) => {
-    let jVarLocalHtmlId = 'pkTextId';
-    let jVarLocalpkTextId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalpkTextId.innerHTML = inpkTextId;
+    jFLocalToInputRowCountId(inDataToShow.QrCount)
 };
 
 let jFLocalToInnerHtmlVoucherNumberTextId = ({ inVoucherNumberTextId }) => {
@@ -97,6 +89,15 @@ let jFLocalToInputDCBranchNameDCDetailsTextId = ({ inDCBranchNameDCDetailsTextId
 
     if (jVarLocalDCBranchNameDCDetailsTextId === null === false) {
         jVarLocalDCBranchNameDCDetailsTextId.innerHTML = inDCBranchNameDCDetailsTextId;
+    };
+};
+
+let jFLocalToInputRowCountId = (inValue) => {
+    let jVarLocalHtmlId = 'RowCountId';
+    let jVarLocalRowCountId = document.getElementById(jVarLocalHtmlId);
+
+    if (jVarLocalRowCountId === null === false) {
+        jVarLocalRowCountId.innerHTML = inValue;
     };
 };
 
