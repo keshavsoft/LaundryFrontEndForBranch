@@ -1,9 +1,7 @@
-import ConfigJson from "../../Config.json" with {type: 'json'};
-
 let StartFunc = async () => {
     let jVarLocalFilterString = getUrlQueryParams({ inGetKey: "VoucherRef" });
 
-    let jVarLocalFetchUrl = `/${ConfigJson.routePath}/FactoryOut_DC/Show/Filter/pk/${jVarLocalFilterString}`;
+    let jVarLocalFetchUrl = `/Custom/Cleaning/Branch/Factory/FromFactory/EntryReturn/Voucher/RowData/${jVarLocalFilterString}`;
     let response = await fetch(jVarLocalFetchUrl);
     let data = await response.json();
 
