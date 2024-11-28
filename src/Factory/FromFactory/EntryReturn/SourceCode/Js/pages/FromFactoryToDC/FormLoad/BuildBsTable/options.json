@@ -1,49 +1,75 @@
 {
-    "toolbar": "#toolbar",
-    "search": "true",
-    "searchable": "true",
     "idfield": "pk",
     "showFooter": "true",
+    "search": true,
+    "searchHighlight": true,
     "data": [],
     "onClickRow": "",
     "pagination":"true",
+    "pageList":"[5,10, 25, 50, 100, all]",
+    "responseHandler": "responseHandler",
+    "queryParams": "queryParams",
+    "rowStyle": "rowStyle",
+    "filterControl":true,
+    "pagination":"true",
+    "url": "/Custom/Cleaning/Factory/V1/Inward/Scan/Voucher/QrStatus/$FactoryName",
     "columns": [
         {
-            "field": "id",
+            "field": "KS-Serial",
             "title": "#",
-            "formatter": ""
+            "formatter": "jFLocalSerialColumn"
         },
         {
             "field": "pk",
-            "title": "Dc #"
-        },
-        {
-            "field": "FactoryName",
-            "title": "To Factory"
+            "title": "DC",
+            "filtercontrol": "input"
         },
         {
             "field": "Date",
-            "title": "DC Date"
+            "title": "Date",
+            "filtercontrol": "select"
         },
         {
-            "title": "Duration",
-            "field":"Duration",
+            "field": "BranchName",
+            "title": "BranchName",
+            "filterControl":"select"
+        },
+        {
+            "field": "TimeSpan",
+            "title": "TimeSpan"
+        },
+        {
+            "field": "Description",
+            "title": "Description",
+            "filtercontrol": "select"
+        },
+        
+        {
+            "title": "Scan",
+            "field": "operate",
             "formatter": ""
         },
         {
-            "title": "Description",
-            "field": "Description"
+            "title": "Sent From Branch",
+            "formatter": "",
+            "field": "Sent",
+            "footerFormatter": ""
         },
         {
-            "title": "Items",
-            "field": "ItemDetails",
+            "title": "Scanned",
+            "field":"scanned",
             "formatter": "",
             "footerFormatter": ""
         },
         {
-            "title": "Scan",
-            "field":"Scan",
-            "formatter": ""
+            "title": "Pending",
+            "field": "Pending",
+            "formatter":"",
+            "footerFormatter": ""
+        },
+        {
+            "title": "EntryCancel",
+            "field": "EntryCancel"
         }
     ]
 }
