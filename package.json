@@ -20,7 +20,6 @@
     "Dashboard-CommonConfig-AsArray": "vite build --config src/Dashboard/CommonConfig/AsArray/vite.config.js",
     "Factory-FromFactory": "vite build --config src/Factory/FromFactory/vite.config.js",
     "FromFactoryQrCodes": "vite build --config src/FromFactoryQrCodes/vite.config.js",
-    "FactoryMenu": "vite build --config src/Factory/Menu/vite.config.js",
     "FromFactory-Completion": "vite build --config src/Factory/FromFactory/Completion/vite.config.js",
     "FromFactory-EntryReturn": "vite build --config src/Factory/FromFactory/EntryReturn/vite.config.js",
     "FromFactory-WashingReturn": "vite build --config src/Factory/FromFactory/WashingReturn/vite.config.js"
