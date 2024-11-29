@@ -15,7 +15,7 @@
     {
         "name": "Insert",
         "key": "FromFactory",
-        "icon": "bi bi-people-fill",
+        "icon": "bi bi-layers",
         "children": [
             {
                 "name": "To-DC",
@@ -40,6 +40,23 @@
             {
                 "name": "BranchDCItems",
                 "url": "ShowDCPendingItems.html"
+            }
+        ]
+    },
+    {
+        "name": "Status",
+        "key": "StatusDC",
+        "icon": "bi bi-database-fill",
+        "children": [
+            {
+                "name": "DC",
+                "url": "StatusDC.html",
+                "icon": "bi bi-plus-square-fill"
+            },
+            {
+                "name": "FilterDC",
+                "url": "StatusDCFilter.html",
+                "icon": "bi bi-plus-square-fill"
             }
         ]
     },
