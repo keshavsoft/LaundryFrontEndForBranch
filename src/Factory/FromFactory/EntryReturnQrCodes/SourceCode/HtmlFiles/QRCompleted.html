@@ -1,0 +1,27 @@
+{% extends 'src/Factory/FromFactory/EntryReturnQrCodes/SourceCode/Masters/simple.html' %}
+
+{% block content %}
+<div class="page-heading">
+    <!--  Inverse table start -->
+    <section class="section">
+        <div class="spinner-border" id="SpinnerId" role="status" style="display: none;">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <table class="table mb-0" id="table">
+            <thead>
+                <tr>
+                    <th data-formatter="jFGlobalSerialColumn">#</th>
+                </tr>
+
+            </thead>
+        </table>
+    </section>
+    <!-- Inverse table end -->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script type="module" src="../Js/pages/QRCompleted/StartFunc.js"></script>
+
+
+{% endblock %}
