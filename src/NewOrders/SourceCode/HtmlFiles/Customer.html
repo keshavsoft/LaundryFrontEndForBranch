@@ -103,7 +103,8 @@
                     <!-- Factory Button -->
                     <div class="col-auto">
                         <a class="btn bg-secondary" style="background-color: #d35400; color: white; width: 135px;"
-                            id="MasterButtonId" href="../../Factory/ToFactory/HtmlFiles/Menu.html"><i class="bi bi-truck"></i>
+                            id="MasterButtonId" href="../../Factory/ToFactory/HtmlFiles/Menu.html"><i
+                                class="bi bi-truck"></i>
                             Factory
                         </a>
                     </div>
@@ -224,6 +225,32 @@
             const formattedDate = `${day}-${month}-${year}`;
             return formattedDate;
         };
+
+        function ItemsFormatter(data) {
+            var field = this.field
+            var tPcs = data.map(function (row) {
+                return +row.AggValues.ItemDetails.split(' / ')[1]
+            }).reduce(function (sum, i) {
+                return sum + i
+            }, 0)
+            var tPTpes = data.map(function (row) {
+                return +row.AggValues.ItemDetails.split(' / ')[0]
+            }).reduce(function (sum, i) {
+                return sum + i
+            }, 0)
+
+            return `${tPTpes}/${tPcs}`
+        };
+
+        function priceFormatter(data) {
+            var field = this.field
+            return '₹ ' + data.map(function (row) {
+                return +row.AggValues.SettlementAmount
+            }).reduce(function (sum, i) {
+                return sum + i
+            }, 0)
+        }
+
     </script>
 
     <!-- <script type="module" src="../Js/pages/Customer/EntryFile.js"></script> -->
