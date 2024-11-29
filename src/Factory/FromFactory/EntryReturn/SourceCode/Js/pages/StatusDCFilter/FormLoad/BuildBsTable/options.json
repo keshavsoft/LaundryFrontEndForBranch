@@ -1,0 +1,48 @@
+{
+    "idfield": "pk",
+    "showFooter": "true",
+    "search": true,
+    "searchHighlight": true,
+    "responseHandler": "responseHandler",
+    "queryParams": "queryParams",
+    "data": [],
+    "pagination":"true",
+    "pageList":"[5,10, 25, 50, 100, all]",
+    "onClickRow": "",
+    "filterControl": true,
+    "url": "/Custom/Cleaning/Branch/Factory/FromFactory/EntryReturn/Voucher/QrStatus/$BranchName",
+    "columns": [
+        {
+            "field": "KS-Serial",
+            "title": "#",
+            "formatter": ""
+        },
+        {
+            "field": "pk",
+            "title": "DC",
+            "filterControl": "input"
+        },
+        {
+            "field": "FactoryName",
+            "title": "From Factory ",
+            "filterControl": "select"
+        },
+        {
+            "field": "Description",
+            "title": "Description "
+        },
+        {
+            "field": "Sent",
+            "title": "Sent",
+            "align":"right",
+            "filtercontrol": "select",
+            "footerFormatter":""
+        },
+        {
+            "field": "Scanned",
+            "title": "Scanned",
+            "align":"right",
+            "footerFormatter":""
+        }
+    ]
+}
