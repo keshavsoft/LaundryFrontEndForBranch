@@ -10,7 +10,7 @@
     {
         "name": "Parent",
         "icon": "bi bi-arrow-90deg-left",
-        "url": "../../../Menu/HtmlFiles/"
+        "url": "../../../ToFactory/HtmlFiles/Menu.html"
     },
     {
         "name": "Insert",

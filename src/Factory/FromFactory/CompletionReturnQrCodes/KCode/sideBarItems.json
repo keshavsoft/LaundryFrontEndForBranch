@@ -2,12 +2,12 @@
   {
     "name": "Dashboard",
     "icon": "bi bi-grid",
-    "url": "../../NewOrders/HtmlFiles/Customer.html"
+    "url": "../../../../NewOrders/HtmlFiles/Customer.html"
   },
   {
     "name": "Parent",
     "icon": "bi bi-arrow-90deg-left",
-    "url": "../../Factory/FromFactory/HtmlFiles/"
+    "url": "../../Completion/HtmlFiles/"
   },
   {
     "name": "All",
