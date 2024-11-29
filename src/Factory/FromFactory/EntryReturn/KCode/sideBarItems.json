@@ -25,6 +25,25 @@
         ]
     },
     {
+        "name": "VerticalShow",
+        "key": "Show",
+        "icon": "bi bi-table",
+        "children": [
+            {
+                "name": "DCItems",
+                "url": "ShowDCBranchItems.html"
+            },
+            {
+                "name": "BranchDCItems",
+                "url": "ShowDCItems.html"
+            },
+            {
+                "name": "BranchDCItems",
+                "url": "ShowDCPendingItems.html"
+            }
+        ]
+    },
+    {
         "name": "Report",
         "icon": "bi bi-qr-code",
         "url": "../../EntryReturnQrCodes/HtmlFiles/"
