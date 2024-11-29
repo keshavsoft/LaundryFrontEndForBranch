@@ -23,10 +23,5 @@
     "name": "Scanned",
     "url": "QRCompleted.html",
     "icon": "bi bi-check-circle"
-  },
-  {
-    "name": "Return",
-    "url": "QRReturn.html",
-    "icon": "bi bi-arrow-counterclockwise"
   }
 ]
