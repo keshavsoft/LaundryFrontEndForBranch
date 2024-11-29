@@ -11,8 +11,8 @@ const StartFunc = () => {
     optionsJson.onClickRow = onClickRow;
     optionsJson.queryParams = queryParams;
     optionsJson.responseHandler = responseHandler;
-    let LocalFactoryName = localStorage.getItem("FactoryName");
-    optionsJson.url=`/Custom/Cleaning/Branch/Factory/FromFactory/Scan/QrCode/Pending/${LocalFactoryName}`;
+    let LocalFactoryName = localStorage.getItem("BranchName");
+    optionsJson.url=`/Custom/Cleaning/Branch/Factory/FromFactory/EntryReturn/QrCode/Pending/${LocalFactoryName}`;
     $table.bootstrapTable(optionsJson);
 };
 
