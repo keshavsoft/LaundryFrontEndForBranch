@@ -27,6 +27,6 @@
     {
         "name": "Report",
         "icon": "bi bi-qr-code",
-        "url": "../../../FromFactoryQrCodes/HtmlFiles/"
+        "url": "../../CompletionReturnQrCodes/HtmlFiles/"
     }
 ]
