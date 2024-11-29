@@ -25,11 +25,13 @@
         },
         {
             "field": "AggValues.ItemDetails",
-            "title": "Items"
+            "title": "Items",
+            "footerFormatter": "ItemsFormatter"
         },
         {
             "field": "AggValues.SettlementAmount",
-            "title": "Settlement"
+            "title": "Settlement",
+            "footerFormatter": "priceFormatter"
         },
         {
             "field": "IsSettled",
