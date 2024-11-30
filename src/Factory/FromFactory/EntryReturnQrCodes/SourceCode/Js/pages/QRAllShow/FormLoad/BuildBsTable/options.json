@@ -9,6 +9,9 @@
     "queryParams": "",
     "rowStyle": "rowStyle",
     "pagination": "true",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
+   
     "columns": [
         {
             "field": "KS-Serial",
@@ -16,13 +19,13 @@
             "formatter": ""
         },
         {
-            "field": "OrderNumber",
-            "title": "Order #"
-        },
-        {
             "field": "QrCodeId",
             "title": "QrCode",
             "filtercontrol": "select"
+        },
+        {
+            "field": "OrderNumber",
+            "title": "Order #"
         },
         {
             "field": "OrderDate",
@@ -39,6 +42,7 @@
         {
             "field": "Rate",
             "title": "Rate",
+            "align":"right",
             "footerFormatter": ""
         },
         {

@@ -34,11 +34,11 @@
                 "url": "ShowDCBranchItems.html"
             },
             {
-                "name": "BranchDCItems",
+                "name": "ScannedItems",
                 "url": "ShowDCItems.html"
             },
             {
-                "name": "BranchDCItems",
+                "name": "PendingItems",
                 "url": "ShowDCPendingItems.html"
             }
         ]
