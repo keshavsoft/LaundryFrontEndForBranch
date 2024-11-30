@@ -62,6 +62,16 @@
                 "name": "Show",
                 "url": "ItemsShowAll.html",
                 "icon": "bi bi-grid-3x3"
+            },
+            {
+                "name": "CategoryFilter",
+                "url": "ItemsCategoryFilter.html",
+                "icon": "bi bi-grid-3x3"
+            },
+            {
+                "name": "WashTypeFilter",
+                "url": "ItemsWashTypeFilter.html",
+                "icon": "bi bi-grid-3x3"
             }
         ]
     }
