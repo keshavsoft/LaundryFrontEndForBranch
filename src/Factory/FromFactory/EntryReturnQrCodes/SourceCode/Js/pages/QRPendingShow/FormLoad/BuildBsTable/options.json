@@ -3,6 +3,9 @@
     "showFooter": "true",
     "search": true,
     "searchHighlight": true,
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
+   
     "data": [],
     "onClickRow": "",
     "responseHandler": "",
@@ -15,13 +18,14 @@
             "formatter": ""
         },
         {
-            "field": "OrderNumber",
-            "title": "Order #"
-        },
-        {
             "field": "QrCodeId",
             "title": "QrCode"
         },
+        {
+            "field": "OrderNumber",
+            "title": "Order #"
+        },
+       
         {
             "field": "OrderDate",
             "title": "Order Date"
@@ -37,6 +41,7 @@
         {
             "field": "Rate",
             "title": "Rate",
+            "align":"right",
             "filtercontrol": "select",
             "footerFormatter": ""
         },

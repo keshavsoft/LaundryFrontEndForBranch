@@ -5,6 +5,9 @@
     "searchHighlight": true,
     "data": [],
     "onClickRow": "",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
+   
     "responseHandler": "",
     "queryParams": "",
     "rowStyle": "",
@@ -17,15 +20,16 @@
             "formatter": ""
         },
         {
-            "field": "OrderNumber",
-            "title": "Order #",
-            "filterControl": "select"
-        },
-        {
             "field": "QrCodeId",
             "title": "QrCode",
             "filterControl": "select"
         },
+        {
+            "field": "OrderNumber",
+            "title": "Order #",
+            "filterControl": "select"
+        },
+        
         {
             "field": "OrderDate",
             "title": "Order Date"
@@ -41,6 +45,7 @@
         {
             "field": "Rate",
             "title": "Rate",
+            "align":"right",
             "footerFormatter": ""
         },
         {

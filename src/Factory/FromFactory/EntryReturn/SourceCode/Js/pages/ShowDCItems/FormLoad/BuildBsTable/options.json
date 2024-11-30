@@ -6,6 +6,8 @@
     "responseHandler": "responseHandler",
     "queryParams": "queryParams",
     "pagination":"true",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",   
     "data": [],
     "onClickRow": "",
     "columns": [
@@ -47,6 +49,7 @@
             "title": "Rate",
             "field": "Rate",
             "filtercontrol": "select",
+            "align":"right",
             "footerFormatter":"totalFormatter"
         },
         {
