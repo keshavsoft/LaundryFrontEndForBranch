@@ -2,8 +2,8 @@ import { StartFunc as StartFuncFromUrlParams } from "./FromUrlParams/EntryFile.j
 import { StartFunc as StartFuncBuildBsTable } from "./BuildBsTable/EntryFile.js";
 
 const StartFunc = () => {
-    StartFuncBuildBsTable();
     StartFuncFromUrlParams();
+    StartFuncBuildBsTable();
 };
 
 export { StartFunc };
