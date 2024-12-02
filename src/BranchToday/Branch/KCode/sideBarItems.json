@@ -74,7 +74,7 @@
     {
         "name": "Orders",
         "key": "DeleteOrder",
-        "icon": "bi bi-diagram-2",
+        "icon": "bi bi-box",
         "children": [
             {
                 "name": "DeleteOrder",

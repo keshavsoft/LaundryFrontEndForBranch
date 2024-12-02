@@ -1,7 +1,7 @@
 let StartFunc = () => {
-  let jVarLocalBranchId = 'FactoryNameId';
+  let jVarLocalBranchId = 'BranchNameId';
   let jVarlocalBranch = document.getElementById(jVarLocalBranchId);
-  let jVarLocalBranchName = localStorage.getItem("FactoryName");
+  let jVarLocalBranchName = localStorage.getItem("BranchName");
 
   if (jVarlocalBranch === null === false) {
       jVarlocalBranch.innerHTML = jVarLocalBranchName;
