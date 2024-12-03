@@ -6,6 +6,8 @@
     "showFooter": "true",
     "pagination": "true",
     "filterControl": "select",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
     "data": [],
     "onClickRow": "",
     "columns": [
@@ -24,6 +26,7 @@
         },
         {
             "field": "Rate",
+            "align":"right",
             "title": "Rate"
         },
         {

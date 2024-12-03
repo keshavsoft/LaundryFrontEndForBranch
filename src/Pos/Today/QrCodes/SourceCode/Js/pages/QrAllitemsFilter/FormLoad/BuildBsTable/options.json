@@ -6,6 +6,8 @@
     "showFooter": "true",
     "pagination": "true",
     "filterControl": true,
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
     "data": [],
     "onClickRow": "",
     "columns": [
@@ -25,7 +27,8 @@
         },
         {
             "field": "Rate",
-            "title": "Rate"
+            "title": "Rate",
+            "align":"right"
         },
         {
             "field": "OrderDateTime",
