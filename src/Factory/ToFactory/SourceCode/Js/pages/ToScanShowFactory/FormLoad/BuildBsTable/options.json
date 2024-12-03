@@ -8,6 +8,8 @@
     "pagination":"true",
     "onClickRow": "",
     "url": "get Url",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
     "columns": [
         {
             "field": "KS-Serial",

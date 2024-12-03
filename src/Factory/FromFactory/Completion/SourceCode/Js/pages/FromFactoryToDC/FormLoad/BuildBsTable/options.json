@@ -5,7 +5,9 @@
     "searchHighlight": true,
     "data": [],
     "onClickRow": "",
-    "pageList": "[5,10, 25, 50, 100, all]",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
+   
     "responseHandler": "responseHandler",
     "queryParams": "queryParams",
     "rowStyle": "rowStyle",

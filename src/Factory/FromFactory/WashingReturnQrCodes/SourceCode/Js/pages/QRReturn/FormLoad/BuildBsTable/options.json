@@ -9,6 +9,9 @@
     "queryParams": "",
     "pagination":"true",
     "rowStyle": "rowStyle",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
+   
     "columns": [
         {
             "field": "KS-Serial",

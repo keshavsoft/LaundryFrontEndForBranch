@@ -15,12 +15,22 @@ let jFLocalToInputBranchName = () => {
 };
 
 let jFLocalToInputDate = () => {
-    let jVarLocalHtmlId = "Date";
-    let currentDate = new Date();
-    let formattedDate = currentDate.toISOString().slice(0, 10);
+    // let jVarLocalHtmlId = "Date";
+    // let currentDate = new Date();
+    // let formattedDate = currentDate.toISOString().slice(0, 10);
 
-    let jVarLocalMenItemsTabId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalMenItemsTabId.value = formattedDate;
+    // let jVarLocalMenItemsTabId = document.getElementById(jVarLocalHtmlId);
+    // jVarLocalMenItemsTabId.value = formattedDate;
+    
+    var today = new Date(); 
+    today.setDate(today.getDate());
+    var dd = String(today.getDate()).padStart(2, '0'); 
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); 
+    var yyyy = today.getFullYear(); 
+    var nextWeek=yyyy + '-' + mm + '-' + dd; 
+    var dateInput=document.getElementById("Date");
+    dateInput.value=nextWeek;
+    dateInput.setAttribute("min",nextWeek);
 };
 
 export { StartFunc };
