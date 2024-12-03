@@ -49,6 +49,7 @@
             "title": "Rate",
             "field": "Rate",
             "filtercontrol": "select",
+            "align":"right",
             "footerFormatter":"totalFormatter"
         },
         {
