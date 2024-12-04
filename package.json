@@ -23,7 +23,7 @@
     "FromFactory-WashingReturn": "vite build --config src/Factory/FromFactory/WashingReturn/vite.config.js",
     "FromFactory-EntryReturnQrCodes": "vite build --config src/Factory/FromFactory/EntryReturnQrCodes/vite.config.js",
     "FromFactory-WashingReturnQrCodes": "vite build --config src/Factory/FromFactory/WashingReturnQrCodes/vite.config.js",
-    "FromFactory-CompletionReturnQrCodes": "vite build --config src/Factory/FromFactory/CompletionReturnQrCodes/vite.config.js"
+    "FromFactory-CompletionQrCodes": "vite build --config src/Factory/FromFactory/CompletionQrCodes/vite.config.js"
   },
   "author": "",
   "license": "ISC",

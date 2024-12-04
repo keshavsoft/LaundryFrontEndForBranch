@@ -6,14 +6,13 @@
     "data": [],
     "onClickRow": "",
     "pageList": "[5, 10, 25 ]",
-    "pageSize": "5",
-   
+    "pageSize": "5",   
     "responseHandler": "responseHandler",
     "queryParams": "queryParams",
     "rowStyle": "rowStyle",
     "filterControl": true,
     "pagination": "true",
-    "url": "/Custom/Cleaning/Branch/Factory/FromFactory/EntryReturn/Voucher/QrStatus/$BranchName",
+    "url": "/Custom/Cleaning/Branch/Factory/FromFactory/Completion/Voucher/QrStatus/$BranchName",
     "columns": [
         {
             "field": "KS-Serial",
