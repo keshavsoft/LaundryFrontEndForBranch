@@ -22,15 +22,21 @@ const jFdate = () => {
     // var formattedSevenDaysAgo = sevenDaysAgo.getFullYear() + '-' + ((sevenDaysAgo.getMonth() + 1) < 10 ? '0' : '') + (sevenDaysAgo.getMonth() + 1) + '-' + (sevenDaysAgo.getDate() < 10 ? '0' : '') + sevenDaysAgo.getDate();
 
     // document.getElementById('TableFooterdateInputId').value = formattedSevenDaysAgo;
-    var today = new Date(); 
-    today.setDate(today.getDate()+7);
-    var dd = String(today.getDate()).padStart(2, '0'); 
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); 
-    var yyyy = today.getFullYear(); 
-    var nextWeek=yyyy + '-' + mm + '-' + dd; 
-    var dateInput=document.getElementById("TableFooterdateInputId");
-    dateInput.value=nextWeek;
-    dateInput.setAttribute("min",nextWeek);
+        var today = new Date();
+        var ddToday = String(today.getDate()).padStart(2, '0');
+        var mmToday = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyyToday = today.getFullYear();
+        var formattedToday = yyyyToday + '-' + mmToday + '-' + ddToday;
+
+        today.setDate(today.getDate() + 7);
+        var ddNextWeek = String(today.getDate()).padStart(2, '0');
+        var mmNextWeek = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyyNextWeek = today.getFullYear();
+        var formattedNextWeek = yyyyNextWeek + '-' + mmNextWeek + '-' + ddNextWeek;
+
+        var dateInput = document.getElementById("TableFooterdateInputId");
+        dateInput.value = formattedNextWeek;
+        dateInput.setAttribute("min", formattedToday);
     // document.getElementById("TableFooterdateInputId").setAttribute("min", today); 
     // document.getElementById("TableFooterdateInputId").value = today; 
 };

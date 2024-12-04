@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Dashboard",
+    "icon": "bi bi-grid",
+    "url": "../../../../NewOrders/HtmlFiles/Customer.html"
+  },
+  {
+    "name": "Parent",
+    "icon": "bi bi-arrow-90deg-left",
+    "url": "../../EntryReturn/HtmlFiles/"
+  },
+  {
+    "name": "All",
+    "key": "QRAll",
+    "icon": "bi bi-list-ul",
+    "children": [
+      {
+        "name": "Show",
+        "url": "QRAllShow.html"
+      },
+      {
+        "name": "Filter",
+        "url": "QRAllFilter.html"
+      }
+    ]
+  },
+  {
+    "name": "Pending",
+    "key": "QRPending",
+    "icon": "bi bi-hourglass-split",
+    "children": [
+      {
+        "name": "Show",
+        "url": "QRPendingShow.html"
+      },
+      {
+        "name": "Filter",
+        "url": "QRPendingFilter.html"
+      }
+    ]
+  },
+  {
+    "name": "Scanned",
+    "key": "QRComplete",
+    "icon": "bi bi-check-circle",
+    "children": [
+      {
+        "name": "Show",
+        "url": "QRCompleteShow.html"
+      },
+      {
+        "name": "Filter",
+        "url": "QRCompleteFilter.html"
+      }
+    ]
+  }
+]

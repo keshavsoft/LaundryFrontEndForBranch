@@ -1,0 +1,74 @@
+{
+    "idfield": "pk",
+    "showFooter": "true",
+    "search": true,
+    "searchHighlight": true,
+    "data": [],
+    "onClickRow": "",
+    "responseHandler": "",
+    "queryParams": "",
+    "rowStyle": "rowStyle",
+    "filterControl": "true",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
+    "pagination": "true",
+    "columns": [
+        {
+            "field": "KS-Serial",
+            "title": "#",
+            "formatter": ""
+        },
+        {
+            "field": "QrCodeId",
+            "title": "QrCode",
+            "filterControl": "select"
+        },
+        {
+            "field": "OrderNumber",
+            "title": "Order #",
+            "filterControl": "select"
+        },
+        
+        {
+            "field": "OrderDate",
+            "title": "Order Date"
+        },
+        {
+            "field": "DeliveryDate",
+            "title": "Delivery Date"
+        },
+        {
+            "field": "ItemName",
+            "title": "ItemName"
+        },
+        {
+            "field": "Rate",
+            "title": "Rate",
+            "align":"right",
+            "footerFormatter": ""
+        },
+        {
+            "field": "VoucherNumber",
+            "title": "DC #",
+            "filterControl": "select"
+        },
+        {
+            "title": "DC Date",
+            "field": "DCDate"
+        },
+        {
+            "title": "FactoryName",
+            "field": "FactoryName",
+            "filterControl": "select"
+        },
+        {
+            "title": "Status",
+            "field": "Status",
+            "filterControl": "select"
+        },
+        {
+            "title": "GenSpan",
+            "field": "TimeSpan"
+        }
+    ]
+}
