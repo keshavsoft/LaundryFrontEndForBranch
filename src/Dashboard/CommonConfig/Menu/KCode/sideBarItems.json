@@ -20,5 +20,17 @@
                 "icon": "bi bi-list"
             }
         ]
+    },
+    {
+        "name": "AtStage",
+        "key": "",
+        "icon": "bi bi-bar-chart-steps",
+        "children": [
+            {
+                "name": "BranchFilter",
+                "url": "../../../QrCodeAtStage/BranchFilter/HtmlFiles/",
+                "icon": "bi bi-list"
+            }
+        ]
     }
 ]
