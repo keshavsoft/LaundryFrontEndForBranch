@@ -18,6 +18,7 @@
     "Menu": "vite build --config src/Dashboard/Menu/vite.config.js",
     "Branch-CommonConfig-Menu": "vite build --config src/Dashboard/CommonConfig/Menu/vite.config.js",
     "Dashboard-CommonConfig-AsArray": "vite build --config src/Dashboard/CommonConfig/AsArray/vite.config.js",
+    "Dashboard-QrCodeAtStage-BranchFilter": "vite build --config src/Dashboard/QrCodeAtStage/BranchFilter/vite.config.js",
     "FromFactory-Completion": "vite build --config src/Factory/FromFactory/Completion/vite.config.js",
     "FromFactory-EntryReturn": "vite build --config src/Factory/FromFactory/EntryReturn/vite.config.js",
     "FromFactory-WashingReturn": "vite build --config src/Factory/FromFactory/WashingReturn/vite.config.js",
