@@ -5,9 +5,9 @@ console.log("inDataToShow:",inDataToShow);
 
     // jFLocalToInnerHtmlpkTextId({ inpkTextId: jVarLocalData.pk });
     jFLocalToInnerHtmlVoucherNumberTextId({ inVoucherNumberTextId: jVarLocalData.pk })
-    jFLocalToInnerHtmlDescriptionTextId({ inDescriptionTextId: jVarLocalData.Description });
-    jFLocalToInnerHtmlDateTextId({ inDateTextId: jVarLocalData.Date });
-    // jFLocalToInnerHtmlFactoryTextId({ inFactoryTextId: jVarLocalData.Factory });
+    // jFLocalToInnerHtmlDescriptionTextId({ inDescriptionTextId: jVarLocalData.Description });
+    jFLocalToInnerHtmlDateTextId({ inDateTextId: jVarLocalData.DateTime });
+    jFLocalToInnerHtmlFactoryTextId({ inFactoryTextId: jVarLocalData.FactoryName });
     // jFLocalToInnerHtmlDCBranchNameTextId({ inDCBranchNameTextId: jVarLocalData.BranchName })
 };
 
@@ -29,19 +29,19 @@ let jFLocalToInnerHtmlDateTextId = ({ inDateTextId }) => {
     jVarLocalDateTextId.innerHTML = inDateTextId;
 };
 
-let jFLocalToInnerHtmlDescriptionTextId = ({ inDescriptionTextId }) => {
-    let jVarLocalHtmlId = 'DescriptionTextId';
-    let jVarLocalDescriptionTextId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalDescriptionTextId.innerHTML = inDescriptionTextId;
-};
-
-
-
-// let jFLocalToInnerHtmlFactoryTextId = ({ inFactoryTextId }) => {
-//     let jVarLocalHtmlId = 'DCFactoryTextId';
-//     let jVarLocalFactoryTextId = document.getElementById(jVarLocalHtmlId);
-//     jVarLocalFactoryTextId.innerHTML = inFactoryTextId;
+// let jFLocalToInnerHtmlDescriptionTextId = ({ inDescriptionTextId }) => {
+//     let jVarLocalHtmlId = 'DescriptionTextId';
+//     let jVarLocalDescriptionTextId = document.getElementById(jVarLocalHtmlId);
+//     jVarLocalDescriptionTextId.innerHTML = inDescriptionTextId;
 // };
+
+
+
+let jFLocalToInnerHtmlFactoryTextId = ({ inFactoryTextId }) => {
+    let jVarLocalHtmlId = 'DCFactoryTextId';
+    let jVarLocalFactoryTextId = document.getElementById(jVarLocalHtmlId);
+    jVarLocalFactoryTextId.innerHTML = inFactoryTextId;
+};
 
 let jFLocalToInnerHtmlDCBranchNameTextId = ({ inDCBranchNameTextId }) => {
     let jVarLocalHtmlId = 'DCBranchNameTextId';

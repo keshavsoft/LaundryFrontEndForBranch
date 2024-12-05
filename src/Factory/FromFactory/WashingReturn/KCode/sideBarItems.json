@@ -13,18 +13,6 @@
         "url": "../../../ToFactory/HtmlFiles/Menu.html"
     },
     {
-        "name": "Insert",
-        "key": "FromFactory",
-        "icon": "bi bi-layers",
-        "children": [
-            {
-                "name": "To-DC",
-                "url": "FromFactoryToDC.html",
-                "icon": "bi bi-plus-square-fill"
-            }
-        ]
-    },
-    {
         "name": "VerticalShow",
         "key": "Show",
         "icon": "bi bi-table",
@@ -43,6 +31,19 @@
             }
         ]
     },
+    {
+        "name": "Insert",
+        "key": "FromFactory",
+        "icon": "bi bi-layers",
+        "children": [
+            {
+                "name": "To-DC",
+                "url": "FromFactoryToDC.html",
+                "icon": "bi bi-plus-square-fill"
+            }
+        ]
+    },
+   
     {
         "name": "Status",
         "key": "StatusDC",
