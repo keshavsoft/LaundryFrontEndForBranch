@@ -7,7 +7,7 @@
     {
         "name": "Parent",
         "icon": "bi bi-arrow-90deg-left",
-        "url":"../../../../CommonConfig/Menu/HtmlFiles/"
+        "url":"../../../CommonConfig/Menu/HtmlFiles/"
     },
     {
         "name": "Parent-QrCodes",
