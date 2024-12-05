@@ -25,7 +25,7 @@
             "filterControl": "input"
         },
         {
-            "field": "Date",
+            "field": "DateTime",
             "title": "Date"
         },
         {
@@ -36,10 +36,6 @@
         {
             "field": "TimeSpan",
             "title": "TimeSpan"
-        },
-        {
-            "field": "Description",
-            "title": "Description"
         },
         {
             "title": "Scan",

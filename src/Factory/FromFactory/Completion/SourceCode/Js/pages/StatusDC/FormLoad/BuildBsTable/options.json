@@ -29,10 +29,6 @@
             "filtercontrol": "select"
         },
         {
-            "field": "Description",
-            "title": "Description "
-        },
-        {
             "field": "Sent",
             "title": "Sent",
             "align":"right",
@@ -42,6 +38,12 @@
         {
             "field": "Scanned",
             "title": "Scanned",
+            "align":"right",
+            "footerFormatter":""
+        },
+        {
+            "field": "Pending",
+            "title": "Pending",
             "align":"right",
             "footerFormatter":""
         }

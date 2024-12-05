@@ -1,6 +1,7 @@
 import { StartFunc as ColumnSerial } from "./ColumnSerial/entryFile.js";
 import { StartFunc as ColumnSent } from "./ColumnSent/entryFile.js";
 import { StartFunc as ColumnScan } from "./ColumnScan/entryFile.js";
+import { StartFunc as ColumnPending } from "./ColumnPending/entryFile.js";
 
 let StartFunc = ({ inColumns }) => {
     let LocalColumns = inColumns;
@@ -13,6 +14,9 @@ let StartFunc = ({ inColumns }) => {
 
     let LocalColumnScan = LocalColumns.find(element => element.field === "Scanned");
     ColumnScan({ inFindColumn: LocalColumnScan });
+
+    let LocalColumnPending= LocalColumns.find(element => element.field === "Pending");
+    ColumnPending({ inFindColumn: LocalColumnPending });
 
 
 };
