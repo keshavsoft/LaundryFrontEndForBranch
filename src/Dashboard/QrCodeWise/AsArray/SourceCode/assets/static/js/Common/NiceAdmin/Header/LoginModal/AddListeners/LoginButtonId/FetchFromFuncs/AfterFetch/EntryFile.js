@@ -1,14 +1,22 @@
+import { StartFunc as PrepareBody } from "../FetchHeaders/PrepareBody.js";
+
 let StartFunc = async ({ Status, inSuccessFunc }) => {
     let LocalStatus = Status;
 
     if (LocalStatus.status === 200) {
         jFLocalModalClose();
+        jFLocalToLocalStorage();
         inSuccessFunc();
         // console.log("inSuccessFunc",inSuccessFunc);
     }
     if (LocalStatus.status === 401) {
         jFLocalModalInputFocus();
     }
+};
+
+const jFLocalToLocalStorage = () => {
+    const jVarLocalFetchBody = PrepareBody();
+    localStorage.setItem("KUserName", jVarLocalFetchBody.UserName);
 };
 
 let jFLocalModalClose = () => {
