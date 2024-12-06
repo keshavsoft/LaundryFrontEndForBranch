@@ -12,18 +12,7 @@
     {
         "name": "QrCodes"
     },
-    {
-        "name": "Simple",
-        "key": "QrSimple",
-        "icon": "bi bi-slash-circle",
-        "children": [
-            {
-                "name": "ShowAll",
-                "url": "QrSimple.html",
-                "icon": "bi bi-circle"
-            }
-        ]
-    },
+   
     {
         "name": "All",
         "key": "QrAll",
