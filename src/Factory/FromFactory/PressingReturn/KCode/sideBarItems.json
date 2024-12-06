@@ -1,0 +1,69 @@
+[
+    {
+        "name": "FromFactory"
+    },
+    {
+        "name": "Home",
+        "icon": "bi bi-grid",
+        "url": "../../../../NewOrders/HtmlFiles/Customer.html"
+    },
+    {
+        "name": "Parent",
+        "icon": "bi bi-arrow-90deg-left",
+        "url": "../../../ToFactory/HtmlFiles/Menu.html"
+    },
+    {
+        "name": "VerticalShow",
+        "key": "Show",
+        "icon": "bi bi-table",
+        "children": [
+            {
+                "name": "DCItems",
+                "url": "ShowDCBranchItems.html"
+            },
+            {
+                "name": "ScannedItems",
+                "url": "ShowDCItems.html"
+            },
+            {
+                "name": "PendingItems",
+                "url": "ShowDCPendingItems.html"
+            }
+        ]
+    },
+    {
+        "name": "Insert",
+        "key": "FromFactory",
+        "icon": "bi bi-layers",
+        "children": [
+            {
+                "name": "To-DC",
+                "url": "FromFactoryToDC.html",
+                "icon": "bi bi-plus-square-fill"
+            }
+        ]
+    },
+   
+    {
+        "name": "Status",
+        "key": "StatusDC",
+        "icon": "bi bi-database-fill",
+        "children": [
+            {
+                "name": "DC",
+                "url": "StatusDC.html",
+                "icon": "bi bi-plus-square-fill"
+            },
+            {
+                "name": "FilterDC",
+                "url": "StatusDCFilter.html",
+                "icon": "bi bi-plus-square-fill"
+            }
+        ]
+    },
+    {
+        "name": "Report",
+        "icon": "bi bi-qr-code",
+        "url": "../../PressingReturnQrCodes/HtmlFiles/"
+    }
+]

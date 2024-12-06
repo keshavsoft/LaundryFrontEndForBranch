@@ -1,0 +1,61 @@
+{
+    "idfield": "pk",
+    "showFooter": "true",
+    "search": true,
+    "searchHighlight": true,
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
+   
+    "data": [],
+    "onClickRow": "",
+    "responseHandler": "",
+    "queryParams": "",
+    "pagination": "true",
+    "columns": [
+        {
+            "field": "KS-Serial",
+            "title": "#",
+            "formatter": ""
+        },
+        {
+            "field": "QrCodeId",
+            "title": "QrCode"
+        },
+        {
+            "field": "OrderNumber",
+            "title": "Order #"
+        },
+       
+        {
+            "field": "OrderDate",
+            "title": "Order Date"
+        },
+        {
+            "field": "DeliveryDate",
+            "title": "Delivery Date"
+        },
+        {
+            "field": "ItemName",
+            "title": "ItemName"
+        },
+        {
+            "field": "Rate",
+            "title": "Rate",
+            "align":"right",
+            "filtercontrol": "select",
+            "footerFormatter": ""
+        },
+        {
+            "field": "VoucherNumber",
+            "title": "DC #"
+        },
+        {
+            "title": "DC Date",
+            "field": "DCDate"
+        },
+        {
+            "title": "FactoryName",
+            "field": "FactoryName"
+        }
+    ]
+}
