@@ -1,0 +1,68 @@
+{
+    "idfield": "pk",
+    "showFooter": "true",
+    "search": true,
+    "searchHighlight": true,
+    "data": [],
+    "onClickRow": "",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",   
+    "responseHandler": "responseHandler",
+    "queryParams": "queryParams",
+    "rowStyle": "rowStyle",
+    "filterControl": true,
+    "pagination": "true",
+    "url": "/Custom/Cleaning/Branch/Factory/FromFactory/PressingReturn/Voucher/QrStatus/$BranchName",
+    "columns": [
+        {
+            "field": "KS-Serial",
+            "title": "#",
+            "formatter": "jFLocalSerialColumn"
+        },
+        {
+            "field": "pk",
+            "title": "DC",
+            "filterControl": "input"
+        },
+        {
+            "field": "Date",
+            "title": "Date"
+        },
+        {
+            "field": "FactoryName",
+            "title": "Factory",
+            "filterControl": "select"
+        },
+        {
+            "field": "TimeSpan",
+            "title": "TimeSpan"
+        },
+        {
+            "field": "Description",
+            "title": "Description"
+        },
+        {
+            "title": "Scan",
+            "field": "operate",
+            "formatter": ""
+        },
+        {
+            "title": "Sent From Factory",
+            "formatter": "",
+            "field": "Sent",
+            "footerFormatter": ""
+        },
+        {
+            "title": "Scanned",
+            "field": "scanned",
+            "formatter": "",
+            "footerFormatter": ""
+        },
+        {
+            "title": "Pending",
+            "field": "Pending",
+            "formatter": "",
+            "footerFormatter": ""
+        }
+    ]
+}
