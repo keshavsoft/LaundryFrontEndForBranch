@@ -3,7 +3,7 @@
     "SaveButton": {
         "NewOrder": {
             "500Status": {
-                "RedirectUrl": "/Laundry/NewOrders/HtmlFiles/Customer.html"
+                "RedirectUrl": "/Laundry/Branch/NewOrders/HtmlFiles/Customer.html"
             }
         }
     }
