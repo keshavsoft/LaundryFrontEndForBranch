@@ -54,7 +54,7 @@
             "title": "DC Factory"
         },
         {
-            "field": "FactoryScan",
+            "field": "EntryScan",
             "title": "Status"
         },
         {
