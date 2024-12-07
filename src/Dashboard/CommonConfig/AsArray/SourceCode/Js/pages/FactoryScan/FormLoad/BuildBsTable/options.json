@@ -53,7 +53,7 @@
             "filterControl": "select"
         },
         {
-            "field": "FactoryScan",
+            "field": "EntryScan",
             "title": "Status",
             "filterControl": "select"
         },
