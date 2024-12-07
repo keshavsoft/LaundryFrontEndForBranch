@@ -3,7 +3,7 @@ import { StartFunc as StartFuncForResponse200 } from "./ForResponse200/entryFile
 
 let StartFunc = async ({ inFetchResonse }) => {
 
-    if (inFetchResonse.status === 500) {
+    if (inFetchResonse.status === 400) {
         return await StartFuncForResponse500({ inFetchResonse });
     };
     
