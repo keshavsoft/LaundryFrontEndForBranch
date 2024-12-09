@@ -55,6 +55,12 @@ const jFTableFooterPcsInputId = () => {
         jVarLocalFactory.focus();
         return false;
     };
+    if (jVarLocalFactory.value <= 0) {
+
+        jVarLocalFactory.classList.add("is-invalid");
+        jVarLocalFactory.focus();
+        return false;
+    };
 
     if ((jVarLocalFactory.value === "") === false) {
         jVarLocalFactory.classList.remove("is-invalid");
