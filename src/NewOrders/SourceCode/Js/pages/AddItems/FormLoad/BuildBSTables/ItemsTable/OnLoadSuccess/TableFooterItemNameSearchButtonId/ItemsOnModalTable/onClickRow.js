@@ -2,7 +2,7 @@ const StartFunc = (row, $element, field) => {
     jFLocalToInputTableFooterItemNameId(row.ItemName);
     jFLocalToInputTableFooterCategoryId(row.Category);
     jFLocalToInputTableFooterRateInputId(row.DryWashRate);
-
+    jFLocalToInputTableFooterPicsInputId(row.pcs);
     let jVarLocalModalId = "ItemsOnModal";
 
     $(`#${jVarLocalModalId}`).modal("hide");
@@ -54,6 +54,15 @@ let jFLocalToInputTableFooterCategoryId = (inValue) => {
 
 let jFLocalToInputTableFooterRateInputId = (inValue) => {
     let jVarLocalHtmlId = 'TableFooterRateInputId';
+    let jVarLocalTableFooterRateInputId = document.getElementById(jVarLocalHtmlId);
+
+    if (jVarLocalTableFooterRateInputId === null === false) {
+        jVarLocalTableFooterRateInputId.value = inValue;
+    };
+};
+
+let jFLocalToInputTableFooterPcsInputId = (inValue) => {
+    let jVarLocalHtmlId = 'TableFooterPcsInputId';
     let jVarLocalTableFooterRateInputId = document.getElementById(jVarLocalHtmlId);
 
     if (jVarLocalTableFooterRateInputId === null === false) {
