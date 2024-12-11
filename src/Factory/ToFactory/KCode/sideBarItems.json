@@ -24,24 +24,14 @@
         "icon": "bi bi-box-seam",
         "children": [
             {
-                "name": "Vouchers",
-                "url": "ToFactoryVouchers.html",
-                "icon": "bi bi-file-earmark-text"
-            },
-            {
                 "name": "ToScan",
-                "url": "ToFactoryToScan.html",
+                "url": "ToFactoryVouchers.html",
                 "icon": "bi bi-upc-scan"
             },
             {
                 "name": "ToScanDelete",
                 "url": "ToFactoryToScanDelete.html",
                 "icon": "bi bi-upc-scan"
-            },
-            {
-                "name": "ToFactoryDc",
-                "url": "ToFactoryVoucher.html",
-                "icon": "bi bi-file-earmark-zip"
             },
             {
                 "name": "QrPrint",
