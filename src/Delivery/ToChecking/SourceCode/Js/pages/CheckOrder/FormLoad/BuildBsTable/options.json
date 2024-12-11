@@ -1,0 +1,50 @@
+{
+    "toolbar": "#toolbar",
+    "idfield": "pk",
+    "showFooter": "true",
+    "data": [],
+    "onClickRow": "",
+    "pageSize": "5",
+    "columns": [
+        {
+            "field": "KS-Serial",
+            "title": "#",
+            "formatter": ""
+        },
+        {
+            "title": "CustomerName",
+            "field": "CustomerName"
+        },
+        {
+            "title": "Mobile",
+            "field": "CustomerMobile"
+        },
+        {
+            "field": "ItemName",
+            "title": "ItemName"
+        },
+        {
+            "field": "ItemName",
+            "title": "ItemName"
+        },
+        {
+            "field": "Rate",
+            "title": "Rate"
+        },
+        {
+            "field": "DeliveryDate",
+            "title": "DeliveryDate"
+        },
+        {
+            "title": "Duration",
+            "field": "TimeSpan"
+        },
+       
+        {
+            "title": "Status",
+            "field": "Scan",
+            "formatter": "QRCodeGenerate"
+
+        }
+    ]
+}
