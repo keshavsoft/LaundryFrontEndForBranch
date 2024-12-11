@@ -39,6 +39,7 @@
         {
             "title": "Scan",
             "field": "Scan",
+            "footerFormatter": "",
             "formatter": ""
         },
         {
