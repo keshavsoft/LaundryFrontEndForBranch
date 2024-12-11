@@ -4,16 +4,17 @@
     "searchable": "true",
     "idfield": "pk",
     "showFooter": "true",
-    "pagination":"true",
+    "pagination": "true",
     "data": [],
     "onClickRow": "",
+    "url": "get Url",
     "pageList": "[5, 10, 25 ]",
     "pageSize": "5",
     "columns": [
         {
-            "field": "id",
+            "field": "KS-Serial",
             "title": "#",
-            "formatter": "jFGlobalSerialColumn"
+            "formatter": ""
         },
         {
             "field": "pk",
@@ -29,20 +30,28 @@
         },
         {
             "title": "Duration",
-            "formatter": "DateFormatter"
+            "field": "TimeSpan"
         },
         {
             "title": "Description",
             "field": "Description"
         },
         {
-            "title": "Items",
-            "formatter": "ItemsFormatter",
-            "footerFormatter": "priceFormatter"
+            "title": "Scan",
+            "field": "Scan",
+            "formatter": ""
         },
         {
-            "title": "Scan",
-            "formatter": "QRCodeGenerate"
+            "title": "Scanned",
+            "field": "ItemDetails",
+            "footerFormatter": "",
+            "formatter": ""
+        },
+        {
+            "title": "EntryScanned",
+            "field": "EntryScanCount",
+            "align": "right",
+            "footerFormatter": ""
         }
     ]
 }
