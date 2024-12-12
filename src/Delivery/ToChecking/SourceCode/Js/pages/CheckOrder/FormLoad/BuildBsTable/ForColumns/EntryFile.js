@@ -9,7 +9,7 @@ let StartFunc = ({ inColumns }) => {
         ColumnOperate({ inFindColumn: LocalColumnOperateFine });
     };
 
-    let LocalScanColumn = LocalColumns.find(element => element.field === "Scan");
+    let LocalScanColumn = LocalColumns.find(element => element.field === "Rate");
 
     if (LocalScanColumn === undefined === false) {
         ColumnScan({ inFindColumn: LocalScanColumn });
