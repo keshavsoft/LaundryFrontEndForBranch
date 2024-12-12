@@ -1231,3 +1231,41 @@ h6 {
   font-size: 13px;
   color: #012970;
 }
+.rounded-button {
+  position: fixed;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(9, 98, 71); /* Blue color */
+  color: white;
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.right {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left {
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bottom {
+  bottom: 20px;
+  right: 92%;
+  transform: translateX(-50%);
+}
+
+/* Hover effect */
+.rounded-button:hover {
+  background-color: rgb(5, 80, 43); /* Darker shade of blue */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
