@@ -8,13 +8,18 @@
         "url": "../../../NewOrders/HtmlFiles/Customer.html"
     },
     {
-        "name": "CheckOrder",
+        "name": "Orders",
         "key": "CheckOrder",
         "icon": "bi bi-receipt",
         "children": [
             {
-                "name": "Show",
+                "name": "Check",
                 "url": "CheckOrder.html",
+                "icon": "bi bi-file-earmark-text"
+            },
+            {
+                "name": "Delivery",
+                "url": "Delivery.html",
                 "icon": "bi bi-file-earmark-text"
             }
         ]

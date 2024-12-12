@@ -1237,13 +1237,13 @@ h6 {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background-color: rgb(9, 98, 71); /* Blue color */
+  background-color: #007bff; /* Blue color */
   color: white;
   font-size: 24px;
   line-height: 60px;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(43, 73, 184, 0.267);
   transition: all 0.3s ease;
 }
 .right {
