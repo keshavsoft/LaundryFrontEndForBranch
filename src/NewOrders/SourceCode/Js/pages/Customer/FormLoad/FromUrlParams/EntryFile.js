@@ -3,7 +3,7 @@ const StartFunc = () => {
     let jVarLocalCustomerName = getUrlQueryParams({ inGetKey: "CustomerName" });
 
     if (jVarLocalCustomerMobile === null === false && jVarLocalCustomerName === null === false) {
-        let jVarLocalClubbedData = `${jVarLocalCustomerName}:${jVarLocalCustomerMobile}`;
+        let jVarLocalClubbedData = `${jVarLocalCustomerMobile}:${jVarLocalCustomerName}`;
         jFLocalToInputCustomerNameInputId(jVarLocalClubbedData);
     };
 };
