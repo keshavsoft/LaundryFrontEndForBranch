@@ -16,6 +16,22 @@
             "title": "ItemName"
         },
         {
+            "field": "QrCodeId",
+            "title": "QrCode"
+        },
+        {
+            "field": "OrderNumber",
+            "title": "OrderNumber"
+        },
+        {
+            "field": "OrderDate",
+            "title": "OrderDate"
+        },
+        {
+            "field": "DeliveryDate",
+            "title": "DeliveryDate"
+        },
+        {
             "field": "Rate",
             "title": "Rate",
             "footerFormatter":""
@@ -28,12 +44,10 @@
             "title": "Duration",
             "field": "TimeSpan"
         },
-       
         {
             "title": "Status",
             "field": "Scan",
             "formatter": "QRCodeGenerate"
-
         }
     ]
 }
