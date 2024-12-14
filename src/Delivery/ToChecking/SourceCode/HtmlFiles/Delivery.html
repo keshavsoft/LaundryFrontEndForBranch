@@ -214,8 +214,9 @@
 
 
     <button class="rounded-button bottom">
-        <a class="link-light" href="/Laundry/Branch/Delivery/ToChecking/HtmlFiles/index.html"><svg xmlns="http://www.w3.org/2000/svg"
-                width="30" height="20" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+        <a class="link-light" href="/Laundry/Branch/Delivery/ToChecking/HtmlFiles/index.html"><svg
+                xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor"
+                class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                     d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708z" />
             </svg></a></button>
@@ -235,19 +236,97 @@
                         </div>
                     </div>
                 </div>
-                <div class="row d-none CustomerDetailsClass">
-                    <div class="col-md-4">
-                        <label for="validationCustom01" class="form-label">Customer name</label>
-                        <input type="text" id="CustomerNameId" class="form-control" id="validationCustom01" disabled>
-                        <div class="valid-feedback">
-                            Looks good!
+                <div class="d-none CustomerDetailsClass">
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">Order Number</label>
+                            <input type="text" id="OrderNumberId" class="form-control" id="validationCustom01" disabled>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">Customer name</label>
+                            <input type="text" id="CustomerNameId" class="form-control" id="validationCustom01"
+                                disabled>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">Mobile</label>
+                            <input type="text" id="CustomerMobileId" class="form-control" id="validationCustom01"
+                                disabled>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <label for="validationCustom01" class="form-label">Mobile</label>
-                        <input type="text" id="CustomerMobileId" class="form-control" id="validationCustom01" disabled>
-                        <div class="valid-feedback">
-                            Looks good!
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">Settlement</label>
+                            <input type="text" id="SettlementId" class="form-control" id="validationCustom01" disabled>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">CGST</label>
+                            <input type="text" id="CGSTId" class="form-control" id="validationCustom01" disabled>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">SGST</label>
+                            <input type="text" id="SGSTId" class="form-control" id="validationCustom01" disabled>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <label for="validationCustom01" class="form-label">CancelItems Amt</label>
+                            <input type="text" id="CancelItemsAmtId" class="form-control" id="validationCustom01"
+                                disabled>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="validationCustom01" class="form-label">CGST</label>
+                            <input type="text" id="CancelCGSTId" class="form-control" id="validationCustom01" disabled>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="validationCustom01" class="form-label">SGST</label>
+                            <input type="text" id="CancelSGSTId" class="form-control" id="validationCustom01" disabled>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="validationCustom01" class="form-label">GST</label>
+                            <input type="text" id="CancelGSTId" class="form-control" id="validationCustom01" disabled>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="validationCustom01" class="form-label">Total Return Amt</label>
+                            <input type="text" id="TotalAmtReturnId" class="form-control" id="validationCustom01"
+                                disabled>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="validationCustom01" class="form-label">Save Retun Items Amt</label>
+                            <button type="button" id="" class="btn btn-primary">Submit</button>
+
                         </div>
                     </div>
                 </div>
@@ -275,7 +354,7 @@
 
     <!-- ======= Footer ======= -->
     <footer id="" class="footer">
-    
+
         <div class="copyright">
             &copy; Copyright <strong><span>KeshavSoft</span></strong>. All Rights Reserved
         </div>
@@ -286,7 +365,7 @@
             <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
             Version <a href="https://keshavsoft.com/">10.9</a>
         </div>
-    
+
     </footer><!-- End Footer -->
 
     <div class="modal fade" id="LoginModalId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -326,7 +405,14 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.6/dist/bootstrap-table.min.js"></script>
-
+    <script>
+        function rowStyle(row, index) {
+            if (row.EntryReturn || row.ProcessReturn) {
+                return { css: { "background-color": "lightcoral" } };
+            };
+            return {};
+        };
+    </script>
     <!-- Template Main JS File -->
     <script src="../assets/static/NiceAdmin/js/main.js"></script>
 
