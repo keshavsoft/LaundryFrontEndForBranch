@@ -29,7 +29,7 @@
             "title": "Mobile"
         },
         {
-            "title": "Time Span",
+            "title": "TimeSpan",
             "field": "TimeSpan",
             "filter-control": "select"
         },
