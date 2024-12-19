@@ -42,10 +42,11 @@
         {
             "title": "Settlement",
             "formatter": "jFLocalSettlementDetails",
-            "footerFormatter": "priceFormatter"
+            "footerFormatter": "priceFormatter",
+            "align":"right"
         },
         {
-            "title": "QrCodes",
+            "title": "Qr Raise",
             "field": "QRRaise",
             "formatter": "jFLocalQrCodeDetails",
             "footerFormatter": "QrFormatter"
