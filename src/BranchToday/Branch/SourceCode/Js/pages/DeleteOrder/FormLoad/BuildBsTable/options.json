@@ -42,7 +42,8 @@
         {
             "title": "Settlement",
             "formatter": "jFLocalSettlementDetails",
-            "footerFormatter": "priceFormatter"
+            "footerFormatter": "priceFormatter",
+            "align":"right"
         },
         {
             "title": "QrCodes",

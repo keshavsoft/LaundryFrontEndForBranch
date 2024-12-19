@@ -30,7 +30,8 @@
         {
             "title": "Settlement",
             "field":"AggValues.SettlementAmount",
-            "footerFormatter": "priceFormatter"
+            "footerFormatter": "priceFormatter",
+            "align":"right"
         },
         {
             "title": "QrCodes",
