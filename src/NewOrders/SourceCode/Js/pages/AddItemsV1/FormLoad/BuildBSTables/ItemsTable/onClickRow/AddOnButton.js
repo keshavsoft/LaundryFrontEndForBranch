@@ -7,7 +7,7 @@ const StartFunc = ({ inRow }) => {
     var $table = $('#AddOnTable');
     $table.bootstrapTable("load", jVarLocalDataForTable);
 
-    StartFuncShowOnModal(inRow);
+    StartFuncShowOnModal({ inRow });
 
     $("#AddOnModal").modal("show");
 };

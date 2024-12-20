@@ -7,7 +7,6 @@ let StartFunc = async () => {
     let jVarLocalStartFuncPrepareBody = StartFuncPrepareBody();
 
     if (StartFuncCheckFunc({ PrepareBody: jVarLocalStartFuncPrepareBody })) {
-
         let jVarLocalDataNeeded = await StartFuncFetchFuncs({ PrepareBody: jVarLocalStartFuncPrepareBody });
 
         if (jVarLocalDataNeeded.status === 200) {
@@ -16,4 +15,4 @@ let StartFunc = async () => {
     }
 };
 
-export { StartFunc }
+export { StartFunc };

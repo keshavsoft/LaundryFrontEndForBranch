@@ -5,9 +5,9 @@ import ConfigJson from '../../../../../Config.json' with {type: 'json'};
 const StartFunc = async ({ inItemSerial }) => {
     let LocalRowPk = RowPkLocalStorage();
 
-    let responce = await StartFuncDeleteFetch({ inRowpk: LocalRowPk, inItemSerial });
+    let jVarLocalresponse = await StartFuncDeleteFetch({ inRowpk: LocalRowPk, inItemSerial });
 
-    StartFuncAfterFetch({ inResponce: responce })
+    StartFuncAfterFetch({ inResponse: jVarLocalresponse })
 };
 
 const RowPkLocalStorage = () => {

@@ -1,5 +1,4 @@
 const StartFunc = () => {
-
     let jVarLocalAddOnService = jFLocalTableFooterAddOnSelectId();
     let jVarLocalAddOnRate = jFLocalTableFooterAddOnRate({ inlocalAddOnService: jVarLocalAddOnService });
     let jVarLocalAddOnItemSerial = jFLocalAddOnModalItemSerialId();
