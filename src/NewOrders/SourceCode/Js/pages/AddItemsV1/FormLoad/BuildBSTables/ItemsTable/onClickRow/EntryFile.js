@@ -8,7 +8,7 @@ const StartFunc = (row, $element, field) => {
 
     if (field === 9) {
         if (window.confirm("Do you really want to Delete Item?")) {
-            StartFuncDeleteButton({ inItemSerial: row.ItemSerial });
+            StartFuncDeleteButton({ inItemSerial: row.pk });
         };
     };
 };
