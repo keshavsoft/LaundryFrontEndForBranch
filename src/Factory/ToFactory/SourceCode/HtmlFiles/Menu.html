@@ -1,202 +1,82 @@
-{% extends 'src/Factory/ToFactory/SourceCode/Masters/Menu.html' %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content %}
-<section class="section dashboard">
-    <div class="row">
-        <div class="col">
-            <h1>All Tables-WithSSR-SubTable-HtmlSide validations
-            </h1>
-        </div>
-    </div>
-    <div class="row">
-        <!-- Left side columns -->
-        <div class="col-lg-8">
-            <div class="row">
-                <!-- Sales Card -->
-                <div class="col-xxl-4 col-md-6">
-                    <div class="card info-card sales-card">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-                        <div class="filter">
-                            <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                <li class="dropdown-header text-start">
-                                    <h6>Filter</h6>
-                                </li>
+    <!-- Bootstrap CSS -->
+    <link href="../assets/DashboardForFactory/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/DashboardForFactory/css/custom.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/DashboardForFactory/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/DashboardForFactory/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/DashboardForFactory/img/favicon-16x16.png">
 
-                                <li><a class="dropdown-item" href="../../FromFactory/EntryReturn/HtmlFiles/">EntryReturn</a></li>
-                                <li><a class="dropdown-item" href="../../FromFactory/PressingReturn/HtmlFiles/">ProcessReturn</a></li>
-                                <li><a class="dropdown-item" href="../../FromFactory/Completion/HtmlFiles/">Completion</a></li>
-                            </ul>
-                        </div>
 
-                        <div class="card-body">
-                            <h5 class="card-title">FromFactory</span></h5>
+    <link href="../assets/DashboardForFxxxxxxxactory/css/aos.css" rel="stylesheet">
 
-                            <div class="d-flex align-items-center">
-                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                    <!-- <i class="bi bi-cart"></i> -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-building-fill-gear" viewBox="0 0 16 16">
-                                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7.256A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-3.59 1.787A.5.5 0 0 0 9 9.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .39-.187A4.5 4.5 0 0 0 8.027 12H6.5a.5.5 0 0 0-.5.5V16H3a1 1 0 0 1-1-1zm2 1.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m3 0v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
-                                        <path d="M11.886 9.46c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
-                                      </svg>
-                                </div>
-                                <div class="ps-3">
-                                    <!-- <h6>145</h6>
-                                    <span class="text-success small pt-1 fw-bold">12%</span> <span
-                                        class="text-muted small pt-2 ps-1">increase</span> -->
+    <script src="https://kit.fontawesome.com/37948dea6a.js" crossorigin="anonymous"></script>
 
-                                </div>
+    <title>Masters</title>
+
+</head>
+
+<body>
+
+    <section id="express-delivery">
+        <div class="container">
+
+            <h4 class="main-heading text-center" data-aos="zoom-in" data-aos-delay="100">Choose Delivery Times That Work for You</h4>
+            <h5 class="sub-heading mt-1 text-center" data-aos="zoom-in" data-aos-delay="300">Washtex, we know everyone has unique needs. That’s why we provide various delivery options to suit you.</h5>
+
+
+            <div class="row my-3 my-md-5 g-5">
+                <div class="col-md-6 justify-content-center d-flex align-items-center" data-aos="fade-right" data-aos-delay="300">
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <div class="d-flex flex-wrap align-items-center">
+                            <div class="delivery-option-box d-flex flex-column align-items-center justify-content-center border p-3" style="width: 200px; height: 150px;">
+                                <img src="../assets/DashboardForFactory/img/regular-delivery-icon.svg" alt="ToFactory" class="img-fluid">
+                                <h4 class="mt-2"><a href="../../ToFactory/HtmlFiles/">ToFactory</a></h4>
+                            </div>
+                            <div class="delivery-option-box d-flex flex-column align-items-center justify-content-center border p-3 ms-md-3 mt-3 mt-md-0" style="width: 200px; height: 150px;">
+                                <img src="../assets/DashboardForFactory/img/van reverse.svg" alt="From Factory" class="img-fluid">
+                                <h4 class="mt-2"><a href="./FromFactoryMenu.html">From Factory</a></h4>
                             </div>
                         </div>
-
+                        
                     </div>
-                </div><!-- End Sales Card -->
-                <!-- Revenue Card -->
-                <div class="col-xxl-4 col-md-6">
-                    <div class="card info-card revenue-card">
-                        <div class="card-body">
-                            <h5><a class="card-title" href="../../ToFactory/HtmlFiles/">ToFactory</a></h5>
-
-                            <div class="d-flex align-items-center">
-                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                    <!-- <i class="bi bi-currency-dollar"></i> -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
-                                        <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zM2 11h1v1H2zm2 0h1v1H4zm-1 2v1H2v-1zm1 0h1v1H4zm9-10v1h-1V3zM8 5h1v1H8zm1 2v1H8V7zM8 9h1v1H8zm2 0h1v1h-1zm-1 2v1H8v-1zm1 0h1v1h-1zm3-2v1h-1V9zm-1 2h1v1h-1zm-2-4h1v1h-1zm3 0v1h-1V7zm-2-2v1h-1V5zm1 0h1v1h-1z"/>
-                                      </svg>
-                                </div>
-                                <div class="ps-3">
-                                    <!-- <h6>Count</h6>
-                                    <span class="text-success small pt-1 fw-bold">8%</span> <span
-                                        class="text-muted small pt-2 ps-1">increase</span> -->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End Revenue Card -->
-
-                <!-- Customers Card -->
-                <div class="col-xxl-4 col-xl-12">
-
-                    <div class="card info-card customers-card">
-
-                        <div class="filter">
-                            <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                <li class="dropdown-header text-start">
-                                    <h6>Filter</h6>
-                                </li>
-
-                                <li><a class="dropdown-item" href="#">Today</a></li>
-                                <li><a class="dropdown-item" href="#">This Month</a></li>
-                                <li><a class="dropdown-item" href="#">This Year</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title">Customers <span>| This Year</span></h5>
-
-                            <div class="d-flex align-items-center">
-                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-people"></i>
-                                </div>
-                                <div class="ps-3">
-                                    <!-- <h6>1244</h6>
-                                    <span class="text-danger small pt-1 fw-bold">12%</span> <span
-                                        class="text-muted small pt-2 ps-1">decrease</span> -->
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div><!-- End Customers Card -->
+                </div>
+                <div class="col-md-6">
+                    <img src="../assets/DashboardForFactory/img/express-laundry.png" class="img-fluid" data-aos="fade-left" data-aos-delay="500">
+                </div>
             </div>
-        </div><!-- End Left side columns -->
 
-        <!-- Right side columns -->
-        <div class="col-lg-4">
+        </div>
+    </section>
+     
 
-            <!-- Recent Activity -->
-            <div class="card">
-                <div class="filter">
-                    <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                        <li class="dropdown-header text-start">
-                            <h6>Filter</h6>
-                        </li>
 
-                        <li><a class="dropdown-item" href="#">Today</a></li>
-                        <li><a class="dropdown-item" href="#">This Month</a></li>
-                        <li><a class="dropdown-item" href="#">This Year</a></li>
-                    </ul>
-                </div>
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
-                <div class="card-body">
-                    <h5 class="card-title">Recent Activity <span>| Today</span></h5>
+    <script src="../assets/DashboardForFactory/js/owl.carousel.js"></script>
 
-                    <div class="activity">
+    <script src="../assets/DashboardForFactory/js/bootstrap.js"></script>
+    <script src="../assets/DashboardForFactory/js/aos.js"></script>
 
-                        <div class="activity-item d-flex">
-                            <div class="activite-label">32 min</div>
-                            <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
-                            <div class="activity-content">
-                                Quia quae rerum <a href="#" class="fw-bold text-dark">explicabo officiis</a> beatae
-                            </div>
-                        </div><!-- End activity item-->
+    <script type="text/javascript">
+        // Init AOS
+        function aos_init() {
+            AOS.init({
+                duration: 2500,
+                once: true
+            });
+        }
+        $(window).on('load', function() {
+            aos_init();
+        });
+    </script>
+</body>
 
-                        <div class="activity-item d-flex">
-                            <div class="activite-label">56 min</div>
-                            <i class='bi bi-circle-fill activity-badge text-danger align-self-start'></i>
-                            <div class="activity-content">
-                                Voluptatem blanditiis blanditiis eveniet
-                            </div>
-                        </div><!-- End activity item-->
-
-                        <div class="activity-item d-flex">
-                            <div class="activite-label">2 hrs</div>
-                            <i class='bi bi-circle-fill activity-badge text-primary align-self-start'></i>
-                            <div class="activity-content">
-                                Voluptates corrupti molestias voluptatem
-                            </div>
-                        </div><!-- End activity item-->
-
-                        <div class="activity-item d-flex">
-                            <div class="activite-label">1 day</div>
-                            <i class='bi bi-circle-fill activity-badge text-info align-self-start'></i>
-                            <div class="activity-content">
-                                Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati voluptatem</a>
-                                tempore
-                            </div>
-                        </div><!-- End activity item-->
-
-                        <div class="activity-item d-flex">
-                            <div class="activite-label">2 days</div>
-                            <i class='bi bi-circle-fill activity-badge text-warning align-self-start'></i>
-                            <div class="activity-content">
-                                Est sit eum reiciendis exercitationem
-                            </div>
-                        </div><!-- End activity item-->
-
-                        <div class="activity-item d-flex">
-                            <div class="activite-label">4 weeks</div>
-                            <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
-                            <div class="activity-content">
-                                Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
-                            </div>
-                        </div><!-- End activity item-->
-
-                    </div>
-
-                </div>
-            </div><!-- End Recent Activity -->
-        </div><!-- End Right side columns -->
-
-    </div>
-</section>
-{% endblock %}
-
-{% block js %}
-<script type="module" src="../Js/pages/Menu/StartFunc.js"></script>
-{% endblock %}
+</html>
