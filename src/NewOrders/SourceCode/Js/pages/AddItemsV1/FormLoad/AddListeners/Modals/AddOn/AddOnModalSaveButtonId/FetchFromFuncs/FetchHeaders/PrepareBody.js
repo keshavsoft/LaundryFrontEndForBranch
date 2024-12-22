@@ -1,11 +1,11 @@
 const StartFunc = () => {
     let jVarLocalAddOnService = jFLocalTableFooterAddOnSelectId();
-    let jVarLocalAddOnRate = jFLocalTableFooterAddOnRate({ inlocalAddOnService: jVarLocalAddOnService });
+    let jVarLocalAddOnRate = jFLocalAddOnRateId();
     let jVarLocalAddOnItemSerial = jFLocalAddOnModalItemSerialId();
 
     let LocalLocalObj = {};
     LocalLocalObj.AddOnService = jVarLocalAddOnService
-    LocalLocalObj.AddOnRate = parseInt(jFLocalAddOnRateId());
+    LocalLocalObj.AddOnRate = parseInt(jVarLocalAddOnRate);
     LocalLocalObj.AddOnItemSerial = parseInt(jVarLocalAddOnItemSerial);
 
     return LocalLocalObj;

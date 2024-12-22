@@ -2,7 +2,7 @@ import { StartFunc as StartFuncShowOnModal } from "./ShowOnModal.js";
 import ConfigJson from '../../../../Config.json' with {type: 'json'};
 
 const StartFunc = ({ inRow }) => {
-    let jVarLocalDataForTable = jFLocalTransformData({ inItemSerial: inRow.ItemSerial });
+    let jVarLocalDataForTable = jFLocalTransformData({ inItemSerial: parseInt(inRow.pk) });
 
     var $table = $('#AddOnTable');
     $table.bootstrapTable("load", jVarLocalDataForTable);

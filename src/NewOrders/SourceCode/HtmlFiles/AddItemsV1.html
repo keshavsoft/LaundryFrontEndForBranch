@@ -331,7 +331,9 @@
         function jFLocalAddOnFormater(value, row, index) {
             let JVarLocalFromStrogeAddOnData = localStorage.getItem("PresentOrder");
             let JvarLocalData = JSON.parse(JVarLocalFromStrogeAddOnData);
-            let jVarLocalItemSerial = row.ItemSerial;
+
+            let jVarLocalItemSerial = parseInt(row.pk);
+
             let jVarLocalFilterData = Object.values(JvarLocalData.AddOnData).filter(e => e.AddOnItemSerial === jVarLocalItemSerial);
 
             if (jVarLocalFilterData.length > 0) {
