@@ -1,19 +1,15 @@
 let StartFunc = ({ inFindColumn }) => {
-    inFindColumn.footerFormatter = jVarLocalFormatterFunc;
+    inFindColumn.footerFormatter = jFLocalFooterFormatterFunc;
 };
 
-let jVarLocalFormatterFunc = (data) => {
-    var field = "Rate";
-    let LocalTotal = data.map(function (row) {
-        if (row[field] === undefined) {
-            return 0;
-        };
-        return +row[field];
-    }).reduce(function (sum, i) {
-        return sum + i
-    }, 0);
-
-    return Math.floor(LocalTotal);
+let jFLocalFooterFormatterFunc = (data) => {
+    return ` <div class="input-group">
+                                        <input type="text" class="form-control" id="TableFooterRateInputId"
+                                            autocomplete="off" tabindex="-1" readonly>
+                                        <div class="invalid-feedback">
+                                            Please provide correct item.
+                                        </div>
+                                    </div>`;
 };
 
 export { StartFunc };
