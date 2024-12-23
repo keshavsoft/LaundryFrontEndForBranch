@@ -676,7 +676,7 @@ footer .social-links ul li {
     top: 0;
 }
 
-/*#how-it-work img {
+ #how-it-work img {
     position: relative;
     top: 20px;
     transition: all 0.5s;
@@ -684,7 +684,11 @@ footer .social-links ul li {
 
 #how-it-work img:hover{
     top: 0;
-}*/
+}
+.how-it-work-box h4 a{
+    text-decoration: none;
+    color: #000;
+}
 
 #services .service-img {
     scale: 1;
@@ -1338,4 +1342,3 @@ footer .social-links img {
     right: 90%;
     transform: translateX(-50%);
   }
- 
