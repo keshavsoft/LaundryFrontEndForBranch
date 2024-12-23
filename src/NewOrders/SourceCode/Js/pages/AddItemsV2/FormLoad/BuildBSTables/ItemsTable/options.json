@@ -26,10 +26,10 @@
             "title": "Pcs"
         },
         {
-            "field": "Amount",
+            "field": "KS-Amount",
             "title": "Amount",
             "align": "right",
-            "formatter": "jFLocalTotal"
+            "formatter": ""
         },
         {
             "field": "location",
