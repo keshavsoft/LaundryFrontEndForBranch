@@ -27,7 +27,9 @@
         },
         {
             "field": "Amount",
-            "title": "Amount"
+            "title": "Amount",
+            "align": "right",
+            "formatter": "jFLocalTotal"
         },
         {
             "field": "location",
