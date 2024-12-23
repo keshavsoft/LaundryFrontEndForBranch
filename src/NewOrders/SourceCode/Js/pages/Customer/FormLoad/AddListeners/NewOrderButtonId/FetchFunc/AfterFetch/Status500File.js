@@ -7,7 +7,7 @@ let StartFunc = ({ inresponse }) => {
         icon: "error",
         confirmButtonColor: "#3085d6",
         showDenyButton: true,
-        denyButtonText: `Add Items`,
+        denyButtonText: `Add ItemsV1`,
         denyButtonColor: "#008000",
     }).then((result) => {
         if (result.isConfirmed || result.isDismissed) {
