@@ -1,0 +1,47 @@
+{
+    "data": [],
+    "columns": [
+        {
+            "field": "KS-Serial",
+            "title": "#"
+        },
+        {
+            "field": "Category",
+            "title": "Category"
+        },
+        {
+            "field": "ItemName",
+            "title": "Item Name"
+        },
+        {
+            "field": "KS-AddOns",
+            "title": "Add Ons"
+        },
+        {
+            "field": "Rate",
+            "title": "Rate"
+        },
+        {
+            "field": "Pcs",
+            "title": "Pcs"
+        },
+        {
+            "field": "Amount",
+            "title": "Amount"
+        },
+        {
+            "field": "location",
+            "title": "Factory"
+        },
+        {
+            "field": "DeliveryDateTime",
+            "title": "Delivery"
+        },
+        {
+            "field": "KS-Opts",
+            "title": "Opts."
+        }
+    ],
+    "onPostBody": "",
+    "onClickRow": ""
+}
