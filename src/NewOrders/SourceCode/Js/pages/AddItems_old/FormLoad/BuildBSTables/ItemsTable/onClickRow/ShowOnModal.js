@@ -1,9 +1,7 @@
-let StartFunc = ({ inRow }) => {
-    const jVarLocalRow = inRow;
-
-    jFLocalToInputAddOnModalItemNameId(jVarLocalRow.ItemName);
-    jFLocalToInputAddOnModalItemSerialId(jVarLocalRow.pk);
-    jFLocalToInputRate(jVarLocalRow.Rate);
+let StartFunc = (row) => {
+    jFLocalToInputAddOnModalItemNameId(row.ItemName);
+    jFLocalToInputAddOnModalItemSerialId(row.ItemSerial);
+    jFLocalToInputRate(row.Rate);
 };
 
 let jFLocalToInputAddOnModalItemNameId = (inValue) => {

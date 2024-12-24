@@ -1,6 +1,5 @@
-const StartFunc = async ({ inResponce }) => {
-
-    if (inResponce.status === 200) {
+const StartFunc = ({ inResponse }) => {
+    if (inResponse.status === 200) {
         window.location.href = ""
     };
 };
