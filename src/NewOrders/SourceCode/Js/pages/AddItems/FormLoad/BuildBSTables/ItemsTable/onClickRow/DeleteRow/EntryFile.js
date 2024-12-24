@@ -1,5 +1,6 @@
 import { StartFunc as StartFuncDeleteFetch } from "./DeleteFetch.js";
 import { StartFunc as StartFuncAfterFetch } from "./AfterFetch.js";
+
 import ConfigJson from '../../../../../Config.json' with {type: 'json'};
 
 const StartFunc = async ({ inItemSerial }) => {

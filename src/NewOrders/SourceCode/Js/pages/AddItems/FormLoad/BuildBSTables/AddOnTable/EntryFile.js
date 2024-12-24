@@ -9,11 +9,6 @@ const jVarCommonTableId = "AddOnTable";
 const StartFunc = () => {
     var $table = $(`#${jVarCommonTableId}`);
 
-    // optionsJson.onPostBody = () => {
-    //     StartFuncOnLoadSuccess();
-    //     $("#TableFooterItemNameId").focus();
-    // };
-
     optionsJson.onPostBody = StartFuncOnPostBody;
     optionsJson.onClickRow = StartFuncOnClickRowFunc;
 

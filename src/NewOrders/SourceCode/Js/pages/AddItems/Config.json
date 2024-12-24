@@ -9,7 +9,9 @@
     },
     "ApiUrls": {
         "ItemsTable": {
-            "DeleteUrl": "$tableName/SubTable/Delete/SubKey/:Id/:inKey/:SubId"
+            "DeleteUrl_Common": "$tableName/SubTable/Delete/SubKey/:Id/:inKey/:SubId",
+            "DeleteAddOnUrl": "/Custom/Cleaning/Branch/Order/NewOrder/addOn/$tableName/:Id/:SubId",
+            "DeleteItemUrl": "/Custom/Cleaning/Branch/Order/NewOrder/Item/$tableName/:Id/:SubId"
         }
     }
 }
