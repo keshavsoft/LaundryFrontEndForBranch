@@ -185,7 +185,6 @@
                     </div>
                 </div>
                 <div class="modal-body">
-
                     <table id="AddOnTable" data-show-footer="true">
                         <thead>
                             <tr id="tableHeadRow">
@@ -196,38 +195,33 @@
                                 <th data-formatter="jFLocalOptsForAddOnOnModalFormater" data-width="100">Options</th>
                             </tr>
                         </thead>
+                    
                         <tfoot>
                             <tr>
                                 <th></th>
                                 <th>
-
-
+                                    <div class="col">
+                                        <select class="form-select" aria-label="Select AddOn" id="TableFooterAddOnSelectId">
+                                            <!-- Dropdown options go here -->
+                                        </select>
+                                    </div>
                                 </th>
                                 <th>
-
+                                    <div class="col">
+                                        <input type="number" name="AddOnRate" id="AddOnRateId" class="form-control"
+                                            placeholder="AddOn Rate">
+                                    </div>
                                 </th>
                                 <th>
-
-
+                                    <div class="col">
+                                        <button type="button" class="btn btn-primary" id="AddOnModalSaveButtonId">
+                                            Save
+                                        </button>
+                                    </div>
                                 </th>
                             </tr>
                         </tfoot>
                     </table>
-                    <div class="row mt-3">
-                        <div class="col">
-                            <select class="form-select" aria-label="Select AddOn" id="TableFooterAddOnSelectId">
-                            </select>
-                        </div>
-                        <div class="col">
-                            <input type="number" name="AddOnRate" id="AddOnRateId" class="form-control"
-                                placeholder="AddOn Rate">
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary" id="AddOnModalSaveButtonId">
-                                Save
-                            </button>
-                        </div>
-                    </div>
                 </div>
                 <div class="modal-footer">
 
