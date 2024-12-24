@@ -2,7 +2,7 @@ import { StartFunc as StartFuncAddOnButton } from "./AddOnButton.js";
 import { StartFunc as StartFuncDeleteButton } from "./DeleteRow/EntryFile.js";
 
 const StartFunc = (row, $element, field) => {
-    console.log("field : ", field, $element);
+    console.log("row : ", row, $element);
 
     if (field === "KS-AddOns") {
         StartFuncAddOnButton({ inRow: row });
@@ -10,7 +10,7 @@ const StartFunc = (row, $element, field) => {
 
     if (field === "KS-Opts") {
         if (window.confirm("Do you really want to Delete Item?")) {
-            StartFuncDeleteButton({ inItemSerial: row.pk });
+            StartFuncDeleteButton({ inItemSerial: row.AddOnPK });
         };
     };
 };

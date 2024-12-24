@@ -5,7 +5,7 @@ const StartFunc = async ({ inRowpk, inItemSerial }) => {
     const jVarLocalRoutePath = ConfigJson.routePath;
 
     let jVarLocalBranchName = localStorage.getItem("BranchName");
-    const jVarLocalFindKey = "ItemsInOrder";
+    const jVarLocalFindKey = "AddOnData";
     const jVarLocalSubId = inItemSerial;
 
     let LocalUrl = jVarLocalDeleteUrl.replace("$tableName", jVarLocalBranchName).replace(":Id", inRowpk).replace(":inKey", jVarLocalFindKey).replace(":SubId", jVarLocalSubId);
