@@ -6,10 +6,5 @@
         "OrderKey": "PresentOrder",
         "ItemNamesKey": "ItemNames",
         "AddOnsKey": "AddOns"
-    },
-    "ApiUrls": {
-        "ItemsTable": {
-            "DeleteUrl": "$tableName/SubTable/Delete/SubKey/:Id/:inKey/:SubId"
-        }
     }
 }

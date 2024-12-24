@@ -1,8 +1,15 @@
-const StartFunc = async ({inRowpk, inItemSerial}) => {
-    let jVarLocalBranchName = localStorage.getItem("BranchName");
+import ConfigJson from '../../../../../Config.json' with {type: 'json'};
 
-    let jVarLocalOrderNo = jFLocalOrderNumberId();
-    let LocalUrl = `/bin/Transactions/${jVarLocalBranchName}/FromKey/${inRowpk}/ItemsInOrder/${inItemSerial}`
+const StartFunc = async ({ inRowpk, inItemSerial }) => {
+    const jVarLocalDeleteUrl = ConfigJson.ApiUrls.ItemsTable.DeleteUrl;
+    const jVarLocalRoutePath = ConfigJson.routePath;
+
+    let jVarLocalBranchName = localStorage.getItem("BranchName");
+    const jVarLocalFindKey = "ItemsInOrder";
+    const jVarLocalSubId = inItemSerial;
+
+    let LocalUrl = jVarLocalDeleteUrl.replace("$tableName", jVarLocalBranchName).replace(":Id", inRowpk).replace(":inKey", jVarLocalFindKey).replace(":SubId", jVarLocalSubId);
+
     let LocalFetchObj = {
         method: "DELETE",
         headers: {
@@ -10,21 +17,10 @@ const StartFunc = async ({inRowpk, inItemSerial}) => {
             "Content-Type": "application/json"
         }
     };
-    
-    let responce = await fetch(LocalUrl, LocalFetchObj);
+
+    let responce = await fetch(`/${jVarLocalRoutePath}/${LocalUrl}`, LocalFetchObj);
+
     return responce;
-
-
 };
-
-let jFLocalOrderNumberId = () => {
-    let jVarLocalOrderNumberId = 'OrderNumberId'
-    let jVarLocalHtmlId = document.getElementById(jVarLocalOrderNumberId);
-
-    if (jVarLocalHtmlId === null === false) {
-        return jVarLocalHtmlId.innerHTML.trim();
-    };
-};
-
 
 export { StartFunc };

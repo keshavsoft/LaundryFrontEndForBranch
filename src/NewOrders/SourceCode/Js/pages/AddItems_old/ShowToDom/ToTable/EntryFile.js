@@ -6,6 +6,8 @@ const StartFunc = () => {
     var $table = $('#table')
 
     $table.bootstrapTable("load", jVarLocalDataFromLocalStorage);
+
+    
 };
 
 export { StartFunc };

@@ -5,7 +5,17 @@ const StartFunc = () => {
     let jVarLocalDataFromLocalStorage = localStorage.getItem(jVarLocalStorageKey);
     let jVarLocalDataFromLocalStorageJson = JSON.parse(jVarLocalDataFromLocalStorage);
 
-    let jVarLocalItemsArray = Object.values(jVarLocalDataFromLocalStorageJson.ItemsInOrder);
+    let jVarLocalItemsArray = jFLocalItemsObjectToArray({ inItemsObject: jVarLocalDataFromLocalStorageJson.ItemsInOrder });
+    // console.log("jVarLocalItemsArray : ", jVarLocalItemsArray);
+
+    return jVarLocalItemsArray;
+};
+
+const jFLocalItemsObjectToArray = ({ inItemsObject }) => {
+    const jVarLocalItemsArray = Object.entries(inItemsObject).map(([key, value]) => {
+        return { ...value, pk: key };
+    });
+
     return jVarLocalItemsArray;
 };
 
