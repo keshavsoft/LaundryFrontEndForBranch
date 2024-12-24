@@ -12,8 +12,6 @@ function jFLocalOptsFormater(value, row, index) {
 };
 
 const jFLocalFooterFormatterFunc = (data) => {
-    console.log("data : ", data);
-
     return `<button class="btn btn-outline-success" type="button"
                                         id="TableFooterSaveButtonId">Save</button>`;
 };

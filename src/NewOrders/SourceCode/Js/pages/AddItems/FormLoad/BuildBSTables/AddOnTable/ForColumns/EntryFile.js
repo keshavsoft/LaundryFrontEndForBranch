@@ -1,10 +1,10 @@
 import { StartFunc as ColumnOperate } from "./ColumnSerial/entryFile.js";
-import { StartFunc as ColumnRate } from "./ColumnRate/entryFile.js";
+import { StartFunc as StartFuncColumnColumnAddOnRate } from "./ColumnAddOnRate/entryFile.js";
 import { StartFunc as StartFuncColumnAddOns } from "./ColumnAddOns/entryFile.js";
 import { StartFunc as StartFuncColumnopts } from "./Columnopts/entryFile.js";
 import { StartFunc as StartFuncColumnAmount } from "./ColumnAmount/entryFile.js";
-import { StartFunc as StartFuncColumnCategory } from "./ColumnCategory/entryFile.js";
-import { StartFunc as StartFuncColumnItemName } from "./ColumnItemName/entryFile.js";
+import { StartFunc as StartFuncColumnAddOnService } from "./ColumnAddOnService/entryFile.js";
+import { StartFunc as StartFuncColumnItemName } from "./ColumnAddOnService/entryFile.js";
 import { StartFunc as StartFuncColumnPcs } from "./ColumnPcs/entryFile.js";
 import { StartFunc as StartFuncColumnLocation } from "./ColumnLocation/entryFile.js";
 import { StartFunc as StartFuncColumnDeliveryDateTime } from "./ColumnDeliveryDateTime/entryFile.js";
@@ -13,6 +13,8 @@ let StartFunc = ({ inColumns }) => {
     let LocalColumns = inColumns;
     let LocalColumnOperateFine = LocalColumns.find(element => element.field === "KS-Serial");
     let LocalColumnopts = LocalColumns.find(element => element.field === "KS-Opts");
+    let LocalColumnAddOnService = LocalColumns.find(element => element.field === "AddOnService");
+    let LocalColumnAddOnRate = LocalColumns.find(element => element.field === "AddOnRate");
 
     if (LocalColumnOperateFine === undefined === false) {
         ColumnOperate({ inFindColumn: LocalColumnOperateFine });
@@ -20,6 +22,14 @@ let StartFunc = ({ inColumns }) => {
 
     if (LocalColumnopts === undefined === false) {
         StartFuncColumnopts({ inFindColumn: LocalColumnopts });
+    };
+
+    if (LocalColumnAddOnService === undefined === false) {
+        StartFuncColumnAddOnService({ inFindColumn: LocalColumnAddOnService });
+    };
+    
+    if (LocalColumnAddOnRate === undefined === false) {
+        StartFuncColumnColumnAddOnRate({ inFindColumn: LocalColumnAddOnRate });
     };
 
     StartFuncColumnAmount

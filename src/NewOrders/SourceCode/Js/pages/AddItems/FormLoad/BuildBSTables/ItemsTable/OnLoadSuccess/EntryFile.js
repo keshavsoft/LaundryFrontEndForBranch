@@ -15,7 +15,6 @@ let StartFunc = () => {
 let jFLocalEndFunc = () => {
     var event = new Event('change');
     let jVarLocalTableFooterCategoryId = document.getElementById('TableFooterCategoryId');
-    console.log("jVarLocalTableFooterCategoryId : ", jVarLocalTableFooterCategoryId);
 
     if (jVarLocalTableFooterCategoryId === null === false) {
         document.getElementById("TableFooterCategoryId").dispatchEvent(event)
