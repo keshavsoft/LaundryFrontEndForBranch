@@ -1,13 +1,18 @@
 // import { StartFunc as StartFuncFormLoad } from "../../../../../../../FormLoad/ToLocalStorage/EntryFile.js";
 import { StartFunc as StartFuncFormLoad } from "../../../../../../ToLocalStorage/EntryFile.js";
 
+import { StartFunc as StartFuncGetAddOnData } from "../../../../../../../FromLocalStorage/getAddOnData.js";
+import { StartFunc as StartFuncPresentOrder } from "../../../../../../../FromLocalStorage/presentOrder.js";
+
 let StartFunc = async () => {
     await StartFuncFormLoad();
 
-    let JvarLocalData = jFLocalFromLocalStorage();
+    let JvarLocalData = StartFuncPresentOrder();
 
     let jVarLocalItemSerial = parseInt(jFLocalAddOnModalItemSerialId());
-    let jVarLocalFilterData = Object.values(JvarLocalData.AddOnData).filter(e => e.AddOnItemSerial === jVarLocalItemSerial);
+    // let jVarLocalFilterData = Object.values(JvarLocalData.AddOnData).filter(e => e.AddOnItemSerial === jVarLocalItemSerial);
+
+    let jVarLocalFilterData = StartFuncGetAddOnData({ inItemSerial: jVarLocalItemSerial });
 
     jFLocalShowAddOn({ inAddOnData: jVarLocalFilterData });
     jFLocalShowItemsTable({ inItemsData: JvarLocalData });
@@ -23,11 +28,10 @@ let jFLocalSetFocus = () => {
 
 let jFLocalShowAddOn = ({ inAddOnData }) => {
     let LocalAddOnData = inAddOnData;
-    console.log("LocalAddOnData : ", LocalAddOnData);
+
     var $AddOnTable = $('#AddOnTable');
 
     $AddOnTable.bootstrapTable('load', LocalAddOnData);
-
 };
 
 let jFLocalShowItemsTable = ({ inItemsData }) => {
@@ -47,32 +51,7 @@ let jFLocalAddOnModalItemSerialId = () => {
     };
 };
 
-let StartFunc1 = async () => {
-    await StartFuncFormLoad();
-
-    let jVarLocalAddOnModalItemSerialId = document.getElementById("AddOnModalItemSerialId");
-
-    let JVarLocalFromStrogeAddOnData = localStorage.getItem("PresentOrder");
-    let JvarLocalData = JSON.parse(JVarLocalFromStrogeAddOnData);
-    let jVarLocalItemSerial = parseInt(jVarLocalAddOnModalItemSerialId.value);
-    let jVarLocalFilterData = Object.values(JvarLocalData.AddOnData).filter(e => e.AddOnItemSerial === jVarLocalItemSerial);
-
-    var $AddOnTable = $('#AddOnTable');
-
-    $AddOnTable.bootstrapTable('load', jVarLocalFilterData);
-
-    var $table = $('#table');
-
-    $table.bootstrapTable('load', JvarLocalData);
-
-    let jVarLocalHtmlId = 'TableFooterAddOnSelectId';
-    let jVarLocalRefreshBSTableId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalRefreshBSTableId.focus();
-};
-
 let jFLocalFromLocalStorage = () => {
-    let jVarLocalAddOnModalItemSerialId = document.getElementById("AddOnModalItemSerialId");
-
     let JVarLocalFromStrogeAddOnData = localStorage.getItem("PresentOrder");
     let JvarLocalData = JSON.parse(JVarLocalFromStrogeAddOnData);
 

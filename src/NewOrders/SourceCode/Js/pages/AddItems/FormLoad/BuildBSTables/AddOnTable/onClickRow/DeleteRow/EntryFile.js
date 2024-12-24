@@ -3,6 +3,7 @@ import { StartFunc as StartFuncAfterFetch } from "./AfterFetch.js";
 import ConfigJson from '../../../../../Config.json' with {type: 'json'};
 
 const StartFunc = async ({ inItemSerial }) => {
+    debugger;
     let LocalRowPk = RowPkLocalStorage();
 
     let jVarLocalresponse = await StartFuncDeleteFetch({ inRowpk: LocalRowPk, inItemSerial });
