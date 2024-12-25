@@ -2,7 +2,7 @@ const StartFunc = (row, $element, field) => {
     jFLocalToInputTableFooterItemNameId(row.ItemName);
     jFLocalToInputTableFooterCategoryId(row.Category);
     jFLocalToInputTableFooterRateInputId(row.DryWashRate);
-    jFLocalToInputTableFooterPicsInputId(row.pcs);
+    jFLocalToInputTableFooterPcsInputId(1);
     let jVarLocalModalId = "ItemsOnModal";
 
     $(`#${jVarLocalModalId}`).modal("hide");

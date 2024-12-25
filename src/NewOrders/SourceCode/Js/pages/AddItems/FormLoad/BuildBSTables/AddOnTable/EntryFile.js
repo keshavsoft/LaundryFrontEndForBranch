@@ -7,7 +7,6 @@ import optionsJson from './options.json' with {type: 'json'};
 const jVarCommonTableId = "AddOnTable";
 
 const StartFunc = () => {
-    debugger;
     var $table = $(`#${jVarCommonTableId}`);
 
     optionsJson.onPostBody = StartFuncOnPostBody;

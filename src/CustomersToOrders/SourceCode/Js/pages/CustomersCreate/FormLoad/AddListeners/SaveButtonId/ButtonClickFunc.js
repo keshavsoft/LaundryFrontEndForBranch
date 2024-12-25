@@ -10,7 +10,6 @@ let StartFunc = async (inEvent) => {
     inEvent.preventDefault()
 
     let jVarLocalFromCheck = CheckFunc();
-    debugger
 
     if (jVarLocalFromCheck) {
         let LocalBodyData = FetchHeaders();
