@@ -6,9 +6,9 @@ let StartFunc = () => {
     StartFuncCustomerNames().then(() => {
         jFLocalToDataList();
     });
-
+    
     StartFuncItemNames().then();
-    StartFuncAddOns().then();
+    StartFuncAddOns().then(() => location.reload());
 };
 
 const jFLocalToDataList = () => {
