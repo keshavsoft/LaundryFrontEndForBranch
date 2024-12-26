@@ -6,7 +6,7 @@ const StartFunc = () => {
 
     var $table = $(`#${jVarCommonModalId}`);
 
-    $table.bootstrapTable("load", jVarLocalDataFromLocalStorage);
+    $table.bootstrapTable("load", jVarLocalDataFromLocalStorage === null ? [] : jVarLocalDataFromLocalStorage);
 };
 
 export { StartFunc };
