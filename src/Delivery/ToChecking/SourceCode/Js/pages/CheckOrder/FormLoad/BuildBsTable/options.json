@@ -4,6 +4,7 @@
     "showFooter": "true",
     "data": [],
     "onClickRow": "",
+    "rowStyle": "rowStyle",
     "pageSize": "5",
     "columns": [
         {
