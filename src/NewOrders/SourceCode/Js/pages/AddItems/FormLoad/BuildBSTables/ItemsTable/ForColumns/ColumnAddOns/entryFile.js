@@ -1,5 +1,6 @@
 let StartFunc = ({ inFindColumn }) => {
     inFindColumn.formatter = jVarLocalFormatterFunc;
+    inFindColumn.footerFormatter = jVarLocalFooterFormatterFunc;
 };
 
 let jVarLocalFormatterFunc = (value, row, index) => {
@@ -19,14 +20,20 @@ let jVarLocalFormatterFunc = (value, row, index) => {
             `</a>`
         ].join('');
     } else {
-        let jVarLocalAddOnPrice = jVarLocalFilterData.map(e => e.AddOnRate).reduce((a, b) => a + b, 0);
-
         return [
             `<a href="#" class="btn btn-outline-primary ">`,
             `Click`,
             `</a>`
         ].join('')
     };
+};
+
+let jVarLocalFooterFormatterFunc = (value, row, index) => {
+    return [
+        `<a href="#" id="TableFooterAddOnId" class="btn btn-outline-primary ">`,
+        `Click`,
+        `</a>`
+    ].join('');
 };
 
 export { StartFunc };

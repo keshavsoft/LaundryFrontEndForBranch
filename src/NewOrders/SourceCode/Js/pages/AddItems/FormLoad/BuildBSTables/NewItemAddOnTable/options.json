@@ -22,5 +22,6 @@
             "width": 100
         }
     ],
+    "onPostBody": "",
     "onClickRow": ""
 }

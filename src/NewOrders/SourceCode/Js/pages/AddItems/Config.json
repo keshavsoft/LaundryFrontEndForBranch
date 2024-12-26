@@ -5,7 +5,8 @@
     "localStorageKeys": {
         "OrderKey": "PresentOrder",
         "ItemNamesKey": "ItemNames",
-        "AddOnsKey": "AddOns"
+        "AddOnsKey": "AddOns",
+        "PresentOrderAddOnsKey": "PresentOrderAddOns"
     },
     "ApiUrls": {
         "ItemsTable": {

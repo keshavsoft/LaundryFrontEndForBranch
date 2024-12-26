@@ -1,10 +1,10 @@
 import { StartFunc as StartFuncAddOnModalSaveButtonId } from "./AddOnModalSaveButtonId/EntryFile.js";
-// import { StartFunc as StartFuncToAddOns } from "./ToAddOns/EntryFile.js";
+import { StartFunc as StartFuncToAddOns } from "./ToAddOns/EntryFile.js";
 import { StartFunc as StartFuncTableFooterAddOnSelectId } from "./TableFooterAddOnSelectId/entryFile.js";
 
 let StartFunc = () => {
     StartFuncAddOnModalSaveButtonId();
-    // StartFuncToAddOns();
+    StartFuncToAddOns();
     StartFuncTableFooterAddOnSelectId();
 
     jFLocalEndFunc();

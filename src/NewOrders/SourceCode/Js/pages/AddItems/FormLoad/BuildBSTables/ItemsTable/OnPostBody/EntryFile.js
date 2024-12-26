@@ -2,13 +2,17 @@ import { StartFunc as StartFuncTableFooterSaveButtonId } from "./TableFooterSave
 import { StartFunc as StartFuncTableFooterCategoryId } from "./TableFooterCategoryId/EntryFile.js";
 import { StartFunc as StartFuncTableFooterItemNameId } from "./TableFooterItemNameId/EntryFile.js";
 import { StartFunc as StartFuncTableFooterItemNameSearchButtonId } from "./TableFooterItemNameSearchButtonId/EntryFile.js";
+import { StartFunc as StartFuncTableFooterAddOnId } from "./TableFooterAddOnId/EntryFile.js";
 
 let StartFunc = () => {
     jFLocalShowToday();
+
     StartFuncTableFooterSaveButtonId();
+    
     StartFuncTableFooterCategoryId();
     StartFuncTableFooterItemNameId();
     StartFuncTableFooterItemNameSearchButtonId();
+    StartFuncTableFooterAddOnId();
 
     jFLocalEndFunc();
 
