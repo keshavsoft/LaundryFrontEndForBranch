@@ -8,7 +8,6 @@ import { StartFunc as StartFuncColumnItemName } from "./ColumnItemName/entryFile
 import { StartFunc as StartFuncColumnPcs } from "./ColumnPcs/entryFile.js";
 import { StartFunc as StartFuncColumnLocation } from "./ColumnLocation/entryFile.js";
 import { StartFunc as StartFuncColumnDeliveryDateTime } from "./ColumnDeliveryDateTime/entryFile.js";
-import { StartFunc as StartFuncColumnItemService } from "./ColumnItemService/entryFile.js";
 
 let StartFunc = ({ inColumns }) => {
     let LocalColumns = inColumns;
@@ -23,7 +22,6 @@ let StartFunc = ({ inColumns }) => {
     let LocalColumnPcs = LocalColumns.find(element => element.field === "Pcs");
     let LocalColumnLocation = LocalColumns.find(element => element.field === "location");
     let LocalColumnDeliveryDateTime = LocalColumns.find(element => element.field === "DeliveryDateTime");
-    let LocalColumnItemService = LocalColumns.find(element => element.field === "ItemService");
 
     if (LocalColumnOperateFine === undefined === false) {
         ColumnOperate({ inFindColumn: LocalColumnOperateFine });
@@ -65,9 +63,7 @@ let StartFunc = ({ inColumns }) => {
         StartFuncColumnDeliveryDateTime({ inFindColumn: LocalColumnDeliveryDateTime });
     };
 
-    if (LocalColumnItemService === undefined === false) {
-        StartFuncColumnItemService({ inFindColumn: LocalColumnItemService });
-    };
+    StartFuncColumnAmount
 };
 
 export { StartFunc };

@@ -17,11 +17,6 @@
             "width": 350
         },
         {
-            "field": "ItemService",
-            "title": "Service",
-            "width": 200
-        },
-        {
             "field": "KS-AddOns",
             "title": "Add Ons",
             "width": 100

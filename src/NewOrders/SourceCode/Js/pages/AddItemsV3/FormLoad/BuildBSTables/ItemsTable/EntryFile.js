@@ -7,6 +7,11 @@ import optionsJson from './options.json' with {type: 'json'};
 const StartFunc = () => {
     var $table = $('#table');
 
+    // optionsJson.onPostBody = () => {
+    //     StartFuncOnLoadSuccess();
+    //     jFdate();
+    //     $("#TableFooterItemNameId").focus();
+    // };
     optionsJson.onPostBody = StartFuncOnPostBody;
     optionsJson.onClickRow = StartFuncOnClickRowFunc;
 

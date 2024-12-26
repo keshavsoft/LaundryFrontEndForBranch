@@ -4,8 +4,10 @@ import { StartFunc as StartFuncForColumns } from "./ForColumns/EntryFile.js";
 
 import optionsJson from './options.json' with {type: 'json'};
 
+const jVarCommonTableId = "AddOnTable";
+
 const StartFunc = () => {
-    var $table = $('#table');
+    var $table = $(`#${jVarCommonTableId}`);
 
     optionsJson.onPostBody = StartFuncOnPostBody;
     optionsJson.onClickRow = StartFuncOnClickRowFunc;
