@@ -18,7 +18,7 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode"    
+            "title": "QrCode"
         },
         {
             "field": "OrderNo",
@@ -31,7 +31,17 @@
         {
             "field": "Rate",
             "title": "Rate",
-            "align":"right"
+            "align": "right"
+        },
+        {
+            "field": "Status",
+            "title": "Status",
+            "filterControl": "select"
+        },
+        {
+            "title": "TimeSpan",
+            "field": "TimeSpan",
+            "filtercontrol": "select"
         },
         {
             "field": "OrderDateTime",
@@ -44,16 +54,6 @@
         {
             "field": "location",
             "title": "DC Factory"
-        },
-        {
-            "field": "Status",
-            "title": "Status",
-            "filterControl": "select"
-        },
-        {
-            "title": "TimeSpan",
-            "field": "TimeSpan",
-            "filtercontrol": "select"
         }
     ]
 }

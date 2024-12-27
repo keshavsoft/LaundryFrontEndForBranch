@@ -36,6 +36,14 @@
             "footerFormatter": "totalFormatter"
         },
         {
+            "field": "Status",
+            "title": "Status"
+        },
+        {
+            "title": "TimeSpan",
+            "field": "TimeSpan"
+        },
+        {
             "field": "OrderDateTime",
             "title": "Order DateTime"
         },
@@ -46,14 +54,6 @@
         {
             "field": "location",
             "title": "DC Factory"
-        },
-        {
-            "field": "Status",
-            "title": "Status"
-        },
-        {
-            "title": "TimeSpan",
-            "field": "TimeSpan"
         }
     ]
 }
