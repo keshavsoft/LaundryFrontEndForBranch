@@ -36,6 +36,16 @@
             "footerFormatter": "totalFormatter"
         },
         {
+            "field": "BranchScan",
+            "title": "Status",
+            "filtercontrol": "select"
+        },
+        {
+            "title": "TimeSpan",
+            "field": "TimeSpan",
+            "filtercontrol": "select"
+        },
+        {
             "field": "OrderDateTime",
             "title": "Order DateTime",
             "formatter":""
@@ -58,16 +68,6 @@
         {
             "field": "location",
             "title": "DC Factory",
-            "filtercontrol": "select"
-        },
-        {
-            "field": "BranchScan",
-            "title": "Status",
-            "filtercontrol": "select"
-        },
-        {
-            "title": "TimeSpan",
-            "field": "TimeSpan",
             "filtercontrol": "select"
         }
     ]
