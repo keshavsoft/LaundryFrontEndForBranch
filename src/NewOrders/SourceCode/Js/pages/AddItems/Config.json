@@ -14,5 +14,8 @@
             "DeleteAddOnUrl": "/Custom/Cleaning/Branch/Order/NewOrder/addOn/$tableName/:Id/:SubId",
             "DeleteItemUrl": "/Custom/Cleaning/Branch/Order/NewOrder/Item/$tableName/:Id/:SubId"
         }
+    },
+    "ModalIds":{
+        "AddOnModal": "AddOnModal"
     }
 }

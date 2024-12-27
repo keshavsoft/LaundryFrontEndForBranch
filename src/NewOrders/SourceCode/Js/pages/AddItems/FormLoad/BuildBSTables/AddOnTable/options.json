@@ -15,11 +15,6 @@
             "field": "AddOnRate",
             "title": "Rate",
             "width": 200
-        },
-        {
-            "field": "KS-Opts",
-            "title": "Options",
-            "width": 100
         }
     ],
     "onClickRow": ""

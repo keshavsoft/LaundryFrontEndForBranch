@@ -4,12 +4,7 @@ let StartFunc = ({ inFindColumn }) => {
 };
 
 let jVarLocalFormatterFunc = (value, row, index) => {
-    let JVarLocalFromStrogeAddOnData = localStorage.getItem("PresentOrder");
-    let JvarLocalData = JSON.parse(JVarLocalFromStrogeAddOnData);
-
-    let jVarLocalItemSerial = parseInt(row.pk);
-
-    let jVarLocalFilterData = Object.values(JvarLocalData.AddOnData).filter(e => e.AddOnItemSerial === jVarLocalItemSerial);
+    let jVarLocalFilterData = row.AddOnArray;
 
     if (jVarLocalFilterData.length > 0) {
         let jVarLocalAddOnPrice = jVarLocalFilterData.map(e => e.AddOnRate).reduce((a, b) => a + b, 0);
