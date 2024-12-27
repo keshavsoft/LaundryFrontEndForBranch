@@ -1,17 +1,27 @@
+import { StartFunc as StartFuncFromLocalStorage } from "./FromLocalStorage.js";
+
 const StartFunc = () => {
     let jVarLocalCategory = jFLocalTableFooterCategoryId();
-    let jVarLocalItemName = LocalFuncForjVarLocalTableFooterItemNameId();
+    let jVarLocalItemType = LocalFuncForjVarLocalTableFooterItemNameId();
     let jVarLocalItemRate = jFLocalTableFooterRateInputId();
     let jVarLocalPcs = jFLocalTableFooterPcsInputId();
     let jVarLocalTotal = jFLocalTableFooterTotalId();
     let jVarLocallocation = jFLocalTableFooterFactoryInputId();
     let jVarLocalDeliveryDateTime = jFLocalTableFooterdateInputId();
     const jVarLocalItemService = jFLocalTableFooterItemServiceId();
+
     let LocalAddOnData = JSON.parse(localStorage.getItem("PresentOrderAddOns"));
 
+    const jVarLocalFromLocalStorageFind = StartFuncFromLocalStorage({
+        inCategory: jVarLocalCategory,
+        inItemType: jVarLocalItemType,
+        inService: jVarLocalItemService
+    });
+
     let LocalLocalObj = {};
-    LocalLocalObj.Category = jVarLocalCategory
-    LocalLocalObj.ItemName = jVarLocalItemName
+    LocalLocalObj.Category = jVarLocalCategory;
+    LocalLocalObj.ItemName = jVarLocalFromLocalStorageFind.ItemName;
+    LocalLocalObj.ItemType = jVarLocalItemType
     LocalLocalObj.Rate = jVarLocalItemRate
     LocalLocalObj.Pcs = jVarLocalPcs
     LocalLocalObj.Total = jVarLocalTotal
