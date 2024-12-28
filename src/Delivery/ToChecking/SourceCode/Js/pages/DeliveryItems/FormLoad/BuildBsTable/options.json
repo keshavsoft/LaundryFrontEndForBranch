@@ -1,0 +1,49 @@
+{
+    "toolbar": "#toolbar",
+    "idfield": "pk",
+    "showFooter": "true",
+    "data": [],
+    "onClickRow": "",
+    "rowStyle": "rowStyle",
+    "pageSize": "5",
+    "columns": [
+        {
+            "checkbox": "true"
+        },
+        {
+            "field": "KS-Serial",
+            "title": "#",
+            "formatter": ""
+        },
+        {
+            "field": "QrCodeId",
+            "title": "QrCode"
+        },
+        {
+            "field": "ItemName",
+            "title": "ItemName"
+        },
+        {
+            "field": "OrderDate",
+            "title": "OrderDate"
+        },
+        {
+            "field": "DeliveryDate",
+            "title": "DeliveryDate"
+        },
+        {
+            "field": "Rate",
+            "title": "Rate",
+            "footerFormatter": ""
+        },
+        {
+            "title": "Duration",
+            "field": "TimeSpan"
+        },
+        {
+            "title": "Status",
+            "field": "Scan",
+            "formatter": "QRCodeGenerate"
+        }
+    ]
+}
