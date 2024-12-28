@@ -21,6 +21,11 @@
                 "name": "Delivery",
                 "url": "Delivery.html",
                 "icon": "bi bi-file-earmark-text"
+            },
+            {
+                "name": "DeliveryItems",
+                "url": "DeliveryItems.html",
+                "icon": "bi bi-file-earmark-text"
             }
         ]
     }
