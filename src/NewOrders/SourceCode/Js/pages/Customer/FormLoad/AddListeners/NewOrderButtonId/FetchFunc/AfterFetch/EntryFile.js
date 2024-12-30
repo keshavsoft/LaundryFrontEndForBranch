@@ -5,4 +5,22 @@ let StartFunc = () => {
     window.location = ConfigJson.Urls.NewOrderButtonId.RedirectUrl['200Status'];
 };
 
+document.getElementById("NewOrderButtonId").addEventListener("click", function () {
+    const selectedOption = document.getElementById("AddItemsHtmlId").value;
+
+    switch (selectedOption) {
+        case "AddRight":
+            window.location.href = "AddItemsTotalRight.html";
+            break;
+
+        case "AddBottom":
+            window.location.href = "AddItems.html";
+            break;
+
+        default:
+            console.warn("Invalid option selected.");
+            break;
+    }
+});
+
 export { StartFunc };
