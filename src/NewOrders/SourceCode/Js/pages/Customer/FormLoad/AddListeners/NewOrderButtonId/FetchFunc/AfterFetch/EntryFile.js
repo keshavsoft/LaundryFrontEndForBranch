@@ -5,7 +5,7 @@ let StartFunc = () => {
     window.location = ConfigJson.Urls.NewOrderButtonId.RedirectUrl['200Status'];
 };
 
-document.getElementById("NewOrderButtonId").addEventListener("click", function () {
+document.getElementById("AddItemsButtonId").addEventListener("click", function () {
     const selectedOption = document.getElementById("AddItemsHtmlId").value;
 
     switch (selectedOption) {
