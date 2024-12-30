@@ -14,7 +14,7 @@ document.getElementById("AddItemsButtonId").addEventListener("click", function (
             break;
 
         case "AddBottom":
-            window.location.href = "AddItems.html";
+            window.location.href = "AddItemsButtom.html";
             break;
 
         default:
