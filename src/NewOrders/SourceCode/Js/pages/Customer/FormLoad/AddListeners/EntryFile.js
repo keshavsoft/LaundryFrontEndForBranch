@@ -3,6 +3,7 @@ import { StartFunc as StartFuncNewOrderButtonId } from "./NewOrderButtonId/Entry
 import { StartFunc as StartFuncCustomerNameSearchButtonId } from "./CustomerNameSearchButtonId/EntryFile.js";
 import { StartFunc as StartFuncMasterButtonId } from "./MasterButtonId/EntryFile.js";
 import { StartFunc as StartFuncBranchButtonId } from "./BranchNameButton/EntryFile.js";
+import { StartFunc as AddItemsHtmlId } from "./AddItemsHtmlId/EntryFile.js";
 
 let StartFunc = () => {
     StartFuncCustomerNameInputId();
@@ -10,6 +11,7 @@ let StartFunc = () => {
     StartFuncCustomerNameSearchButtonId();
     StartFuncMasterButtonId();
     StartFuncBranchButtonId();
+    AddItemsHtmlId()
 };
 
 export { StartFunc }
