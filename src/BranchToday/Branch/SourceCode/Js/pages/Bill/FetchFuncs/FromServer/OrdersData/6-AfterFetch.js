@@ -4,7 +4,6 @@ import { StartFunc as StartFuncFooter } from "./AfterFetch/Footer/Footer.js";
 import { StartFunc as StartFuncPaymentMode } from "./PaymentMode.js";
 
 let StartFunc = ({ inFromFetch }) => {
-    console.log("inFromFetch",inFromFetch);
     let data = inFromFetch;
     let BillNumber = data.pk;
     let CustomerName = data.CustomerData.CustomerName;
