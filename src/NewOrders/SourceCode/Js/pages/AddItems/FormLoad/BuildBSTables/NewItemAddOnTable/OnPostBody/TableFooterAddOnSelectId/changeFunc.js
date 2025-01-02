@@ -18,7 +18,11 @@ const jFLocalFromLocalStorage = () => {
 const jFLocalGetRate = ({ inAddOnData }) => {
     const jVarLocalAddOnArray = jFLocalFromLocalStorage();
     const found = jVarLocalAddOnArray.find((element) => element.AddOnService === inAddOnData);
+    
+    if (found === undefined) {
+        return 0;
 
+    }
     return found.AddOnRate;
 };
 

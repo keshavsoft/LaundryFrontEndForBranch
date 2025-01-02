@@ -12,7 +12,8 @@
             "field": "Category",
             "title": "Category",
             "width": 10,
-            "widthUnit": "%"
+            "widthUnit": "%",
+            "visible": false
         },
         {
             "field": "ItemName",
