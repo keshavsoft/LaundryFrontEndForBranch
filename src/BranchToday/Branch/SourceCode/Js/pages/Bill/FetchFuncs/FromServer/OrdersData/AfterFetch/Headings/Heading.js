@@ -5,7 +5,7 @@ let StartFunc = ({ inBillNumberid, inCustomerNameid, inMobileNumberid, inBooking
     jFLocalToInnerHtmlBookingDateid({ inBookingDateid });
     jFLocalToInnerHtmlPaymentid({ inPaymentid });
     jFLocalToInnerHtmlGSTNoid({ inGSTNoid });
-    jFLocalToInnerHtmlBranchNameId({inBranchName});
+    jFLocalToInnerHtmlBranchNameId({ inBranchName });
 }
 
 let jFLocalToInnerHtmlBillNumberid = ({ inBillNumberid }) => {
@@ -35,7 +35,7 @@ let jFLocalToInnerHtmlGSTNoid = ({ inGSTNoid }) => {
 let jFLocalToInnerHtmlBookingDateid = ({ inBookingDateid }) => {
     let jVarLocalHtmlId = 'BookingDateid';
     let jVarLocalBookingDateid = document.getElementById(jVarLocalHtmlId);
-    jVarLocalBookingDateid.innerHTML = inBookingDateid;
+    jVarLocalBookingDateid.innerHTML = `${new Date(inBookingDateid).toLocaleDateString('en-GB')} ${new Date(inBookingDateid).toLocaleTimeString()}`;
 };
 
 let jFLocalToInnerHtmlPaymentid = ({ inPaymentid }) => {
