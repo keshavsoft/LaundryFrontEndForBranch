@@ -5,11 +5,11 @@ let StartFunc = ({ inItemData, inAddOnsData }) => {
     const entries = Object.entries(inItemData);
 
     entries.forEach(([key, value]) => {
-        let localAddonData = inAddOnsData.filter(element => {
-            return element.AddOnItemSerial === parseInt(key);
-        });
+        // let localAddonData = inAddOnsData.filter(element => {
+        //     return element.AddOnItemSerial === parseInt(key);
+        // });
 
-        let localAddonArray = Object.values(inItemData)[0].AddOnArray.map(element => {
+        let localAddonArray = value.AddOnArray.map(element => {
             return `${element.AddOnService}@${element.AddOnRate}`;
         });
 
