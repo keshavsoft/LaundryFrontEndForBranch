@@ -2,6 +2,7 @@ import { StartFunc as StartFuncOnExpandRow } from "./onExpandRow/EntryFile.js";
 import IconsJson from './icons.json' with {type: 'json'};
 import AttributesJson from './Attributes.json' with {type: 'json'};
 import optionsJson from './options.json' with {type: 'json'};
+import { StartFunc as ForColumns } from "./ForColumns/EntryFile.js";
 
 
 const StartFunc = () => {
@@ -25,6 +26,8 @@ var $table = $('#table');
 optionsJson.onExpandRow = StartFuncOnExpandRow;
 optionsJson.icons = IconsJson;
 $table.bootstrapTable(optionsJson);
+ForColumns({ inColumns: optionsJson.columns });
+
 
 // // const jFLocalToTableTag = () => {
 //     $table.attr(AttributesJson.tableAttributes);

@@ -16,7 +16,7 @@
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": "jFGlobalSerialColumn"
+            "formatter": ""
         },
         {
             "field": "pk",
@@ -31,19 +31,19 @@
             "title": "Mobile"
         },
         {
-            "field": "DateTime",
+            "field": "OrderData.Currentdateandtime",
             "title": "Time Span",
-            "formatter": "TimeDiff"
+            "formatter": ""
         },
         {
             "field": "AggValues.ItemDetails",
             "title": "Items",
-            "footerFormatter": "pcsFormatter"
+            "footerFormatter": ""
         },
         {
             "field": "AggValues.SettlementAmount",
             "title": "Settlement",
-            "footerFormatter": "totalPriceFormatter",
+            "footerFormatter": "",
             "align": "right"
         },
         {
