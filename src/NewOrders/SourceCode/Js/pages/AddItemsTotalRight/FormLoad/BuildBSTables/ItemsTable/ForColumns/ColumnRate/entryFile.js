@@ -15,7 +15,7 @@ let jFLocalFooterFormatterFunc = (data) => {
 function priceFormatter(data) {
     var field = this.field
     return '₹ ' + data.map(function (row) {
-        return +row.AggValues.SettlementAmount
+        return +row.Rate
     }).reduce(function (sum, i) {
         return sum + i
     }, 0)
