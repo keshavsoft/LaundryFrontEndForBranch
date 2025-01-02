@@ -15,7 +15,10 @@ let jFLocalAddOnData = ({ inQrCodeData }) => {
     let jFLocalTotalQrCodes = inQrCodeData.length;
 
     let jFLocalData = inQrCodeData.map(element => {
-        let JVarLoopInsideAddOnArray = element.AddOnArray.map(LoopAddOn => LoopAddOn.AddOnService);
+
+        let JVarLoopInsideFiltered = Object.values(element.BookingData.AddOnData).filter(LoopAddOn => element.ItemSerial === LoopAddOn.AddOnItemSerial );
+        let JVarLoopInsideAddOnArray = JVarLoopInsideFiltered.map(LoopAddOn => LoopAddOn.AddOnRate > 0 ? `${LoopAddOn.AddOnService}` : LoopAddOn.AddOnService);
+
         element.AddOnDataAsString = JVarLoopInsideAddOnArray.join(", ");
 
         element.TotalQrCodes = jFLocalTotalQrCodes;
