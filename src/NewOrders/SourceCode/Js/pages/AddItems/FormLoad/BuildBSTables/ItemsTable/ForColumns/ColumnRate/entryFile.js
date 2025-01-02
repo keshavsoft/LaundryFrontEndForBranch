@@ -1,5 +1,5 @@
 let StartFunc = ({ inFindColumn }) => {
-    inFindColumn.footerFormatter = jFLocalFooterFormatterFunc;
+    inFindColumn.footerFormatter = priceFormatter;
 };
 
 let jFLocalFooterFormatterFunc = (data) => {
@@ -11,5 +11,14 @@ let jFLocalFooterFormatterFunc = (data) => {
                                         </div>
                                     </div>`;
 };
+
+function priceFormatter(data) {
+    var field = this.field
+    return '₹ ' + data.map(function (row) {
+        return +row.Rate
+    }).reduce(function (sum, i) {
+        return sum + i
+    }, 0)
+}
 
 export { StartFunc };

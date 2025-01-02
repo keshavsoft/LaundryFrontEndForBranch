@@ -1,5 +1,5 @@
 import { StartFunc as StartFuncShowOnModal } from "./ShowOnModal.js";
-import { StartFunc as StartFuncShowToDom } from "../../../../../../ShowToDom/OnModals/AddOnModalLocalStorage/EntryFile.js";
+import { StartFunc as StartFuncShowToDom } from "../../../../ShowToDom/OnModals/AddOnModalLocalStorage/EntryFile.js";
 
 const jVarCommonModalId = "AddOnModalLocalStorage";
 

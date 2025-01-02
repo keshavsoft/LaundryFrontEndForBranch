@@ -10,7 +10,7 @@ const StartFunc = (row, $element, field) => {
 
     if (field === "KS-Opts") {
         if (window.confirm("Do you really want to Delete Item?")) {
-            StartFuncDeleteButton({ inItemSerial: row.AddOnPK });
+            StartFuncDeleteButton({ inItemSerial: row.AddOnService });
         };
     };
 };

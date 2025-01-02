@@ -1,5 +1,5 @@
 let StartFunc = ({ inFindColumn }) => {
-    inFindColumn.footerFormatter = jFLocalFooterFormatterFunc;
+    // inFindColumn.footerFormatter = jFLocalFooterFormatterFunc;
 };
 
 const jFLocalFooterFormatterFunc = (data) => {

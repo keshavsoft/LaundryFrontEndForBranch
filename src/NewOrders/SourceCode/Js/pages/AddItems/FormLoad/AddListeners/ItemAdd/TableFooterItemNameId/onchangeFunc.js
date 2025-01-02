@@ -1,11 +1,12 @@
 import { StartFuncinItemType as StartFuncFromLocalStorage } from "../fromlocalStorage.js";
+const jVarLocalSelectId = "TableFooterItemServiceId";
 
 const StartFunc = (event) => {
     let jVarLocalCurrentTarget = event.currentTarget;
     let jVarLocalItemType = jVarLocalCurrentTarget.value;
     const jVarLocalCategorySelected = jFLocalTableFooterCategoryId();
 
-    let jVarLocalTableFooterItemServiceId = document.getElementById('TableFooterItemServiceId');
+    let jVarLocalTableFooterItemServiceId = document.getElementById(jVarLocalSelectId);
 
     let jVarLocalFromLocalStorage = StartFuncFromLocalStorage({
         inCategory: jVarLocalCategorySelected,
@@ -30,8 +31,7 @@ const StartFunc = (event) => {
     };
 
     jVarLocalTableFooterItemServiceId.innerHTML = options;
-
-    // jFLocalToInputTableFooterRateInputId(jVarLocalItemData.DryWashRate);
+    jFLocalEndFunc();
 };
 
 let jFLocalTableFooterCategoryId = () => {
@@ -43,12 +43,12 @@ let jFLocalTableFooterCategoryId = () => {
     };
 };
 
-let jFLocalToInputTableFooterRateInputId = (inValue) => {
-    let jVarLocalHtmlId = 'TableFooterRateInputId';
-    let jVarLocalTableFooterRateInputId = document.getElementById(jVarLocalHtmlId);
+let jFLocalEndFunc = () => {
+    var event = new Event('change');
+    let jVarLocalTableFooterCategoryId = document.getElementById(jVarLocalSelectId);
 
-    if (jVarLocalTableFooterRateInputId === null === false) {
-        jVarLocalTableFooterRateInputId.value = inValue;
+    if (jVarLocalTableFooterCategoryId === null === false) {
+        jVarLocalTableFooterCategoryId.dispatchEvent(event);
     };
 };
 

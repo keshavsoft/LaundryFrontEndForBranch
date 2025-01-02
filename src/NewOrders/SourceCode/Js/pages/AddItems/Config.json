@@ -11,11 +11,11 @@
     "ApiUrls": {
         "ItemsTable": {
             "DeleteUrl_Common": "$tableName/SubTable/Delete/SubKey/:Id/:inKey/:SubId",
-            "DeleteAddOnUrl": "/Custom/Cleaning/Branch/Order/NewOrder/addOn/$tableName/:Id/:SubId",
+            "DeleteAddOnUrl": "/Custom/Cleaning/Branch/Order/NewOrder/addOn/$tableName/:Id/:SubId/:AddOnKey",
             "DeleteItemUrl": "/Custom/Cleaning/Branch/Order/NewOrder/Item/$tableName/:Id/:SubId"
         }
     },
-    "ModalIds":{
+    "ModalIds": {
         "AddOnModal": "AddOnModal"
     }
 }

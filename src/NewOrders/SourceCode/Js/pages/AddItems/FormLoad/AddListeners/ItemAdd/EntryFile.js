@@ -6,12 +6,15 @@ import { StartFunc as StartFuncTableFooterAddOnId } from "./TableFooterAddOnId/E
 import { StartFunc as StartFuncTableFooterItemServiceId } from "./TableFooterItemServiceId/EntryFile.js";
 
 const StartFunc = () => {
-    StartFuncTableFooterSaveButtonId();
     StartFuncTableFooterCategoryId();
     StartFuncTableFooterAddOnId();
-    StartFuncTableFooterItemNameId();
+
     StartFuncTableFooterItemNameSearchButtonId();
     StartFuncTableFooterItemServiceId();
 
+    StartFuncTableFooterItemNameId();
+
+    StartFuncTableFooterSaveButtonId();
 };
+
 export { StartFunc };
