@@ -1,5 +1,5 @@
 let StartFunc = ({ inFindColumn }) => {
-    inFindColumn.footerFormatter = jFLocalFooterFormatterFunc;
+    inFindColumn.footerFormatter = totalFormatter;
 };
 
 let jFLocalFooterFormatterFunc = (data) => {
@@ -10,6 +10,20 @@ let jFLocalFooterFormatterFunc = (data) => {
                                             Please provide correct item.
                                         </div>
                                     </div>`;
+};
+
+function totalFormatter(data) {
+    var field = this.field;
+    let LocalTotal = data.map(function (row) {
+        if (row[field] === undefined) {
+            return 0;
+        };
+        return +row[field];
+    }).reduce(function (sum, i) {
+        return sum + i
+    }, 0);
+
+    return LocalTotal.toFixed(2);
 };
 
 export { StartFunc };

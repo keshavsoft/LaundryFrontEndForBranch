@@ -1,34 +1,16 @@
-let StartFunc = ({ inFindColumn }) => {
-    inFindColumn.formatter = jVarLocalFormatterFunc;
-    inFindColumn.footerFormatter = jVarLocalFooterFormatterFunc;
+const StartFunc = ({ inFindColumn }) => {
+    inFindColumn.formatter = formatterFunc;
 };
 
-let jVarLocalFormatterFunc = (value, row, index) => {
-    let jVarLocalFilterData = row.AddOnArray;
+const formatterFunc = (value, row) => {
+    const addOnData = row.AddOnArray;
 
-    if (jVarLocalFilterData.length > 0) {
-        let jVarLocalAddOnPrice = jVarLocalFilterData.map(e => e.AddOnRate).reduce((a, b) => a + b, 0);
+    if (addOnData && addOnData.length > 0) {
+        const addOnPrice = addOnData.reduce((sum, item) => sum + item.AddOnRate, 0);
+        return `<a href="#" class="btn btn-primary ">${addOnData.length}-${addOnPrice}</a>`;
+    }
 
-        return [
-            `<a href="#" class="btn btn-primary ">`,
-            `${jVarLocalFilterData.length} -${jVarLocalAddOnPrice}`,
-            `</a>`
-        ].join('');
-    } else {
-        return [
-            `<a href="#" class="btn btn-outline-primary ">`,
-            `Click`,
-            `</a>`
-        ].join('')
-    };
-};
-
-let jVarLocalFooterFormatterFunc = (value, row, index) => {
-    return [
-        `<a href="#" id="TableFooterAddOnId" class="btn btn-outline-primary ">`,
-        `Click`,
-        `</a>`
-    ].join('');
+    return "No";
 };
 
 export { StartFunc };

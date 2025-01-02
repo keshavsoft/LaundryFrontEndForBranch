@@ -1,10 +1,19 @@
-let StartFunc = () => {
-    window.location.href = ""
-    localStorage.removeItem('PresentOrderAddOns'); 
+import { StartFunc as StartFuncGetFetch } from "../../../../../ToLocalStorage/PresentOrder/GetFetch.js";
+import { StartFunc as StartFuncShowToDom } from "../../../../../../ShowToDom/ToTable/EntryFile.js";
+import { jFShowToday } from "../../../../../ShowOnDom/EntryFile.js";
 
-    // let jVarLocalHtmlId = 'RefreshBSTableId';
-    // let jVarLocalRefreshBSTableId = document.getElementById(jVarLocalHtmlId);
-    // jVarLocalRefreshBSTableId.click();
+let StartFunc = () => {
+    // window.location.href = ""
+    StartFuncGetFetch().then(() => {
+        StartFuncShowToDom();
+        localStorage.removeItem('PresentOrderAddOns');
+        $('#table').bootstrapTable('refresh');
+        $('#AddItemsId')[0].reset();
+        $('#TableFooterItemNameId').focus();
+        jFShowToday();
+
+    });
+
 
 };
 
