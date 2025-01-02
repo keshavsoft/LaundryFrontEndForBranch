@@ -1,6 +1,6 @@
 let StartFunc = ({ inFindColumn }) => {
     inFindColumn.formatter = jFLocalOptsFormater;
-    inFindColumn.footerFormatter = totalFormatter;
+    inFindColumn.footerFormatter = totalPriceFormatter;
 };
 
 function jFLocalOptsFormater(value, row, index) {
@@ -17,18 +17,14 @@ function jFLocalOptsFormater(value, row, index) {
     };
 };
 
-function totalFormatter(data) {
-    var field = "Total";
-    let LocalTotal = data.map(function (row) {
-        if (row[field] === undefined) {
-            return 0;
-        };
-        return +row[field];
+function totalPriceFormatter(data) {
+    var field = this.field
+    return '₹ ' + data.map(function (row) {
+        return +row.Total
     }).reduce(function (sum, i) {
-        return sum + i
-    }, 0);
 
-    return LocalTotal.toFixed(2);
-};
+        return sum + i
+    }, 0)
+}
 
 export { StartFunc };

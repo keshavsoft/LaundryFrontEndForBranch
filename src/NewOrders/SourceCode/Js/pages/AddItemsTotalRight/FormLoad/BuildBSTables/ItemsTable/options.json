@@ -50,7 +50,7 @@
             "field": "KS-Amount",
             "title": "Amount",
             "align": "right",
-            "formatter": "",
+            "footerFormatter": "",
             "width": 15,
             "widthUnit": "%"
         },
