@@ -1,5 +1,6 @@
 {
     "data": [],
+    "showFooter": "true",
     "columns": [
         {
             "field": "KS-Serial",
@@ -34,6 +35,7 @@
             "field": "Rate",
             "title": "Rate",
             "align": "right",
+            "footerFormatter": "",
             "width": 10,
             "widthUnit": "%"
         },
@@ -65,7 +67,7 @@
         },
         {
             "field": "KS-Opts",
-            "title": "Opts.",
+            "title": "",
             "width": 100
         }
     ],
