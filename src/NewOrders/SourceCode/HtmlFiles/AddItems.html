@@ -359,6 +359,14 @@
             jVarLocalTableFooterAddOnSelectId.focus();
         });
 
+        const myModalAddOnModalLocalStorage = document.getElementById('AddOnModalLocalStorage');
+
+        myModalAddOnModalLocalStorage.addEventListener('shown.bs.modal', event => {
+            const jVarLocalCurrentTarget = event.currentTarget;
+            const jVarLocalSelect = jVarLocalCurrentTarget.querySelector("select");
+
+            jVarLocalSelect.focus();
+        });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.6/dist/bootstrap-table.min.js"></script>
