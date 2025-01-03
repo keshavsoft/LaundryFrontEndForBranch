@@ -102,7 +102,7 @@ let jFLocalTableFooterTotalId = () => {
     let jVarLocalTableFooterPcsInputId = 'TableFooterPcsInputId'
     let jVarLocalHtmlId2 = document.getElementById(jVarLocalTableFooterPcsInputId);
     let LocalAddOnData = JSON.parse(localStorage.getItem("PresentOrderAddOns"));
-    let LocalAddOnRate = LocalAddOnData.map(e => e.AddOnRate).reduce((a, b) => a + parseInt(b), 0);
+    let LocalAddOnRate = LocalAddOnData !== null ? LocalAddOnData.map(e => e.AddOnRate).reduce((a, b) => a + parseInt(b), 0) : 0;
     let jVarLocalItemRate = parseInt(jVarLocalHtmlId1.value) + LocalAddOnRate
     console.log("Total:", jVarLocalItemRate * jVarLocalHtmlId2.value);
     return jVarLocalItemRate * jVarLocalHtmlId2.value;
