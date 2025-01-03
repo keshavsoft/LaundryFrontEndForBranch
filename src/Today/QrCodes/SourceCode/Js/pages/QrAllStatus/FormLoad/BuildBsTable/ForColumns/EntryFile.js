@@ -9,6 +9,7 @@ let StartFunc = ({ inColumns }) => {
     if (LocalColumnOperateFine === undefined === false) {
         ColumnOperate({ inFindColumn: LocalColumnOperateFine });
     };
+
     if (LocalColumnStatus === undefined === false) {
         ColumnStatus({ inFindColumn: LocalColumnStatus });
     };

@@ -4,8 +4,11 @@ import { StartFunc as ForColumns } from "./ForColumns/EntryFile.js";
 
 const StartFunc = () => {
     var $table = $('#table');
+
     ForColumns({ inColumns: optionsJson.columns });
+
     optionsJson.onClickRow = StartFuncOnClickRowFunc;
+
     $table.bootstrapTable(optionsJson);
 };
 
