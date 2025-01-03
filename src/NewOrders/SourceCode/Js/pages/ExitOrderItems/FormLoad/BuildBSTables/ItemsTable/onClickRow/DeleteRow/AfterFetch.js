@@ -1,7 +1,14 @@
-const StartFunc = async ({ inResponce }) => {
+import { StartFunc as ToLocalStorage } from "../../../../ToLocalStorage/PresentOrder/GetFetch.js";
+import { StartFunc as StartFuncShowToDom } from "../../../../../ShowToDom/ToTable/EntryFile.js";
 
-    if (inResponce.status === 200) {
-        window.location.href = ""
+const StartFunc = ({ inResponse }) => {
+    if (inResponse.status === 200) {
+        ToLocalStorage().then(FromPromise => {
+            StartFuncShowToDom();
+            $("#TableFooterItemNameId").focus();
+        });
+
+        // window.location.href = ""
     };
 };
 

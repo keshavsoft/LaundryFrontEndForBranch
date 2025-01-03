@@ -39,7 +39,8 @@
         },
         {
             "title": "Opts.",
-            "formatter": "jFLocalOptsFormater"
+            "field":"Opts",
+            "formatter": ""
         }
     ]
 }
