@@ -1,5 +1,5 @@
 import { StartFunc as ColumnOperate } from "./ColumnSerial/entryFile.js";
-import { StartFunc as ColumnRate } from "./ColumnRate/entryFile.js";
+import { StartFunc as StartFuncColumnRate } from "./ColumnRate/entryFile.js";
 import { StartFunc as StartFuncColumnAddOns } from "./ColumnAddOns/entryFile.js";
 import { StartFunc as StartFuncColumnopts } from "./Columnopts/entryFile.js";
 import { StartFunc as StartFuncColumnAmount } from "./ColumnAmount/entryFile.js";
@@ -29,9 +29,9 @@ let StartFunc = ({ inColumns }) => {
         ColumnOperate({ inFindColumn: LocalColumnOperateFine });
     };
 
-    if (LocalColumnRate === undefined === false) {
-        ColumnRate({ inFindColumn: LocalColumnRate });
-    };
+    // if (LocalColumnRate === undefined === false) {
+    //     StartFuncColumnRate({ inFindColumn: LocalColumnRate });
+    // };
 
     if (LocalColumnAddOns === undefined === false) {
         StartFuncColumnAddOns({ inFindColumn: LocalColumnAddOns });
