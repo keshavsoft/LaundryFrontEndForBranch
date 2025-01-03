@@ -11,6 +11,8 @@ let StartFunc = () => {
         $('#AddItemsId')[0].reset();
         $('#TableFooterItemNameId').focus();
         jFShowToday();
+        localStorage.setItem("PresentOrderAddOns", JSON.stringify([]))
+
 
     });
 
