@@ -29,8 +29,8 @@
             "align": "right"
         },
         {
-            "field": "WashType",
-            "title": "WashType",
+            "field": "Service",
+            "title": "ServiceType",
             "filterControl": "select"
         },
         {
