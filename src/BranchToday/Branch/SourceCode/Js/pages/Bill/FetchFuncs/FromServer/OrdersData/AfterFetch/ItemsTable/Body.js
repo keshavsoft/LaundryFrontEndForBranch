@@ -5,13 +5,14 @@ let StartFunc = ({ inItemData, inAddOnsData }) => {
     const entries = Object.entries(inItemData);
 
     entries.forEach(([key, value]) => {
-        // let localAddonData = inAddOnsData.filter(element => {
-        //     return element.AddOnItemSerial === parseInt(key);
-        // });
 
         let localAddonArray = value.AddOnArray.map(element => {
             return `${element.AddOnService}@${element.AddOnRate}`;
         });
+
+        let localAddOnRateArray = value.AddOnArray.map(element => {
+            return element.AddOnRate
+        }).reduce((a, b) => a + parseInt(b), 0)
 
         const template = document.getElementById("TemplateForTableRowId");
         const clone = template.content.cloneNode(true);
@@ -20,7 +21,7 @@ let StartFunc = ({ inItemData, inAddOnsData }) => {
         //td[0].textContent = value.ItemName+'@'+value.Rate+'@'+localAddonArray.toString();
         td[0].textContent = `${value.ItemName}@${value.Rate}@${localAddonArray.toString()}`;
         td[1].textContent = value.Pcs;
-        td[2].textContent = (value.Rate) * (value.Pcs);
+        td[2].textContent = (parseInt(value.Rate) + (localAddOnRateArray)) * (value.Pcs);
         // td[3].textContent = new Date(value.DeliveryDateTime).toLocaleDateString('en-GB');
         td[3].textContent = formatDate(new Date(value.DeliveryDateTime))
 
