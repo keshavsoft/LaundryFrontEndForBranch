@@ -10,7 +10,7 @@
     {
         "name": "Parent",
         "icon": "bi bi-arrow-90deg-left",
-        "url": "../../../ToFactory/HtmlFiles/Menu.html"
+        "url": "../../../../Factory/FromFactory/EntryReturn/HtmlFiles/FromFactoryMenu.html"
     },
     {
         "name": "VerticalShow",
