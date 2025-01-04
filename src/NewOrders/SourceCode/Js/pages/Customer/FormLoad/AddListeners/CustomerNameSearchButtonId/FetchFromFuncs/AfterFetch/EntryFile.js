@@ -1,7 +1,9 @@
+import { StartFunc as ToLocalStorage } from "../../../../../ToLocalStorage/AllOrders.js";
 let StartFunc = (inData) => {
     let jVarLocalData = inData.JsonData;
     let jVarLocalOrdered = jVarLocalData.sort((x, y) => ((x.pk === y.pk) ? 0 : ((x.pk < y.pk) ? 1 : -1)));
     let jVarLocalWithAggValues = jFLocalInsertAggValues({ inData: jVarLocalOrdered });
+    ToLocalStorage({ inOrdersArray: jVarLocalData });
 
     var $table = $('#table')
 

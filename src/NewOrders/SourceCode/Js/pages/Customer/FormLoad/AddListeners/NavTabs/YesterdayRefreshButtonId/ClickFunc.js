@@ -1,5 +1,4 @@
 let StartFunc = () => {
-console.log("sharath");
 
 };
 
