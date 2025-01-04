@@ -4,6 +4,7 @@ import { StartFunc as StartFuncCustomerNameSearchButtonId } from "./CustomerName
 import { StartFunc as StartFuncMasterButtonId } from "./MasterButtonId/EntryFile.js";
 import { StartFunc as StartFuncBranchButtonId } from "./BranchNameButton/EntryFile.js";
 import { StartFunc as AddItemsHtmlId } from "./AddItemsHtmlId/EntryFile.js";
+import { StartFunc as StartFuncNavTabs } from "./NavTabs/EntryFile.js";
 
 let StartFunc = () => {
     StartFuncCustomerNameInputId();
@@ -11,7 +12,8 @@ let StartFunc = () => {
     StartFuncCustomerNameSearchButtonId();
     StartFuncMasterButtonId();
     StartFuncBranchButtonId();
-    AddItemsHtmlId()
+    AddItemsHtmlId();
+    StartFuncNavTabs();
 };
 
 export { StartFunc }
