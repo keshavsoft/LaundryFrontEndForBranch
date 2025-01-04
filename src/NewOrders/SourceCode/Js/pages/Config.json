@@ -8,7 +8,7 @@
     "folderName": "Masters",
     "tableName": "CustomerNames",
     "localStorageKeys": {
-        "OrderKey": "CustomerNames",
+        "CustomerOrderKey": "CustomerOrderKey",
         "ItemNamesKey": "ItemNames",
         "AddOnsKey": "AddOns"
     }
