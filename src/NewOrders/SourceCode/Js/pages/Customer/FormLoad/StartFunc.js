@@ -1,8 +1,10 @@
 import { StartFunc as StartFuncAddListeners } from "./AddListeners/EntryFile.js";
 import { StartFunc as StartFuncFromUrlParams } from "./FromUrlParams/EntryFile.js";
 import { StartFunc as StartFuncBuildBSTables } from "./BuildBSTables/EntryFile.js";
+import { StartFunc as StartFuncBSTables } from "./BSTables/EntryFile.js";
 
 const StartFunc = () => {
+    StartFuncBSTables();
     StartFuncBuildBSTables();
 
     StartFuncAddListeners();
