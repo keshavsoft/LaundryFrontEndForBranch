@@ -21,18 +21,18 @@ const StartFunc = (jFLocalFilter) => {
     $(`#${jVarLocalModalId}`).modal("show");
 };
 
-const jFLocalFromLocalStorage = () => {
-    let jVarLocalDataFromLocalStorage = localStorage.getItem("ItemNames");
-    let jVarLocalDataFromLocalStorageJson = JSON.parse(jVarLocalDataFromLocalStorage);
-    //console.log(jVarLocalDataFromLocalStorageJson);
-    return jVarLocalDataFromLocalStorageJson;
-};
+// const jFLocalFromLocalStorage = () => {
+//     let jVarLocalDataFromLocalStorage = localStorage.getItem("ItemNames");
+//     let jVarLocalDataFromLocalStorageJson = JSON.parse(jVarLocalDataFromLocalStorage);
+//     //console.log(jVarLocalDataFromLocalStorageJson);
+//     return jVarLocalDataFromLocalStorageJson;
+// };
 
-const jFLocalFromLocalStorageWithFilter = (jFLocalFilter) => {
-    let jVarLocalDataFromLocalStorage = localStorage.getItem("ItemNames");
-    let jVarLocalDataFromLocalStorageJson = JSON.parse(jVarLocalDataFromLocalStorage);
+// const jFLocalFromLocalStorageWithFilter = (jFLocalFilter) => {
+//     let jVarLocalDataFromLocalStorage = localStorage.getItem("ItemNames");
+//     let jVarLocalDataFromLocalStorageJson = JSON.parse(jVarLocalDataFromLocalStorage);
 
-    return jVarLocalDataFromLocalStorageJson.filter(obj => obj.ItemName.toLowerCase().includes(jFLocalFilter.toLowerCase()));
-};
+//     return jVarLocalDataFromLocalStorageJson.filter(obj => obj.ItemName.toLowerCase().includes(jFLocalFilter.toLowerCase()));
+// };
 
 export { StartFunc };
