@@ -10,7 +10,9 @@ const StartFunc = () => {
         StartFuncToLocalStorage();
         StartFuncShowToDom();
         LocalFuncForTableFooterAddOnSelectIdFocus();
-    };
+    } else {
+        jFLocalAddClass();
+    }
 };
 
 let LocalFuncForTableFooterAddOnSelectIdFocus = () => {
@@ -20,6 +22,12 @@ let LocalFuncForTableFooterAddOnSelectIdFocus = () => {
     if (jVarLocalTableFooterAddOnSelectId === null === false) {
         jVarLocalTableFooterAddOnSelectId.focus();
     };
+};
+
+const jFLocalAddClass = () => {
+    const element = document.getElementById('TableFooterAddOnSelectId');
+    element.classList.add('is-invalid');
+    element.addEventListener('click', () => element.classList.remove('is-invalid'));
 };
 
 export { StartFunc };

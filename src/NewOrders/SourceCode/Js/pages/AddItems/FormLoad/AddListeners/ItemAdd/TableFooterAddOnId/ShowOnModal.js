@@ -4,10 +4,12 @@ let StartFunc = ({ inRow }) => {
     const jVarLocalRow = inRow;
     const jVarLocalItemName = jFLocalTableFooterItemNameId();
     const jVarLocalItemRate = jFLocalTableFooterRateInputId();
+    const jVarLocalItemCName = jFLocalCustomerNameId();
 
     jFLocalToInputAddOnModalItemNameId(jVarLocalItemName);
     // jFLocalToInputAddOnModalItemSerialId(jVarLocalRow.pk);
     jFLocalToInputRate(jVarLocalItemRate);
+    jFLocalToInputCName(jVarLocalItemCName);
 };
 
 let jFLocalTableFooterItemNameId = () => {
@@ -25,6 +27,14 @@ let jFLocalTableFooterRateInputId = () => {
 
     if (jVarLocalHtmlId === null === false) {
         return jVarLocalHtmlId.value.trim();
+    };
+};
+let jFLocalCustomerNameId = () => {
+    let jVarLocalCustomerNameId = 'CustomerNameId'
+    let jVarLocalHtmlId = document.getElementById(jVarLocalCustomerNameId);
+
+    if (jVarLocalHtmlId === null === false) {
+    return jVarLocalHtmlId.value.trim();
     };
 };
 
@@ -47,6 +57,14 @@ let jFLocalToInputAddOnModalItemSerialId = (inValue) => {
 
 let jFLocalToInputRate = (inValue) => {
     const jVarLocalHtmlControl = jVarCommonAddOnModalLocalStorage.querySelector(".AddOnModalLocalStorageItemRateClass");
+
+    if (jVarLocalHtmlControl === null === false) {
+        jVarLocalHtmlControl.value = inValue;
+    };
+};
+
+let jFLocalToInputCName = (inValue) => {
+    const jVarLocalHtmlControl = jVarCommonAddOnModalLocalStorage.querySelector(".AddOnModalLocalStorageSerialClass");
 
     if (jVarLocalHtmlControl === null === false) {
         jVarLocalHtmlControl.value = inValue;
