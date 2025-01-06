@@ -3,7 +3,7 @@ import { StartFunc as LoginModal } from "../../../assets/static/js/Common/NiceAd
 import { StartFunc as StartFuncShowToDom } from "./ShowToDom/EntryFile.js";
 
 const StartFunc = () => {
-    let jVarLocalFromAdmin = LoginModal({ inSuccessFunc: StartFuncShowToDom });
+    let jVarLocalFromAdmin = LoginModal({ inSuccessFunc: StartFuncFormLoad });
 
     if (jVarLocalFromAdmin) {
         StartFuncFormLoad();
