@@ -1,5 +1,5 @@
 let StartFunc = () => {
-    let jVarLocalBranchId = 'BranchNameId';
+    let jVarLocalBranchId = 'BranchNameAnchorId';
     let jVarlocalBranch = document.getElementById(jVarLocalBranchId);
     let jVarLocalBranchName = localStorage.getItem("BranchName");
 
