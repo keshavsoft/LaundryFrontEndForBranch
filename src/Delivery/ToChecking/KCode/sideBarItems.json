@@ -8,7 +8,7 @@
         "url": "../../../NewOrders/HtmlFiles/Customer.html"
     },
     {
-        "name": "Orders",
+        "name": "CheckQrs",
         "key": "CheckOrder",
         "icon": "bi bi-receipt",
         "children": [
@@ -16,7 +16,14 @@
                 "name": "Check",
                 "url": "CheckOrder.html",
                 "icon": "bi bi-file-earmark-text"
-            },
+            }
+        ]
+    },
+    {
+        "name": "Settlement",
+        "key": "CheckOrder",
+        "icon": "bi bi-receipt",
+        "children": [
             {
                 "name": "Delivery",
                 "url": "Delivery.html",
@@ -28,7 +35,17 @@
                 "icon": "bi bi-file-earmark-text"
             }
         ]
+    },
+    {
+        "name": "Delivery",
+        "key": "CheckOrder",
+        "icon": "bi bi-receipt",
+        "children": [
+            {
+                "name": "DeliveryAddItems",
+                "url": "DeliveryAddItems.html",
+                "icon": "bi bi-file-earmark-text"
+            }
+        ]
     }
-    
-    
 ]
