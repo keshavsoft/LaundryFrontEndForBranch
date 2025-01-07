@@ -30,6 +30,16 @@
             font-size: 24px;
             line-height: 1.33;
         }
+        #nav-Today-tabContent .fade .col-auto button{
+            background-color: #377abe;
+            color: white;
+            width: 60px;
+            float: right;
+            
+        }
+        #nav-Today-tabContent .fade .col-auto h4{
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -133,29 +143,34 @@
                 </nav>
                 <div class="tab-content" id="nav-Today-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="col-auto mt-3">
+                            <h4>Today </h4>
+                            <button class="btn"  href="#">
+                                <i class="bi bi-arrow-clockwise"></i>
+                            </button>
+                        </div>
                         <table id="table">
                         </table>
                     </div>
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <div class="col-auto">
-                            <button class="btn" style="background-color: #34495e; color: white; width: 60px;"
-                                id="YesterdayRefreshButtonId" href="#">
-                                <i class="bi bi-house"></i>
+                        <div class="col-auto mt-3">
+                            <h4>Yesterday </h4>
+                            <button class="btn" id="YesterdayRefreshButtonId" href="#">
+                                <i class="bi bi-arrow-clockwise"></i>
                             </button>
                         </div>
                         <table id="YesterdayTableId">
                         </table>
                     </div>
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        <div class="col-auto">
-                            <button class="btn" style="background-color: #34495e; color: white; width: 60px;"
-                                id="ThisWeekRefreshButtonId" href="#">
-                                <i class="bi bi-house"></i>
+                        <div class="col-auto mt-3">
+                            <h4> Week </h4>
+                            <button class="btn" id="ThisWeekRefreshButtonId" href="#">
+                                <i class="bi bi-arrow-clockwise"></i>
                             </button>
                         </div>
                         <table id="ThisWeekTableId"></table>
                     </div>
-                </div>
 
                 <div class="row">
 
