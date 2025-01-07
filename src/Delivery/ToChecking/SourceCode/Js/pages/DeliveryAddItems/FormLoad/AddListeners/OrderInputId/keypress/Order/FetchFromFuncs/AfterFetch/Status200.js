@@ -3,6 +3,8 @@ let StartFunc = (inData) => {
     LocalUnDisableFunc()
     jFLocalToInputCustomerNameId(inData[0].CustomerName)
     jFLocalToInputCustomerMobileId(inData[0].CustomerMobile)
+    jFLocalToInputOrderNumberId(inData[0].OrderNumber)
+
     var $table = $('#table')
 
     $table.bootstrapTable("load", inData);
@@ -31,6 +33,14 @@ const LocalUnDisableFunc = () => {
         jVarLocalCustomerDetailsClass[i].classList.remove("d-none");
 
     }
-}
+};
+let jFLocalToInputOrderNumberId = (inValue) => {
+    let jVarLocalHtmlId = 'OrderNumberId';
+   let jVarLocalOrderNumberId = document.getElementById(jVarLocalHtmlId);
+   
+   if (jVarLocalOrderNumberId === null === false) {
+      jVarLocalOrderNumberId.innerHTML = inValue;
+   };
+};
 
 export { StartFunc };
