@@ -25,35 +25,41 @@
     <div class="container">
         <div class="row">
             <div class="col-8">
-                <div class="card-header bg-transparent border-success">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="input-group mb-3">
-                                <input type="number" id="OrderId" class="form-control" placeholder="Order Number"
-                                    autofocus aria-label="Recipient's username" aria-describedby="button-addon2">
-                                <button class="btn btn-outline-secondary" type="button"
-                                    id="button-addon2">Search</button>
+                <div class="row mt-4">
+                    <!-- Order Number Button -->
+                    <div class="col-1">
+                        <button type="button" class="btn btn-primary fs-1" id="OrderNumberId">0</button>
+                    </div>
+                
+                    <div class="col-8">
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <input type="number" id="OrderId" class="form-control fs-1" placeholder="Order Number" autofocus
+                                    aria-label="Order Number">
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <label for="CustomerNameId" class="form-label">Customer name</label>
+                                <input type="text" id="CustomerNameId" class="form-control" disabled>
+                                <div class="valid-feedback">Looks good!</div>
+                            </div>
+                
+                            <div class="col-lg-6 col-md-6">
+                                <label for="CustomerMobileId" class="form-label">Mobile Number</label>
+                                <input type="text" id="CustomerMobileId" class="form-control" disabled>
+                                <div class="valid-feedback">Looks good!</div>
                             </div>
                         </div>
                     </div>
-                    <div class="row d-none CustomerDetailsClass">
-                        <div class="col-md-4">
-                            <label for="validationCustom01" class="form-label">Customer name</label>
-                            <input type="text" id="CustomerNameId" class="form-control" id="validationCustom01"
-                                disabled>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <label for="validationCustom01" class="form-label">Mobile</label>
-                            <input type="text" id="CustomerMobileId" class="form-control" id="validationCustom01"
-                                disabled>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
+                
+                    <div class="col-3">
+                        <a id="BranchNameAnchorId" href="#" class="btn btn-secondary fs-1">Outlet</a>
                     </div>
+                </div>
+                
+
                     <div class="card-body text-success">
                         <table id="table">
                             <thead>
@@ -64,54 +70,45 @@
                             </thead>
                         </table>
                     </div>
-                    <div class="card-footer bg-transparent border-success">Footer</div>
-                </div>
+                    <!-- <div class="card-footer bg-transparent border-success">Footer</div> -->
             </div>
 
             <div class="col mt-2">
-                <div class="card">
-                    <form class="row needs-validation p-2" id="AddItemsId" novalidate>
-                        <div class="card mt-2 border-primary">
-                            <div class="card-header">
-                                <h3>Scan Qrcode - <label id="BranchNameId"></label></h3>
-                            </div>
-
-                            <div class="card-body">
-                                <div class="row">
-                                    <label for="InputPkId"
-                                        class="col-sm-12 col-form-label col-form-label-lg fs-3">QrCode</label>
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control form-control-lg" id="InputPkId"
-                                            placeholder="Scan QrCode" autofocus="">
-                                    </div>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="InputProductNameId" class="form-label">Item Name</label>
-                                    <input type="text" class="form-control" id="InputProductNameId" disabled>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="InputSalePriceId" class="form-label">Rate</label>
-                                    <input type="text" class="form-control" id="InputSalePriceId" disabled>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="InputFactorySelectedId" class="form-label">Factory Selected</label>
-                                    <input type="text" class="form-control" id="InputFactorySelectedId" disabled>
-                                </div>
-                            </div>
-
+                <form class="row needs-validation p-2" id="AddItemsId" novalidate>
+                    <div class="card mt-2">
+                        <div class="card-header">
+                            <h3>Scan Qrcode - <label id="BranchNameId"></label></h3>
                         </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <label for="InputPkId"
+                                    class="col-sm-12 col-form-label col-form-label-lg fs-3">QrCode</label>
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control form-control-lg" id="InputPkId"
+                                        placeholder="Scan QrCode" autofocus="">
+                                </div>
+                            </div>
 
-                    </form>
+                            <div class="mb-3">
+                                <label for="InputProductNameId" class="form-label">Item Name</label>
+                                <input type="text" class="form-control" id="InputProductNameId" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label for="InputSalePriceId" class="form-label">Rate</label>
+                                <input type="text" class="form-control" id="InputSalePriceId" disabled>
+                            </div>
 
-                </div>
-
+                            <div class="mb-3">
+                                <label for="InputFactorySelectedId" class="form-label">Factory Selected</label>
+                                <input type="text" class="form-control" id="InputFactorySelectedId" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-
-
-    </div>
+    </div>  
+   
 
     <!-- modal popup with bootstrap for addons -->
     <div class="modal fade" id="AddOnModal" tabindex="-1">
