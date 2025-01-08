@@ -12,7 +12,8 @@ const StartFunc = ({ mode, inFilesArray, inSrcPath }) => {
             sidebarItems,
             isDev: mode === 'development',
             tableName: "",
-            columnData: {}
+            columnData: {},
+            title:filename
         };
     });
 
