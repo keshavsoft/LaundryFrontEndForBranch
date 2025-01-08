@@ -21,6 +21,11 @@
             "title": "QrCode"
         },
         {
+            "field": "Status",
+            "title": "Status",
+            "filterControl": "select"
+        },
+        {
             "field": "OrderNo",
             "title": "Order#"
         },
@@ -32,11 +37,6 @@
             "field": "Rate",
             "title": "Rate",
             "align": "right"
-        },
-        {
-            "field": "Status",
-            "title": "Status",
-            "filterControl": "select"
         },
         {
             "title": "TimeSpan",
