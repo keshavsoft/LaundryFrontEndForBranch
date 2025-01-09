@@ -13,6 +13,7 @@ let StartFunc = () => {
     // inDataToInsert.DCFactory = jFLocalFromDomDCFactoryTextId();
     // inDataToInsert.DCDate = jFLocalFromDomDateTextId();
     // inDataToInsert.DCDescription = jFLocalFromDomDescriptionTextId();
+    inDataToInsert.OrderNumber = parseInt(getUrlQueryParams({ inGetKey: "OrerNumber" }));
 
     KeysJson.body = JSON.stringify(inDataToInsert);
 
