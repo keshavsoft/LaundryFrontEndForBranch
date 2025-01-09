@@ -4,10 +4,9 @@
     "searchable": "true",
     "idfield": "pk",
     "showFooter": "true",
-    "pagination":"true",
+    "pagination": "true",
     "pageList": "[5, 10, 25 ]",
     "pageSize": "5",
-   
     "data": [],
     "onClickRow": "",
     "columns": [
@@ -35,20 +34,21 @@
         },
         {
             "title": "Pcs",
-            "formatter": "jFLocalOrderDetails",
+            "field": "ItemDetails",
+            "formatter": "",
             "width": "100",
-            "footerFormatter": "pcsFormatter"
-
+            "footerFormatter": ""
         },
         {
             "title": "Settlement",
-            "formatter": "jFLocalSettlementDetails",
-            "footerFormatter": "priceFormatter",
-            "align":"right"
+            "field": "SettlementAmount",
+            "formatter": "",
+            "footerFormatter": "",
+            "align": "right"
         },
         {
             "title": "QrCodes",
-            "field":"QRRaise",
+            "field": "QRRaise",
             "formatter": "jFLocalQrCodeDetails",
             "footerFormatter": "QrFormatter"
         }

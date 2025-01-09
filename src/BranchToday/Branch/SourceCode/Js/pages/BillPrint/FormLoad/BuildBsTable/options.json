@@ -12,7 +12,7 @@
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": "jFGlobalSerialColumn"
+            "formatter": ""
         },
         {
             "field": "UuId",
@@ -30,13 +30,13 @@
         {
             "title": "Settlement",
             "field":"AggValues.SettlementAmount",
-            "footerFormatter": "priceFormatter",
+            "footerFormatter": "",
             "align":"right"
         },
         {
             "title": "QrCodes",
             "field":"TotalItems",
-            "footerFormatter": "QrFormatter"
+            "footerFormatter": ""
         },
         {
             "title": "Print",
