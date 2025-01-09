@@ -41,6 +41,7 @@
         {
             "title": "Opts.",
             "field": "Opts",
+            "align":"center",
             "formatter": ""
         }
     ]
