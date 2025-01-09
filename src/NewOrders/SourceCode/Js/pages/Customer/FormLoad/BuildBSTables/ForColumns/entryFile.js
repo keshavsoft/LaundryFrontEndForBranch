@@ -15,7 +15,7 @@ let StartFunc = ({ inColumns }) => {
     let LocalColumnOperateFine = LocalColumns.find(element => element.field === "KS-Serial");
     let LocalColumnSettlementAmount = LocalColumns.find(element => element.field === "AggValues.SettlementAmount");
     let LocalColumnAddOns = LocalColumns.find(element => element.field === "KS-AddOns");
-    let LocalColumnopts = LocalColumns.find(element => element.field === "KS-Opts");
+    let LocalColumnopts = LocalColumns.find(element => element.field === "Opts");
     let LocalColumnAmount = LocalColumns.find(element => element.field === "KS-Amount");
 
     let LocalColumnDateTime = LocalColumns.find(element => element.field === "DateTime");
