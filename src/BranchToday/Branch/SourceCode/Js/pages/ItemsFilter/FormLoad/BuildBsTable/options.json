@@ -29,12 +29,13 @@
             "title": "Rate",
             "field": "Rate",
             "align": "right",
-            "footerFormatter": "totalFormatter"
+            "footerFormatter": ""
         },
         {
             "title": "Pcs",
             "field": "Pcs",
-            "footerFormatter": "totalFormatter1"
+            "align": "right",
+            "footerFormatter": ""
         }
     ]
 }

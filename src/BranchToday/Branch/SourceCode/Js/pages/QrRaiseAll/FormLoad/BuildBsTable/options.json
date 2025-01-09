@@ -7,14 +7,13 @@
     "pagination": "true",
     "pageList": "[5, 10, 25 ]",
     "pageSize": "5",
-   
     "data": [],
     "onClickRow": "",
     "columns": [
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": "jFGlobalSerialColumn"
+            "formatter": ""
         },
         {
             "field": "UuId",
@@ -35,21 +34,23 @@
         },
         {
             "title": "Pcs",
-            "formatter": "jFLocalOrderDetails",
+            "field": "ItemDetails",
+            "formatter": "",
             "width": "100",
-            "footerFormatter": "pcsFormatter"
+            "footerFormatter": ""
         },
         {
             "title": "Settlement",
-            "formatter": "jFLocalSettlementDetails",
-            "footerFormatter": "priceFormatter",
-            "align":"right"
+            "field": "SettlementAmount",
+            "formatter": "",
+            "footerFormatter": "",
+            "align": "right"
         },
         {
             "title": "Qr Raise",
             "field": "QRRaise",
             "formatter": "jFLocalQrCodeDetails",
-            "footerFormatter": "QrFormatter"
+            "footerFormatter": ""
         }
     ]
 }

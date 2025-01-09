@@ -35,14 +35,16 @@
         },
         {
             "title": "Pcs",
-            "formatter": "jFLocalOrderDetails",
+            "field": "ItemDetails",
+            "formatter": "",
             "width": "100",
-            "footerFormatter": "pcsFormatter"
+            "footerFormatter": ""
         },
         {
             "title": "Settlement",
-            "formatter": "jFLocalSettlementDetails",
-            "footerFormatter": "priceFormatter",
+            "field": "SettlementAmount",
+            "formatter": "",
+            "footerFormatter": "",
             "align":"right"
         },
         {
