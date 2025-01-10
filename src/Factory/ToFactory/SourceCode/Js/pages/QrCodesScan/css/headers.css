@@ -78,3 +78,17 @@
   background-color: #0056b3; /* Darker shade of blue */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+  padding: 1rem;
+  transition: transform .3s ease, box-shadow .3s ease !important
+}
+
+.card:hover {
+  transform: translatex(7px) !important;
+  box-shadow: 4px 8px 16px rgba(42, 111, 248, 0.4) !important
+}
