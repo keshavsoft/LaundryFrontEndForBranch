@@ -8,12 +8,12 @@
         "url": "../../../NewOrders/HtmlFiles/Customer.html"
     },
     {
-        "name": "CheckQrs",
+        "name": "Check",
         "key": "CheckOrder",
         "icon": "bi bi-receipt",
         "children": [
             {
-                "name": "Check",
+                "name": "CheckOrder",
                 "url": "CheckOrder.html",
                 "icon": "bi bi-file-earmark-text"
             }
