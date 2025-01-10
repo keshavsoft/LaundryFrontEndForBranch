@@ -1,6 +1,7 @@
 import { StartFunc as ColumnOperate } from "./ColumnSerial/entryFile.js";
 import { StartFunc as ColumnScan } from "./ColumnScan/entryFile.js";
 import { StartFunc as ColumnRate } from "./ColumnRate/entryFile.js";
+import { StartFunc as ColumnDelivery } from "./ColumnDelivery/entryFile.js";
 
 let StartFunc = ({ inColumns }) => {
     let LocalColumns = inColumns;
@@ -20,6 +21,12 @@ let StartFunc = ({ inColumns }) => {
 
     if (LocalScanRate === undefined === false) {
         ColumnRate({ inFindColumn: LocalScanRate });
+    };
+
+    let LocalColumnDelivery = LocalColumns.find(element => element.field === "Delivery");
+
+    if (LocalColumnDelivery === undefined === false) {
+        ColumnDelivery({ inFindColumn: LocalColumnDelivery });
     };
 };
 
