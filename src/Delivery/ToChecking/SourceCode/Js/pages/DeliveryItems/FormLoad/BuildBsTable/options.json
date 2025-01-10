@@ -44,6 +44,11 @@
             "title": "Status",
             "field": "Scan",
             "formatter": "QRCodeGenerate"
+        },
+        {
+            "title": "Delivery",
+            "field": "Delivery",
+            "formatter": ""
         }
     ]
 }
