@@ -18,15 +18,15 @@
         "icon": "bi bi-table",
         "children": [
             {
-                "name": "DCItems",
+                "name": "DCQrs",
                 "url": "ShowDCBranchItems.html"
             },
             {
-                "name": "ScannedItems",
+                "name": "ScannedQrs",
                 "url": "ShowDCItems.html"
             },
             {
-                "name": "PendingItems",
+                "name": "PendingQrs",
                 "url": "ShowDCPendingItems.html"
             }
         ]
