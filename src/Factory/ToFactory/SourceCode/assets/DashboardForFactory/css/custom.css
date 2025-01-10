@@ -1339,3 +1339,24 @@ footer .social-links img {
     transform: translateX(-50%);
   }
  
+  
+#bike-image {
+    position: absolute;
+    right: -200px;
+    animation: moveBike 2s ease-in-out forwards; 
+}
+
+@keyframes moveBike {
+    0% {
+        right: -200px; 
+    }
+    100% {
+        right: 50%;
+        transform: translateX(50%); 
+    }
+}
+
+.delivery-option-box {
+    width: 200px;
+    height: 150px;
+}
