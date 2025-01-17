@@ -49,13 +49,13 @@
             "filtercontrol": "select"
         },
         {
-            "field": "OrderDateTime",
-            "title": "Order DateTime",
+            "field": "OrderDate",
+            "title": "Order Date",
             "formatter":""
         },
         {
             "field": "DeliveryDateTime",
-            "title": "DeliveryDateTime",
+            "title": "Delivery Date",
             "filtercontrol": "select"
         },
         {
