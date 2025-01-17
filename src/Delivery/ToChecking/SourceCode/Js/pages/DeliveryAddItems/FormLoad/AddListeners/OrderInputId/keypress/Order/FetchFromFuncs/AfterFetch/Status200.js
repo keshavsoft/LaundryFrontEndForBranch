@@ -1,13 +1,17 @@
 let StartFunc = (inData) => {
-    console.log("inData:", inData);
+    // console.log("inData:", inData);
+    let jVarLocalAsIs = inData.AsIs;
+    let jVarLocalOrderData = inData.OrderData;
+    let jVarLocalQrCount = inData.QrCount;
     LocalUnDisableFunc()
-    jFLocalToInputCustomerNameId(inData[0].CustomerName)
-    jFLocalToInputCustomerMobileId(inData[0].CustomerMobile)
-    jFLocalToInputOrderNumberId(inData[0].OrderNumber)
+    jFLocalToInputCustomerNameId(jVarLocalOrderData.CustomerName)
+    jFLocalToInputCustomerMobileId(jVarLocalOrderData.CustomerMobile)
+    jFLocalToInputOrderNumberId(jVarLocalOrderData.OrderNumber)
+    jFLocalToInputRowCountId(jVarLocalQrCount)
 
     var $table = $('#table')
 
-    $table.bootstrapTable("load", inData);
+    $table.bootstrapTable("load", jVarLocalAsIs);
 };
 
 let jFLocalToInputCustomerNameId = (inValue) => {
@@ -36,11 +40,20 @@ const LocalUnDisableFunc = () => {
 };
 let jFLocalToInputOrderNumberId = (inValue) => {
     let jVarLocalHtmlId = 'OrderNumberId';
-   let jVarLocalOrderNumberId = document.getElementById(jVarLocalHtmlId);
-   
-   if (jVarLocalOrderNumberId === null === false) {
-      jVarLocalOrderNumberId.innerHTML = inValue;
-   };
+    let jVarLocalOrderNumberId = document.getElementById(jVarLocalHtmlId);
+
+    if (jVarLocalOrderNumberId === null === false) {
+        jVarLocalOrderNumberId.innerHTML = inValue;
+    };
+};
+
+let jFLocalToInputRowCountId = (inValue) => {
+    let jVarLocalHtmlId = 'RowCountId';
+    let jVarLocalRowCountId = document.getElementById(jVarLocalHtmlId);
+
+    if (jVarLocalRowCountId === null === false) {
+        jVarLocalRowCountId.innerHTML = inValue;
+    };
 };
 
 export { StartFunc };
