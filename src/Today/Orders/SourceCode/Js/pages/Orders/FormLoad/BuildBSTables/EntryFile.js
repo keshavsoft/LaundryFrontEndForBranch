@@ -7,31 +7,14 @@ import { StartFunc as ForColumns } from "./ForColumns/EntryFile.js";
 
 const StartFunc = () => {
 
-    // jFLocalToTableTag();
     jFPrepareColumns();
-    // jFLocalInitialize();
 };
 
-// const jFLocalInitialize = () => {
-//     var $table = $('#table');
-
-//     $table.bootstrapTable({
-
-//         onExpandRow: StartFuncOnExpandRow,
-//         icons: IconsJson
-//     });
-
-// }
 var $table = $('#table');
 optionsJson.onExpandRow = StartFuncOnExpandRow;
 optionsJson.icons = IconsJson;
-$table.bootstrapTable(optionsJson);
 ForColumns({ inColumns: optionsJson.columns });
-
-
-// // const jFLocalToTableTag = () => {
-//     $table.attr(AttributesJson.tableAttributes);
-// };
+$table.bootstrapTable(optionsJson);
 
 const jFPrepareColumns = () => {
     jFPrepareOrder();
