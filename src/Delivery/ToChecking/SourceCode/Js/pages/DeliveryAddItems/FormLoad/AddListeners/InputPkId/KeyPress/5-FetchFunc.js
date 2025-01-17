@@ -7,8 +7,6 @@ let StartFunc = async () => {
     let jVarLocalFetchUrl = `/Custom/Cleaning/Branch/Factory/FromFactory/Delivery/QrCode/${jVarLocalbranchName}`;
 
     let response = await fetch(jVarLocalFetchUrl, jVarLocalFetchHeaders);
-    // let data = await response.json();
-
     return await response;
 };
 
