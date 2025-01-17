@@ -3,8 +3,6 @@ import { StartFunc as ToLocalStorage } from "../../../../../ToLocalStorage/AllOr
 let StartFunc = (inData) => {
     let jVarLocalData = inData.JsonData;
 
-    ToLocalStorage({ inOrdersArray: jVarLocalData });
-
     let today = new Date().toISOString().split("T")[0];
 
     let jVarLocalFilteredData = jVarLocalData.filter(order => {
@@ -16,6 +14,7 @@ let StartFunc = (inData) => {
 
     let jVarLocalOrdered = jVarLocalFilteredData.sort((x, y) => ((x.pk === y.pk) ? 0 : ((x.pk < y.pk) ? 1 : -1)));
     let jVarLocalWithAggValues = jFLocalInsertAggValues({ inData: jVarLocalOrdered });
+    ToLocalStorage({ inOrdersArray: jVarLocalWithAggValues });
 
     var $table = $('#table');
 

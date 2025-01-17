@@ -227,7 +227,6 @@
                                 <!-- <th data-field="AddOnItemSerial">AddOnItem #</th> -->
                                 <th data-field="AddOnService" data-width="400">AddOn Item</th>
                                 <th data-field="AddOnRate" data-width="200">Rate</th>
-                                <th data-formatter="jFLocalOptsForAddOnOnModalFormater" data-width="100">Options</th>
                             </tr>
                         </thead>
                         <tfoot>
@@ -247,17 +246,6 @@
                             </tr>
                         </tfoot>
                     </table>
-                    <div class="row mt-3">
-                        <div class="col">
-                            <select class="form-select" aria-label="Select AddOn" id="TableFooterAddOnSelectId">
-                            </select>
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary" id="AddOnModalSaveButtonId">
-                                Save
-                            </button>
-                        </div>
-                    </div>
                 </div>
                 <div class="modal-footer">
 
@@ -298,14 +286,12 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <!-- <h1>Search results for - <span id="SearchString"></span></h1> -->
                 </div>
                 <div class="modal-body">
                     <table data-searchable="true" id="myTable">
                         <thead>
                             <tr>
                                 <th data-formatter="jFLocalSerialColumn" data-width="75">#</th>
-                                <!-- <th data-field="AddOnItemSerial">AddOnItem #</th> -->
                                 <th data-field="Category" data-width="200">Category</th>
                                 <th data-field="ItemName" data-width="400">Item Name</th>
                                 <th data-field="DryWashRate" data-width="100">Rate</th>
@@ -383,14 +369,6 @@
             };
         };
 
-        function jFLocalOptsFormater(value, row, index) {
-            return [
-                `<a href="#" class="btn btn-danger ">`,
-                `<i class="bi bi-trash3"></i>`,
-                `</a>`
-            ].join('');
-        };
-
         function jFLocalTotal(value, row, index) {
             let JVarLocalFromStrogeAddOnData = localStorage.getItem("PresentOrder");
             let JvarLocalData = JSON.parse(JVarLocalFromStrogeAddOnData);
@@ -405,28 +383,9 @@
             };
         };
 
-        function jFLocalOptsFormater(value, row, index) {
-            return [
-                `<a href="#" class="btn btn-danger ">`,
-                `<i class="bi bi-trash3"></i>`,
-                `</a>`
-            ].join('');
-        };
-
-        function jFLocalOptsForAddOnOnModalFormater(value, row, index) {
-            return [
-                `<a href="#" class="btn btn-danger ">`,
-                `<i class="bi bi-trash3"></i>`,
-                `</a>`
-            ].join('');
-        };
-
         const myModalEl = document.getElementById('AddOnModal');
 
         myModalEl.addEventListener('shown.bs.modal', event => {
-            let jVarLocalTableFooterAddOnSelectId = document.getElementById("TableFooterAddOnSelectId");
-
-            jVarLocalTableFooterAddOnSelectId.focus();
         });
 
         function JFDeliveryDateFormat(value, row, index) {

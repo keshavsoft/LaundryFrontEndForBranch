@@ -5,6 +5,7 @@ let StartFunc = () => {
 
     const today = new Date(); const lastWeek = new Date();
     lastWeek.setDate(today.getDate() - 7);
+
     const filteredData = JVarLocalFromStorage.filter(item => {
         const itemDate = new Date(item.DateTime);
         return itemDate >= lastWeek && itemDate <= today;
