@@ -45,12 +45,12 @@
         },
         {
             "field": "OrderDateTime",
-            "title": "Order DateTime",
+            "title": "Order Date",
             "filtercontrol": "select"
         },
         {
             "field": "DeliveryDateTime",
-            "title": "DeliveryDateTime",
+            "title": "Delivery Date",
             "filtercontrol": "select"
         },
         {
