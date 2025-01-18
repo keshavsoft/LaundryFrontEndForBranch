@@ -28,11 +28,6 @@
             "title": "Mobile"
         },
         {
-            "title": "TimeSpan",
-            "field": "TimeSpan",
-            "filter-control": "select"
-        },
-        {
             "title": "Pcs",
             "field": "ItemDetails",
             "formatter": "",
@@ -51,6 +46,11 @@
             "field": "QRRaise",
             "formatter": "jFLocalQrCodeDetails",
             "footerFormatter": "QrFormatter"
+        },
+        {
+            "title": "TimeSpan",
+            "field": "TimeSpan",
+            "filter-control": "select"
         }
     ]
 }
