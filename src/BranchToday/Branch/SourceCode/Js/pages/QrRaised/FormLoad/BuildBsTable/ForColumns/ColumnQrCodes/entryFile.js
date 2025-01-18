@@ -7,7 +7,7 @@ let StartFunc = ({ inFindColumn }) => {
 function jFLocalQrCodeDetails(value, row, index) {
     if (row.IsQrCodesRaised) {
         return [
-            `<a href="#" data-rowpk="${row.pk}" class="btn btn-primary QRGenerateClass">`,
+
             `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-qr-code" viewBox="0 0 16 16">`,
             `<path d="M2 2h2v2H2V2Z"></path>`,
             `<path d="M6 0v6H0V0h6ZM5 1H1v4h4V1ZM4 12H2v2h2v-2Z"></path>`,
@@ -18,7 +18,7 @@ function jFLocalQrCodeDetails(value, row, index) {
             `</svg>`,
             ` `,
             `${row.TotalItems}`,
-            `</a>`
+
         ].join('')
     } else {
         return [

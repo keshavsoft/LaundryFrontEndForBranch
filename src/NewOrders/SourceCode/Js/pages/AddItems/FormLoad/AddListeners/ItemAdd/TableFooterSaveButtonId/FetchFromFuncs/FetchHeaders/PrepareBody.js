@@ -10,6 +10,7 @@ const StartFunc = () => {
     let jVarLocalDeliveryDateTime = jFLocalTableFooterdateInputId();
     const jVarLocalItemService = jFLocalTableFooterItemServiceId();
 
+    localStorage.setItem("DeliveryDateTime", JSON.stringify(jVarLocalDeliveryDateTime))
     let LocalAddOnData = JSON.parse(localStorage.getItem("PresentOrderAddOns"));
 
     const jVarLocalFromLocalStorageFind = StartFuncFromLocalStorage({

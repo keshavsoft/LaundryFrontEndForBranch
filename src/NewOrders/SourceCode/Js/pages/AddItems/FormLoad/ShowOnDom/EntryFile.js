@@ -21,10 +21,17 @@ const jFShowToday = () => {
     const formattedNextWeek = today.toISOString().split('T')[0];
 
     const dateInput = document.getElementById('TableFooterdateInputId');
+    let LocalDeliveryDateTime = JSON.parse(localStorage.getItem("DeliveryDateTime"));
+
     if (dateInput) {
-        dateInput.value = formattedNextWeek;
-        dateInput.setAttribute("min", formattedToday);
-    }
+        if (LocalDeliveryDateTime !== null) {
+            dateInput.value = LocalDeliveryDateTime;
+            dateInput.setAttribute("min", formattedToday);
+        } else {
+            dateInput.value = formattedNextWeek;
+            dateInput.setAttribute("min", formattedToday);
+        }
+    };
 };
 
 export { StartFunc, jFShowToday }

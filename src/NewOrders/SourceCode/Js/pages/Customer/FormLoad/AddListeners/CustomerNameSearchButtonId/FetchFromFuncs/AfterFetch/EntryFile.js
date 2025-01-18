@@ -2,23 +2,23 @@ import { StartFunc as ToLocalStorage } from "../../../../../ToLocalStorage/AllOr
 
 let StartFunc = (inData) => {
     let jVarLocalData = inData.JsonData;
+    let jVarLocalWithAggValues = jFLocalInsertAggValues({ inData: jVarLocalData });
+    ToLocalStorage({ inOrdersArray: jVarLocalWithAggValues });
 
     let today = new Date().toISOString().split("T")[0];
 
-    let jVarLocalFilteredData = jVarLocalData.filter(order => {
-
+    let jVarLocalFilteredData = jVarLocalWithAggValues.filter(order => {
         let orderDate = new Date(order.DateTime).toISOString().split("T")[0];
-
         return orderDate === today;
     });
 
     let jVarLocalOrdered = jVarLocalFilteredData.sort((x, y) => ((x.pk === y.pk) ? 0 : ((x.pk < y.pk) ? 1 : -1)));
-    let jVarLocalWithAggValues = jFLocalInsertAggValues({ inData: jVarLocalOrdered });
-    ToLocalStorage({ inOrdersArray: jVarLocalWithAggValues });
 
     var $table = $('#table');
 
-    $table.bootstrapTable("load", jVarLocalWithAggValues);
+    $table.bootstrapTable("load", jVarLocalOrdered);
+    jFLocalYesterdayRefreshButtonId()
+    jFLocalThisWeekRefreshButtonId()
 };
 
 let jFLocalInsertAggValues = ({ inData }) => {
@@ -51,6 +51,18 @@ let jFLocalInsertAggValues = ({ inData }) => {
     });
 
     return jVarLocalReturnObject;
+};
+
+let jFLocalThisWeekRefreshButtonId = () => {
+    let jVarLocalThisWeekRefreshButtonId = 'ThisWeekRefreshButtonId'
+    let jVarLocalHtmlId = document.getElementById(jVarLocalThisWeekRefreshButtonId);
+    jVarLocalHtmlId.click()
+};
+
+let jFLocalYesterdayRefreshButtonId = () => {
+    let jVarLocalYesterdayRefreshButtonId = 'YesterdayRefreshButtonId'
+    let jVarLocalHtmlId = document.getElementById(jVarLocalYesterdayRefreshButtonId);
+    jVarLocalHtmlId.click();
 };
 
 export { StartFunc };
