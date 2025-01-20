@@ -53,6 +53,12 @@
             "footerFormatter":"totalFormatter"
         },
         {
+            "title": "Status",
+            "field": "FFCompletion",
+            "filterControl": "select",
+            "formatter": ""
+        },
+        {
             "title": "Time Span",
             "field": "TimeSpan"
         }

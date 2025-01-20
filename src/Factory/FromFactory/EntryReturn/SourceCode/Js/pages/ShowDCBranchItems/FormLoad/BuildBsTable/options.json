@@ -5,9 +5,10 @@
     "searchHighlight": true,
     "responseHandler": "responseHandler",
     "queryParams": "queryParams",
-    "pagination":"true",
+    "pagination": "true",
+    "filterControl": "true",
     "pageList": "[5, 10, 25 ]",
-    "pageSize": "5",   
+    "pageSize": "5",
     "data": [],
     "onClickRow": "",
     "columns": [
@@ -49,8 +50,14 @@
             "title": "Rate",
             "field": "Rate",
             "filtercontrol": "select",
-            "align":"right",
-            "footerFormatter":"totalFormatter"
+            "align": "right",
+            "footerFormatter": "totalFormatter"
+        },
+        {
+            "title": "Status",
+            "field": "FFEntryStatus",
+            "filterControl": "select",
+            "formatter": ""
         },
         {
             "title": "Time Span",
