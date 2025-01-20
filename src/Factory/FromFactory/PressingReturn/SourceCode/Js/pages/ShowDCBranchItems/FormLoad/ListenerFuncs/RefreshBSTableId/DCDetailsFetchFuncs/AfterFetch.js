@@ -1,5 +1,5 @@
 let StartFunc = ({ inDataToShow }) => {
-console.log("inDataToShow:",inDataToShow);
+// console.log("inDataToShow:",inDataToShow);
 
     let jVarLocalData = inDataToShow;
 
@@ -8,7 +8,7 @@ console.log("inDataToShow:",inDataToShow);
     jFLocalToInnerHtmlDescriptionTextId({ inDescriptionTextId: jVarLocalData.Description });
     jFLocalToInnerHtmlDateTextId({ inDateTextId: jVarLocalData.Date });
     // jFLocalToInnerHtmlFactoryTextId({ inFactoryTextId: jVarLocalData.Factory });
-    // jFLocalToInnerHtmlDCBranchNameTextId({ inDCBranchNameTextId: jVarLocalData.BranchName })
+    jFLocalToInnerHtmlDCBranchNameTextId({ inDCBranchNameTextId: jVarLocalData.Branch })
 };
 
 let jFLocalToInnerHtmlpkTextId = ({ inpkTextId }) => {

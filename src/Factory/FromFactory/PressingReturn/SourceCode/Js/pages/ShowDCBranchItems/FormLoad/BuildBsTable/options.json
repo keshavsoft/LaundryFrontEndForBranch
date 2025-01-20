@@ -36,11 +36,6 @@
             "filtercontrol": "select"
         },
         {
-            "field": "BranchName",
-            "title": "Branch Name",
-            "filtercontrol": "select"
-        },
-        {
             "field": "ItemName",
             "title": "ItemName",
             "filtercontrol": "select"
