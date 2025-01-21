@@ -14,7 +14,7 @@
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": "jFGlobalSerialColumn"
+            "formatter": ""
         },
         {
             "field": "UuId",
@@ -35,26 +35,28 @@
         },
         {
             "title": "Pcs",
-            "formatter": "jFLocalOrderDetails",
+            "field":"pcs",
+            "formatter": "",
             "width": "100",
-            "footerFormatter": "pcsFormatter"
+            "footerFormatter": ""
         },
         {
             "title": "Settlement",
-            "formatter": "jFLocalSettlementDetails",
-            "footerFormatter": "priceFormatter",
+            "formatter": "",
+            "field":"Settlement",
+            "footerFormatter": "",
             "align":"right"
         },
         {
             "title": "QrCodes",
             "field": "QRRaise",
-            "formatter": "jFLocalQrCodeDetails",
-            "footerFormatter": "QrFormatter"
+            "formatter": "",
+            "footerFormatter": ""
         },
         {
             "title": "DeleteOrder",
             "field": "DeleteOrders",
-            "formatter": "jFLocalOptsForAddOnOnModalFormater",
+            "formatter": "",
             "footerFormatter": ""
         }
     ]
