@@ -29,7 +29,8 @@
         },
         {
             "title": "Duration",
-            "formatter": "DateFormatter"
+            "field":"DateTime",
+            "formatter": ""
         },
         {
             "title": "Description",
@@ -37,8 +38,9 @@
         },
         {
             "title": "Items",
-            "formatter": "ItemsFormatter",
-            "footerFormatter":"priceFormatter"
+            "field":"ItemDetails",
+            "formatter": "",
+            "footerFormatter":""
         },
         {
             "title": "Print",
