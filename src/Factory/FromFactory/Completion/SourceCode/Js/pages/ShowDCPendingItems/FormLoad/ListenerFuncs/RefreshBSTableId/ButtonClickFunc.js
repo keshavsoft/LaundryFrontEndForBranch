@@ -4,7 +4,6 @@ import { StartFunc as StartFuncFactoryScanFetchFuncs } from "./FactoryScanFetchF
 
 let StartFunc = () => {
     if (StartFuncCheckFunc()) {
-        
         StartFuncDCDetailsFetchFuncs();
         StartFuncFactoryScanFetchFuncs();
     }

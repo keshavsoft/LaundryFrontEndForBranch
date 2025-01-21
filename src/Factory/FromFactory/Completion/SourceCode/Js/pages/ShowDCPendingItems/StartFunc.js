@@ -4,7 +4,6 @@ import { StartFunc as StartFuncFormLoad } from "./FormLoad/StartFunc.js";
 
 const StartFunc = () => {
     StartFuncFormLoad();
-
     // StartFuncFormLoadBeforeAdmin();
 
     let jVarLocalFromAdmin = true;
