@@ -7,7 +7,7 @@ let StartFunc = ({ inItemData, inAddOnsData }) => {
     entries.forEach(([key, value]) => {
 
         let localAddonArray = value.AddOnArray.map(element => {
-            return `${element.AddOnService}@${element.AddOnRate}`;
+            return `${element.AddOnService}`;
         });
 
         let localAddOnRateArray = value.AddOnArray.map(element => {
@@ -19,7 +19,7 @@ let StartFunc = ({ inItemData, inAddOnsData }) => {
 
         let td = clone.querySelectorAll("td");
         //td[0].textContent = value.ItemName+'@'+value.Rate+'@'+localAddonArray.toString();
-        td[0].textContent = `${value.ItemName}@${value.Rate}@${localAddonArray.toString()}`;
+        td[0].textContent = `${value.ItemName}@${(parseInt(value.Rate) + localAddOnRateArray)}@${localAddonArray.toString()}`;
         td[1].textContent = value.Pcs;
         td[2].textContent = (parseInt(value.Rate) + (localAddOnRateArray)) * (value.Pcs);
         // td[3].textContent = new Date(value.DeliveryDateTime).toLocaleDateString('en-GB');

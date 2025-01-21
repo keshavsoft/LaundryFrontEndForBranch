@@ -1,5 +1,4 @@
 let StartFunc = ({ inDataToShow }) => {
-console.log("inDataToShow:",inDataToShow);
 
     let jVarLocalData = inDataToShow;
 
@@ -26,7 +25,7 @@ let jFLocalToInnerHtmlVoucherNumberTextId = ({ inVoucherNumberTextId }) => {
 let jFLocalToInnerHtmlDateTextId = ({ inDateTextId }) => {
     let jVarLocalHtmlId = 'DateTextId';
     let jVarLocalDateTextId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalDateTextId.innerHTML = inDateTextId;
+    jVarLocalDateTextId.innerHTML = new Date(inDateTextId).toLocaleDateString('en-GB');
 };
 
 // let jFLocalToInnerHtmlDescriptionTextId = ({ inDescriptionTextId }) => {
