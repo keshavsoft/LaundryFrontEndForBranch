@@ -4,7 +4,7 @@ let StartFunc = async () => {
     let LocalOrderId = jFLocalOrderId();
     let jVarLocalBranchName = localStorage.getItem("BranchName");
 
-    let jVarLocalFetchUrl = `/Custom/Cleaning/Branch/Order/Delivery/Completion/Check/${LocalOrderId}/${jVarLocalBranchName}`;
+    let jVarLocalFetchUrl = `/Custom/Cleaning/Branch/Order/Delivery/OrderScan/Check/${LocalOrderId}/${jVarLocalBranchName}`;
     let response = await fetch(jVarLocalFetchUrl);
 
     return await response;
