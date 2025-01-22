@@ -24,6 +24,11 @@
             "filterControl": "select"
         },
         {
+            "title": "Status",
+            "field": "Status",
+            "filterControl": "select"
+        },
+        {
             "field": "OrderNumber",
             "title": "Order #",
             "filterControl": "select"
@@ -59,11 +64,6 @@
         {
             "title": "FactoryName",
             "field": "FactoryName",
-            "filterControl": "select"
-        },
-        {
-            "title": "Status",
-            "field": "Status",
             "filterControl": "select"
         },
         {
