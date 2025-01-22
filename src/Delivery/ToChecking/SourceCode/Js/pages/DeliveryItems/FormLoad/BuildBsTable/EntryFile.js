@@ -7,7 +7,7 @@ import { StartFunc as ForColumns } from "./ForColumns/EntryFile.js";
 const StartFunc = () => {
     var $table = $('#table');
 
-    optionsJson.onClickRow = StartFuncOnClickRowFunc;
+    optionsJson.onCheck = StartFuncOnClickRowFunc;
     optionsJson.responseHandler = responseHandler;
     optionsJson.queryParams = queryParams;
     ForColumns({ inColumns: optionsJson.columns });

@@ -8,6 +8,7 @@
     "pageSize": "5",
     "columns": [
         {
+            "field": "state",
             "checkbox": "true"
         },
         {

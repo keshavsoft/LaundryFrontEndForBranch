@@ -3,7 +3,7 @@ let StartFunc = ({ inFindColumn }) => {
 };
 
 let jVarLocalFormatterFunc = (value, row, index) => {
-    console.log("row:", row, value);
+    // console.log("row:", row, value);
 
     if (row.ProcessReturn === true || row.Completion === true || row.EntryReturn === true) {
         return '<span class="badge bg-success">Ready to delivery</span>';
