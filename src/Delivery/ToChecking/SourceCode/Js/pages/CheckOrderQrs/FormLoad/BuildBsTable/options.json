@@ -1,0 +1,102 @@
+{
+    "toolbar": "#toolbar",
+    "idfield": "pk",
+    "showFooter": "true",
+    "data": [],
+    "onClickRow": "",
+    "rowStyle": "rowStyle",
+    "pageSize": "5",
+    "columns": [
+        {
+            "field": "KS-Serial",
+            "title": "#",
+            "formatter": ""
+        },
+        {
+            "field": "QrCodeId",
+            "title": "QrCode"
+        },
+        {
+            "title": "Status",
+            "field": "Scan",
+            "formatter": "QRCodeGenerate"
+        },
+        {
+            "title": "Branch Scan",
+            "field": "BranchScanStatus",
+            "formatter": ""
+        },
+        {
+            "title": "Entry Scan",
+            "field": "EntryScanStatus",
+            "formatter": ""
+        },
+        {
+            "title": "Entry Cancel",
+            "field": "EntryCancel",
+            "formatter": ""
+        },
+        {
+            "title": "Wash Scan",
+            "field": "WashingScanStatus",
+            "formatter": ""
+        },
+        {
+            "title": "Process Scan",
+            "field": "PressingScanStatus",
+            "formatter": ""
+        },
+        {
+            "title": "Process Cancel",
+            "field": "PressingCancel",
+            "formatter": ""
+        },
+        {
+            "title": "Completion Scan",
+            "field": "CompletionScanStatus",
+            "formatter": ""
+        },
+        {
+            "title": "FF Entry",
+            "field": "EntryReturn",
+            "formatter": ""
+        },
+        {
+            "title": "FF Pressing",
+            "field": "ProcessReturn",
+            "formatter": ""
+        },
+        {
+            "title": "FF Completion",
+            "field": "Completion",
+            "formatter": ""
+        },
+        {
+            "field": "ItemName",
+            "title": "ItemName"
+        },
+        {
+            "field": "OrderDate",
+            "title": "OrderDate"
+        },
+        {
+            "field": "DeliveryDate",
+            "title": "DeliveryDate"
+        },
+        {
+            "field": "Rate",
+            "title": "Rate",
+            "align": "right",
+            "footerFormatter": ""
+        },
+        {
+            "title": "Duration",
+            "field": "TimeSpan"
+        },
+        {
+            "title": "Delivery",
+            "field": "Delivery",
+            "formatter": ""
+        }
+    ]
+}
