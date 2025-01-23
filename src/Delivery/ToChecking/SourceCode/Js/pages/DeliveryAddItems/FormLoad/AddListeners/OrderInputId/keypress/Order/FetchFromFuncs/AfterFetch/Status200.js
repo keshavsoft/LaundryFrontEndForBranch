@@ -8,6 +8,8 @@ let StartFunc = (inData) => {
     jFLocalToInputCustomerMobileId(jVarLocalOrderData.CustomerMobile)
     jFLocalToInputOrderNumberId(jVarLocalOrderData.OrderNumber)
     jFLocalToInputRowCountId(jVarLocalQrCount)
+    LocalFuncForInputPkIdFocus()
+    LocalFuncForOrderIdFocus()
 
     var $table = $('#table')
 
@@ -53,6 +55,23 @@ let jFLocalToInputRowCountId = (inValue) => {
 
     if (jVarLocalRowCountId === null === false) {
         jVarLocalRowCountId.innerHTML = inValue;
+    };
+};
+
+let LocalFuncForInputPkIdFocus = () => {
+    let jVarLocalHtmlId = 'InputPkId';
+    let jVarLocalInputPkId = document.getElementById(jVarLocalHtmlId);
+
+    if (jVarLocalInputPkId === null === false) {
+        jVarLocalInputPkId.focus();
+    };
+};
+let LocalFuncForOrderIdFocus = () => {
+    let jVarLocalHtmlId = 'OrderId';
+    let jVarLocalOrderId = document.getElementById(jVarLocalHtmlId);
+
+    if (jVarLocalOrderId === null === false) {
+        jVarLocalOrderId.setAttribute('readonly', true);;
     };
 };
 

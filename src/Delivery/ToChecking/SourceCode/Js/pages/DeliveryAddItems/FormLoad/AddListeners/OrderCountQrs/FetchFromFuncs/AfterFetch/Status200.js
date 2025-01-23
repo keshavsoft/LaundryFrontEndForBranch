@@ -1,6 +1,6 @@
 let StartFunc = (inData) => {
-    let jVarLocalAsIs = inData.AsIs;
-    console.log("jVarLocalAsIs:", jVarLocalAsIs);
+    let jVarLocalAsIs = inData;
+    // console.log("jVarLocalAsIs:", jVarLocalAsIs);
 
     $("#RowCountModal").modal("show");
 
