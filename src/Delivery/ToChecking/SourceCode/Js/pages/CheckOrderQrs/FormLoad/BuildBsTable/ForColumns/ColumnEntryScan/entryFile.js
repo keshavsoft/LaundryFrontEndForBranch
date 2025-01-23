@@ -5,7 +5,7 @@ let StartFunc = ({ inFindColumn }) => {
 let jVarLocalFormatterFunc = (value, row, index) => {
     // console.log("row:", row);
 
-    if (row.Delivery === true ) {
+    if (row.EntryScanStatus === true ) {
         return '<span class="badge bg-success">✔</span>';
     } else {
         return '<span class="badge bg-danger">✘</span>';
