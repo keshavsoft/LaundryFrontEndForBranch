@@ -7,7 +7,7 @@ let StartFunc = () => {
     // inDataToInsert.ItemName = jFLocalFromDomInputProductNameId();
     // inDataToInsert.Rate = jFLocalFromDomInputSalePriceId();
     // inDataToInsert.FactorySelected = jFLocalFromDomInputFactorySelectedId();
-    inDataToInsert.VoucherRef = getUrlQueryParams({ inGetKey: "RefDC" });
+    inDataToInsert.VoucherRef = getUrlQueryParams({ inGetKey: "VoucherRef" });
     inDataToInsert.BranchName = localStorage.getItem("BranchName");
     // inDataToInsert.VoucherNumber = jFLocalFromDomVoucherNumberTextId();
     inDataToInsert.DCFactory = jFLocalFromDomDCFactoryTextId();
