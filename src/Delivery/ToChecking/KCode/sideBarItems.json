@@ -16,6 +16,11 @@
                 "name": "CheckOrder",
                 "url": "CheckOrder.html",
                 "icon": "bi bi-file-earmark-text"
+            },
+            {
+                "name": "CheckOrderQrs",
+                "url": "CheckOrderQrs.html",
+                "icon": "bi bi-file-earmark-text"
             }
         ]
     },
