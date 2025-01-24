@@ -60,7 +60,7 @@ let StartFunc = ({ inColumns }) => {
     ColumnProcessScan({ inFindColumn: LocalColumnProcessScan });
   }
 
-  let LocalColumnProcessCancel = LocalColumns.find((element) => element.field === "PressingCancel");
+  let LocalColumnProcessCancel = LocalColumns.find((element) => element.field === "ProcessReturn");
   if ((LocalColumnProcessCancel === undefined) === false) {
     ColumnProcessCancel({ inFindColumn: LocalColumnProcessCancel });
   }
