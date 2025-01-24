@@ -4,6 +4,7 @@ import { StartFunc as StartFuncTableFooterItemNameId } from "./TableFooterItemNa
 import { StartFunc as StartFuncTableFooterItemNameSearchButtonId } from "./TableFooterItemNameSearchButtonId/EntryFile.js";
 import { StartFunc as StartFuncTableFooterAddOnId } from "./TableFooterAddOnId/EntryFile.js";
 import { StartFunc as StartFuncTableFooterItemServiceId } from "./TableFooterItemServiceId/EntryFile.js";
+import { StartFunc as StartFuncTableFooterAlterButtonId } from "./TableFooterAlterButtonId/EntryFile.js";
 
 const StartFunc = () => {
     StartFuncTableFooterCategoryId();
@@ -15,6 +16,7 @@ const StartFunc = () => {
     StartFuncTableFooterItemNameId();
 
     StartFuncTableFooterSaveButtonId();
+    StartFuncTableFooterAlterButtonId()
 };
 
 export { StartFunc };
