@@ -14,89 +14,64 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode"
+            "title": "Qr"
         },
         {
-            "title": "Status",
-            "field": "Scan",
-            "formatter": "QRCodeGenerate"
-        },
-        {
-            "title": "Branch Scan",
+            "title": "Branch",
             "field": "BranchScanStatus",
             "formatter": ""
         },
         {
-            "title": "Entry Scan",
+            "title": "Entry",
             "field": "EntryScanStatus",
             "formatter": ""
         },
         {
-            "title": "Entry Cancel",
+            "title": "Entry_C",
             "field": "EntryCancel",
             "formatter": ""
         },
         {
-            "title": "Wash Scan",
+            "title": "Wash",
             "field": "WashingScanStatus",
             "formatter": ""
         },
         {
-            "title": "Process Scan",
+            "title": "Pro",
             "field": "PressingScanStatus",
             "formatter": ""
         },
         {
-            "title": "Process Cancel",
+            "title": "Pro_C",
             "field": "PressingCancel",
             "formatter": ""
         },
         {
-            "title": "Completion Scan",
+            "title": "F_Out",
             "field": "CompletionScanStatus",
             "formatter": ""
         },
         {
-            "title": "FF Entry",
-            "field": "EntryReturn",
-            "formatter": ""
-        },
-        {
-            "title": "FF Pressing",
-            "field": "ProcessReturn",
-            "formatter": ""
-        },
-        {
-            "title": "FF Completion",
-            "field": "Completion",
-            "formatter": ""
-        },
-        {
-            "field": "ItemName",
-            "title": "ItemName"
-        },
-        {
-            "field": "OrderDate",
-            "title": "OrderDate"
-        },
-        {
-            "field": "DeliveryDate",
-            "title": "DeliveryDate"
-        },
-        {
-            "field": "Rate",
-            "title": "Rate",
-            "align": "right",
-            "footerFormatter": ""
-        },
-        {
-            "title": "Duration",
-            "field": "TimeSpan"
+            "title": "F_Recd",
+            "field": "Scan",
+            "formatter": "QRCodeGenerate"
         },
         {
             "title": "Delivery",
             "field": "Delivery",
             "formatter": ""
+        },
+        {
+            "field": "ItemName",
+            "title": "Item"
+        },
+        {
+            "field": "OrderDate",
+            "title": "Order_Dt"
+        },
+        {
+            "field": "DeliveryDate",
+            "title": "Delivery_Dt"
         }
     ]
 }
