@@ -52,7 +52,7 @@ let jFLocalToInputVoucherNumberDCDetailsTextId = ({ inVoucherNumberDCDetailsText
     let jVarLocalVoucherNumberDCDetailsTextId = document.getElementById(jVarLocalHtmlId);
 
     if (jVarLocalVoucherNumberDCDetailsTextId === null === false) {
-        jVarLocalVoucherNumberDCDetailsTextId.innerHTML = inVoucherNumberDCDetailsTextId;
+        jVarLocalVoucherNumberDCDetailsTextId.value = inVoucherNumberDCDetailsTextId;
     };
 };
 
@@ -61,7 +61,7 @@ let jFLocalToInputDateTextDCDetailsId = ({ inDateTextDCDetailsId }) => {
     let jVarLocalDateTextDCDetailsId = document.getElementById(jVarLocalHtmlId);
 
     if (jVarLocalDateTextDCDetailsId === null === false) {
-        jVarLocalDateTextDCDetailsId.innerHTML = inDateTextDCDetailsId;
+        jVarLocalDateTextDCDetailsId.value = inDateTextDCDetailsId;
     };
 };
 
@@ -70,7 +70,7 @@ let jFLocalToInputDescriptionTextDCDetailsId = ({ inDescriptionTextDCDetailsId }
     let jVarLocalDescriptionTextDCDetailsId = document.getElementById(jVarLocalHtmlId);
 
     if (jVarLocalDescriptionTextDCDetailsId === null === false) {
-        jVarLocalDescriptionTextDCDetailsId.innerHTML = inDescriptionTextDCDetailsId;
+        jVarLocalDescriptionTextDCDetailsId.value = inDescriptionTextDCDetailsId;
     };
 };
 
@@ -79,7 +79,7 @@ let jFLocalToInputDCFactoryDCDetailsTextId = ({ inDCFactoryDCDetailsTextId }) =>
     let jVarLocalDCFactoryDCDetailsTextId = document.getElementById(jVarLocalHtmlId);
 
     if (jVarLocalDCFactoryDCDetailsTextId === null === false) {
-        jVarLocalDCFactoryDCDetailsTextId.innerHTML = inDCFactoryDCDetailsTextId;
+        jVarLocalDCFactoryDCDetailsTextId.value = inDCFactoryDCDetailsTextId;
     };
 };
 
