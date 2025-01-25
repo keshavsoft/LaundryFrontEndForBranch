@@ -1,6 +1,6 @@
 
 const StartFunc = (inResponse) => {
-    console.log("inResponse:", inResponse);
+    // console.log("inResponse:", inResponse);
     let LocalItemNames = JSON.parse(localStorage.getItem("ItemNames"));
     let jVarLocalFind = LocalItemNames.find(el => el.ItemName == inResponse.ItemName)
 
@@ -14,6 +14,8 @@ const StartFunc = (inResponse) => {
     jFLocalToInputSubId({ inValue: inResponse.SubKey })
     jFTableFooterSaveButtonId();
     jFLocalTableFooterAlterButtonId();
+    localStorage.setItem("PresentOrderAddOns", JSON.stringify(inResponse.AddOnArray));
+
 };
 
 let jFLocalToInputTableFooterCategoryId = ({ inValue }) => {

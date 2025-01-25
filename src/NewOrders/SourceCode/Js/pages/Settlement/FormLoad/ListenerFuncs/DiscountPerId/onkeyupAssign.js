@@ -81,13 +81,6 @@ let jFLocalFromDomCgstAmountId = () => {
     return jVarHtmlCgstAmountIdValue;
 };
 
-let jFLocalFromDomDiscountAmountId = () => {
-    let jVarLocalHtmlDiscountAmountId = 'DiscountAmountId';
-    let jVarHtmlDiscountAmountId = document.getElementById(jVarLocalHtmlDiscountAmountId);
-    let jVarHtmlDiscountAmountIdValue = jVarHtmlDiscountAmountId.value.trim();
-    return jVarHtmlDiscountAmountIdValue;
-};
-
 let jFLocalNettAmountId = ({ inNettAmountId }) => {
     let jVarLocalHtmlId = 'NettAmountId';
     let jVarLocalNettAmountId = document.getElementById(jVarLocalHtmlId);
