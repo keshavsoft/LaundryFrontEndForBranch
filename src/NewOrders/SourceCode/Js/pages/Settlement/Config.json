@@ -1,6 +1,6 @@
 {
     "routePath": "binV4",
-    "folderName": "Transactions",
+    "GetUrl": "Custom/Cleaning/Branch/Order/NewOrder/RowSettlement",
     "tableName": "Kakinada",
     "localStorageKeys": {
         "OrderKey": "PresentOrder",

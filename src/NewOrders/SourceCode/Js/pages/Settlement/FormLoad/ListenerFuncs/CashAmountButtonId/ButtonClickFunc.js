@@ -1,48 +1,20 @@
-let StartFunc = () => {
-    let jVarLocalNettAmount = jFLocalFromDomNettAmountId();
-    let jVarLocalRoundOff = jFLocalFromDomRoundOffId();
+const getInputValueById = id => document.getElementById(id)?.value || 0;
 
-    let jVarLocalCardAmount = jFLocalFromDomCardAmountId()||0;
-    let jVarLocalUPIAmount = jFLocalFromDomUPIAmountId()||0;
-    let jVarLocalSettlementAmount = parseInt(jVarLocalCardAmount) + parseInt(jVarLocalUPIAmount);
-    let jVarLocalCashAmount = parseFloat(jVarLocalNettAmount) + parseFloat(jVarLocalRoundOff) - jVarLocalSettlementAmount;
-
-    jFLocalToInnerHtmlCashAmountId({ injVarCashAmount: jVarLocalCashAmount });
+const setInputValueById = (id, value) => {
+    let element = document.getElementById(id);
+    if (element) element.value = value;
 };
 
-let jFLocalFromDomNettAmountId = () => {
-    let jVarLocalHtmlNettAmountId = 'NettAmountId';
-   let jVarHtmlNettAmountId = document.getElementById(jVarLocalHtmlNettAmountId);
-   let jVarHtmlNettAmountIdValue = jVarHtmlNettAmountId.value;
-   return jVarHtmlNettAmountIdValue;
-};
+const StartFunc = () => {
+    let nettAmount = parseFloat(getInputValueById("NettAmountId"));
+    let roundOff = parseFloat(getInputValueById("RoundOffId"));
 
-let jFLocalFromDomRoundOffId = () => {
-    let jVarLocalHtmlRoundOffId = 'RoundOffId';
-   let jVarHtmlRoundOffId = document.getElementById(jVarLocalHtmlRoundOffId);
-   let jVarHtmlRoundOffIdValue = jVarHtmlRoundOffId.value;
-   return jVarHtmlRoundOffIdValue;
-};
+    let cardAmount = parseInt(getInputValueById("CardAmountId")) || 0;
+    let upiAmount = parseInt(getInputValueById("UPIAmountId")) || 0;
+    let settlementAmount = cardAmount + upiAmount;
+    let cashAmount = nettAmount + roundOff - settlementAmount;
 
-let jFLocalToInnerHtmlCashAmountId = ({ injVarCashAmount }) => {
-    let jVarLocalHtmlId = 'CashAmountId';
-   let jVarLocalCashAmountId = document.getElementById(jVarLocalHtmlId);
-   jVarLocalCashAmountId.value = injVarCashAmount;
+    setInputValueById("CashAmountId", cashAmount.toFixed(0));
 };
-
-let jFLocalFromDomUPIAmountId = () => {
-    let jVarLocalHtmlUPIAmountId = 'UPIAmountId';
-    let jVarHtmlUPIAmountId = document.getElementById(jVarLocalHtmlUPIAmountId);
-    let jVarHtmlUPIAmountIdValue = jVarHtmlUPIAmountId.value;
-    return jVarHtmlUPIAmountIdValue;
-};
-
-let jFLocalFromDomCardAmountId = () => {
-    let jVarLocalHtmlCardAmountId = 'CardAmountId';
-   let jVarHtmlCardAmountId = document.getElementById(jVarLocalHtmlCardAmountId);
-   let jVarHtmlCardAmountIdValue = jVarHtmlCardAmountId.value;
-   return jVarHtmlCardAmountIdValue;
-};
-
 
 export { StartFunc };

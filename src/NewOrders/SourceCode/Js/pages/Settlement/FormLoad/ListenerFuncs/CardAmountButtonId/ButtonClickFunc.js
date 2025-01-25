@@ -1,48 +1,20 @@
-let StartFunc = () => {
-    let jVarLocalNettAmount = jFLocalFromDomNettAmountId();
-    let jVarLocalRoundOff = jFLocalFromDomRoundOffId();
+const getValueById = id => parseFloat(document.getElementById(id)?.value) || 0;
 
-    let jVarLocalCashAmount = jFLocalFromDomCashAmountId()||0;
-    let jVarLocalUPIAmount = jFLocalFromDomUPIAmountId()||0;
-    let jVarLocalSettlementAmount = parseInt(jVarLocalCashAmount) + parseInt(jVarLocalUPIAmount);
-    let jVarLocalCardAmount = parseFloat(jVarLocalNettAmount) + parseFloat(jVarLocalRoundOff) - jVarLocalSettlementAmount;
-
-    jFLocalToInnerHtmlCardAmountId({ injVarCardAmount: jVarLocalCardAmount });
+const setValueById = (id, value) => {
+    let element = document.getElementById(id);
+    if (element) element.value = value.toFixed(0);
 };
 
-let jFLocalFromDomNettAmountId = () => {
-    let jVarLocalHtmlNettAmountId = 'NettAmountId';
-    let jVarHtmlNettAmountId = document.getElementById(jVarLocalHtmlNettAmountId);
-    let jVarHtmlNettAmountIdValue = jVarHtmlNettAmountId.value;
-    return jVarHtmlNettAmountIdValue;
-};
+const StartFunc = () => {
+    let nettAmount = getValueById("NettAmountId");
+    let roundOff = getValueById("RoundOffId");
 
-let jFLocalFromDomRoundOffId = () => {
-    let jVarLocalHtmlRoundOffId = 'RoundOffId';
-    let jVarHtmlRoundOffId = document.getElementById(jVarLocalHtmlRoundOffId);
-    let jVarHtmlRoundOffIdValue = jVarHtmlRoundOffId.value;
-    return jVarHtmlRoundOffIdValue;
-};
+    let cashAmount = getValueById("CashAmountId");
+    let upiAmount = getValueById("UPIAmountId");
+    let settlementAmount = cashAmount + upiAmount;
+    let cardAmount = nettAmount + roundOff - settlementAmount;
 
-let jFLocalToInnerHtmlCardAmountId = ({ injVarCardAmount }) => {
-    let jVarLocalHtmlId = 'CardAmountId';
-   let jVarLocalCardAmountId = document.getElementById(jVarLocalHtmlId);
-   jVarLocalCardAmountId.value = injVarCardAmount;
+    setValueById("CardAmountId", cardAmount);
 };
-
-let jFLocalFromDomCashAmountId = () => {
-    let jVarLocalHtmlCashAmountId = 'CashAmountId';
-   let jVarHtmlCashAmountId = document.getElementById(jVarLocalHtmlCashAmountId);
-   let jVarHtmlCashAmountIdValue = jVarHtmlCashAmountId.value;
-   return jVarHtmlCashAmountIdValue;
-};
-
-let jFLocalFromDomUPIAmountId = () => {
-    let jVarLocalHtmlUPIAmountId = 'UPIAmountId';
-    let jVarHtmlUPIAmountId = document.getElementById(jVarLocalHtmlUPIAmountId);
-    let jVarHtmlUPIAmountIdValue = jVarHtmlUPIAmountId.value;
-    return jVarHtmlUPIAmountIdValue;
-};
-
 
 export { StartFunc };
