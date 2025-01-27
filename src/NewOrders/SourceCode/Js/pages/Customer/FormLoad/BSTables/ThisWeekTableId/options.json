@@ -21,18 +21,21 @@
         {
             "field": "DateTime",
             "title": "Time Span",
-            "formatter": "TimeDiff"
+            "formatter": "TimeDiff",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "AggValues.ItemDetails",
             "title": "Items",
-            "footerFormatter": "ItemsFormatter"
+            "footerFormatter": "ItemsFormatter",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "AggValues.SettlementAmount",
             "title": "Settlement",
             "footerFormatter": "priceFormatter",
-            "align": "right"
+            "align": "right",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "IsSettled",
