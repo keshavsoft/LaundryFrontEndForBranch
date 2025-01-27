@@ -13,7 +13,8 @@
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": "jFGlobalSerialColumn"
+            "formatter": "jFGlobalSerialColumn",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "UuId",
@@ -25,25 +26,29 @@
         },
         {
             "field": "CustomerData.CustomerMobile",
-            "title": "Mobile"
+            "title": "Mobile",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "QrCodes",
             "field":"QRPrint",
             "formatter": "jFLocalQrCodeDetails",
             "footerFormatter": "QrFormatter"
+            
         },
         {
             "title": "Pcs",
             "field":"AggValues.ItemDetails",
             "width": "100",
-            "footerFormatter": "pcsFormatter"
+            "footerFormatter": "pcsFormatter",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "Settlement",
             "field":"AggValues.SettlementAmount",
             "footerFormatter": "priceFormatter",
-            "align":"right"
+            "align":"right",
+            "class": "d-none d-sm-table-cell"
         }
     ]
 }
