@@ -12,7 +12,8 @@
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": ""
+            "formatter": "",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "UuId",
@@ -24,19 +25,22 @@
         },
         {
             "field": "CustomerData.CustomerMobile",
-            "title": "Mobile"
+            "title": "Mobile",
+            "class": "d-none d-sm-table-cell"
         },
     
         {
             "title": "Settlement",
             "field":"AggValues.SettlementAmount",
             "footerFormatter": "",
-            "align":"right"
+            "align":"right",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "QrCodes",
             "field":"TotalItems",
-            "footerFormatter": ""
+            "footerFormatter": "",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "Print",
