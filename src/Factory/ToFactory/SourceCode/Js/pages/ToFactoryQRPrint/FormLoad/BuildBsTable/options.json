@@ -13,7 +13,8 @@
         {
             "field": "id",
             "title": "#",
-            "formatter": "jFGlobalSerialColumn"
+            "formatter": "jFGlobalSerialColumn",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "pk",
@@ -21,20 +22,24 @@
         },
         {
             "field": "Factory",
-            "title": "To Factory"
+            "title": "To Factory",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "Date",
-            "title": "DC Date"
+            "title": "DC Date",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "Duration",
             "field":"DateTime",
-            "formatter": ""
+            "formatter": "",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "Description",
-            "field": "Description"
+            "field": "Description",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "Items",

@@ -14,7 +14,8 @@
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": ""
+            "formatter": "",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "pk",
@@ -22,19 +23,23 @@
         },
         {
             "field": "Factory",
-            "title": "To Factory"
+            "title": "To Factory",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "Date",
-            "title": "DC Date"
+            "title": "DC Date",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "Duration",
-            "field": "TimeSpan"
+            "field": "TimeSpan",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "Description",
-            "field": "Description"
+            "field": "Description",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "Scan",
@@ -44,12 +49,14 @@
         {
             "title": "ItemDetails",
             "field": "ItemDetails",
-            "footerFormatter": " "
+            "footerFormatter": " ",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "EntryScanCount",
             "field": "EntryScanCount",
-            "footerFormatter": " "
+            "footerFormatter": " ",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "Delete",
