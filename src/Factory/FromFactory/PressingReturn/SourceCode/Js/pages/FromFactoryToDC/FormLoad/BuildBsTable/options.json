@@ -17,7 +17,8 @@
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": "jFLocalSerialColumn"
+            "formatter": "jFLocalSerialColumn",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "pk",
@@ -26,20 +27,24 @@
         },
         {
             "field": "Date",
-            "title": "Date"
+            "title": "Date",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "FactoryName",
             "title": "Factory",
-            "filterControl": "select"
+            "filterControl": "select",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "TimeSpan",
-            "title": "TimeSpan"
+            "title": "TimeSpan",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "Description",
-            "title": "Description"
+            "title": "Description",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "Scan",
@@ -56,13 +61,15 @@
             "title": "Scanned",
             "field": "scanned",
             "formatter": "",
-            "footerFormatter": ""
+            "footerFormatter": "",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "Pending",
             "field": "Pending",
             "formatter": "",
-            "footerFormatter": ""
+            "footerFormatter": "",
+            "class": "d-none d-sm-table-cell"
         }
     ]
 }
