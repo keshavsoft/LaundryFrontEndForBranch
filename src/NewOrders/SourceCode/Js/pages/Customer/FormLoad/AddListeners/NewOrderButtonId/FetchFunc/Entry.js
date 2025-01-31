@@ -7,7 +7,8 @@ let StartFunc = async () => {
     let jVarLocalDataNeeded = await StartFuncFetchFuncs();
     // debugger
     if (jVarLocalDataNeeded.status === 200) {
-        StartFuncAfterFetch(await jVarLocalDataNeeded.json());
+        // const jVarLocalJsonBody = await jVarLocalDataNeeded.json();
+        StartFuncAfterFetch();
     };
 
     if (jVarLocalDataNeeded.status === 500) {
