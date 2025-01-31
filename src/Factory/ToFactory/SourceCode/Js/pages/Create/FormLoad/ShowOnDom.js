@@ -5,12 +5,12 @@ const StartFunc = () => {
 
 let jFLocalToInputBranchName = () => {
     let jVarLocalFromBranchName = localStorage.getItem("BranchName");
-
     let jVarLocalHtmlId = 'BranchName';
     let jVarLocalBranchName = document.getElementById(jVarLocalHtmlId);
+    const modifiedString = jVarLocalFromBranchName.replace("BranOrders", "");
 
     if (jVarLocalBranchName === null === false) {
-        jVarLocalBranchName.value = jVarLocalFromBranchName;
+        jVarLocalBranchName.value = modifiedString;
     };
 };
 
