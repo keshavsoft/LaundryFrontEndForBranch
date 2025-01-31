@@ -5,7 +5,9 @@ let StartFunc = () => {
     let jVarLocalBranchName = localStorage.getItem("BranchName");
 
     if (jVarlocalBranch === null === false) {
-        jVarlocalBranch.innerHTML = jVarLocalBranchName;
+    const modifiedString = jVarLocalBranchName.replace("BranOrders", "");
+
+        jVarlocalBranch.innerHTML = modifiedString;
     };
 };
 
