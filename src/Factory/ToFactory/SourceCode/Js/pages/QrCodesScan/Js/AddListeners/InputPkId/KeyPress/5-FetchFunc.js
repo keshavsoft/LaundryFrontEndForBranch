@@ -4,7 +4,9 @@ let StartFunc = async () => {
     let jVarLocalFetchHeaders = StartFuncFetchHeaders();
 
     let jVarLocalbranchName = localStorage.getItem("BranchName")
-    let jVarLocalFetchUrl = `/Custom/Cleaning/Branch/Factory/ToFactory/ScanV1/${jVarLocalbranchName}`;
+    const modifiedBranch = jVarLocalbranchName.replace("BranOrders", "");
+
+    let jVarLocalFetchUrl = `/Custom/Cleaning/Branch/Factory/ToFactory/ScanV1/${modifiedBranch}`;
 
     let response = await fetch(jVarLocalFetchUrl, jVarLocalFetchHeaders);
     // let data = await response.json();
