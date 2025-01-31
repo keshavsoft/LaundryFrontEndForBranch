@@ -1,12 +1,11 @@
 let StartFunc = () => {
     let jVarLocalBranchId = 'BranchNameAnchorId';
-    const CommonReplaceText = "BranOrders";
     let jVarlocalBranch = document.getElementById(jVarLocalBranchId);
     let jVarLocalBranchName = localStorage.getItem("BranchName");
-    let LocalTable = jVarLocalBranchName.replace(CommonReplaceText, "");
+    const modifiedBranch = jVarLocalBranchName.replace("BranOrders", "");
 
     if (jVarlocalBranch === null === false) {
-        jVarlocalBranch.innerHTML = LocalTable;
+        jVarlocalBranch.innerHTML = modifiedBranch;
     };
 };
 
