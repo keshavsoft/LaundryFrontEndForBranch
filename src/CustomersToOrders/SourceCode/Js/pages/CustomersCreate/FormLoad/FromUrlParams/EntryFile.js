@@ -16,9 +16,10 @@ let localBranchInputFunc = () =>  {
     let jVarLocalBranchId='BranchName';
     let jVarlocalBranch=document.getElementById(jVarLocalBranchId);
     let jVarLocalBranchName=localStorage.getItem("BranchName");
+    const modifiedBranch = jVarLocalBranchName.replace("BranOrders", "");
 
     if(jVarlocalBranch===null===false){
-        jVarlocalBranch.value=jVarLocalBranchName;
+        jVarlocalBranch.value=modifiedBranch;
     }
 
 

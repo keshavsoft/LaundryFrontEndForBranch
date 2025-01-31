@@ -6,7 +6,6 @@ import { StartFunc as responseHandler } from "./responseHandler/EntryFile.js";
 import { StartFunc as ForColumns } from "./ForColumns/EntryFile.js";
 
 let jVarLocalBranchName = localStorage.getItem("BranchName");
-const modifiedBranch = jVarLocalBranchName.replace("BranOrders", "");
 
 const StartFunc = () => {
     var $table = $('#table');
@@ -15,7 +14,7 @@ const StartFunc = () => {
     optionsJson.responseHandler = responseHandler;
     optionsJson.queryParams = queryParams;
 
-    optionsJson.url = `${UrlJson.url}/${modifiedBranch}`;
+    optionsJson.url = `${UrlJson.url}/${jVarLocalBranchName}`;
 
     ForColumns({ inColumns: optionsJson.columns });
 
