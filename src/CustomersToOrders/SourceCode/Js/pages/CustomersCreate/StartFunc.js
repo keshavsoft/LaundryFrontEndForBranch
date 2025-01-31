@@ -10,7 +10,7 @@ const StartFunc = () => {
         const year = today.getFullYear();
         const month = (today.getMonth() + 1).toString().padStart(2, '0');
         const day = today.getDate().toString().padStart(2, '0'); // pad day to 2 digits
-        const maxDate = year+'-'+month+'-'+day;
+        const maxDate = year+'/'+month+'/'+day;
         dobInput.setAttribute("max", maxDate);
     }
     if (jVarLocalFromAdmin) {

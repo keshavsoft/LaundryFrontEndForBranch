@@ -26,7 +26,7 @@ let LocalFuncCurrentDateAndTime = () => {
     let MM = ((date.getMonth() + 1) < 10 ? '0' : '') + (date.getMonth() + 1);
     let yyyy = date.getFullYear();
 
-    return `${yyyy}-${MM}-${dd} ${hr}:${min}:${sec}`;
+    return `${dd}/${MM}/${yyyy} ${hr}:${min}:${sec}`;
 };
 
 export { StartFunc };

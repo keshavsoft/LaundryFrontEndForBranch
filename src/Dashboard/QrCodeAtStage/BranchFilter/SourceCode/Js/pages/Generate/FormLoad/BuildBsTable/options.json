@@ -4,7 +4,7 @@
     "searchable": "true",
     "idfield": "pk",
     "pagination": "true",
-    "pageList": "[5, 10, 25 ]",
+    "pageList": "[5,10,25,50,100,All]",
     "pageSize": "5",  
     "showFooter": "true",
     "data": [],
