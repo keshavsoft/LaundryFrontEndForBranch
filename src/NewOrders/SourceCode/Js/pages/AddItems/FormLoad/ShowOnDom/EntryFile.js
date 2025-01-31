@@ -15,10 +15,13 @@ let jFBranchNameId = () => {
 
 const jFShowToday = () => {
     const today = new Date();
-    const formattedToday = today.toISOString().split('T')[0];
+    // const formattedToday = today.toISOString().split('T')[0];
+    const formattedToday = today.toLocaleDateString('en-GB');
 
     today.setDate(today.getDate() + 7);
-    const formattedNextWeek = today.toISOString().split('T')[0];
+    // const formattedNextWeek = today.toISOString().split('T')[0];
+    const formattedNextWeek = today.toLocaleDateString('en-GB');
+
 
     const dateInput = document.getElementById('TableFooterdateInputId');
     let LocalDeliveryDateTime = JSON.parse(localStorage.getItem("DeliveryDateTime"));
