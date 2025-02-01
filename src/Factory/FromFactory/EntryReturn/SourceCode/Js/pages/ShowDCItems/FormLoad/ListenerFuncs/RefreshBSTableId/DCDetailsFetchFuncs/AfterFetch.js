@@ -20,19 +20,19 @@ let jFLocalToInnerHtmlpkTextId = ({ inpkTextId }) => {
 let jFLocalToInnerHtmlVoucherNumberTextId = ({ inVoucherNumberTextId }) => {
     let jVarLocalHtmlId = 'VoucherNumberTextId';
     let jVarLocalVoucherNumberTextId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalVoucherNumberTextId.innerHTML = inVoucherNumberTextId;
+    jVarLocalVoucherNumberTextId.value = inVoucherNumberTextId;
 };
 
 let jFLocalToInnerHtmlDateTextId = ({ inDateTextId }) => {
     let jVarLocalHtmlId = 'DateTextId';
     let jVarLocalDateTextId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalDateTextId.innerHTML = inDateTextId;
+    jVarLocalDateTextId.value = inDateTextId;
 };
 
 let jFLocalToInnerHtmlDescriptionTextId = ({ inDescriptionTextId }) => {
     let jVarLocalHtmlId = 'DescriptionTextId';
     let jVarLocalDescriptionTextId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalDescriptionTextId.innerHTML = inDescriptionTextId;
+    jVarLocalDescriptionTextId.value = inDescriptionTextId;
 };
 
 
