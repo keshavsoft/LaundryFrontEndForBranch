@@ -4,15 +4,11 @@ let StartFunc = () => {
     let inDataToInsert = {};
 
     inDataToInsert.QrCodeId = jFLocalFromDomInputPkId();
-    // inDataToInsert.ItemName = jFLocalFromDomInputProductNameId();
-    // inDataToInsert.Rate = jFLocalFromDomInputSalePriceId();
-    // inDataToInsert.FactorySelected = jFLocalFromDomInputFactorySelectedId();
     inDataToInsert.VoucherRef = getUrlQueryParams({ inGetKey: "VoucherRef" });
     inDataToInsert.BranchName = localStorage.getItem("BranchName");
-    // inDataToInsert.VoucherNumber = jFLocalFromDomVoucherNumberTextId();
+    let modifiedBranch = inDataToInsert.BranchName.replace("BranOrders", "");
+    inDataToInsert.BranchName = modifiedBranch;
     inDataToInsert.DCFactory = jFLocalFromDomDCFactoryTextId();
-    // inDataToInsert.DCDate = jFLocalFromDomDateTextId();
-    // inDataToInsert.DCDescription = jFLocalFromDomDescriptionTextId();
 
     KeysJson.body = JSON.stringify(inDataToInsert);
 

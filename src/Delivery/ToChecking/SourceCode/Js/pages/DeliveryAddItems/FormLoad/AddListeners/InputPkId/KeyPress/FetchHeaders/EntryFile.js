@@ -5,6 +5,8 @@ let StartFunc = () => {
 
     inDataToInsert.QrCodeId = jFLocalFromDomInputPkId();
     inDataToInsert.BranchName = localStorage.getItem("BranchName");
+    let modifiedBranch = inDataToInsert.BranchName.replace("BranOrders", "");
+    inDataToInsert.BranchName = modifiedBranch;
     inDataToInsert.OrderNumber = jFLocalOrderId();
 
     KeysJson.body = JSON.stringify(inDataToInsert);
