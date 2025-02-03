@@ -12,9 +12,10 @@ const StartFunc = () => {
 let jFLocalToInputBranchNameAnchorId = (inValue) => {
     let jVarLocalHtmlId = 'BranchNameAnchorId';
     let jVarLocalBranchNameAnchorId = document.getElementById(jVarLocalHtmlId);
+    let LocalModifiedBranchName = inValue.replace("BranOrders", "")
 
     if (jVarLocalBranchNameAnchorId === null === false) {
-        jVarLocalBranchNameAnchorId.innerHTML = inValue;
+        jVarLocalBranchNameAnchorId.innerHTML = LocalModifiedBranchName;
     };
 };
 

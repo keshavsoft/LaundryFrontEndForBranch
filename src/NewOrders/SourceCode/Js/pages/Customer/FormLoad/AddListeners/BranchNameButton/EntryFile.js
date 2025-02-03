@@ -4,7 +4,7 @@ let StartFunc = () => {
     let jVarLocalBranchButtonId = document.getElementById("BranchButtonId");
     jVarLocalBranchButtonId.innerText = modifiedString;
     jVarLocalBranchButtonId.addEventListener('click', function() {
-        window.location.href = "/LoginUsers/HtmlFiles/login.html";
+        window.location.href = "/LoginUsers/HtmlFiles/loginBranch.html";
     });
 };
 
