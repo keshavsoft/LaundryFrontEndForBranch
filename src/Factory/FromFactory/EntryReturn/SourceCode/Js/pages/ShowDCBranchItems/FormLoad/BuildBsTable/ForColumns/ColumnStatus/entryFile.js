@@ -3,11 +3,12 @@ let StartFunc = ({ inFindColumn }) => {
 };
 
 let jVarLocalFormatterFunc = (value, row, index) => {
-    console.log("value : ", value);
-    if (value === true) {
-        return '<span class="badge bg-danger">false</span>';
-    } else {
+    // console.log("value : ", row);
+    if (row.FFEntryStatus === true) {
         return '<span class="badge bg-success">true</span>';
+
+    } else {
+        return '<span class="badge bg-danger">false</span>';
     };
 };
 

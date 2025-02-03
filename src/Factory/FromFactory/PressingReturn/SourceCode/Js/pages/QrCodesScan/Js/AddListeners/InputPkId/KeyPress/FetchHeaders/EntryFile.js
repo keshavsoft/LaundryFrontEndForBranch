@@ -8,7 +8,7 @@ let StartFunc = () => {
     inDataToInsert.BranchName = localStorage.getItem("BranchName");
     let modifiedBranch = inDataToInsert.BranchName.replace("BranOrders", "");
     inDataToInsert.BranchName = modifiedBranch;
-    inDataToInsert.DCFactory = jFLocalFromDomDCFactoryTextId();
+    inDataToInsert.FactoryName = jFLocalFromDomDCFactoryTextId();
 
     KeysJson.body = JSON.stringify(inDataToInsert);
 
@@ -65,9 +65,9 @@ let jFLocalFromDomInputFactorySelectedId = () => {
 };
 
 let jFLocalFromDomDCFactoryTextId = () => {
-    let jVarLocalHtmlDCFactoryTextId = 'DCFactoryTextId';
+    let jVarLocalHtmlDCFactoryTextId = 'DCFactoryDCDetailsTextId';
     let jVarHtmlDCFactoryTextId = document.getElementById(jVarLocalHtmlDCFactoryTextId);
-    let jVarHtmlDCFactoryTextIdValue = jVarHtmlDCFactoryTextId.value.trim();
+    let jVarHtmlDCFactoryTextIdValue = jVarHtmlDCFactoryTextId.innerHTML.trim();
     return jVarHtmlDCFactoryTextIdValue;
 };
 
