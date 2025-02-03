@@ -7,7 +7,7 @@ import { StartFunc as responseHandler } from "./responseHandler/EntryFile.js";
 const StartFunc = () => {
     var $table = $('#table');
     let jVarLocalVoucherRef = getUrlQueryParams({ inGetKey: "VoucherRef" });
-    let jVarLocalFactoryName = localStorage.getItem("BranchName");
+    let jVarLocalFactoryName = localStorage.getItem("FactoryName");
     optionsJson.onClickRow = onClickRow;
     optionsJson.queryParams = queryParams;
     optionsJson.responseHandler = responseHandler;
