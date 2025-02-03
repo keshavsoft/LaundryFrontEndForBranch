@@ -2,6 +2,7 @@ import { StartFunc as ColumnOperate } from "./ColumnSerial/entryFile.js";
 import { StartFunc as ColumnScan } from "./ColumnScan/entryFile.js";
 import { StartFunc as ItemsDetails } from "./ItemsDetails/entryFile.js";
 import { StartFunc as EntryScanCount } from "./EntryScanCount/entryFile.js";
+import { StartFunc as ColumnPending } from "./ColumnPending/entryFile.js";
 
 
 let StartFunc = ({ inColumns }) => {
@@ -26,6 +27,12 @@ let StartFunc = ({ inColumns }) => {
 
     if (LocalEntryScanCount === undefined === false) {
         EntryScanCount({ inFindColumn: LocalEntryScanCount });
+    };
+
+    let LocalColumnPending= LocalColumns.find(element => element.field === "pending");
+
+    if (LocalColumnPending === undefined === false) {
+        ColumnPending({ inFindColumn: LocalColumnPending });
     };
 };
 
