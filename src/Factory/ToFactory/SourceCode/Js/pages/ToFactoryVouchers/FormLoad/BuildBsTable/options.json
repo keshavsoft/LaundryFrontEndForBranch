@@ -54,7 +54,7 @@
             "formatter": ""
         },
         {
-            "title": "Pending",
+            "title": "EntryScanPending",
             "field": "pending",
             "footerFormatter": "",
             "formatter": ""
