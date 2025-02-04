@@ -12,7 +12,7 @@ let StartFunc_Old_Post = async ({ inBodyData }) => {
 };
 
 let StartFunc = async ({ inBodyData }) => {
-    debugger;
+    // debugger;
     let jVarLocalMobileNumber = inBodyData.Mobile;
 
     let jVarLocalBranchName = localStorage.getItem("BranchName");

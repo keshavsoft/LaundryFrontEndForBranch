@@ -8,7 +8,7 @@ import { StartFunc as Customer500StatusFile } from "./AfterFetch/500StatusFile.j
 
 let StartFunc = async (inEvent) => {
     inEvent.preventDefault();
-    debugger;
+    // debugger;
 
     let jVarLocalFromCheck = CheckFunc();
 
