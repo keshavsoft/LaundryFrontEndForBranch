@@ -47,6 +47,7 @@
             "title": "Settlement",
             "field":"AggValues.SettlementAmount",
             "footerFormatter": "priceFormatter",
+            "formatter":"symbolFormatPrice",
             "align":"right",
             "class": "d-none d-sm-table-cell"
         }
