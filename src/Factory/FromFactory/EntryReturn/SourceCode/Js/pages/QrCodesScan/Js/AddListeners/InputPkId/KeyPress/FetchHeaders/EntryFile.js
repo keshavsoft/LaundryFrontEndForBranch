@@ -64,7 +64,7 @@ let jFLocalFromDomInputFactorySelectedId = () => {
     return jVarHtmlInputFactorySelectedIdValue;
 };
 
-let jFLocalFromDomDCFactoryTextId = () => {
+let k = () => {
     let jVarLocalHtmlDCFactoryTextId = 'DCFactoryDCDetailsTextId';
     let jVarHtmlDCFactoryTextId = document.getElementById(jVarLocalHtmlDCFactoryTextId);
     let jVarHtmlDCFactoryTextIdValue = jVarHtmlDCFactoryTextId.innerHTML.trim();
