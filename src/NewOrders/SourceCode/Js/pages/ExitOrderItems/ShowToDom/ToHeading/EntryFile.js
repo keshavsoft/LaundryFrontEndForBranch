@@ -11,11 +11,14 @@ const StartFunc = () => {
 
 let jFLocalToInputBranchNameAnchorId = (inValue) => {
     let jVarLocalHtmlId = 'BranchNameAnchorId';
+    const CommonReplaceText = "BranOrders";
+    let LocalTable = inValue.replace(CommonReplaceText, "");
     let jVarLocalBranchNameAnchorId = document.getElementById(jVarLocalHtmlId);
 
     if (jVarLocalBranchNameAnchorId === null === false) {
-        jVarLocalBranchNameAnchorId.innerHTML = inValue;
+        jVarLocalBranchNameAnchorId.innerHTML = LocalTable;
     };
+yuf-wnbz-jtk
 };
 
 let jFLocalToInputOrderNumberId = (inValue) => {
