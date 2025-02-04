@@ -4,7 +4,7 @@ let StartFunc = ({ inData }) => {
     let jVarLocalDataNeeded = inData;
 
     let jVarLocalModalBody = document.getElementById("ModalBody");
-
+    jVarLocalModalBody.innerHTML = "";
     jVarLocalDataNeeded.map(element => {
         const str = StartFuncSingleQrcode({ inData: element });
         jVarLocalModalBody.innerHTML += str;
