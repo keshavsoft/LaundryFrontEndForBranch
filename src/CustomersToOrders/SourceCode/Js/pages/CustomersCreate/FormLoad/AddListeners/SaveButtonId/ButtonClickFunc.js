@@ -7,12 +7,14 @@ import { StartFunc as Order500StatusFile } from "../AfterFetch/500StatusFile.js"
 import { StartFunc as Customer500StatusFile } from "./AfterFetch/500StatusFile.js";
 
 let StartFunc = async (inEvent) => {
-    inEvent.preventDefault()
+    inEvent.preventDefault();
+    debugger;
 
     let jVarLocalFromCheck = CheckFunc();
 
     if (jVarLocalFromCheck) {
         let LocalBodyData = FetchHeaders();
+
         let jVarLocalResponse = await StartFuncFetchFuncs({ inBodyData: LocalBodyData });
 
         if (jVarLocalResponse.status === 200) {

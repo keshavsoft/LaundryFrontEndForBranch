@@ -1,5 +1,6 @@
 {
     "RedirectToUrl": "CustomersShowAll.html",
     "PresentUrl": "CustomersCreate.html",
-    "FetchUrl": "/Custom/Clients/Laundry/Orders/NewOrder"
+    "FetchUrl_Old_Post": "/Custom/Clients/Laundry/Orders/NewOrder",
+    "FetchUrl": "/Custom/Cleaning/Branch/Order/NewOrderV1/InSertOrder/{BranchName}/{MobileNumber}"
 }
