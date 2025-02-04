@@ -67,6 +67,7 @@
                                         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                                 </svg>
                             </button>
+                            <button class="btn" style="background-color: #f3129d; color: white;" type="button" id="CustomerAlter" data-bs-toggle="modal" data-bs-target="#editCustomerModal">Edit</button>
                         </div>
                     </div>
 
@@ -197,6 +198,53 @@
                         </div>
                         <div class="text-center mt-3">
                             <a href="#">Forgot password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editCustomerModal" tabindex="-1" aria-labelledby="editCustomerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editCustomerModalLabel">Edit Customer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="return false" id="FormId">
+                        <div class="mb-3">
+                            <label class="form-label">Customer Name</label>
+                            <input id="CustomerName" name="CustomerName" type="text" class="form-control" autocomplete="off" >
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Mobile</label>
+                            <input id="CustomerMobileNumber" name="Mobile" type="number" class="form-control" autocomplete="off" >
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">DOB</label>
+                            <input name="DOB" type="date" id="dob" class="form-control" autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">GST Number</label>
+                            <input name="GSTNumber" id="CustomerGST" type="text" class="form-control" autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Location</label>
+                            <input name="City" type="text" id="CustomerLocation" class="form-control" autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Occupation</label>
+                            <input name="Occupation" type="text" id="CustomerOccupation" class="form-control" autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Company Name</label>
+                            <input name="CompanyName" type="text" class="form-control" id="CustomerCompany" autocomplete="off">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" id="ModelAlter">Save</button>
                         </div>
                     </form>
                 </div>
