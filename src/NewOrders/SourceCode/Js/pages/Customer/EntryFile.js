@@ -14,25 +14,21 @@ const StartFunc = async () => {
     StartFuncShowOnDom();
 };
 
-
 document.addEventListener("DOMContentLoaded", function () {
     let editCustomerModal = document.getElementById('editCustomerModal');
+    let jVarLocalHtmlId = 'CustomerNameInputId';
+    let jVarLocalCustomerNameInputId = document.getElementById(jVarLocalHtmlId);
+
     editCustomerModal.addEventListener('shown.bs.modal', function () {
         document.getElementById('CustomerName').focus();
     });
 
-    const myModalEl = document.getElementById('myModal')
-    myModalEl.addEventListener('hidden.bs.modal', event => {
-        LocalFuncForCustomerNameInputIdFocus();
-    })
+    editCustomerModal.addEventListener('hidden.bs.modal', () => {
+        setTimeout(() => {
+            jVarLocalCustomerNameInputId.setAttribute("tabindex", "-1")
+            jVarLocalCustomerNameInputId.focus();
+        }, 5);
+    });
 });
 
-let LocalFuncForCustomerNameInputIdFocus = () => {
-    let jVarLocalHtmlId = 'CustomerNameInputId';
-    let jVarLocalCustomerNameInputId = document.getElementById(jVarLocalHtmlId);
-
-    if (jVarLocalCustomerNameInputId === null === false) {
-        jVarLocalCustomerNameInputId.focus();
-    };
-};
 StartFunc().then();
