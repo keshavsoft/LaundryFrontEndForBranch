@@ -1,5 +1,6 @@
 let StartFunc = ({ inData }) => {
-    
+   
+   jFLocalToInputpkId({ inValue:inData.pk });
     jFLocalToInputCustomerName({ inValue:inData.CustomerName });
     jFLocalToInputCustomerMobileNumber({ inValue:inData.Mobile });
     jFLocalToInputdob({ inValue:inData.DOB });
@@ -10,7 +11,16 @@ let StartFunc = ({ inData }) => {
 
 };
 
-let jFLocalToInputCustomerName = (inValue) => {
+let jFLocalToInputpkId = ({inValue}) => {
+   let jVarLocalHtmlId = 'pkId';
+  let jVarLocalCustomerName = document.getElementById(jVarLocalHtmlId);
+  
+  if (jVarLocalCustomerName === null === false) {
+     jVarLocalCustomerName.value = inValue;
+  };
+};
+
+let jFLocalToInputCustomerName = ({inValue}) => {
     let jVarLocalHtmlId = 'CustomerName';
    let jVarLocalCustomerName = document.getElementById(jVarLocalHtmlId);
    
@@ -19,7 +29,7 @@ let jFLocalToInputCustomerName = (inValue) => {
    };
 };
 
-let jFLocalToInputCustomerMobileNumber = (inValue) => {
+let jFLocalToInputCustomerMobileNumber = ({inValue}) => {
     let jVarLocalHtmlId = 'CustomerMobileNumber';
    let jVarLocalCustomerMobileNumber = document.getElementById(jVarLocalHtmlId);
    
@@ -28,7 +38,7 @@ let jFLocalToInputCustomerMobileNumber = (inValue) => {
    };
 };
 
-let jFLocalToInputdob = (inValue) => {
+let jFLocalToInputdob = ({inValue}) => {
     let jVarLocalHtmlId = 'dob';
    let jVarLocaldob = document.getElementById(jVarLocalHtmlId);
    
@@ -37,7 +47,7 @@ let jFLocalToInputdob = (inValue) => {
    };
 };
 
-let jFLocalToInputCustomerGST = (inValue) => {
+let jFLocalToInputCustomerGST = ({inValue}) => {
     let jVarLocalHtmlId = 'CustomerGST';
    let jVarLocalCustomerGST = document.getElementById(jVarLocalHtmlId);
    
@@ -46,7 +56,7 @@ let jFLocalToInputCustomerGST = (inValue) => {
    };
 };
 
-let jFLocalToInputCustomerLocation = (inValue) => {
+let jFLocalToInputCustomerLocation = ({inValue}) => {
     let jVarLocalHtmlId = 'CustomerLocation';
    let jVarLocalCustomerLocation = document.getElementById(jVarLocalHtmlId);
    
@@ -55,7 +65,7 @@ let jFLocalToInputCustomerLocation = (inValue) => {
    };
 };
 
-let jFLocalToInputCustomerOccupation = (inValue) => {
+let jFLocalToInputCustomerOccupation = ({inValue}) => {
     let jVarLocalHtmlId = 'CustomerOccupation';
    let jVarLocalCustomerOccupation = document.getElementById(jVarLocalHtmlId);
    
@@ -64,7 +74,7 @@ let jFLocalToInputCustomerOccupation = (inValue) => {
    };
 };
 
-let jFLocalToInputCustomerCompany = (inValue) => {
+let jFLocalToInputCustomerCompany = ({inValue}) => {
     let jVarLocalHtmlId = 'CustomerCompany';
    let jVarLocalCustomerCompany = document.getElementById(jVarLocalHtmlId);
    
