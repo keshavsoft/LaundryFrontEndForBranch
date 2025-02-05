@@ -3,7 +3,7 @@ import getUrlJson from './getUrl.json' with {type: 'json'};
 let StartFunc = async () => {
     let jVarLocalFetchUrl = getUrlJson.GetEndPoint;
     const jVarLocalFromDom = jFLocalCustomerNameInputId();
-    debugger;
+    // debugger;
     const jVarLocalMobileFromDom = jVarLocalFromDom.split(":")[1].trim();
 
     const jVarLocalReplaceMobile = jVarLocalFetchUrl.replace("{MobileNumber}", jVarLocalMobileFromDom);

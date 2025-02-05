@@ -1,10 +1,5 @@
 let StartFunc = ({ inFetchData }) => {
-    console.log("inFetchData:", inFetchData);
-    const url = new URL(window.location.href);
-    let NewURl = new URL("./Customer.html", url);
-    const new_url = new URL(`${NewURl.href}`);
-    window.location.href = new_url.href;
-
+    $('#editCustomerModal').modal('hide')
 };
 
 
