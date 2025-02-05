@@ -1,7 +1,10 @@
 import { StartFunc as StartFuncShowOnModal } from "./ShowOnModal.js";
 import ConfigJson from '../../../../Config.json' with {type: 'json'};
+import { StartFunc as StartFuncCheckFunc } from "../OnPostBody/AddOnModalSaveButtonId/CheckFunc.js";
+
 
 const StartFunc = ({ inRow }) => {
+    StartFuncCheckFunc();
     let jVarLocalDataForTable = jFLocalTransformData({ inItemSerial: parseInt(inRow.pk) });
 
     var $table = $('#AddOnTable');
