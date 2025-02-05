@@ -1,5 +1,5 @@
 let StartFunc = ({ inFetchData }) => {
-    $('#editCustomerModal').modal('hide')
+    $('#editCustomerModal').modal('hide');
 };
 
 
