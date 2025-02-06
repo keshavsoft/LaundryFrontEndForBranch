@@ -37,6 +37,12 @@
                 "name": "ItemsFilter",
                 "url": "QrAllitemsFilter.html",
                 "icon": "bi bi-circle"
+            },
+            {
+              
+                "name": "OrderFilter",
+                "url": "QrAllOrder.html",
+                "icon": "bi bi-circle"  
             }
         ]
     },
