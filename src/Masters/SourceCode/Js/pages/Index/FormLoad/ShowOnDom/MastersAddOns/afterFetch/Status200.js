@@ -1,5 +1,5 @@
 const StartFunc = (data) => {
-    let localAddondata = data.JsonData
+    let localAddondata = data.Count;
     jFLocalToInputAddonsId(localAddondata)
 };
 
