@@ -50,7 +50,6 @@ let StartFunc = ({ inData }) => {
     });
 
     let jVarLocalHtmlQrId = clone.getElementById(`CanvasId`);
-    // jVarLocalHtmlQrId.dataset.qrcode = "keshav"
     jVarLocalHtmlQrId.dataset.qrcode = `${jVarLocalDataNeeded.pk}~`
     jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.pk}-${jVarLocalDataNeeded.OrderNumber}~`
     jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.ItemName}~`
@@ -58,8 +57,6 @@ let StartFunc = ({ inData }) => {
     jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.AddOnDataAsString}~`
     jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.BookingData.OrderData.Currentdateandtime}~`
     jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.DeliveryDateTime}`;
-    console.log("jVarLocalHtmlQrId::", jVarLocalHtmlQrId);
-    // GenerateQrCodeOnModal({ inQrData: jVarLocalDataNeeded, inCanvasId: jVarLocalHtmlQrId })
     const s = new XMLSerializer();
     const str = s.serializeToString(clone);
 
