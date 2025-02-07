@@ -1,7 +1,7 @@
 import { StartFunc as StartFuncButtonClickFunc } from "./MultipleQrCodeButtonId/2-ButtonClickFunc.js";
 
 const StartFunc = (row, $element, field) => {
-    if (field === "QRPrint") {
+    if (field === "TotalItems") {
         StartFuncButtonClickFunc({ inRowData: row });
     };
 };

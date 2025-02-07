@@ -30,10 +30,13 @@
             "class": "d-none d-sm-table-cell"
         },
         {
-            "title": "QrCodes",
-            "field":"QRPrint",
-            "formatter": "jFLocalQrCodeDetails",
-            "footerFormatter": "QrFormatter"
+            "title": "Qr Print",
+            "field":"TotalItems"
+            
+        },
+        {
+            "title": "Print",
+            "field":"OrderPrint"
             
         },
         {
@@ -46,7 +49,6 @@
         {
             "title": "Settlement",
             "field":"AggValues.SettlementAmount",
-            "footerFormatter": "priceFormatter",
             "formatter":"symbolFormatPrice",
             "align":"right",
             "class": "d-none d-sm-table-cell"
