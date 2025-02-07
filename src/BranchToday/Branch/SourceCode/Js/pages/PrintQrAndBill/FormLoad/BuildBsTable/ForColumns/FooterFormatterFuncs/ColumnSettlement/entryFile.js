@@ -1,5 +1,6 @@
 let StartFunc = ({ inFindColumn }) => {
     inFindColumn.footerFormatter = priceFormatter;
+    inFindColumn.formatter = jFLocalQrCodeDetails;
 };
 
 function priceFormatter(data) {
@@ -10,5 +11,17 @@ function priceFormatter(data) {
         return sum + i
     }, 0)
 }
+
+function jFLocalQrCodeDetails(value, row, index) {
+    console.log("row", row);
+
+    if (row.AggValues.SettlementAmount) {
+        return [
+            `<a href="#">`,
+            `</a>`, '₹ ',
+            `${row.AggValues.SettlementAmount}`,
+        ].join('')
+    }
+};
 
 export { StartFunc };
