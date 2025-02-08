@@ -11,6 +11,7 @@
         {
             "field": "pk",
             "title": "Order#"
+            
         },
         {
             "field": "OrderData.Currentdateandtime",
@@ -29,6 +30,7 @@
             "title": "Items",
             "footerFormatter": "ItemsFormatter",
             "class": "d-none d-sm-table-cell"
+
         },
         {
             "field": "AggValues.SettlementAmount",
