@@ -6,10 +6,8 @@ import { StartFunc as StartFuncBSTables } from "./BSTables/EntryFile.js";
 const StartFunc = () => {
     StartFuncBSTables();
     StartFuncBuildBSTables();
-
     StartFuncAddListeners();
     StartFuncFromUrlParams();
-
     jFLocalRunCustomerButtonClick();
 };
 

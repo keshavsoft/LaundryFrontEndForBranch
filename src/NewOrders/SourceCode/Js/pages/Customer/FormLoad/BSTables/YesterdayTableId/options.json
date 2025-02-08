@@ -11,13 +11,13 @@
         {
             "field": "pk",
             "title": "Order#"
+            
         },
         {
             "field": "OrderData.Currentdateandtime",
             "title": "Date",
             "formatter": "LocalDate",
-            "visible": false,
-            "class": "d-none d-sm-table-cell"
+            "visible": false
         },
         {
             "field": "DateTime",
@@ -30,6 +30,7 @@
             "title": "Items",
             "footerFormatter": "ItemsFormatter",
             "class": "d-none d-sm-table-cell"
+
         },
         {
             "field": "AggValues.SettlementAmount",
