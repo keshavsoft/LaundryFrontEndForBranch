@@ -69,14 +69,13 @@
                                         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                                 </svg>
                             </button>
-                            <button class="btn border-light" style="background-color: #f3129d; color: white;"
-                                type="button" id="CustomerAlter" data-bs-toggle="modal"
-                                data-bs-target="#editCustomerModal">
+                            <button class="btn border-light" style="background-color: #f3129d; color: white;" type="button"
+                                id="CustomerAlter" data-bs-toggle="modal" data-bs-target="#editCustomerModal">
                                 <i class="bi bi-pencil-fill"></i>
                             </button>
                         </div>
                     </div>
-
+            
                     <!-- New Order Button -->
                     <div class="col-auto">
                         <button class="btn" style="background-color: #3498db; color: white; width: 120px;" type="button"
@@ -85,55 +84,37 @@
                         </button>
                     </div>
                     <!-- Create Customer Button -->
-
-
                     <div class="col-auto">
                         <a class="btn" style="background-color: #2ecc71; color: white; width: 150px;"
                             href="../../CustomersToOrders/HtmlFiles/CustomersCreate.html">
                             <i class="bi bi-person-plus-fill"></i>NewCustomer
                         </a>
                     </div>
-
+            
                     <!-- Reload Button -->
                     <div class="col-auto">
-                        <a class="btn" style="background-color: #9b59b6; color: white; width: 110px;"
-                            id="MasterButtonId" href="#">
+                        <a class="btn" style="background-color: #9b59b6; color: white; width: 110px;" id="MasterButtonId" href="#">
                             <i class="bi bi-arrow-clockwise"></i>Reload
                         </a>
                     </div>
-
+            
                     <!-- Today Button -->
                     <div class="col-auto">
-                        <a class="btn" style="background-color: #1abc9c; color: white; width: 130px;"
-                            id="MasterButtonId" href="./NewOrdersMenu.html">
+                        <a class="btn" style="background-color: #1abc9c; color: white; width: 130px;" id="MasterButtonId"
+                            href="./NewOrdersMenu.html">
                             <i class="bi bi-calendar-check"></i> DashBoard
                         </a>
                     </div>
-
-
-                    <!-- Branch Button -->
-                    <div class="col-auto">
-                        <a class="btn" style="background-color: #34495e; color: white; width: 60px;" id="BranchButtonId"
-                            href="#">
+            
+                    <!-- Align Branch Button to the right -->
+                    <div class="col-auto ms-auto">
+                        <a class="btn" style="background-color: #34495e; color: white; width: 70px;" id="BranchButtonId" href="#">
                             <i class="bi bi-house"></i>
                         </a>
                     </div>
-                    <!-- AddItems Html type Select -->
-                    <div class="col-auto">
-                        <select name="AddItemsHtml" id="AddItemsHtmlId" class="form-select">
-                            <option value="AddRight">AddRight</option>
-                            <option value="AddBottom">AddBottom</option>
-                        </select>
-                    </div>
-                    <!-- Open the selected html for add items to new order -->
-                    <div class="col-auto">
-                        <button class="btn" style="background-color: #34495e; color: white; width: 60px;"
-                            id="AddItemsButtonId" href="#">
-                            <i class="bi bi-house"></i>
-                        </button>
-                    </div>
                 </div>
             </div>
+            
             <div class="card-body">
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -303,68 +284,6 @@
             </table>
         </template>
 
-        <script>
-            function jFLocalSerialColumn(value, row, index) {
-                return index + 1;
-            };
-
-        </script>
-        <script>
-
-            function TimeDiff(value) {
-                if (value === undefined) {
-                    return "";
-                }
-                var diffMs = (new Date() - new Date(value)); // milliseconds between now & Christmas
-                var diffDays = Math.floor(diffMs / 86400000); // days
-                var diffHrs = Math.floor((diffMs % 86400000) / 3600000); // hours
-                var diffMins = Math.round(((diffMs % 86400000) % 3600000) / 60000); // minutes
-
-                return diffDays + " days, " + diffHrs + " hours, " + diffMins + " min...";
-
-                // console.log(diffDays + " days, " + diffHrs + " hours, " + diffMins + " min...");
-            };
-
-            function LocalDate(value) {
-                // Create a new Date object with the specified date
-                const date = new Date(value);
-
-                // Get the day, month, and year
-                const day = String(date.getDate()).padStart(2, '0');
-                const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are zero-indexed
-                const year = date.getFullYear();
-
-                // Format the date as "DD-MM-YYYY"
-                const formattedDate = `${day}-${month}-${year}`;
-                return formattedDate;
-            };
-
-            function ItemsFormatter(data) {
-                var field = this.field
-                var tPcs = data.map(function (row) {
-                    return +row.AggValues.ItemDetails.split(' / ')[1]
-                }).reduce(function (sum, i) {
-                    return sum + i
-                }, 0)
-                var tPTpes = data.map(function (row) {
-                    return +row.AggValues.ItemDetails.split(' / ')[0]
-                }).reduce(function (sum, i) {
-                    return sum + i
-                }, 0)
-
-                return `${tPTpes}/${tPcs}`
-            };
-
-            function priceFormatter(data) {
-                var field = this.field
-                return '₹ ' + data.map(function (row) {
-                    return +row.AggValues.SettlementAmount
-                }).reduce(function (sum, i) {
-                    return sum + i
-                }, 0)
-            }
-
-        </script>
 
         <!-- <script type="module" src="../Js/pages/Customer/EntryFile.js"></script> -->
         <script type="module" src="../Js/pages/Customer/EntryFile.js"></script>

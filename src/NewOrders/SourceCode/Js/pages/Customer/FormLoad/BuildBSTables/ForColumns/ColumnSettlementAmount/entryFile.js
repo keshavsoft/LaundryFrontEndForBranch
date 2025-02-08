@@ -12,7 +12,6 @@ const jFLocalFormatterFunc = (value, row, index) => {
 };
 
 function priceFormatter(data) {
-    console.log("data : ", data);
 
     return '₹ ' + data.map(function (row) {
         return +row.AggValues.SettlementAmount;

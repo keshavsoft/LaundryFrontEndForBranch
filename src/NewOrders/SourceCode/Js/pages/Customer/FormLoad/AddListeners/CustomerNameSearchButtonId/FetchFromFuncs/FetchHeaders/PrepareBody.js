@@ -1,6 +1,6 @@
 const StartFunc = () => {
     let jVarLocalCustomersDataListId = document.getElementById("CustomerNameInputId");
-    console.log(jVarLocalCustomersDataListId.value);
+    // console.log(jVarLocalCustomersDataListId.value);
     let jVarLocalCustomerValue = jVarLocalCustomersDataListId.value;
     let jVarLocalCustomernumbersOnly = jVarLocalCustomerValue.replace(/\D/g, "");
 
