@@ -1,5 +1,6 @@
 import { StartFunc as ColumnOperate } from "./ColumnSerial/entryFile.js";
 import { StartFunc as StartFuncSettlementAmount } from "./ColumnSettlementAmount/entryFile.js";
+import { StartFunc as ColumnItemDetails } from "./ColumnItemDetails/entryFile.js";
 import { StartFunc as StartFuncColumnAddOns } from "./ColumnAddOns/entryFile.js";
 import { StartFunc as StartFuncColumnopts } from "./Columnopts/entryFile.js";
 import { StartFunc as StartFuncColumnAmount } from "./ColumnAmount/entryFile.js";
@@ -14,6 +15,7 @@ let StartFunc = ({ inColumns }) => {
     let LocalColumns = inColumns;
     let LocalColumnOperateFine = LocalColumns.find(element => element.field === "KS-Serial");
     let LocalColumnSettlementAmount = LocalColumns.find(element => element.field === "AggValues.SettlementAmount");
+    let LocalColumnItemDetails = LocalColumns.find(element => element.field === "AggValues.ItemDetails");
     let LocalColumnAddOns = LocalColumns.find(element => element.field === "KS-AddOns");
     let LocalColumnopts = LocalColumns.find(element => element.field === "Opts");
     let LocalColumnAmount = LocalColumns.find(element => element.field === "KS-Amount");
@@ -32,6 +34,9 @@ let StartFunc = ({ inColumns }) => {
 
     if (LocalColumnSettlementAmount === undefined === false) {
         StartFuncSettlementAmount({ inFindColumn: LocalColumnSettlementAmount });
+    };
+    if (LocalColumnItemDetails === undefined === false) {
+        ColumnItemDetails({ inFindColumn: LocalColumnItemDetails });
     };
 
     if (LocalColumnAddOns === undefined === false) {
