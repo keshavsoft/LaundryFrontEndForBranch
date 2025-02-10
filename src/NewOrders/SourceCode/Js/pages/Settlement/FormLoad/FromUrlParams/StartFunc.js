@@ -1,26 +1,12 @@
-const getUrlQueryParams = ({ inGetKey }) => new URLSearchParams(window.location.search).get(inGetKey);
+let StartFunc = () => {
+    let jVarLocalBranchId = 'BranchNameId';
+    let jVarlocalBranch = document.getElementById(jVarLocalBranchId);
+    let jVarLocalBranchName = localStorage.getItem("BranchName");
+    const modifiedBranch = jVarLocalBranchName.replace("BranOrders", "");
 
-const StartFunc = () => {
-    const branchName = localStorage.getItem("BranchName");
-    const orderNumber = getUrlQueryParams({ inGetKey: "OrderNumber" });
-
-    if (!branchName) {
-        Swal.fire({
-            title: "BranchName!",
-            text: "Not found in URL!",
-            icon: "error"
-        });
-        return;
-    }
-
-    if (!orderNumber) {
-        Swal.fire({
-            title: "OrderNumber!",
-            text: "Not found in URL!",
-            icon: "error"
-        });
-        return;
-    }
+    if (jVarlocalBranch === null === false) {
+        jVarlocalBranch.innerHTML = modifiedBranch;
+    };
 };
 
-export { StartFunc };
+export { StartFunc }

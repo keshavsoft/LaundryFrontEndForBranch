@@ -32,9 +32,9 @@
     <header id="header" class="header fixed-top d-flex align-items-center">
 
         <div class="d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="/Laundry/Branch/NewOrders/HtmlFiles/Customer.html" class="logo d-flex align-items-center">
                 <img src="../assets/static/NiceAdmin/img/logo.png" alt="">
-                <span class="d-none d-lg-block">KeshavSoft</span>
+                <span class="d-none d-lg-block" id="BranchNameId"></span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div>
@@ -307,7 +307,14 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col">
-                            <button type="button" class="btn btn-danger fs-4" id="OrderNumberId">OrderNumber</button>
+                            <button class="btn btn-danger fs-4">
+                            <a class="link-light" href="/Laundry/Branch/NewOrders/HtmlFiles/AddItems.html" id="OrderNumberId">OrderNumber<svg xmlns="http://www.w3.org/2000/svg"
+                            width="30" height="20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                            d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708z" />
+                            </svg>
+                            </a>
+                            </button>
                         </div>
                         <div class="col"> <input class="form-control fs-4" tabindex="-1" type="text" id="OrderDate" readonly></div>
                         <div class="col fs-1" id="OrderAmountId">OrderAmount</div>
@@ -551,6 +558,15 @@
             </div>
         </div>
     </div>
+
+    <!-- <button class="rounded-button bottom">
+        <a class="link-light" href="/Laundry/Branch/NewOrders/HtmlFiles/AddItems.html"><svg xmlns="http://www.w3.org/2000/svg"
+                width="30" height="20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708z" />
+            </svg>
+        </a>
+    </button> -->
 
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
