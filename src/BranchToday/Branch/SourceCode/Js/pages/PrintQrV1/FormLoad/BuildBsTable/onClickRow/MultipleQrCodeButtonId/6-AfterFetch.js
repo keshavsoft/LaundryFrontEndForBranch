@@ -1,17 +1,15 @@
 import { StartFunc as StartFuncQrCodeToModal } from "./QrCodeToModal/EntryFile.js";
 
-let StartFunc = ({ inQrCodeData, inRow }) => {
+let StartFunc = ({ inQrCodeData, inRowPk }) => {
     let localQrodeData = inQrCodeData;
-    var jVarLocalRowPk = inRow.pk;
-
     let jVarLocalBranchName = localStorage.getItem("BranchName");
     const modifiedBranch = jVarLocalBranchName.replace("BranOrders", "");
 
-    let localFilterQrcodeData = localQrodeData.filter(element => element.OrderNumber == jVarLocalRowPk && element.BookingData.OrderData.BranchName == modifiedBranch);
+    let localFilterQrcodeData = localQrodeData.filter(element => element.OrderNumber == inRowPk && element.BookingData.OrderData.BranchName == modifiedBranch);
 
     let jFLocalData = jFLocalAddOnData({ inQrCodeData: localFilterQrcodeData });
 
-    StartFuncQrCodeToModal({ inData: jFLocalData, inRow });
+    StartFuncQrCodeToModal({ inData: jFLocalData });
 };
 
 let jFLocalAddOnData = ({ inQrCodeData }) => {

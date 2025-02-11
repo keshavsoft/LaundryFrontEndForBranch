@@ -1,12 +1,12 @@
 import { StartFunc as StartFuncSingleQrcode } from "./SingleQrCode.js";
 
-let StartFunc = ({ inData, inRow }) => {
+let StartFunc = ({ inData }) => {
     let jVarLocalDataNeeded = inData;
 
     let jVarLocalModalBody = document.getElementById("ModalBody");
     jVarLocalModalBody.innerHTML = "";
     jVarLocalDataNeeded.map(element => {
-        const str = StartFuncSingleQrcode({ inData: element, inRow });
+        const str = StartFuncSingleQrcode({ inData: element });
         jVarLocalModalBody.innerHTML += str;
     });
 

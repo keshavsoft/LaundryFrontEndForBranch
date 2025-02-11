@@ -3,7 +3,7 @@ import { StartFunc as StartFuncCheckBeforeFetch } from "./3-CheckBeforeFetch.js"
 import { StartFunc as StartFuncAfterFetch } from "./6-AfterFetch.js";
 
 let StartFunc = async ({ inRowData }) => {
-    var jVarLocalRow = inRowData;
+    var jVarLocalRowPk = inRowData.pk;
 
     Swal.fire({
         title: 'Are you sure?',
@@ -19,10 +19,10 @@ let StartFunc = async ({ inRowData }) => {
         if (result.isConfirmed) {
             if (StartFuncCheckBeforeFetch()) {
                 StartFuncFetchFunc({
-                    inRow: jVarLocalRow
+                    inRowPk: jVarLocalRowPk
                 }).then(ResponseData => {
                     if (ResponseData) {
-                        StartFuncAfterFetch({ inQrCodeData: ResponseData, inRow: jVarLocalRow });
+                        StartFuncAfterFetch({ inQrCodeData: ResponseData, inRowPk: jVarLocalRowPk });
                     };
                 });
             };
