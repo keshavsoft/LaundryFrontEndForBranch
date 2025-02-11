@@ -31,12 +31,12 @@
         ]
     },
     {
-        "name": "QrPrint",
+        "name": "Prints",
         "key": "PrintQr",
-        "icon": "bi bi-qr-code-scan",
+        "icon": "bi bi-printer",
         "children": [
             {
-                "name": "QRPrint",
+                "name": "Print",
                 "url": "PrintQr.html",
                 "icon": "bi bi-plus-square-fill"
             },
@@ -86,10 +86,8 @@
                 "url": "DeleteOrder.html",
                 "icon": "bi bi-box-seam"
             }
-       ]
+        ]
     },
- 
-
     {
         "name": "Reports",
         "isHeading": true

@@ -1,4 +1,4 @@
-let StartFunc = ({ inData, inRow }) => {
+let StartFunc = ({ inData }) => {
     let jVarLocalDataNeeded = inData;
 
     let jVarLocalTemplate = document.getElementById("TemplateForQrCodePrint");
@@ -50,15 +50,13 @@ let StartFunc = ({ inData, inRow }) => {
     });
 
     let jVarLocalHtmlQrId = clone.getElementById(`CanvasId`);
-    console.log("jVarLocalDataNeeded", jVarLocalDataNeeded);
-
     jVarLocalHtmlQrId.dataset.qrcode = `${jVarLocalDataNeeded.pk}~`
     jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.pk}-${jVarLocalDataNeeded.OrderNumber}~`
-    jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.BookingData.OrderData.BranchName}-${jVarLocalDataNeeded.location}~`
     jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.ItemName}~`
-    jVarLocalHtmlQrId.dataset.qrcode += `${inRow.AggValues.ItemDetails}~`
+    jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.WashType}@${jVarLocalDataNeeded.ItemSerial}/${jVarLocalDataNeeded.Pcs}/${jVarLocalDataNeeded.TotalQrCodes}~`
     jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.AddOnDataAsString}~`
-    jVarLocalHtmlQrId.dataset.qrcode += `${new Date(jVarLocalDataNeeded.BookingData.OrderData.Currentdateandtime).toLocaleDateString('en-GB')}@${new Date(jVarLocalDataNeeded.DeliveryDateTime).toLocaleDateString('en-GB')}`
+    jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.BookingData.OrderData.Currentdateandtime}~`
+    jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.DeliveryDateTime}`;
     const s = new XMLSerializer();
     const str = s.serializeToString(clone);
 
