@@ -27,7 +27,10 @@
     "FromFactory-WashingReturnQrCodes": "vite build --config src/Factory/FromFactory/WashingReturnQrCodes/vite.config.js",
     "FromFactory-PressingReturnQrCodes": "vite build --config src/Factory/FromFactory/PressingReturnQrCodes/vite.config.js",
     "FromFactory-CompletionQrCodes": "vite build --config src/Factory/FromFactory/CompletionQrCodes/vite.config.js",
-    "Delivery": "vite build --config src/Delivery/ToChecking/vite.config.js"
+    "Delivery": "vite build --config src/Delivery/ToChecking/vite.config.js",
+    "Orders": "vite build --config src/Reports/Orders/vite.config.js",
+    "Payments": "vite build --config src/Reports/Payments/vite.config.js",
+    "QrCodes": "vite build --config src/Reports/QrCodes/vite.config.js"
   },
   "author": "",
   "license": "ISC",
