@@ -21,7 +21,18 @@
         "name": "Create",
         "key": "Create",
         "icon": "bi bi-plus-circle",
-        "url": "Create.html"
+        "children": [
+            {
+                "name": "CreateDc",
+                "url": "Create.html",
+                "icon": "bi bi-upc-scan"
+            },
+            {
+                "name": "ToScanDc",
+                "url": "CreateScanDc.html",
+                "icon": "bi bi-upc-scan"
+            }
+        ]
     },
     {
         "name": "DC",
