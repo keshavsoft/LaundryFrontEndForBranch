@@ -8,10 +8,17 @@ let StartFunc = ({ inResponse }) => {
     }).then((result) => {
 
         if (result.isConfirmed || result.isDismissed) {
-            window.location.href = "";
+            InputPkId();
         }
     });
 };
 
+const InputPkId = () => {
+    let jVarLocalHtmlId = 'Mobile';
+    let jVarLocalInputPkId = document.getElementById(jVarLocalHtmlId);
+    let jVarLocalLength = jVarLocalInputPkId.value.trim().length;
+    jVarLocalInputPkId.setSelectionRange(0, jVarLocalLength);
+
+};
 
 export { StartFunc }

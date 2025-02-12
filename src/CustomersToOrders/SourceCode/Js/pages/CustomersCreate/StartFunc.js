@@ -1,13 +1,13 @@
 import { StartFunc as StartFuncFormLoad } from "./FormLoad/StartFunc.js";
-// import { StartFunc as LoginModal } from "../../../assets/static/js/Common/NiceAdmin/Header/LoginModal/EntryFile.js";
+import { StartFunc as LoginModal } from "../../../assets/static/js/Common/NiceAdmin/Header/LoginModal/EntryFile.js";
 
 const StartFunc = () => {
-    // let jVarLocalFromAdmin = LoginModal({ inSuccessFunc: StartFuncFormLoad });
-    let jVarLocalFromAdmin = true;
+    let jVarLocalFromAdmin = LoginModal({ inSuccessFunc: StartFuncFormLoad });
 
     if (jVarLocalFromAdmin) {
         dobDateInput();
         StartFuncFormLoad();
+        jFLocalFromDomInputPkId();
     };
 };
 
@@ -20,5 +20,13 @@ const dobDateInput = () => {
     const maxDate = year + '/' + month + '/' + day;
     dobInput.setAttribute("max", maxDate);
 };
+
+let jFLocalFromDomInputPkId = () => {
+    let jVarLocalHtmlInputPkId = 'Mobile';
+    let jVarHtmlInputPkId = document.getElementById(jVarLocalHtmlInputPkId);
+    let jVarHtmlInputPkIdValue = jVarHtmlInputPkId.value.trim();
+    return parseInt(jVarHtmlInputPkIdValue);
+};
+
 
 StartFunc();
