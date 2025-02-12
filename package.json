@@ -30,7 +30,9 @@
     "Delivery": "vite build --config src/Delivery/ToChecking/vite.config.js",
     "Orders": "vite build --config src/Reports/Orders/vite.config.js",
     "Payments": "vite build --config src/Reports/Payments/vite.config.js",
-    "QrCodes": "vite build --config src/Reports/QrCodes/vite.config.js"
+    "QrCodes": "vite build --config src/Reports/QrCodes/vite.config.js",
+    "AllDays": "vite build --config src/AllDays/Branch/vite.config.js"
+
   },
   "author": "",
   "license": "ISC",
