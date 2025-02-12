@@ -16,6 +16,6 @@ let StartFunc = () => {
     $table.bootstrapTable("load", filteredData);
 
 };
-
+document.getElementById("ThisWeekRefreshButtonId").addEventListener("click", StartFunc);
 
 export { StartFunc };
