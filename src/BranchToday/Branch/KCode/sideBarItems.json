@@ -41,6 +41,11 @@
                 "icon": "bi bi-plus-square-fill"
             },
             {
+                "name": "QR Only",
+                "url": "PrintQrOnly.html",
+                "icon": "bi bi-plus-square-fill"
+            },
+            {
                 "name": "QR And Bill",
                 "url": "PrintQrAndBill.html",
                 "icon": "bi bi-plus-square-fill"
