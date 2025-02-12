@@ -5,10 +5,7 @@
     "idfield": "pk",
     "showFooter": "true",
     "filterControl": true,
-    "pagination":"true",
-    "pageList": "[5, 10, 25 ]",
     "pageSize": "5",
-   
     "data": [],
     "columns": [
         {
