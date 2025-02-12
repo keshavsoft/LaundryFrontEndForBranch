@@ -18,7 +18,7 @@ let StartFunc = (inData) => {
 
     $table.bootstrapTable("load", jVarLocalOrdered);
     jFLocalYesterdayRefreshButtonId()
-    jFLocalThisWeekRefreshButtonId()
+    // jFLocalThisWeekRefreshButtonId()
 };
 
 let jFLocalInsertAggValues = ({ inData }) => {
