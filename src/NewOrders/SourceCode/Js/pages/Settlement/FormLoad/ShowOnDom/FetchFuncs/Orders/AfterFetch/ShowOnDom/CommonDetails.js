@@ -15,6 +15,7 @@ const StartFunc = ({ inData }) => {
         { id: 'OrderNumberId', value: inData.OrderNumber, isInnerHTML: true },
         { id: 'OrderInfoCustomerNameId', value: inData.CustomerName },
         { id: 'BranchNameId', value: inData.BranchName },
+        { id: 'BranchDisplay', value: inData.BranchName },
         { id: 'OrderDate', value: inData.Date },
         { id: 'OrderInfoCustomerMobileId', value: inData.Mobile }
     ];
