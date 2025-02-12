@@ -7,6 +7,11 @@ let StartFunc = () => {
     if (jVarlocalBranch === null === false) {
         jVarlocalBranch.innerHTML = modifiedBranch;
     };
+
+    let branchDisplayElement = document.getElementById("BranchDisplay");
+    if (branchDisplayElement) {
+        branchDisplayElement.textContent = modifiedBranch;
+    }
 };
 
 export { StartFunc }
