@@ -56,7 +56,7 @@
         {
             "title": "Send",
             "field": "EntryScanCount",
-            "align": "right",
+            "align": "center",
             "footerFormatter": "",
             "class": "d-none d-sm-table-cell"
         }
