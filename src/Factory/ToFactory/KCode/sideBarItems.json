@@ -18,12 +18,12 @@
         "url": "./Menu.html"
     },
     {
-        "name": "CreateDc",
+        "name": "Dc-Create",
         "url": "Create.html",
         "icon": "bi bi-plus-circle"
     },
     {
-        "name": "ToScanDc",
+        "name": "Dc-Scan",
         "url": "CreateScanDc.html",
         "icon": "bi bi-upc-scan"
     },
