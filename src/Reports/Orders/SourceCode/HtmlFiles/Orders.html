@@ -12,15 +12,38 @@
         </ol>
     </nav>
 </div>
+
 <section class="section">
+
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-md-4">
+            <div class="form-group row align-items-centerv">
+                <label for="FromDateInputId" class="col-md-4 col-form-label text-right">From Date</label>
+                <div class="col-md-8">
+                    <input id="FromDateInputId" type="date" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group row align-items-center">
+                <label for="ToDateInputId" class="col-md-4 col-form-label text-right">To Date</label>
+                <div class="col-md-8">
+                    <input id="ToDateInputId" type="date" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-center justify-content-end">
+            <button id="ShowButtonId" class="btn btn-success">Show</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-11">
             <div class="card">
                 <div class="card-body">
 
                     <div class="spinner-border" id="SpinnerId" role="status">
                         <span class="visually-hidden">Loading...</span>
-
                     </div>
                     <table id="table">
                     </table>
@@ -137,7 +160,7 @@
         }, 0)
     }
 
-    
+
     function pcsFormatter(data) {
         var field = this.field
         var tPcs = data.map(function (row) {
