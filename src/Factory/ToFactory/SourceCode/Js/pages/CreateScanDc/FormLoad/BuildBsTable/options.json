@@ -54,7 +54,7 @@
             "formatter": ""
         },
         {
-            "title": "EntryScanned",
+            "title": "Send",
             "field": "EntryScanCount",
             "align": "right",
             "footerFormatter": "",
