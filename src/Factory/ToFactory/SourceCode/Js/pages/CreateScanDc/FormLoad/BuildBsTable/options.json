@@ -54,12 +54,6 @@
             "formatter": ""
         },
         {
-            "title": "EntryScanPending",
-            "field": "pending",
-            "footerFormatter": "",
-            "formatter": ""
-        },
-        {
             "title": "EntryScanned",
             "field": "EntryScanCount",
             "align": "right",
