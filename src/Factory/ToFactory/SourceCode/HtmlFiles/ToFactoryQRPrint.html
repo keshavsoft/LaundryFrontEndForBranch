@@ -28,7 +28,7 @@
 
 {% block js %}
 
-<div class="modal fade" id="ModalForQrCodeOnly" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="ModalForQrCodeOnly" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -55,28 +55,8 @@
             </div>
         </div>
     </div>
-</div>
-<!-- <script>
-    
+</div> -->
 
-    function totalFormatter(data) {
-        var field = this.field;
-        let LocalTotal = data.map(function (row) {
-            if (row[field] === undefined) {
-                return 0;
-            };
-            return +row[field];
-        }).reduce(function (sum, i) {
-            return sum + i
-        }, 0);
-
-        return LocalTotal.toFixed(2);
-    };
-    
-    
-    
-    
-</script> -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script
