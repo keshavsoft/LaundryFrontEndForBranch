@@ -2,9 +2,8 @@ let StartFunc = () => {
     var $table = $('#table');
     let jVarLocalSortByDate = jFLocalSortByDate();
     let jVarLocalSortByAccountName = jVarLocalSortByDate.sort((a, b) => a.value - b.value);
-    let jVarLocalFilterData = jVarLocalSortByAccountName.filter(e => e.BranchScan === true);
 
-    $table.bootstrapTable("load", jVarLocalFilterData);
+    $table.bootstrapTable("load", jVarLocalSortByAccountName);
 };
 
 const jFLocalSortByDate = () => {
