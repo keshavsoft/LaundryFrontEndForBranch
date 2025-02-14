@@ -42,12 +42,6 @@
             "class": "d-none d-sm-table-cell"
         },
         {
-            "title": "Scan",
-            "field": "Scan",
-            "footerFormatter": "",
-            "formatter": ""
-        },
-        {
             "title": "Scanned",
             "field": "ItemDetails",
             "footerFormatter": "",
