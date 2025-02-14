@@ -54,8 +54,8 @@
             "formatter": ""
         },
         {
-            "title": "EntryScanned",
-            "field": "EntryScanCount",
+            "title": "Send",
+            "field": "Send",
             "align": "center",
             "footerFormatter": "",
             "class": "d-none d-sm-table-cell"
