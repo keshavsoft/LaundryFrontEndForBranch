@@ -23,7 +23,7 @@ let StartFunc = ({ inColumns }) => {
     if (LocalItemDetails === undefined === false) {
         ItemsDetails({ inFindColumn: LocalItemDetails });
     };
-    let LocalEntryScanCount = LocalColumns.find(element => element.field === "EntryScanCount");
+    let LocalEntryScanCount = LocalColumns.find(element => element.field === "Send");
 
     if (LocalEntryScanCount === undefined === false) {
         EntryScanCount({ inFindColumn: LocalEntryScanCount });

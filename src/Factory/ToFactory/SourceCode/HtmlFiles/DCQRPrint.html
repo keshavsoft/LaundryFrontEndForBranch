@@ -3,105 +3,107 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+
   <title>Ultrawash Bill</title>
   <style type="text/css">
     body,
     td,
-    th,h6 {
+    th {
       font-family: Verdana, Geneva, sans-serif;
       font-size: 11px;
     }
   </style>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
   <!-- <script type="module" crossorigin src="../assets/Bill-Cy2TKjDH.js"></script> -->
   <!-- <link rel="modulepreload" crossorigin href="../assets/modulepreload-polyfill-B5Qt9EMX.js"> -->
- 
 </head>
 
 <body>
-  <main>
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col-6 m-3">
-        <div class="row">
-            <div class="col-2">
-                <h6 style="display: inline;">DC No </h6>
-            </div>
-            <div class="col-1">:</div>
-            <div class="col-7">
-                <b>
-                    <input type="text" class="mb-2 form-control rounded p-1" style="display: inline;" id="VoucherNumberDCDetailsTextId" readonly disabled>
-                     <!-- <p style="display: inline;" id="VoucherNumberDCDetailsTextId">Not found</p>  -->
-                </b>
-            </div>
-        </div>
-        <div class="row">
-          <div class="col-2">
-              <h6 style="display: inline;">Date </h6>
-          </div>
-          <div class="col-1">:</div>
+  <table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td width="371" valign="top" id="LeftBillId">
+          <table width="100%" border="1" align="left" cellpadding="4" cellspacing="1">
+            <tbody>
+              <tr>
+                <td height="30" colspan="4" align="center"><strong>Ultra WashTex PVT LTD</strong>
+                  <strong>(<label id="BranchNameId"></label>)</strong>
+                </td>
+              </tr>
 
-          <div class="col-7">
-              <b>
-                  <input type="text" class="mb-2 form-control rounded p-1" style="display: inline;" id="DateTextDCDetailsId" readonly disabled>
-                  <!-- <p style="display: inline;" id="DateTextDCDetailsId">Not found</p> -->
-              </b>
-          </div>
-      </div>
+              <tr>
+                <td align="left">Store Contact : 8790902823</td>
+                <td align="right" colspan="3">GSTN : 37AABCU0026A1Z2</td>
 
-      <div class="row">
-          <div class="col-2">
-              <h6 style="display: inline;">Description</h6>
-          </div>
-          <div class="col-1">:</div>
-          <div class="col-7">
-              <b>
-                  <input type="text" class="mb-2 form-control rounded p-1" style="display: inline;" id="DescriptionTextDCDetailsId" readonly disabled>
+              </tr>
+              <tr>
+                <td colspan="4" align="center">
+                  <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td width="50%">
+                          <p> <strong>Dc Number : <label id="BillNumberid">0</label></strong></p>
+                          <p> <strong>Branch :<label id="CustomerNameid">KKD</label></strong></p>
+                          <p> <strong>Date :<label id="MobileNumberid">14/02/2025</label></strong></p>
+                          <p> <strong>Factory :<label id="GSTNoid">ANF</label></strong></p>
+                        </td>
+                        <td width="40%" align="right">
+                          <canvas id="CanvasId" width="50" height="50"
+                            style="border:1px solid #ccc; margin-left: 60rem;"></canvas>
 
-                  <!-- <p style="display: inline;" id="DescriptionTextDCDetailsId">Not found</p> -->
-              </b>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-2">
-              <h6 style="display: inline;">ToFactory</h6>
-          </div>
-          <div class="col-1">:</div>
-          <div class="col-7">
-              <b>
-                  <input type="text" class="mb-2 form-control rounded p-1" style="display: inline;" id="DCFactoryDCDetailsTextId" readonly disabled>
 
-                  <!-- <p style="display: inline;" id="DCFactoryDCDetailsTextId">Not found</p> -->
-              </b>
-          </div>
-      </div>
+                        </td>
 
-      </div>
+                      </tr>
 
-      <div class="col-5 m-2">
-        <canvas id="CanvasId" width="100" height="100" style="border:1px solid #ccc; margin-left: 21rem;"></canvas>
-        <div>
-          <b id="BranchName"></b>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
+                    </tbody>
+
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <table border="1" cellpadding="2" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <td align="left">
+                          Order Number
+                        </td>
+
+                        <td align="right">Quantity</td>
+                        <td align="right">
+                          Order Date
+                        </td>
+                        <td align="center">Delivary Date</td>
+                        <td align="center">Remarks</td>
+
+                    </thead>
+                    <tbody id="ItemNamesBodyId" align="center">
+                      <tr>
+
+                      </tr>
+                    </tbody>
+
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.6/dist/extensions/export/bootstrap-table-export.min.js"></script>
-  
+    src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.6/dist/extensions/export/bootstrap-table-export.min.js"></script>
+
   <script src="../assets/static/vendor/bwip-js-min.js"></script>
   <script src="../assets/static/vendor/print.min.js"></script>
+  <!-- <script type="module" src="../Js/pages/DCQRPrint/BillPrint.js"></script> -->
   <script type="module" src="../Js/pages/DCQRPrint/BillPrint.js"></script>
-
 
 </body>
 
