@@ -13,7 +13,7 @@
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": ""
+            "formatter": "jFLocalSerialColumn"
         },
         {
             "field": "QrCodeId",
