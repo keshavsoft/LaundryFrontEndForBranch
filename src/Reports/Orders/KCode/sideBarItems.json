@@ -17,5 +17,11 @@
         "key": "Orders",
         "icon": "bi bi-people-fill",
         "url": "Orders.html"
+    },
+    {
+        "name": "UpComingOrders",
+        "key": "Orders",
+        "icon": "bi bi-people-fill",
+        "url": "UpComingOrders.html"
     }
 ]
