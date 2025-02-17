@@ -23,6 +23,7 @@
         {
             "field": "Status",
             "title": "Status",
+            "formatter":"",
             "filterControl": "select"
         },
         {
