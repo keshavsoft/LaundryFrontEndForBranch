@@ -33,7 +33,7 @@
         "icon": "bi bi-box-seam",
         "children": [
             {
-                "name": "ToScan",
+                "name": "ShowAll",
                 "url": "ToFactoryVouchers.html",
                 "icon": "bi bi-upc-scan"
             },
