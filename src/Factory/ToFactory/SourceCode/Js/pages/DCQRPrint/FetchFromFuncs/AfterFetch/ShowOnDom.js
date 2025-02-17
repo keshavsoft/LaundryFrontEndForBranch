@@ -1,7 +1,7 @@
 let StartFunc = ({ inDataToShow }) => {
     let LocalDataToShow = inDataToShow.OrderData;
 
-    jfShow({ inDataToShow: LocalDataToShow });
+    jfShow({ inDataToShow });
     GenerateQrCode({
         inQrData: LocalDataToShow,
         inCanvasId: document.getElementById("CanvasId")
@@ -10,7 +10,8 @@ let StartFunc = ({ inDataToShow }) => {
     var $table = $('#table');
     if ($table.length) {
         $table.bootstrapTable("load", LocalDataToShow);
-    }
+    };
+    window.print()
 };
 
 let GenerateQrCode = ({ inQrData = "", inCanvasId }) => {
@@ -38,12 +39,12 @@ let GenerateQrCode = ({ inQrData = "", inCanvasId }) => {
 };
 
 const jfShow = ({ inDataToShow }) => {
-    
     jFLocalToInputVoucherNumberDCDetailsTextId({ inVoucherNumberDCDetailsTextId: inDataToShow.pk });
     jFLocalToInputDateTextDCDetailsId({ inDateTextDCDetailsId: inDataToShow.Date });
     jFLocalToInputDescriptionTextDCDetailsId({ inDescriptionTextDCDetailsId: inDataToShow.Description });
     jFLocalToInputDCFactoryDCDetailsTextId({ inDCFactoryDCDetailsTextId: inDataToShow.Factory });
     jFLocalToInputDCBranchDCDetailsTextId({ inDCBranchDCDetailsTextId: inDataToShow.BranchName });
+    jFLocalToInputBranchNameId({ inValue: inDataToShow.BranchName });
 };
 
 let jFLocalToInputVoucherNumberDCDetailsTextId = ({ inVoucherNumberDCDetailsTextId }) => {
@@ -79,6 +80,15 @@ let jFLocalToInputDCBranchDCDetailsTextId = ({ inDCBranchDCDetailsTextId }) => {
     if (element !== null) {
         element.innerHTML = inDCBranchDCDetailsTextId;
     }
+};
+
+let jFLocalToInputBranchNameId = ({ inValue }) => {
+    let jVarLocalHtmlId = 'BranchNameId';
+    let jVarLocalBranchNameId = document.getElementById(jVarLocalHtmlId);
+
+    if (jVarLocalBranchNameId === null === false) {
+        jVarLocalBranchNameId.innerHTML = inValue;
+    };
 };
 
 export { StartFunc };
