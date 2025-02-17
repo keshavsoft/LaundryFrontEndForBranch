@@ -42,11 +42,6 @@
             "class": "d-none d-sm-table-cell"
         },
         {
-            "title": "Scan",
-            "field": "Scan",
-            "formatter": "QRCodeGenerate"
-        },
-        {
             "title": "ItemDetails",
             "field": "ItemDetails",
             "footerFormatter": " ",
