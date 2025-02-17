@@ -17,5 +17,11 @@
         "key": "Orders",
         "icon": "bi bi-people-fill",
         "url": "Orders.html"
+    },
+    {
+        "name": "IsQrRaised",
+        "key": "IsQrRaised",
+        "icon": "bi bi-people-fill",
+        "url": "IsQrRaised.html"
     }
 ]
