@@ -1,8 +1,4 @@
 {
-    "toolbar": "#toolbar",
-    "search": "true",
-    "searchable": "true",
-    "idfield": "pk",
     "showFooter": "true",
     "data": [],
     "onClickRow": "",
@@ -28,6 +24,10 @@
         {
             "field": "DeliveryDate",
             "title": "DeliveryDate"
+        },
+        {
+            "field": "",
+            "title": "Remarks"
         }
     ]
 }
