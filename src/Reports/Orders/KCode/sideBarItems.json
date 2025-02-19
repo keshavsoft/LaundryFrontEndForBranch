@@ -21,6 +21,6 @@
     {
         "name": "UpComingDelivery",
         "icon": "bi bi-people-fill",
-        "url": "UpComingOrders.html"
+        "url": "UpComingDelivery.html"
     }
 ]
