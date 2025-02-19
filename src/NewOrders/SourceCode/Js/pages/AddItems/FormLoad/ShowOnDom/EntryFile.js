@@ -15,26 +15,17 @@ let jFBranchNameId = () => {
 
 const jFShowToday = () => {
     const today = new Date();
-    // const formattedToday = today.toISOString().split('T')[0];
-    const formattedToday = today.toLocaleDateString('en-GB');
-
-    today.setDate(today.getDate() + 7);
-    // const formattedNextWeek = today.toISOString().split('T')[0];
-    const formattedNextWeek = today.toLocaleDateString('en-GB');
-
-
+    const formattedToday = today.toISOString().split('T')[0];
     const dateInput = document.getElementById('TableFooterdateInputId');
-    let LocalDeliveryDateTime = JSON.parse(localStorage.getItem("DeliveryDateTime"));
-
     if (dateInput) {
-        if (LocalDeliveryDateTime !== null) {
+        dateInput.setAttribute("min", formattedToday);
+        const LocalDeliveryDateTime = JSON.parse(localStorage.getItem("DeliveryDateTime"));
+        if (LocalDeliveryDateTime) {
             dateInput.value = LocalDeliveryDateTime;
-            dateInput.setAttribute("min", formattedToday);
         } else {
-            dateInput.value = formattedNextWeek;
-            dateInput.setAttribute("min", formattedToday);
+            dateInput.value = formattedToday;
         }
-    };
+    }
 };
 
 export { StartFunc, jFShowToday }
