@@ -20,7 +20,6 @@
     },
     {
         "name": "UpComingDelivery",
-        "key": "Orders",
         "icon": "bi bi-people-fill",
         "url": "UpComingOrders.html"
     }
