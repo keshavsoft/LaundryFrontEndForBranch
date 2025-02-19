@@ -23,9 +23,11 @@
                     <div class="col-md-12">
                         <label class="col-md-4 col-form-label">Customer Name</label>
                         <div class="col-md-8">
-                            <input name="CustomerName" type="text" class="form-control" autocomplete="off" required
+                            <input name="CustomerName" type="text" class="form-control" List="CustomerNameDataListId" autocomplete="off" required
                                 autofocus oninput="this.value = this.value.replace(/[^a-zA-Z0-9\s]/g, '')">
-                            <div class="invalid-feedback">
+                                <datalist id="CustomerNameDataListId">
+                                </datalist>
+                                <div class="invalid-feedback">
                                 CustomerName Should not be empty!!
                             </div>
                         </div>
@@ -36,8 +38,10 @@
 
                         <div class="col-md-8">
 
-                            <input name="Mobile" type="text" class="form-control" id="Mobile" autocomplete="off" required 
+                            <input name="Mobile" type="text" class="form-control" id="Mobile" List="MobileNumberDataListId" autocomplete="off" required 
                             oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)">
+                            <datalist id="MobileNumberDataListId">
+                            </datalist>
                             <div class="invalid-feedback" id="MobileClass">
                                 Mobile Should not be empty!!
                             </div>
