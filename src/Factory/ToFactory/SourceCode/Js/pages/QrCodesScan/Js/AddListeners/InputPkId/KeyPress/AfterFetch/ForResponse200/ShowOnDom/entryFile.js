@@ -2,12 +2,15 @@ import { StartFunc as InputValues } from "./InputValues.js";
 
 let StartFunc = ({ inFromFetch }) => {
     let jVarLocalFetchData = inFromFetch;
-    console.log("jVarLocalFetchData", jVarLocalFetchData)
+    let jVarLocalAddOnString = jVarLocalFetchData.QrData.AddOnArray
+    .map(e => Object.values(e).filter(ele => typeof ele === "string" && ele))
+    .flat()
+    .join(", ");
 
     if (jVarLocalFetchData.KTF === true) {
         jFLocalToInputAlertSuccessIdUserName(jVarLocalFetchData.ScanNo);
         jFLocalToInputAlertSuccessItemNameId(jVarLocalFetchData.QrData.ItemName)
-        jFLocalToInputAlertSuccessAddOnServiceId(jVarLocalFetchData.QrData.AddOnService)
+        jFLocalToInputAlertSuccessAddOnServiceId(jVarLocalAddOnString)
         jFLocalToInputInputPkId("");
         JFlocalShowAlertFunc();
         jFLocalToInputRowCountId(jVarLocalFetchData.QrCount)
@@ -45,8 +48,6 @@ let jFLocalToInputAlertSuccessItemNameId = (inValue) => {
 };
 
 let jFLocalToInputAlertSuccessAddOnServiceId = (inValue) => {
-    console.log("inValue", inValue);
-
     let jVarLocalHtmlId = 'AlertSuccessAddOnServiceId';
     let jVarLocalAlertSuccessIdUserName = document.getElementById(jVarLocalHtmlId);
 
