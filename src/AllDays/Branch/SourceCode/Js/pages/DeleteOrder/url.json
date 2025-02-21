@@ -1,6 +1,6 @@
 {
     "StartRoute": "binV4",
     "tableName":"",
-    "Url": "Custom/Clients/Laundry/Today/Orders/OrdersWithQrs"
+    "Url": "Custom/Clients/Laundry/Today/Orders/OrdersWithQrs/GetOrdersDelete"
 
 }
