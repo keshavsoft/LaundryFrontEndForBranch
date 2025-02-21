@@ -24,18 +24,19 @@ let StartFunc = ({ inData, inRow }) => {
     myModal.show();
 };
 
+
 let GenerateQrCodeOnModal = ({ inQrData = "", inCanvasId }) => {
     var canvas = inCanvasId;
-    canvas.height = 1;
-    canvas.width = 1;
+    canvas.height = 150; // Set desired canvas height
+    canvas.width = 150;  // Set desired canvas width
     canvas.style.visibility = 'hidden';
 
     // Convert the options to an object.
     let opts = {};
-    opts.text = canvas.dataset.qrcode
+    opts.text = canvas.dataset.qrcode;
     opts.bcid = "qrcode";
-    opts.scaleX = 1;
-    opts.scaleY = 1;
+    opts.scaleX = 2; // Adjust scale for larger QR code
+    opts.scaleY = 2; // Adjust scale for larger QR code
     opts.rotate = "N";
 
     // Draw the bar code to the canvas
@@ -53,5 +54,6 @@ let GenerateQrCodeOnModal = ({ inQrData = "", inCanvasId }) => {
         canvas.style.visibility = 'visible';
     }
 };
+
 
 export { StartFunc };

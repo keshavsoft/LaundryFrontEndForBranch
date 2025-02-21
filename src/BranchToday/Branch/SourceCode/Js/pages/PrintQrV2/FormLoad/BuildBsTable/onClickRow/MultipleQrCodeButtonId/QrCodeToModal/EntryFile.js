@@ -24,7 +24,7 @@ let StartFunc = ({ inData, inRow }) => {
     myModal.show();
 };
 
-let GenerateQrCodeOnModal1 = ({ inQrData = "", inCanvasId }) => {
+let GenerateQrCodeOnModal = ({ inQrData = "", inCanvasId }) => {
     var canvas = inCanvasId;
     canvas.height = 1;
     canvas.width = 1;
@@ -53,36 +53,5 @@ let GenerateQrCodeOnModal1 = ({ inQrData = "", inCanvasId }) => {
         canvas.style.visibility = 'visible';
     }
 };
-
-let GenerateQrCodeOnModal = ({ inQrData = "", inCanvasId }) => {
-    var canvas = inCanvasId;
-    canvas.height = 150; // Set desired canvas height
-    canvas.width = 150;  // Set desired canvas width
-    canvas.style.visibility = 'hidden';
-
-    // Convert the options to an object.
-    let opts = {};
-    opts.text = canvas.dataset.qrcode;
-    opts.bcid = "qrcode";
-    opts.scaleX = 2; // Adjust scale for larger QR code
-    opts.scaleY = 2; // Adjust scale for larger QR code
-    opts.rotate = "N";
-
-    // Draw the bar code to the canvas
-    try {
-        let ts0 = new Date;
-        bwipjs.toCanvas(canvas, opts);
-        show(ts0, new Date);
-    } catch (e) {
-        console.log("error : ", e);
-
-        return;
-    }
-
-    function show(ts0, ts1) {
-        canvas.style.visibility = 'visible';
-    }
-};
-
 
 export { StartFunc };
