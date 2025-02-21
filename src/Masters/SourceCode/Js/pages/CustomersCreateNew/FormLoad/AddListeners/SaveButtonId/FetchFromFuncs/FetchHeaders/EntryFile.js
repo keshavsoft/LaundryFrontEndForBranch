@@ -13,6 +13,8 @@ function jFLocalserializeFormData(form) {
     var serializedData = {};
 
     for (var [name, value] of formData) {
+        value = value.trim();
+
         if (serializedData[name]) {
             if (!Array.isArray(serializedData[name])) {
                 serializedData[name] = [serializedData[name]];
