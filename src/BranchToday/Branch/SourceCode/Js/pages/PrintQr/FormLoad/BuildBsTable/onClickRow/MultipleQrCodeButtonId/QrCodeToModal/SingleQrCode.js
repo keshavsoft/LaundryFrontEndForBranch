@@ -48,17 +48,21 @@ let StartFunc = ({ inData, inRow }) => {
         inClone: clone, inHtmlClassName: "OrderDateClass",
         inTextContent: new Date(jVarLocalDataNeeded.DeliveryDateTime).toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit' }).split('/').join('-')
     });
+    jFLocalTotextContent({
+        inClone: clone, inHtmlClassName: "QuantityClass",
+        inTextContent: inRow.AggValues.ItemDetails
+    });
 
     let jVarLocalHtmlQrId = clone.getElementById(`CanvasId`);
-    console.log("jVarLocalDataNeeded", jVarLocalDataNeeded);
+    // console.log("jVarLocalDataNeeded", jVarLocalDataNeeded);
 
-    jVarLocalHtmlQrId.dataset.qrcode = `${jVarLocalDataNeeded.pk}~`
-    jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.pk}-${jVarLocalDataNeeded.OrderNumber}~`
-    jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.BookingData.OrderData.BranchName}-${jVarLocalDataNeeded.location}~`
-    jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.ItemName}~`
-    jVarLocalHtmlQrId.dataset.qrcode += `${inRow.AggValues.ItemDetails}~`
-    jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.AddOnDataAsString}~`
-    jVarLocalHtmlQrId.dataset.qrcode += `${new Date(jVarLocalDataNeeded.BookingData.OrderData.Currentdateandtime).toLocaleDateString('en-GB')}@${new Date(jVarLocalDataNeeded.DeliveryDateTime).toLocaleDateString('en-GB')}`
+    jVarLocalHtmlQrId.dataset.qrcode = `${jVarLocalDataNeeded.pk}`
+    // jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.pk}-${jVarLocalDataNeeded.OrderNumber}~`
+    // jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.BookingData.OrderData.BranchName}-${jVarLocalDataNeeded.location}~`
+    // jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.ItemName}~`
+    // jVarLocalHtmlQrId.dataset.qrcode += `${inRow.AggValues.ItemDetails}~`
+    // jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.AddOnDataAsString}~`
+    // jVarLocalHtmlQrId.dataset.qrcode += `${new Date(jVarLocalDataNeeded.BookingData.OrderData.Currentdateandtime).toLocaleDateString('en-GB')}@${new Date(jVarLocalDataNeeded.DeliveryDateTime).toLocaleDateString('en-GB')}`
     const s = new XMLSerializer();
     const str = s.serializeToString(clone);
 
