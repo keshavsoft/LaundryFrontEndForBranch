@@ -7,7 +7,7 @@ let StartFunc = ({ inFromFetch }) => {
     if (jVarLocalFetchData.KTF === true) {
         jFLocalToInputAlertSuccessIdUserName(jVarLocalFetchData.ScanNo);
         jFLocalToInputAlertSuccessItemNameId(jVarLocalFetchData.QrData.ItemName)
-        jFLocalToInputAlertSuccessAddOnServiceId(jVarLocalFetchData.QrData.addondata)
+        jFLocalToInputAlertSuccessAddOnServiceId(jVarLocalFetchData.QrData.AddOnService)
         jFLocalToInputInputPkId("");
         JFlocalShowAlertFunc();
         jFLocalToInputRowCountId(jVarLocalFetchData.QrCount)
@@ -45,21 +45,14 @@ let jFLocalToInputAlertSuccessItemNameId = (inValue) => {
 };
 
 let jFLocalToInputAlertSuccessAddOnServiceId = (inValue) => {
-    console.log("inValue",inValue);
-    
+    console.log("inValue", inValue);
+
     let jVarLocalHtmlId = 'AlertSuccessAddOnServiceId';
     let jVarLocalAlertSuccessIdUserName = document.getElementById(jVarLocalHtmlId);
 
     if (jVarLocalAlertSuccessIdUserName === null === false) {
         jVarLocalAlertSuccessIdUserName.innerHTML = inValue;
     };
-
-    let addondata = jVarLocalFetchData.forEach(element => {
-        Object.values(element.AddOnArray).forEach(function (key) {
-            key.AddOnService = element.AddOnService;
-            jvarLocalDataArray.push(key);
-        });
-    });
 
 };
 
