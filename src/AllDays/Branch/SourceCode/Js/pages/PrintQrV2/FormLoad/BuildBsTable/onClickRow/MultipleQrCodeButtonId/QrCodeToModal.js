@@ -1,5 +1,6 @@
-let StartFunc = ({ inData, inRow }) => {
-    let jVarLocalDataNeeded = inData;
+let StartFunc = ({ inData }) => {
+    let jVarLocalDataNeeded = inData[0];
+    console.log("--QrData-", jVarLocalDataNeeded);
 
     let jVarLocalTemplate = document.getElementById("TemplateForQrCodePrint");
     let clone = jVarLocalTemplate.content.cloneNode("true");
@@ -11,7 +12,7 @@ let StartFunc = ({ inData, inRow }) => {
 
     jFLocalTotextContent({
         inClone: clone, inHtmlClassName: "PkClass",
-        inTextContent: jVarLocalDataNeeded.location
+        inTextContent: jVarLocalDataNeeded.locationPk
     });
 
     jFLocalTotextContent({
@@ -36,7 +37,7 @@ let StartFunc = ({ inData, inRow }) => {
 
     jFLocalTotextContent({
         inClone: clone, inHtmlClassName: "AddOnDataAsStringClass",
-        inTextContent: jVarLocalDataNeeded.AddOnDataAsString
+        inTextContent: jVarLocalDataNeeded.WashType
     });
 
     jFLocalTotextContent({
@@ -48,25 +49,22 @@ let StartFunc = ({ inData, inRow }) => {
         inClone: clone, inHtmlClassName: "OrderDateClass",
         inTextContent: new Date(jVarLocalDataNeeded.DeliveryDateTime).toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit' }).split('/').join('-')
     });
-    jFLocalTotextContent({
-        inClone: clone, inHtmlClassName: "QuantityClass",
-        inTextContent: inRow.AggValues.ItemDetails
-    });
 
-    let jVarLocalHtmlQrId = clone.getElementById(`CanvasId`);
-    // console.log("jVarLocalDataNeeded", jVarLocalDataNeeded);
 
-    jVarLocalHtmlQrId.dataset.qrcode = `${jVarLocalDataNeeded.pk}`
-    // jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.pk}-${jVarLocalDataNeeded.OrderNumber}~`
-    // jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.BookingData.OrderData.BranchName}-${jVarLocalDataNeeded.location}~`
-    // jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.ItemName}~`
-    // jVarLocalHtmlQrId.dataset.qrcode += `${inRow.AggValues.ItemDetails}~`
-    // jVarLocalHtmlQrId.dataset.qrcode += `${jVarLocalDataNeeded.AddOnDataAsString}~`
-    // jVarLocalHtmlQrId.dataset.qrcode += `${new Date(jVarLocalDataNeeded.BookingData.OrderData.Currentdateandtime).toLocaleDateString('en-GB')}@${new Date(jVarLocalDataNeeded.DeliveryDateTime).toLocaleDateString('en-GB')}`
     const s = new XMLSerializer();
     const str = s.serializeToString(clone);
 
-    return str;
+    let jVarLocalModalBody = document.getElementById("ModalBody");
+    jVarLocalModalBody.innerHTML = str;
+
+    let jVarLocalId = "ModalForQrCode";
+
+    var myModal = new bootstrap.Modal(document.getElementById(jVarLocalId), { keyboard: true, focus: true });
+
+    myModal.show();
+
+    let jVarLocalHtmlQrId = document.getElementById(`CanvasId`);
+    GenerateQrCodeOnModal({ inQrData: jVarLocalDataNeeded, inCanvasId: jVarLocalHtmlQrId })
 };
 
 let jFLocalTotextContent = ({ inClone, inHtmlClassName, inTextContent }) => {
@@ -78,5 +76,40 @@ let jFLocalTotextContent = ({ inClone, inHtmlClassName, inTextContent }) => {
     jVarLocalFound.textContent = jVarLocalTextContent;
 };
 
+let GenerateQrCodeOnModal = ({ inQrData = "", inCanvasId }) => {
+    var canvas = inCanvasId;
+    canvas.height = 1;
+    canvas.width = 1;
+    canvas.style.visibility = 'hidden';
+
+    // Convert the options to an object.
+    let opts = {};
+    opts.text = `${inQrData.pk}~`
+    opts.text += `${inQrData.pk}-${inQrData.OrderNumber}~`
+    opts.text += `${inQrData.ItemName}~`
+    opts.text += `${inQrData.WashType}@${inQrData.ItemSerial}/${inQrData.Pcs}/${inQrData.TotalQrCodes}~`
+    opts.text += `${inQrData.AddOnDataAsString}~`
+    opts.text += `${inQrData.BookingData.OrderData.Currentdateandtime}~`
+    opts.text += `${inQrData.DeliveryDateTime}`;
+    opts.bcid = "qrcode";
+    opts.scaleX = 1;
+    opts.scaleY = 1;
+    opts.rotate = "N";
+
+    // Draw the bar code to the canvas
+    try {
+        let ts0 = new Date;
+        bwipjs.toCanvas(canvas, opts);
+        show(ts0, new Date);
+    } catch (e) {
+        console.log("error : ", e);
+
+        return;
+    }
+
+    function show(ts0, ts1) {
+        canvas.style.visibility = 'visible';
+    }
+};
 
 export { StartFunc };
