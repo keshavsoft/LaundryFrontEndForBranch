@@ -4,8 +4,8 @@
     "searchable": "true",
     "idfield": "pk",
     "showFooter": "true",
+    "pagination": "true",
     "data": [],
-    "pagination":"true",
     "onClickRow": "",
     "url": "get Url",
     "pageList": "[5, 10, 25 ]",
@@ -14,7 +14,8 @@
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": ""
+            "formatter": "",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "pk",
@@ -22,26 +23,29 @@
         },
         {
             "field": "Factory",
-            "title": "To Factory"
+            "title": "To Factory",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "Date",
-            "title": "DC Date"
+            "title": "DC Date",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "Duration",
-            "field": "TimeSpan"
+            "field": "TimeSpan",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "title": "Description",
-            "field": "Description"
+            "field": "Description",
+            "class": "d-none d-sm-table-cell"
         },
         {
-            "title": "Scan",
-            "field": "Scan",
-            "formatter": "QRCodeGenerate",
-            "footerFormatter": "priceFormatter"
-
+            "title": "Scanned",
+            "field": "ItemDetails",
+            "footerFormatter": "",
+            "formatter": ""
         }
     ]
 }
