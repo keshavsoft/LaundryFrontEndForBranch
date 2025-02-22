@@ -14,18 +14,31 @@ let jFBranchNameId = () => {
 };
 
 const jFShowToday = () => {
-    const today = new Date();
-    const formattedToday = today.toISOString().split('T')[0];
-    const dateInput = document.getElementById('TableFooterdateInputId');
+    var today = new Date();
+    var ddToday = String(today.getDate()).padStart(2, "0");
+    var mmToday = String(today.getMonth() + 1).padStart(2, "0");
+    var yyyyToday = today.getFullYear();
+    var formattedToday = yyyyToday + "-" + mmToday + "-" + ddToday;
+  
+    today.setDate(today.getDate() + 7);
+    var ddNextWeek = String(today.getDate()).padStart(2, "0");
+    var mmNextWeek = String(today.getMonth() + 1).padStart(2, "0");
+    var yyyyNextWeek = today.getFullYear();
+    var formattedNextWeek = yyyyNextWeek + "-" + mmNextWeek + "-" + ddNextWeek;
+  
+    var dateInput = document.getElementById("TableFooterdateInputId");
+    dateInput.setAttribute("min", formattedToday);
     if (dateInput) {
-        dateInput.setAttribute("min", formattedToday);
-        const LocalDeliveryDateTime = JSON.parse(localStorage.getItem("DeliveryDateTime"));
-        if (LocalDeliveryDateTime) {
-            dateInput.value = LocalDeliveryDateTime;
-        } else {
-            dateInput.value = formattedToday;
-        }
+      dateInput.setAttribute("min", formattedToday);
+      const LocalDeliveryDateTime = JSON.parse(
+        localStorage.getItem("DeliveryDateTime")
+      );
+      if (LocalDeliveryDateTime) {
+        dateInput.value = LocalDeliveryDateTime;
+      } else {
+        dateInput.value = formattedNextWeek;
+      }
     }
-};
+  };
 
 export { StartFunc, jFShowToday }
