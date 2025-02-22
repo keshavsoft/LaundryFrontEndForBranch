@@ -4,8 +4,6 @@
     "searchable": "true",
     "idfield": "pk",
     "showFooter": "true",
-    "pagination": "true",
-    "filterControl": true,
     "pageList": "[5, 10, 25 ]",
     "pageSize": "5",
     "data": [],
@@ -18,8 +16,7 @@
         },
         {
             "field": "UuId",
-            "title": "Order #",
-            "filterControl": "select"
+            "title": "Order #"
         },
         {
             "field": "CustomerData.CustomerName",
