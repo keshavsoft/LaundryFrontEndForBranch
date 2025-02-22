@@ -1,4 +1,4 @@
-let StartFunc = ({ inData, inRow }) => {
+let StartFunc = ({ inData, inQrCount }) => {
     let jVarLocalDataNeeded = inData;
 
     let jVarLocalTemplate = document.getElementById("TemplateForQrCodePrint");
@@ -50,7 +50,7 @@ let StartFunc = ({ inData, inRow }) => {
     });
     jFLocalTotextContent({
         inClone: clone, inHtmlClassName: "QuantityClass",
-        inTextContent: inRow.AggValues.ItemDetails
+        inTextContent: inQrCount
     });
 
     let jVarLocalHtmlQrId = clone.getElementById(`CanvasId`);
