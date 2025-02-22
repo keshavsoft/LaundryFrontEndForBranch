@@ -3,7 +3,6 @@ import { StartFunc as StartFuncShowToDom } from "../../../../../../ShowToDom/ToT
 import { jFShowToday } from "../../../../../ShowOnDom/EntryFile.js";
 
 let StartFunc = () => {
-    // window.location.href = ""
     StartFuncGetFetch().then(() => {
         StartFuncShowToDom();
         localStorage.removeItem('PresentOrderAddOns');
@@ -12,7 +11,7 @@ let StartFunc = () => {
         $('#TableFooterItemNameId').focus();
         jFShowToday();
         localStorage.setItem("PresentOrderAddOns", JSON.stringify([]));
-
+        jFTableFooterCategoryId();
         jFLocalToInputSubId()
         jFTableFooterSaveButtonId()
         jFLocalTableFooterAlterButtonId()
@@ -39,5 +38,15 @@ let jFLocalTableFooterAlterButtonId = () => {
     let jVarLocalHtmlId = document.getElementById(jVarLocalTableFooterAlterButtonId);
     jVarLocalHtmlId.classList.add("d-none")
 };
+
+const jFTableFooterCategoryId = () => {
+    var event = new Event('change');
+    let jVarLocalTableFooterCategoryId = document.getElementById('TableFooterCategoryId');
+
+    if (jVarLocalTableFooterCategoryId === null === false) {
+        document.getElementById("TableFooterCategoryId").dispatchEvent(event)
+    };
+
+}
 
 export { StartFunc }
