@@ -5,8 +5,9 @@ let StartFunc = ({ inData, inRow }) => {
 
     let jVarLocalModalBody = document.getElementById("ModalBody");
     jVarLocalModalBody.innerHTML = "";
-    jVarLocalDataNeeded.map(element => {
-        const str = StartFuncSingleQrcode({ inData: element, inRow });
+    jVarLocalDataNeeded.map((element, index) => {
+        let jVarLocalQrCount = `${index + 1}/${element.TotalQrCodes}`;
+        const str = StartFuncSingleQrcode({ inData: element, inQrCount: jVarLocalQrCount });
         jVarLocalModalBody.innerHTML += str;
     });
 
