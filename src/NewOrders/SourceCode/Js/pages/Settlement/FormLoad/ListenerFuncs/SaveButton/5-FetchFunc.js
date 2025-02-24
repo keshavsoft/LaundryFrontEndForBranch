@@ -4,7 +4,8 @@ let StartFunc = async ({ inSettlementData }) => {
     let jVarLocalBranchName = localStorage.getItem("BranchName");
     let jVarLocalBodyData = inSettlementData.inDataToUpdate;
 
-    let jVarLocalFetchUrl = `/${Configjson.routePath}/${jVarLocalBranchName}/SubTable/Create/${inSettlementData.MainRowPK}/${inSettlementData.InsertKey}`;
+    let jVarLocalFetchUrl = `/${Configjson.PostUrl}/${inSettlementData.MainRowPK}/${jVarLocalBranchName}`;
+
     let jVarLocalFetchHeaderObject = {
         method: "POST",
         headers: {
