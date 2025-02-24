@@ -23,11 +23,12 @@ const StartFunc = (event) => {
     let jVarLocalOrdered = jVarLocalServicesArray.sort((x, y) => {
         return ((x == y) ? 0 : ((x > y) ? 1 : -1));
     });
+    let jVarOrderedNames = jVarLocalOrdered.sort((a, b) => (a === 'DW' ? -1 : 0));
 
     var options = '';
 
-    for (var i = 0; i < jVarLocalOrdered.length; i++) {
-        options += `<option value="${jVarLocalOrdered[i]}">${jVarLocalOrdered[i]}</option>`;
+    for (var i = 0; i < jVarOrderedNames.length; i++) {
+        options += `<option value="${jVarOrderedNames[i]}">${jVarOrderedNames[i]}</option>`;
     };
 
     jVarLocalTableFooterItemServiceId.innerHTML = options;

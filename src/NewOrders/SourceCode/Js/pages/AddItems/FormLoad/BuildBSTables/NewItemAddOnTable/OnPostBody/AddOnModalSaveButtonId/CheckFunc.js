@@ -1,26 +1,30 @@
-let StartFunc = () => {
+import { StartFunc as StartFuncCheckService } from "../../../../../FromLocalStorage/AddOnData/checkService.js";
 
-    if ((jFTableFooterItemNameId()) === false) {
-        return false;
-    };
-    return true;
+const StartFunc = () => {
+    if (!jFTableFooterItemNameId()) return false;
+
+    const jVarLocalAddOnService = jFLocalTableFooterAddOnSelectId();
+
+    return StartFuncCheckService({ inAddOnService: jVarLocalAddOnService }) !== false;
 };
 
 const jFTableFooterItemNameId = () => {
-    let jVarLocalFactory = document.getElementById('TableFooterAddOnSelectId');
+    const jVarLocalFactory = document.getElementById('TableFooterAddOnSelectId');
 
-    if (jVarLocalFactory.value === "") {
+    if (!jVarLocalFactory.value.trim()) {
         jVarLocalFactory.classList.add("is-invalid");
         jVarLocalFactory.focus();
         return false;
-    };
+    }
 
-    if ((jVarLocalFactory.value === "") === false) {
-        jVarLocalFactory.classList.remove("is-invalid");
-        return true;
-    };
+    jVarLocalFactory.classList.remove("is-invalid");
     return true;
 };
 
+const jFLocalTableFooterAddOnSelectId = () => {
+    const jVarLocalHtmlId = document.getElementById('TableFooterAddOnSelectId');
 
-export { StartFunc }
+    return jVarLocalHtmlId ? jVarLocalHtmlId.value.trim() : undefined;
+};
+
+export { StartFunc };
