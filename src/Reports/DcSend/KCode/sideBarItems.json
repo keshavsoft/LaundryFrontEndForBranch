@@ -18,15 +18,18 @@
         "url": "../../All-Orders/HtmlFiles/ReportsMenu.html"
     },
     {
-        "name": "DC",
-        "key": "ToFactory",
-        "icon": "bi bi-box-seam",
-        "children": [
-            {
-                "name": "ShowAll",
-                "url": "ToFactoryVouchers.html",
-                "icon": "bi bi-upc-scan"
-            }
-        ]
+        "name": "ShowAll",
+        "url": "ToFactoryVouchers.html",
+        "icon": "bi bi-box-seam"
+    },
+    {
+        "name": "FactorySent",
+        "url": "FactorySent.html",
+        "icon": "bi bi-send"
+    },
+    {
+        "name": "FactoryScan",
+        "url": "SentAndFactoryScan.html",
+        "icon": "bi bi-clipboard-check"
     }
 ]
