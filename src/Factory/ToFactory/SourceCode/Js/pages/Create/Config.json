@@ -1,4 +1,4 @@
 {
     "routePath": "binV4",
-    "tableName":"BranchDC"
+    "tableName":"BranToFactDC"
 }

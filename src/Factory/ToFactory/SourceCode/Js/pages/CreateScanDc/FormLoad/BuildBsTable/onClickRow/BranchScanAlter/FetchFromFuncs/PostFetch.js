@@ -5,7 +5,7 @@ let StartFunc = async ({ inRow }) => {
     let LocalPk = inRow.pk;
     let jVarLocalFetchHeaders = StartFuncFetchHeaders();
 
-    let jVarLocalFetchUrl = `/${ConfigJson.routePath}/BranchDC/Alter/AsIs/${LocalPk}`;
+    let jVarLocalFetchUrl = `/${ConfigJson.routePath}/BranToFactDC/Alter/AsIs/${LocalPk}`;
     let response = await fetch(jVarLocalFetchUrl, jVarLocalFetchHeaders);
 
     return await response;
