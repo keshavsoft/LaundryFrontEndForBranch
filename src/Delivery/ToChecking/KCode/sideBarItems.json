@@ -10,7 +10,7 @@
     {
         "name": "Check",
         "key": "CheckOrder",
-        "icon": "bi bi-receipt",
+        "icon": "bi bi-cart",
         "children": [
             {
                 "name": "CheckOrder",
@@ -44,7 +44,7 @@
     {
         "name": "Delivery",
         "key": "CheckOrder",
-        "icon": "bi bi-receipt",
+        "icon": "bi bi-bag-fill",
         "children": [
             {
                 "name": "DeliveryAddItems",
