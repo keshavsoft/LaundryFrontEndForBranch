@@ -63,7 +63,7 @@
     },
     {
         "name": "Report",
-        "icon": "bi bi-qr-code",
+        "icon": "bi bi-file-text-fill",
         "url": "../../EntryReturnQrCodes/HtmlFiles/"
     }
 ]
