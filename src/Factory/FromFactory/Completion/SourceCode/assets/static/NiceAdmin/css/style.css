@@ -240,10 +240,10 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-.card-title span {
+h3 span {
   color: #899bbd;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 22px;
+  font-weight: 400
 }
 
 .card-body {
