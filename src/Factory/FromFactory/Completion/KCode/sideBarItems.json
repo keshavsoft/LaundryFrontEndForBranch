@@ -37,8 +37,13 @@
         "icon": "bi bi-layers",
         "children": [
             {
-                "name": "To-DC",
+                "name": "To-ScanOnly",
                 "url": "FromFactoryToDC.html",
+                "icon": "bi bi-plus-square-fill"
+            },
+            {
+                "name": "DC Scanned",
+                "url": "FromFactoryToScannedDC.html",
                 "icon": "bi bi-plus-square-fill"
             }
         ]
