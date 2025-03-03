@@ -12,7 +12,7 @@
     "rowStyle": "rowStyle",
     "filterControl": true,
     "pagination": "true",
-    "url": "/Custom/Cleaning/Branch/Factory/FromFactory/Completion/Voucher/OnlyScanDc/$BranchName",
+    "url": "/Custom/Cleaning/Branch/Factory/FromFactory/PressingReturn/Voucher/OnlyScanDc/$BranchName",
     "columns": [
         {
             "field": "KS-Serial",
@@ -26,7 +26,7 @@
             "filterControl": "input"
         },
         {
-            "field": "DateTime",
+            "field": "Date",
             "title": "Date",
             "class": "d-none d-sm-table-cell"
         },
@@ -39,6 +39,11 @@
         {
             "field": "TimeSpan",
             "title": "TimeSpan",
+            "class": "d-none d-sm-table-cell"
+        },
+        {
+            "field": "Description",
+            "title": "Description",
             "class": "d-none d-sm-table-cell"
         },
         {
