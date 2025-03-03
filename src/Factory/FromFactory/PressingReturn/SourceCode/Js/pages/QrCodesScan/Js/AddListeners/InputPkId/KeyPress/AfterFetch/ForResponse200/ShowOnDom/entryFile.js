@@ -4,6 +4,7 @@ let StartFunc = ({ inFromFetch }) => {
     let jVarLocalFetchData = inFromFetch;
     if (jVarLocalFetchData.KTF === true) {
         jFLocalToInputAlertSuccessIdUserName(jVarLocalFetchData.ScanNo);
+        jFLocalToInputAlertSuccessItemNameId(jVarLocalFetchData.QrData.ItemName );
         jFLocalToInputInputPkId("");
         JFlocalShowAlertFunc();
         jFLocalToInputRowCountId(jVarLocalFetchData.QrCount)
@@ -24,6 +25,15 @@ let StartFunc = ({ inFromFetch }) => {
 
 let jFLocalToInputAlertSuccessIdUserName = (inValue) => {
     let jVarLocalHtmlId = 'AlertSuccessIdUserName';
+    let jVarLocalAlertSuccessIdUserName = document.getElementById(jVarLocalHtmlId);
+
+    if (jVarLocalAlertSuccessIdUserName === null === false) {
+        jVarLocalAlertSuccessIdUserName.innerHTML = inValue;
+    };
+};
+
+let jFLocalToInputAlertSuccessItemNameId = (inValue) => {
+    let jVarLocalHtmlId = 'AlertSuccessItemNameId';
     let jVarLocalAlertSuccessIdUserName = document.getElementById(jVarLocalHtmlId);
 
     if (jVarLocalAlertSuccessIdUserName === null === false) {
