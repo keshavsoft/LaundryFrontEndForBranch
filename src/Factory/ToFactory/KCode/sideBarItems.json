@@ -33,22 +33,22 @@
         "icon": "bi bi-box-seam",
         "children": [
             {
-                "name": "ShowAll",
+                "name": " DC-All",
                 "url": "ToFactoryDCShowAll.html",
                 "icon": "bi bi-upc-scan"
             },
             {
-                "name": "Sent",
+                "name": "DC-Sent",
                 "url": "ToFactoryVouchers.html",
                 "icon": "bi bi-upc-scan"
             },
             {
-                "name": "ToScanDelete",
+                "name": "DC-Delete",
                 "url": "ToFactoryToScanDelete.html",
                 "icon": "bi bi-upc-scan"
             },
             {
-                "name": "QrPrint",
+                "name": "DC-Print",
                 "url": "ToFactoryQRPrint.html",
                 "icon": "bi bi-printer"
             }
@@ -60,7 +60,7 @@
         "icon": "bi bi-hourglass-split",
         "children": [
             {
-                "name": "ShowFactoryPending",
+                "name": "Show",
                 "url": "ShowFactoryPending.html",
                 "icon": "bi bi-hourglass-bottom"
             }
