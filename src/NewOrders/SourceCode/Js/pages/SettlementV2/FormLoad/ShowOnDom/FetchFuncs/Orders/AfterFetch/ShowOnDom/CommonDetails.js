@@ -17,12 +17,7 @@ const StartFunc = ({ inData }) => {
         { id: 'BranchNameId', value: inData.BranchName },
         { id: 'BranchDisplay', value: inData.BranchName },
         { id: 'OrderDate', value: inData.Date },
-        { id: 'OrderInfoCustomerMobileId', value: inData.Mobile },
-        { id: 'CgstAmountId', value: inData.CGST },
-        { id: 'SgstAmountId', value: inData.SGST },
-        { id: 'NettAmountId', value: inData.TotalAmt },
-        { id: 'RoundOffId', value: inData.RoundOffAmt },
-        { id: 'TotalNetAmountId', value: inData.RoundedTotal,isInnerHTML: true }
+        { id: 'OrderInfoCustomerMobileId', value: inData.Mobile }
     ];
 
     inputMapping.forEach(({ id, value, isInnerHTML }) => setInputValue(id, value, isInnerHTML));
