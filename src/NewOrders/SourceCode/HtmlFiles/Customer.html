@@ -127,6 +127,9 @@
                         <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
                             type="button" role="tab" aria-controls="nav-contact" aria-selected="false">This
                             Week</button>
+                        <button class="nav-link" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info"
+                            type="button" role="tab" aria-controls="nav-info" aria-selected="false">
+                            All</button>
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-Today-tabContent">
@@ -155,6 +158,15 @@
                             </button>
                         </div>
                         <table id="ThisWeekTableId"></table>
+                    </div>
+                    <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+                        <div class="col-auto m-2">
+                            <h4 id=""> All </h4>
+                            <button class="btn" id="AllRefreshButtonId" href="#">
+                                <i class="bi bi-arrow-clockwise"></i>
+                            </button>
+                        </div>
+                        <table id="AllTableId"></table>
                     </div>
 
                     <div class="row">
