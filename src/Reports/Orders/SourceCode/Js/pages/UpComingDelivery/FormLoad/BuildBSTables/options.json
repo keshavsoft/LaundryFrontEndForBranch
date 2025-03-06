@@ -32,7 +32,7 @@
         },
         {
             "field": "OrderData.Currentdateandtime",
-            "title": "Time Span",
+            "title": "Date",
             "formatter": ""
         },
         {
