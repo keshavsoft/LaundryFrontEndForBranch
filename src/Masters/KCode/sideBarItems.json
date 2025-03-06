@@ -5,6 +5,12 @@
         "url": "../../NewOrders/HtmlFiles/Customer.html"
     },
     {
+        "name": "DashBoard",
+        "icon": "bi bi-x-diamond-fill",
+        "url": "./index.html"
+    },
+    
+    {
         "name": "Customers",
         "key": "Customers",
         "icon": "bi bi-people-fill",
