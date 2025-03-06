@@ -6,7 +6,7 @@ const StartFunc = () => {
     StartFuncFromUrlParams();
     StartFuncShowOnDom()
     StartFuncAddlisteners();
-    // jFLocalDiscountKeyUp();
+    jFLocalDiscountKeyUp();
 };
 
 let jFLocalDiscountKeyUp = () => {
