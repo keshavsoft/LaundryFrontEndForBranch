@@ -14,6 +14,11 @@
         "url": "../../NewOrders/HtmlFiles/NewOrdersMenu.html"
     },
     {
+        "name": "Dashboard",
+        "icon": "bi bi-columns-gap",
+        "url": "../HtmlFiles/index.html"
+    },
+    {
         
         "name": "QrRaise",
         "key": "Qr",
