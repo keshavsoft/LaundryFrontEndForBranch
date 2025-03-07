@@ -2,6 +2,7 @@
     "routePath": "binV4",
     "folderName": "Masters",
     "tableName": "CustomerNames",
+    "TodayUrl":"Custom/Cleaning/Branch/Order/NewOrderV1/TodayCustomerFilter",
     "localStorageKeys": {
         "OrderKey": "CustomerNames",
         "ItemNamesKey": "ItemNames",
