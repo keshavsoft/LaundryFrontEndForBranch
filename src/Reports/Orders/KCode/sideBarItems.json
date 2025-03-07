@@ -5,6 +5,11 @@
         "url": "../../NewOrders/HtmlFiles/Customer.html"
     },
     {
+        "name": "DashBoard",
+        "icon": "bi bi-columns-gap",
+        "url": "./index.html"
+    },
+    {
         "name": "Parent",
         "icon": "bi bi-arrow-90deg-left",
         "url": "../../All-Orders/HtmlFiles/ReportsMenu.html"

@@ -5,14 +5,15 @@
         "url": "../../NewOrders/HtmlFiles/Customer.html"
     },
     {
+        "name": "DashBoard",
+        "icon": "bi bi-columns-gap",
+        "url": "./index.html"
+    },
+    {
         "name": "Parent",
         "icon": "bi bi-arrow-90deg-left",
         "url": "../../All-Orders/HtmlFiles/ReportsMenu.html"
     },
-    {
-        "name": "All-QrCodes"
-    },
-   
     {
         "name": "All",
         "key": "QrAll",
@@ -39,10 +40,9 @@
                 "icon": "bi bi-circle"
             },
             {
-              
                 "name": "OrderFilter",
                 "url": "QrAllOrder.html",
-                "icon": "bi bi-circle"  
+                "icon": "bi bi-circle"
             }
         ]
     },
