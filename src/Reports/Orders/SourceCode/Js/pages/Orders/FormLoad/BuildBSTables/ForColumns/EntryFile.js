@@ -5,9 +5,7 @@ import { StartFunc as ColumnSettlement } from "./ColumnSettlement/entryFile.js";
 import { StartFunc as ColumnSettle } from "./ColumnSettle/entryFile.js";
 
 
-let StartFunc = ({ inColumns }) => {
-    console.log("chandana",inColumns);
-    
+let StartFunc = ({ inColumns }) => {    
     let LocalColumns = inColumns;
     let LocalColumnOperateFine = LocalColumns.find(element => element.field === "KS-Serial");
     let LocalColumnTime = LocalColumns.find(element => element.field === "OrderData.Currentdateandtime");
