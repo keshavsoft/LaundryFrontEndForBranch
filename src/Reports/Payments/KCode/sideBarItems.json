@@ -8,17 +8,9 @@
         "url": "../../NewOrders/HtmlFiles/Customer.html"
     },
     {
-        "name": "Dashboard",
-        "icon": "bi bi-columns-gap",
-        "url": "../HtmlFiles/index.html"
-    },
-    {
         "name": "Parent",
         "icon": "bi bi-arrow-90deg-left",
         "url": "../../All-Orders/HtmlFiles/ReportsMenu.html"
-    },
-    {
-        "name": "All-Payments"
     },
     {
         "name": "ShowAll",

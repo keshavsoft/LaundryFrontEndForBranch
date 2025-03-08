@@ -1,4 +1,4 @@
-import { StartFunc as StartFuncClickFunc } from "./ClickFunc.js";
+import { StartFunc as StartFuncClickFunc } from "./FetchFromFuncs/Entry.js";
 
 let StartFunc = () => {
     let jVarLocalMasterButtonId = "AllRefreshButtonId";
