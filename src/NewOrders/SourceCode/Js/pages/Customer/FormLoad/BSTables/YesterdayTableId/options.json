@@ -41,7 +41,8 @@
         },
         {
             "field": "IsSettled",
-            "title": "IsSettled"
+            "title": "IsSettled",
+            "formatter":""
         },
         {
             "title": "Opts.",
