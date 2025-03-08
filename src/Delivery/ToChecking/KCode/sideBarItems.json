@@ -8,14 +8,14 @@
         "url": "../../../NewOrders/HtmlFiles/Customer.html"
     },
     {
-        "name": "Parent",
-        "icon": "bi bi-arrow-90deg-left",
-        "url": "../../../NewOrders/HtmlFiles/NewOrdersMenu.html"
-    },
-    {
         "name": "Dashboard",
         "icon": "bi bi-columns-gap",
         "url": "../HtmlFiles/index.html"
+    },
+    {
+        "name": "Parent",
+        "icon": "bi bi-arrow-90deg-left",
+        "url": "../../../NewOrders/HtmlFiles/NewOrdersMenu.html"
     },
     {
         "name": "Check",
