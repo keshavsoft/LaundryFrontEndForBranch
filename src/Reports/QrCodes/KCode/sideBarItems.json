@@ -5,15 +5,19 @@
         "url": "../../NewOrders/HtmlFiles/Customer.html"
     },
     {
-        "name": "DashBoard",
+        "name": "Dashboard",
         "icon": "bi bi-columns-gap",
-        "url": "./index.html"
+        "url": "../HtmlFiles/index.html"
     },
     {
         "name": "Parent",
         "icon": "bi bi-arrow-90deg-left",
         "url": "../../All-Orders/HtmlFiles/ReportsMenu.html"
     },
+    {
+        "name": "All-QrCodes"
+    },
+   
     {
         "name": "All",
         "key": "QrAll",
