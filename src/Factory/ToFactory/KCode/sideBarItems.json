@@ -15,7 +15,7 @@
     {
         "name": "Parent",
         "icon": "bi bi-arrow-90deg-left",
-        "url": "../../All-Orders/HtmlFiles/ReportsMenu.html"
+        "url": "../../../Factory/ToFactory/HtmlFiles/Menu.html"
     }, 
     {
         "name": "Dc-Create",
