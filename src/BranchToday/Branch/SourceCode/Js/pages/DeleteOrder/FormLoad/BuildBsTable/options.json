@@ -14,7 +14,7 @@
             "formatter": ""
         },
         {
-            "field": "UuId",
+            "field": "pk",
             "title": "Order #"
         },
         {
