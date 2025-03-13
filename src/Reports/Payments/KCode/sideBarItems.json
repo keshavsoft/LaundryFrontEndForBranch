@@ -18,6 +18,11 @@
         "icon": "bi bi-border-all"
     },
     {
+        "name": "GstPayments",
+        "url": "PaymentsGst.html",
+        "icon": "bi-currency-rupee"
+    },
+     {
         "name": "Cash",
         "url": "PaymentsCash.html",
         "icon": "bi bi-cash-coin"
