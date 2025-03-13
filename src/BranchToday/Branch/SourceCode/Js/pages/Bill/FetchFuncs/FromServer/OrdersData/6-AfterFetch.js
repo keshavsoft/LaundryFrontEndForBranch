@@ -4,8 +4,11 @@ import { StartFunc as StartFuncFooter } from "./AfterFetch/Footer/Footer.js";
 import { StartFunc as StartFuncPaymentMode } from "./PaymentMode.js";
 
 let StartFunc = ({ inFromFetch }) => {
+    console.log(inFromFetch);
+
     let data = inFromFetch;
     let BillNumber = data.pk;
+    let StoreContact = data.BranchMobile;
     let CustomerName = data.CustomerData.CustomerName;
     let CustomerMobile = data.CustomerData.CustomerMobile;
     let BookingDate = data.OrderData.Currentdateandtime;
@@ -36,7 +39,8 @@ let StartFunc = ({ inFromFetch }) => {
         inBookingDateid: BookingDate,
         inPaymentid: paymentMode,
         inGSTNoid: GSTNumber,
-        inBranchName: BranchName
+        inBranchName: BranchName,
+        inStore :StoreContact
     });
     StartFuncBody({ inItemData: ItemData, inAddOnsData: Object.values(AddOnsData) });
     StartFuncFooter({
@@ -59,4 +63,5 @@ let jFLocalDuplicateBillOnDom = () => {
     let k2 = document.getElementById("RightBillId");
     k2.innerHTML = k1;
 };
+
 export { StartFunc };

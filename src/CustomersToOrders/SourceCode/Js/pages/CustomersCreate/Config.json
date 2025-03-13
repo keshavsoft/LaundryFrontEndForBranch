@@ -1,5 +1,6 @@
 {
     "FetchUrl": "/binV4/MastersCustomers/Create",
+    "PostFetch": "/Custom/Cleaning/Branch/Order/NewOrderV1",
     "SaveButton": {
         "NewOrder": {
             "500Status": {

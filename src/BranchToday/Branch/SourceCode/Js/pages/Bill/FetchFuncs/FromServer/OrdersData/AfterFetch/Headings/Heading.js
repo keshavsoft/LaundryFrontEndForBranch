@@ -1,4 +1,4 @@
-let StartFunc = ({ inBillNumberid, inCustomerNameid, inMobileNumberid, inBookingDateid, inDeliveryDateid, inPaymentid, inGSTNoid, inBranchName }) => {
+let StartFunc = ({ inBillNumberid, inCustomerNameid, inMobileNumberid, inBookingDateid, inDeliveryDateid, inPaymentid, inGSTNoid, inBranchName,inStore }) => {
     jFLocalToInnerHtmlBillNumberid({ inBillNumberid });
     jFLocalToInnerHtmlCustomerNameid({ inCustomerNameid });
     jFLocalToInnerHtmlMobileNumberid({ inMobileNumberid });
@@ -6,6 +6,8 @@ let StartFunc = ({ inBillNumberid, inCustomerNameid, inMobileNumberid, inBooking
     jFLocalToInnerHtmlPaymentid({ inPaymentid });
     jFLocalToInnerHtmlGSTNoid({ inGSTNoid });
     jFLocalToInnerHtmlBranchNameId({ inBranchName });
+    jFLocalToInnerHtmlStoreContactId({ inStore });
+
 }
 
 let jFLocalToInnerHtmlBillNumberid = ({ inBillNumberid }) => {
@@ -48,6 +50,12 @@ let jFLocalToInnerHtmlBranchNameId = ({ inBranchName }) => {
     let jVarLocalHtmlId = 'BranchNameId';
     let jVarLocalPaymentid = document.getElementById(jVarLocalHtmlId);
     jVarLocalPaymentid.innerHTML = inBranchName;
+};
+
+let jFLocalToInnerHtmlStoreContactId = ({ inStore }) => {
+    let jVarLocalHtmlId = 'StoreContactId';
+    let jVarLocalPaymentid = document.getElementById(jVarLocalHtmlId);
+    jVarLocalPaymentid.innerHTML = inStore;
 };
 
 export { StartFunc };
