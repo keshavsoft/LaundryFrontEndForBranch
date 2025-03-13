@@ -17,7 +17,7 @@
             "class": "d-none d-sm-table-cell"
         },
         {
-            "field": "UuId",
+            "field": "pk",
             "title": "Order #"
         },
         {
