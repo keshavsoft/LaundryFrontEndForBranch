@@ -1,1 +1,5 @@
-{"routePath":"binV4","tableName":"Openings"}
+{
+    "routePath": "binV4",
+    "tableName": "Openings",
+    "url":"/Custom/Cleaning/Branch/Today/Orders/OnlyOrders/BillPrint"
+}

@@ -18,7 +18,7 @@ let StartFunc = async (inEvent) => {
         let jVarLocalResponse = await StartFuncFetchFuncs({ inBodyData: LocalBodyData });
 
         if (jVarLocalResponse.status === 200) {
-            let jVarorderResponse = await OrderFetchFunc({ inBodyData: LocalBodyData });
+            let jVarorderResponse = await OrderFetchFunc();
 
             if (jVarorderResponse.status === 200) {
                 Order200StatusFile();

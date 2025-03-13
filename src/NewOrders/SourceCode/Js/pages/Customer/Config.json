@@ -10,7 +10,9 @@
     },
     "Urls": {
         "NewOrderButtonId": {
-            "PostFetch": "/Custom/Cleaning/Branch/Order/NewOrderV1/InSertOrder",
+            "PostFetch1": "/Custom/Cleaning/Branch/Order/NewOrderV1/InSertOrder",
+            "PostFetch": "/Custom/Cleaning/Branch/Order/NewOrderV1",
+
             "RedirectUrl": {
                 "500Status": "/Laundry/Branch/NewOrders/HtmlFiles/AddItems.html",
                 "200Status": "AddItems.html"

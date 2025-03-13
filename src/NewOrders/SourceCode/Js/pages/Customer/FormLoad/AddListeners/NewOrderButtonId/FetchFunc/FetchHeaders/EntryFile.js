@@ -4,14 +4,16 @@ import KeysJson from './Keys.json' with {type: 'json'};
 let StartFunc = () => {
     let jVarLocalFromDom = jFLocalCustomerNameInputId();
     let jVarLocalMobileNumber = jVarLocalFromDom.split(":")[1];
-    let jVarLocalCustomerName = jVarLocalFromDom.split(":")[0];
-    let jVarLocalBranchName = localStorage.getItem("BranchName");
-     
+    // let jVarLocalCustomerName = jVarLocalFromDom.split(":")[0];
+    // let jVarLocalBranchName = localStorage.getItem("BranchName");
+    let jVarLocalUserUuId = localStorage.getItem("UserUuId");
 
-    KeysJson.body.CustomerData.CustomerMobile = jVarLocalMobileNumber;
-    KeysJson.body.CustomerData.CustomerName = jVarLocalCustomerName;
-    KeysJson.body.OrderData.BranchName = jVarLocalBranchName;
-    KeysJson.body.OrderData.Currentdateandtime = LocalFuncCurrentDateAndTime();
+    KeysJson.body.inMobileNumber = jVarLocalMobileNumber;
+    KeysJson.body.inUserUuId = jVarLocalUserUuId;
+
+    // KeysJson.body.CustomerData.UserUuId = jVarLocalUserUuId;
+    // KeysJson.body.OrderData.BranchName = jVarLocalBranchName;
+    // KeysJson.body.OrderData.Currentdateandtime = LocalFuncCurrentDateAndTime();
 
     KeysJson.body = JSON.stringify(KeysJson.body);
 

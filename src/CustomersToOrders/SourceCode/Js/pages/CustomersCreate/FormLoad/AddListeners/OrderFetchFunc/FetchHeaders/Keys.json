@@ -4,17 +4,5 @@
         "Accept": "application/json",
         "Content-Type": "application/json"
     },
-    "body": {
-        "ItemsInOrder": {},
-        "CustomerData": {
-            "CustomerName": "",
-            "CustomerMobile": ""
-        },
-        "OrderData": {
-            "BranchName": "",
-            "Currentdateandtime": ""
-        },
-        "AddOnData": {},
-        "CheckOutData": {}
-    }
+    "body": {}
 }
