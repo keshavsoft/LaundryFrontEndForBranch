@@ -33,22 +33,22 @@
         "icon": "bi bi-box-seam",
         "children": [
             {
-                "name": " DC-All",
+                "name": " All",
                 "url": "ToFactoryDCShowAll.html",
                 "icon": "bi bi-upc-scan"
             },
             {
-                "name": "DC-Sent",
+                "name": "Sent",
                 "url": "ToFactoryVouchers.html",
                 "icon": "bi bi-upc-scan"
             },
             {
-                "name": "DC-Delete",
+                "name": "Delete",
                 "url": "ToFactoryToScanDelete.html",
                 "icon": "bi bi-upc-scan"
             },
             {
-                "name": "DC-Print",
+                "name": "Print",
                 "url": "ToFactoryQRPrint.html",
                 "icon": "bi bi-printer"
             }
