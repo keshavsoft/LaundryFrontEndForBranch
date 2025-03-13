@@ -28,14 +28,14 @@
             "title": "Mobile"
         },
         {
-            "field": "TotalPcs",
-            "title": "Pcs",
+            "field": "CustomerData.GSTNumber",
+            "title": "GstNumber",
             "align": "right",
             "footerFormatter": "totalFormatter"
         },
         {
-            "field": "CustomerData.GSTNumber",
-            "title": "GstNumber",
+            "field": "TotalPcs",
+            "title": "Pcs",
             "align": "right",
             "footerFormatter": "totalFormatter"
         },
