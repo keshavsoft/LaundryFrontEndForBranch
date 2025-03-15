@@ -1,5 +1,7 @@
+import { StartFunc as LoginModal } from "../../../assets/static/js/Common/NiceAdmin/Header/LoginModal/EntryFile.js";
+
 const StartFunc = () => {
-    let jVarLocalFromAdmin = true;
+    let jVarLocalFromAdmin = LoginModal();
 
     if (jVarLocalFromAdmin) {
         jFLocalLeftSide();
