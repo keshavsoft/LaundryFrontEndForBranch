@@ -3,7 +3,6 @@ import { StartFunc as StartFuncSetFocus } from "./SetFocus.js";
 import { StartFunc as StartFuncAddListeners } from "./AddListeners/EntryFile.js";
 import { StartFunc as ShowOnDom } from "./ShowOnDom/EntryFile.js";
 
-
 const StartFunc = ({ inSuccessFunc }) => {
     let localCheckCookie = StartFuncCheckCookie();
 
