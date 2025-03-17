@@ -1,11 +1,6 @@
 [
   {
     "name": "Dashboard",
-    "icon": "bi bi-grid",
-    "url": "../../../../NewOrders/HtmlFiles/Customer.html"
-  },
-  {
-    "name": "Dashboard",
     "icon": "bi bi-columns-gap",
     "url": "../HtmlFiles/index.html"
 },
