@@ -2,10 +2,10 @@ import KeysJson from './Keys.json' with {type: 'json'};
 
 let StartFunc = () => {
     let jVarLocalFromDom = jFLocalCustomerNameInputId();
-    let jVarLocalUserUuId = localStorage.getItem("UserUuId");
+    let jVarLocalUserName = localStorage.getItem("UserName");
 
     KeysJson.body.inMobileNumber = jVarLocalFromDom;
-    KeysJson.body.inUserUuId = jVarLocalUserUuId;
+    KeysJson.body.UserName = jVarLocalUserName;
 
     KeysJson.body = JSON.stringify(KeysJson.body);
 
