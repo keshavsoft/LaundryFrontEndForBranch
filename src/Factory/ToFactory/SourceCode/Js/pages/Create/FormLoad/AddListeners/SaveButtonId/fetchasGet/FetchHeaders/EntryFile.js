@@ -2,7 +2,6 @@ import KeysJson from './Keys.json' with {type: 'json'};
 
 let StartFunc = () => {
     let jVarLocalForm = document.getElementById("FormId");
-
     KeysJson.body = JSON.stringify(jFLocalserializeFormData(jVarLocalForm));
 
     return KeysJson;
@@ -22,6 +21,7 @@ function jFLocalserializeFormData(form) {
             serializedData[name] = value;
         }
     }
+    serializedData.UserName = localStorage.getItem("UserName");
 
     return serializedData;
 };
