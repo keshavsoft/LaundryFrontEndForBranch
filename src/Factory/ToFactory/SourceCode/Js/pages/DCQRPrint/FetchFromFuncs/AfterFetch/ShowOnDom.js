@@ -45,6 +45,7 @@ const jfShow = ({ inDataToShow }) => {
     jFLocalToInputDCFactoryDCDetailsTextId({ inDCFactoryDCDetailsTextId: inDataToShow.Factory });
     jFLocalToInputDCBranchDCDetailsTextId({ inDCBranchDCDetailsTextId: inDataToShow.BranchName });
     jFLocalToInputBranchNameId({ inValue: inDataToShow.BranchName });
+    jFLocalStoreContactId({inStoreContact:inDataToShow.BranchMobile})
 };
 
 let jFLocalToInputVoucherNumberDCDetailsTextId = ({ inVoucherNumberDCDetailsTextId }) => {
@@ -88,6 +89,15 @@ let jFLocalToInputBranchNameId = ({ inValue }) => {
 
     if (jVarLocalBranchNameId === null === false) {
         jVarLocalBranchNameId.innerHTML = inValue;
+    };
+};
+
+let jFLocalStoreContactId = ({ inStoreContact }) => {
+    let jVarLocalStoreContactId = 'StoreContactId'
+    let jVarLocalHtmlId = document.getElementById(jVarLocalStoreContactId);
+
+    if (jVarLocalHtmlId === null === false) {
+        return jVarLocalHtmlId.innerHTML = inStoreContact;
     };
 };
 
