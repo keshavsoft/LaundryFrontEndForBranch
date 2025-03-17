@@ -2,7 +2,7 @@
   {
     "name": "Dashboard",
     "icon": "bi bi-grid",
-    "url": "../../../../NewOrders/HtmlFiles/Customer.html"
+    "url": "../HtmlFiles/index.html"
   },
   {
     "name": "Parent",
