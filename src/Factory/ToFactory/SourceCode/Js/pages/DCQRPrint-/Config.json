@@ -1,5 +1,0 @@
-{
-    "routePath": "binV4",
-    "tableName": "Openings",
-    "endPoint":"/Custom/Cleaning/Branch/Factory/ToFactory/Voucher/QrDataWithPrint"
-}

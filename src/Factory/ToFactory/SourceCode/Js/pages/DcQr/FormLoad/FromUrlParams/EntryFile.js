@@ -1,11 +1,19 @@
-let StartFunc = () => {
-  let jVarLocalBranchId = 'BranchNameId';
-  let jVarlocalBranch = document.getElementById(jVarLocalBranchId);
-  let jVarLocalBranchName = localStorage.getItem("BranchName");
-  const modifiedBranch = jVarLocalBranchName.replace("BranOrders", "");
+import { StartFunc as StartFuncPop } from "./PopUp.js";
 
-  if (jVarlocalBranch === null === false) {
-      jVarlocalBranch.innerHTML = modifiedBranch;
+let StartFunc = () => {
+  LocalFuncForBranchNameId();
+  StartFuncPop();
+  
+};
+
+let LocalFuncForBranchNameId = () => {
+  let jVarLocalfactoryName = localStorage.getItem("BranchName");
+
+  let jVarLocalBranchNameId = document.getElementById('BranchNameId');
+
+
+  if (jVarLocalBranchNameId === null === false) {
+    jVarLocalBranchNameId.innerHTML = jVarLocalfactoryName
   };
 };
 

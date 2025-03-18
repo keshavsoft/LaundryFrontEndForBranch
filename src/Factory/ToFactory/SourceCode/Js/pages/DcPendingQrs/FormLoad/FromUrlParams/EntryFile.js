@@ -7,9 +7,9 @@ let StartFunc = () => {
 };
 
 let LocalFuncForBranchNameId = () => {
-  let jVarLocalfactoryName = localStorage.getItem("FactoryName");
+  let jVarLocalfactoryName = localStorage.getItem("BranchName");
 
-  let jVarLocalBranchNameId = document.getElementById('FactoryNameId');
+  let jVarLocalBranchNameId = document.getElementById('BranchNameId');
 
 
   if (jVarLocalBranchNameId === null === false) {
