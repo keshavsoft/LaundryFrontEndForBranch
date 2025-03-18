@@ -1,7 +1,7 @@
 import { StartFunc as StartFuncAfterFetch } from "./6-AfterFetch.js";
 
 const StartFunc = async ({ inRowData }) => {
-    let LocalRowPk = inRowData.UuId;
+    let LocalRowPk = inRowData.pk;
     let LocalBranchName = inRowData.OrderData.BranchName;
     let jVarLocalBranchName = localStorage.getItem("BranchName");
 
