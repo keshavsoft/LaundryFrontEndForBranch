@@ -5,13 +5,14 @@
     "idfield": "pk",
     "showFooter": "true",
     "data": [],
-    "pageSize": "5",   
+    "pagination":"true",
+    "pageList":"[5,10, 25, 50, 100, all]",
     "onClickRow": "",
     "columns": [
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": "jFGlobalSerialColumn",
+            "formatter": "",
             "class": "d-none d-sm-table-cell"
         },
         {
@@ -20,36 +21,31 @@
         },
         {
             "field": "CustomerData.CustomerName",
-            "title": "Customer Name"
+            "title": "C Name"
         },
         {
             "field": "CustomerData.CustomerMobile",
             "title": "Mobile",
             "class": "d-none d-sm-table-cell"
         },
-        {
-            "title": "Qr Print",
-            "field":"TotalItems"
-            
-        },
-        {
-            "title": "Print",
-            "field":"OrderPrint"
-            
-        },
-        {
-            "title": "Pcs",
-            "field":"AggValues.ItemDetails",
-            "width": "100",
-            "footerFormatter": "pcsFormatter",
-            "class": "d-none d-sm-table-cell"
-        },
+    
         {
             "title": "Settlement",
             "field":"AggValues.SettlementAmount",
-            "formatter":"symbolFormatPrice",
+            "footerFormatter": "",
             "align":"right",
             "class": "d-none d-sm-table-cell"
+        },
+        {
+            "title": "QrCodes",
+            "field":"TotalItems",
+            "footerFormatter": "",
+            "class": "d-none d-sm-table-cell"
+        },
+        {
+            "title": "Print",
+            "formatter": "Billprint",
+            "width": "100"
         }
     ]
 }
