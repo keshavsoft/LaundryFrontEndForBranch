@@ -4,38 +4,48 @@
     "searchable": "true",
     "idfield": "pk",
     "showFooter": "true",
-    "filterControl": true,
-    "pagination":"true",
-    "pageList": "[5, 10, 25 ]",
-    "pageSize": "5",
-   
     "data": [],
+    "pagination":"true",
+    "pageList":"[5,10, 25, 50, 100, all]",
+    "onClickRow": "",
     "columns": [
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": "jFGlobalSerialColumn"
+            "formatter": "",
+            "class": "d-none d-sm-table-cell"
         },
         {
             "field": "pk",
-            "title": "Order #",
-            "filterControl":"select"
+            "title": "Order #"
         },
         {
-            "title": "ItemName",
-            "field": "ItemName"
+            "field": "CustomerData.CustomerName",
+            "title": "C Name"
         },
         {
-            "title": "Rate",
-            "field": "Rate",
-            "align": "right",
-            "footerFormatter": ""
+            "field": "CustomerData.CustomerMobile",
+            "title": "Mobile",
+            "class": "d-none d-sm-table-cell"
+        },
+    
+        {
+            "title": "Settlement",
+            "field":"AggValues.SettlementAmount",
+            "footerFormatter": "",
+            "align":"right",
+            "class": "d-none d-sm-table-cell"
         },
         {
-            "title": "Pcs",
-            "field": "Pcs",
-            "align": "right",
-            "footerFormatter": ""
+            "title": "QrCodes",
+            "field":"TotalItems",
+            "footerFormatter": "",
+            "class": "d-none d-sm-table-cell"
+        },
+        {
+            "title": "Print",
+            "formatter": "Billprint",
+            "width": "100"
         }
     ]
 }
