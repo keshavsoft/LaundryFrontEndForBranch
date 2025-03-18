@@ -2,18 +2,11 @@ let StartFunc = ({ inDataToShow }) => {
 
     let jVarLocalData = inDataToShow;
 
-    // jFLocalToInnerHtmlpkTextId({ inpkTextId: jVarLocalData.pk });
     jFLocalToInnerHtmlVoucherNumberTextId({ inVoucherNumberTextId: jVarLocalData.pk })
     jFLocalToInnerHtmlDescriptionTextId({ inDescriptionTextId: jVarLocalData.Description });
     jFLocalToInnerHtmlDateTextId({ inDateTextId: jVarLocalData.Date });
     jFLocalToInnerHtmlFactoryTextId({ inFactoryTextId: jVarLocalData.Factory });
     jFLocalToInnerHtmlDCBranchNameTextId({ inDCBranchNameTextId: jVarLocalData.BranchName })
-};
-
-let jFLocalToInnerHtmlpkTextId = ({ inpkTextId }) => {
-    let jVarLocalHtmlId = 'pkTextId';
-    let jVarLocalpkTextId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalpkTextId.innerHTML = inpkTextId;
 };
 
 let jFLocalToInnerHtmlVoucherNumberTextId = ({ inVoucherNumberTextId }) => {
