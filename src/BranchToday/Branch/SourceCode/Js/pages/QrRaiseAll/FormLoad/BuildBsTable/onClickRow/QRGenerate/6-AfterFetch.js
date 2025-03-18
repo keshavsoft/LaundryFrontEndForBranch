@@ -1,5 +1,5 @@
 let StartFunc = () => {
-    jFRefesh();
+    // jFRefesh();
     Swal.fire({
         icon: 'success',
         title: 'Raised',
@@ -15,10 +15,10 @@ let StartFunc = () => {
     });
 };
 
-const jFRefesh = () => {
-    let jVarLocalHtmlId = 'RefreshBSTableId';
-    let jVarLocalRefreshBSTableId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalRefreshBSTableId.click();
-}
+// const jFRefesh = () => {
+//     let jVarLocalHtmlId = 'RefreshBSTableId';
+//     let jVarLocalRefreshBSTableId = document.getElementsByClassName(jVarLocalHtmlId);
+//     jVarLocalRefreshBSTableId.click();
+// }
 
 export { StartFunc };
