@@ -17,7 +17,7 @@ let StartFunc = async ({ inFromFetch }) => {
             Swal.fire({
                 icon: 'success',
                 title: 'Raised',
-                text: ' QrCodes raised successfully'
+                text: ' Deleted successfully'
             }).then((result) => {
                 if (result.isConfirmed) {
                     const url = new URL(window.location.href);
