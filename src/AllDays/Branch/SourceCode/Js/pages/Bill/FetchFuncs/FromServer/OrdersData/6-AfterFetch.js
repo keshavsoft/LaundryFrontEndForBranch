@@ -6,6 +6,7 @@ import { StartFunc as StartFuncPaymentMode } from "./PaymentMode.js";
 let StartFunc = ({ inFromFetch }) => {
     let data = inFromFetch;
     let BillNumber = data.pk;
+    let BranchMobile = data.BranchMobile;
     let CustomerName = data.CustomerData.CustomerName;
     let CustomerMobile = data.CustomerData.CustomerMobile;
     let BookingDate = data.OrderData.Currentdateandtime;
@@ -36,7 +37,8 @@ let StartFunc = ({ inFromFetch }) => {
         inBookingDateid: BookingDate,
         inPaymentid: paymentMode,
         inGSTNoid: GSTNumber,
-        inBranchName: BranchName
+        inBranchName: BranchName,
+        inStoreContact: BranchMobile
     });
     StartFuncBody({ inItemData: ItemData, inAddOnsData: Object.values(AddOnsData) });
     StartFuncFooter({
