@@ -3,7 +3,7 @@
 {% block content %}
 <div class="pagetitle">
     <h1 class="d-block d-sm-none">QrRaiseAll</h1>
-    <h1 class="d-none d-sm-block"><a id="RefreshBSTableId">QrRaiseAll</a></h1>
+    <h1 class="d-none d-sm-block">QrRaiseAll</h1>
     <nav class="d-none d-sm-block">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/Laundry/Branch/NewOrders/HtmlFiles/Customer.html">Home</a></li>
@@ -14,9 +14,18 @@
     </nav>
 </div>
 
-<div class="spinner-border" id="SpinnerId" role="status" style="display: none;">
-    <span class="visually-hidden">Loading...</span>
+<div class="d-flex justify-content-end">
+    <a id="RefreshATagId" href="#"
+        class="btn btn-outline-gray-600 btn-primary d-inline-flex align-items-center RefreshBSTableId">
+        <i class="bi bi-bootstrap-reboot me-2"></i> Refresh
+    </a>
+
+    <button id="LoadingButtonId" class="btn btn-primary d-none ms-2" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+        <span role="status">Loading...</span>
+    </button>
 </div>
+
 <table id="table">
     <thead>
         <tr>
