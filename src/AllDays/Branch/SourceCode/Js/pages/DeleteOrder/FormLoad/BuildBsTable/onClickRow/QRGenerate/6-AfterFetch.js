@@ -16,7 +16,7 @@ let StartFunc = async ({ inFromFetch }) => {
             jFRefesh();
             Swal.fire({
                 icon: 'success',
-                title: 'Raised',
+                title: 'Deleted',
                 text: ' Deleted successfully'
             }).then((result) => {
                 if (result.isConfirmed) {
