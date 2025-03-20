@@ -17,7 +17,7 @@
             "formatter": "jFGlobalSerialColumn"
         },
         {
-            "field": "UuId",
+            "field": "pk",
             "title": "Order #",
             "filterControl": "select"
         },
