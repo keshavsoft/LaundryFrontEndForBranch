@@ -21,6 +21,10 @@
             "title": "ItemName"
         },
         {
+            "field": "AddOns",
+            "title": "AddOns"
+        },
+        {
             "field": "OrderDate",
             "title": "OrderDate"
         },
@@ -41,6 +45,7 @@
         {
             "title": "Status",
             "field": "Scan",
+            "visible":false,
             "formatter": "QRCodeGenerate"
         }
     ]
