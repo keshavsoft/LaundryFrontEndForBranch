@@ -28,5 +28,11 @@
         "key": "IsQrRaised",
         "icon": "bi bi-people-fill",
         "url": "IsQrRaised.html"
+    },
+    {
+        "name": "OrdersWithUsers",
+        "key": "OrdersWithUsers",
+        "icon": "bi bi-people-fill",
+        "url": "OrdersWithUsers.html"
     }
 ]
