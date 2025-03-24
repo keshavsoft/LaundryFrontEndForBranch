@@ -8,7 +8,7 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="">Laundry</a></li>
             <li class="breadcrumb-item">Branch</li>
-            <li class="breadcrumb-item">Factory</li>           
+            <li class="breadcrumb-item">Factory</li>
             <li class="breadcrumb-item">FromFactory</li>
             <li class="breadcrumb-item">PressingReturnQrCodes</li>
             <li class="breadcrumb-item">All</li>
@@ -20,8 +20,36 @@
 <div class="page-heading">
     <!--  Inverse table start -->
     <section class="section">
-        <div class="spinner-border" id="SpinnerId" role="status" style="display: none;">
-            <span class="visually-hidden">Loading...</span>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group row align-items-centerv">
+                    <label for="FromDateInputId" class="col-md-4 col-form-label text-right">From Date</label>
+                    <div class="col-md-8">
+                        <input id="FromDateInputId" type="date" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group row align-items-center">
+                    <label for="ToDateInputId" class="col-md-4 col-form-label text-right">To Date</label>
+                    <div class="col-md-8">
+                        <input id="ToDateInputId" type="date" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center justify-content-end">
+                <button class="btn btn-success ShowButtonId">Show</button>
+            </div>
+        </div>
+        <div id="toolbar">
+            <a id="RefreshATagId" href="#" class="btn btn-outline-gray-600 btn-primary d-inline-flex ShowButtonId">
+                <i class="bi bi-bootstrap-reboot me-2"></i> Refresh
+            </a>
+
+            <button id="LoadingButtonId" class="btn btn-primary d-none ms-2" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                <span role="status">Loading...</span>
+            </button>
         </div>
         <table class="table mb-0" id="table">
             <thead>
