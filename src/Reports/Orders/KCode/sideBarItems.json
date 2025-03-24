@@ -28,5 +28,11 @@
         "name": "UpComingDelivery",
         "icon": "bi bi-people-fill",
         "url": "UpComingDelivery.html"
+    },
+    {
+        "name": "OrdersWithUsers",
+        "key": "OrdersWithUsers",
+        "icon": "bi bi-people-fill",
+        "url": "OrdersWithUsers.html"
     }
 ]
