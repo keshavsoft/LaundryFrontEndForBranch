@@ -38,12 +38,19 @@
                 </div>
             </div>
             <div class="col-md-4 d-flex align-items-center justify-content-end">
-                <button id="ShowButtonId" class="btn btn-success">Show</button>
+                <button class="ShowButtonId btn btn-success">Show</button>
             </div>
         </div>
 
-        <div class="spinner-border" id="SpinnerId" role="status" style="display: none;">
-            <span class="visually-hidden">Loading...</span>
+        <div id="toolbar">
+            <a id="RefreshATagId" href="#" class="btn btn-outline-gray-600 btn-primary d-inline-flex ShowButtonId">
+                <i class="bi bi-bootstrap-reboot me-2"></i> Refresh
+            </a>
+
+            <button id="LoadingButtonId" class="btn btn-primary d-none ms-2" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                <span role="status">Loading...</span>
+            </button>
         </div>
         <table class="table mb-0" id="table">
             <thead>
