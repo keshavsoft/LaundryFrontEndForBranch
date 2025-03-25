@@ -6,6 +6,7 @@ let StartFunc = () => {
     StartFuncItemAdd();
     jFLocalEndFunc()
 };
+
 let jFLocalEndFunc = () => {
     var event = new Event('change');
     let jVarLocalTableFooterCategoryId = document.getElementById('MenItemsId');
