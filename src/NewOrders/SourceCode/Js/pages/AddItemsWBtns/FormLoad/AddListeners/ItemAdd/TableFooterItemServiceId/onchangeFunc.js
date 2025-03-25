@@ -3,6 +3,7 @@ import { StartFuncServiceFind as StartFuncFromLocalStorage } from "../fromlocalS
 const StartFunc = (event) => {
     let jVarLocalCurrentTarget = event.currentTarget;
     let jVarLocalService = jVarLocalCurrentTarget.value;
+    debugger;
 
     const jVarLocalCategorySelected = jFLocalTableFooterCategoryId();
     const jVarLocalItemType = jFLocalTableFooterItemNameId();
@@ -25,12 +26,10 @@ let jFLocalTableFooterItemNameId = () => {
 };
 
 let jFLocalTableFooterCategoryId = () => {
-    let selectedButton = Array.from(document.querySelectorAll('.CategoryItems')).find(button =>
-        button.classList.contains('btn-primary')
-    );
-    return selectedButton ? selectedButton.textContent.trim() : null;
-};
+    let jVarLocalItemTypeLabelId = document.getElementById('ItemTypeLabelId');
 
+    return jVarLocalItemTypeLabelId.dataset.itemCategory;
+};
 
 let jFLocalToInputTableFooterRateInputId = (inValue) => {
     let jVarLocalHtmlId = 'TableFooterRateInputId';

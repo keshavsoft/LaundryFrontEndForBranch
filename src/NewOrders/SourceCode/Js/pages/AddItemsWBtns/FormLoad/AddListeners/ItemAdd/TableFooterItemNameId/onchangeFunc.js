@@ -36,12 +36,10 @@ const StartFunc = (event) => {
 };
 
 let jFLocalTableFooterCategoryId = () => {
-    let selectedButton = Array.from(document.querySelectorAll('.CategoryItems')).find(button =>
-        button.classList.contains('btn-primary')
-    );
-    return selectedButton ? selectedButton.textContent.trim() : null;
-};
+    let jVarLocalItemTypeLabelId = document.getElementById('ItemTypeLabelId');
 
+    return jVarLocalItemTypeLabelId.dataset.itemCategory;
+};
 
 let jFLocalEndFunc = () => {
     var event = new Event('change');
