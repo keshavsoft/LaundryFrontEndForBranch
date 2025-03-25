@@ -31,5 +31,20 @@
         "name": "FactoryScan",
         "url": "SentAndFactoryScan.html",
         "icon": "bi bi-clipboard-check"
+    },
+    {
+        "name": "EntryReturn",
+        "url": "EntryReturn.html",
+        "icon": "bi bi-clipboard-check"
+    },
+    {
+        "name": "ProcessReturn",
+        "url": "ProcessReturn.html",
+        "icon": "bi bi-clipboard-check"
+    },
+    {
+        "name": "CompletionReturn",
+        "url": "CompletionReturn.html",
+        "icon": "bi bi-clipboard-check"
     }
 ]

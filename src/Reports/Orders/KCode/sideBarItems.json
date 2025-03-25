@@ -20,7 +20,6 @@
     },
     {
         "name": "Orders",
-        "key": "Orders",
         "icon": "bi bi-people-fill",
         "url": "Orders.html"
     },
@@ -31,7 +30,6 @@
     },
     {
         "name": "OrdersWithUsers",
-        "key": "OrdersWithUsers",
         "icon": "bi bi-people-fill",
         "url": "OrdersWithUsers.html"
     }
