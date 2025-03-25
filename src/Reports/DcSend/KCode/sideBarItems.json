@@ -35,16 +35,16 @@
     {
         "name": "EntryReturn",
         "url": "EntryReturn.html",
-        "icon": "bi bi-clipboard-check"
+        "icon": "bi bi-box-arrow-up"
     },
     {
         "name": "ProcessReturn",
         "url": "ProcessReturn.html",
-        "icon": "bi bi-clipboard-check"
+        "icon": "bi bi-box-arrow-down-left"
     },
     {
         "name": "CompletionReturn",
         "url": "CompletionReturn.html",
-        "icon": "bi bi-clipboard-check"
+        "icon": "bi bi-bounding-box-circles"
     }
 ]
