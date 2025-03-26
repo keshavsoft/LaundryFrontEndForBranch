@@ -5,14 +5,20 @@ import { StartFunc as LoginModal } from "../../../assets/static/js/Common/NiceAd
 
 const StartFunc = async () => {
     await StartFuncFormLoad();
-
     let jVarLocalFromAdmin = LoginModal({ inSuccessFunc: StartFuncShowToDom });
-    //let jVarLocalFromAdmin = true;
-
+    
     if (jVarLocalFromAdmin) {
         StartFuncToLocalStorage();
         StartFuncShowToDom();
+        jFLocalEndFunc();
     };
 };
 
+let jFLocalEndFunc = () => {
+    let jVarLocalTableFooterCategoryId = document.getElementById('MenCategoryId');
+
+    if (jVarLocalTableFooterCategoryId === null === false) {
+        jVarLocalTableFooterCategoryId.click();
+    };
+};
 StartFunc().then();
