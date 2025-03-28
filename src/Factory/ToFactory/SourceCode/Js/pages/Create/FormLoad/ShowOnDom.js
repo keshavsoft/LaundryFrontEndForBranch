@@ -15,13 +15,6 @@ let jFLocalToInputBranchName = () => {
 };
 
 let jFLocalToInputDate = () => {
-    // let jVarLocalHtmlId = "Date";
-    // let currentDate = new Date();
-    // let formattedDate = currentDate.toISOString().slice(0, 10);
-
-    // let jVarLocalMenItemsTabId = document.getElementById(jVarLocalHtmlId);
-    // jVarLocalMenItemsTabId.value = formattedDate;
-    
     var today = new Date(); 
     today.setDate(today.getDate());
     var dd = String(today.getDate()).padStart(2, '0'); 
