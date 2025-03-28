@@ -13,6 +13,38 @@
         </ol>
     </nav>
 </div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group row align-items-centerv">
+            <label for="FromDateInputId" class="col-md-4 col-form-label text-right">From Date</label>
+            <div class="col-md-8">
+                <input id="FromDateInputId" type="date" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group row align-items-center">
+            <label for="ToDateInputId" class="col-md-4 col-form-label text-right">To Date</label>
+            <div class="col-md-8">
+                <input id="ToDateInputId" type="date" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 d-flex align-items-center justify-content-end">
+        <button class="btn btn-success ShowButtonId">Show</button>
+    </div>
+</div>
+<div id="toolbar">
+    <a id="RefreshATagId" href="#"
+        class="btn btn-outline-gray-600 btn-primary d-inline-flex align-items-center RefreshBSTableId">
+        <i class="bi bi-bootstrap-reboot me-2"></i> Refresh
+    </a>
+
+    <button id="LoadingButtonId" class="btn btn-primary d-none ms-2" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+        <span role="status">Loading...</span>
+    </button>
+</div>
 
 <div class="spinner-border" id="SpinnerId" role="status" style="display: none;">
     <span class="visually-hidden">Loading...</span>
