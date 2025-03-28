@@ -1,4 +1,4 @@
-import { StartFunc as StartFuncFuncToRun } from "./fetchasGet/entryFile.js";
+import { StartFunc as StartFuncFuncToRun } from "./fetchasPost/entryFile.js";
 
 let StartFunc = () => {
     let jVarLocalRefreshBSTableId = document.getElementById("CreateCustomerButtonId");
