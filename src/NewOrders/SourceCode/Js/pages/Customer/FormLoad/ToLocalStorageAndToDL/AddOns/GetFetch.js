@@ -7,7 +7,7 @@ let StartFunc = async () => {
 
     let jVarLocalLocalStorageKey = ConfigJson.localStorageKeys.AddOnsKey;
 
-    let jVarLocalFetchUrl = `/${jVarLocalSubRoute}/MastersAddOns/Show/DataOnly`;
+    let jVarLocalFetchUrl = `/Custom/Cleaning/Masters/V2/AddOns/DataOnly`;
 
     let jVarLocalFromFetch = await fetch(jVarLocalFetchUrl);
     let jVarLocalFromFetchJson = await jVarLocalFromFetch.json();
