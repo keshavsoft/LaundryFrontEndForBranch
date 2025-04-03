@@ -1,6 +1,6 @@
 let StartFunc = () => {
     var $table = $('#table');
-console.log("jVarGlobalPresentViewData",jVarGlobalPresentViewData);
+// console.log("jVarGlobalPresentViewData",jVarGlobalPresentViewData);
 
     $table.bootstrapTable("load", jVarGlobalPresentViewData);
 };
