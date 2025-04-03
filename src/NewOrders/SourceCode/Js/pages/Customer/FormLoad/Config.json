@@ -1,4 +1,4 @@
 {
-    "routePath": "Custom/Cleaning/Masters/V1/Customers",
+    "url": "/Custom/Cleaning/Masters/V1/Customers",
     "tableName":"MastersCustomers"
 }
