@@ -1,8 +1,10 @@
 import UrlJson from '../../Config.json' with {type: 'json'};
 
 let StartFunc = async ({ inData }) => {
-    let jVarLocalVoucherRef = inData.pk;
-    let jVarLocalFactory = inData.Factory;
+    console.log(inData);
+    
+    let jVarLocalVoucherRef = inData.AsIs.pk;
+    let jVarLocalFactory = inData.AsIs.Factory;
 
     let jVarLocalFetchUrl = `${UrlJson.GetQrurl}/${jVarLocalVoucherRef}/${jVarLocalFactory}`;
     let response = await fetch(jVarLocalFetchUrl);
