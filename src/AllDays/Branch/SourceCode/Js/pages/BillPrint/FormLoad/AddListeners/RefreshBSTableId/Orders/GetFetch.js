@@ -19,7 +19,6 @@ let StartFunc = async () => {
 
     let jVarLocalFetchUrl = `${LocalroutePath}/${jVarLocalBranchName}/${formattedFromDate}/${formattedToDate}`;
     let response = await fetch(jVarLocalFetchUrl);
-    console.log(response)
 
     return await response;
 };

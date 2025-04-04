@@ -21,7 +21,8 @@
         },
         {
             "title": "ItemName",
-            "field": "ItemName"
+            "field": "ItemName",
+            "filterControl":"select"
         },
         {
             "title": "Rate",

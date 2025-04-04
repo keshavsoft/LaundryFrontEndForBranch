@@ -1,4 +1,5 @@
 {
     "StartRoute": "binV3",
-    "tableName":""
+    "tableName":"",
+    "url": "/Custom/Cleaning/Branch/All/V1/AllItems"
 }
