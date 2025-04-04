@@ -1,6 +1,5 @@
 {
     "routePath": "binV4",
     "DcCountTable":"BranchDC",
-    "GetQrurl":"/Custom/Cleaning/Factory/V1/Inward/Scan/QrCode/ToScanPending"
-
+    "GetQrurl":"/Custom/Cleaning/Branch/Factory/ToFactory/V1/QrCodes/Pending"
 }

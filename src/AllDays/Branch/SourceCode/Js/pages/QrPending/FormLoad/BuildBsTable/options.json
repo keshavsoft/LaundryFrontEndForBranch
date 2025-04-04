@@ -52,10 +52,8 @@
             "footerFormatter": "QrFormatter"
         },
         {
-            "title": "TimeSpan",
-            "field": "TimeSpan",
-            "filter-control": "select",
-            "class": "d-none d-sm-table-cell"
+            "title": "OrderDate",
+            "field": "OrderData.Currentdateandtime"
         }
     ]
 }
