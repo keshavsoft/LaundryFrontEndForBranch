@@ -9,7 +9,7 @@ const StartFunc = () => {
     optionsJson.queryParams = queryParams;
     optionsJson.responseHandler = responseHandler;
     ForColumns({ inColumns: optionsJson.columns });
-    optionsJson.url = `/Custom/Cleaning/Branch/Today/Orders/OnlyOrders/Items/${localBranchname}`
+    optionsJson.url = `/Custom/Cleaning/Branch/Today/V1/OnlyOrders/Items/${localBranchname}`
     $table.bootstrapTable(optionsJson);
 };
 
