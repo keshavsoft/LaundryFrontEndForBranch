@@ -21,7 +21,7 @@
             "title": "Qr#"
         },
         {
-            "field": "Status",
+            "field": "BranchScan",
             "title": "Status",
             "filterControl": "select"
         },
@@ -44,7 +44,7 @@
             "filtercontrol": "select"
         },
         {
-            "field": "OrderDateTime",
+            "field": "OrderDate",
             "title": "Order Date"
         },
         {

@@ -37,7 +37,7 @@
             "footerFormatter": "totalFormatter"
         },
         {
-            "field": "Status",
+            "field": "BranchScan",
             "title": "Status"
         },
         {
@@ -45,7 +45,7 @@
             "field": "TimeSpan"
         },
         {
-            "field": "OrderDateTime",
+            "field": "OrderDate",
             "title": "Order Date"
         },
         {
