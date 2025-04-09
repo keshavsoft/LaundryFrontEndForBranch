@@ -44,7 +44,7 @@
             "filtercontrol": "select"
         },
         {
-            "field": "OrderDateTime",
+            "field": "OrderDate",
             "title": "Order Date"
         },
         {

@@ -42,7 +42,7 @@
             "field": "TimeSpan"
         },
         {
-            "field": "OrderDateTime",
+            "field": "OrderDate",
             "title": "Order Date"
         },
         {
