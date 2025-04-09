@@ -21,7 +21,7 @@
             "title": "Qr#"
         },
         {
-            "field": "Status",
+            "field": "BranchScan",
             "title": "Status",
             "filterControl": "select"
         },

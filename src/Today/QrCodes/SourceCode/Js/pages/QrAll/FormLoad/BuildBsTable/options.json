@@ -34,7 +34,7 @@
             "footerFormatter": "totalFormatter"
         },
         {
-            "field": "Status",
+            "field": "BranchScan",
             "title": "Status"
         },
         {
