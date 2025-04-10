@@ -29,11 +29,6 @@
                 "icon": "bi bi-circle"
             },
             {
-                "name": "Status",
-                "url": "QrAllStatus.html",
-                "icon": "bi bi-circle"
-            },
-            {
                 "name": "FactoryFilter",
                 "url": "QrAllFactoryFilter.html",
                 "icon": "bi bi-circle"

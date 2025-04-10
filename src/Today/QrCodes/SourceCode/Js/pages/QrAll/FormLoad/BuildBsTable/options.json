@@ -7,6 +7,7 @@
     "pagination": "true",
     "pageList": "[5, 10, 25 ]",
     "pageSize": "5",
+    "filterControl": "select",
     "data": [],
     "onClickRow": "",
     "columns": [
@@ -20,6 +21,11 @@
             "title": "Qr#"
         },
         {
+            "field": "Status",
+            "title": "Status",
+            "filterControl": "select"
+        },
+        {
             "field": "OrderNo",
             "title": "Order#"
         },
@@ -30,19 +36,15 @@
         {
             "field": "Rate",
             "title": "Rate",
-            "align": "right",
-            "footerFormatter": "totalFormatter"
-        },
-        {
-            "field": "BranchScan",
-            "title": "Status"
+            "align": "right"
         },
         {
             "title": "TimeSpan",
-            "field": "TimeSpan"
+            "field": "TimeSpan",
+            "filtercontrol": "select"
         },
         {
-            "field": "OrderDate",
+            "field": "OrderDateTime",
             "title": "Order Date"
         },
         {
