@@ -1,7 +1,5 @@
 let StartFunc = ({ inDataToShow }) => {
-console.log("inDataToShow:",inDataToShow);
-
-    let jVarLocalData = inDataToShow;
+    let jVarLocalData = inDataToShow.AsIs;
 
     // jFLocalToInnerHtmlpkTextId({ inpkTextId: jVarLocalData.pk });
     jFLocalToInnerHtmlVoucherNumberTextId({ inVoucherNumberTextId: jVarLocalData.pk })
