@@ -28,9 +28,7 @@
         },
         {
             "field": "CustomerData.GSTNumber",
-            "title": "GstNumber",
-            "align": "right",
-            "footerFormatter": "totalFormatter"
+            "title": "GstNumber"
         },
         {
             "field": "TotalPcs",
