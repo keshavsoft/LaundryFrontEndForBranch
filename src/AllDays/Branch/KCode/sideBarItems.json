@@ -11,7 +11,7 @@
     {
         "name": "Dashboard",
         "icon": "bi bi-columns-gap",
-        "url": "../HtmlFiles/index.html"
+        "url": "index.html"
     },
     {
         "name": "Parent",
