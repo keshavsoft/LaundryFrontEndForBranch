@@ -17,9 +17,7 @@
         "icon": "bi bi-arrow-90deg-left",
         "url": "../../BranchToday/HtmlFiles/QrRaiseAll.html"
     },
-    {
-        "name": "Payments"
-    },
+    
     {
         "name": "ShowAll",
         "url": "PaymentsShowAll.html",

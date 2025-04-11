@@ -5,6 +5,7 @@
     "idfield": "pk",
     "showFooter": "true",
     "pagination": "true",
+    "filterControl": true,
     "pageList": "[5, 10, 25 ]",
     "pageSize": "5",
     "data": [],
@@ -17,7 +18,8 @@
         },
         {
             "field": "pk",
-            "title": "Order #"
+            "title": "Order #",
+            "filterControl": "select"
         },
         {
             "field": "CustomerData.CustomerName",
@@ -29,9 +31,7 @@
         },
         {
             "field": "CustomerData.GSTNumber",
-            "title": "GstNumber",
-            "align": "right",
-            "footerFormatter": "totalFormatter"
+            "title": "GstNumber"
         },
         {
             "field": "TotalPcs",
@@ -56,6 +56,24 @@
             "title": "Cash",
             "footerFormatter": "totalFormatter",
             "align": "right"
+        },
+        {
+            "field": "CardAmount",
+            "title": "Card",
+            "footerFormatter": "totalFormatter",
+            "align": "right"
+        },
+        {
+            "title": "UPI",
+            "field": "UPIAmount",
+            "align": "right",
+            "footerFormatter": "totalFormatter"
+        },
+        {
+            "title": "Total",
+            "align": "right",
+            "field": "TotalAmount",
+            "footerFormatter": "totalFormatter"
         }
     ]
 }
