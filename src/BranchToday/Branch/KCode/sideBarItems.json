@@ -12,7 +12,7 @@
     {
         "name": "Dashboard",
         "icon": "bi bi-columns-gap",
-        "url": "../../BranchToday/HtmlFiles/"
+        "url": "index.html"
     },
     {
         "name": "Parent",

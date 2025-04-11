@@ -28,9 +28,7 @@
         },
         {
             "field": "CustomerData.GSTNumber",
-            "title": "GstNumber",
-            "align": "right",
-            "footerFormatter": "totalFormatter"
+            "title": "GstNumber"
         },
         {
             "field": "TotalPcs",
@@ -48,30 +46,6 @@
             "field": "DiscountAmount",
             "title": "Dis Amount",
             "align": "right",
-            "footerFormatter": "totalFormatter"
-        },
-        {
-            "field": "CashAmount",
-            "title": "Cash",
-            "footerFormatter": "totalFormatter",
-            "align": "right"
-        },
-        {
-            "field": "CardAmount",
-            "title": "Card",
-            "footerFormatter": "totalFormatter",
-            "align": "right"
-        },
-        {
-            "title": "UPI",
-            "field": "UPIAmount",
-            "align": "right",
-            "footerFormatter": "totalFormatter"
-        },
-        {
-            "title": "Total",
-            "align": "right",
-            "field": "TotalAmount",
             "footerFormatter": "totalFormatter"
         }
     ]
