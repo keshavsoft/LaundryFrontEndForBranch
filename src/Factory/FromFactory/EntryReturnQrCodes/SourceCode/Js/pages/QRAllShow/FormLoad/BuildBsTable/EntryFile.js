@@ -12,7 +12,7 @@ const StartFunc = () => {
     optionsJson.queryParams = queryParams;
     optionsJson.responseHandler = responseHandler;
     let LocalFactoryName = localStorage.getItem("BranchName");
-    optionsJson.url=`/Custom/Cleaning/Branch/Factory/FromFactory/EntryReturn/QrCode/${LocalFactoryName}`;
+    optionsJson.url=`/Custom/Cleaning/V1/Branch/Factory/FromFactory/EntryReturn/QrCode/All/${LocalFactoryName}`;
     $table.bootstrapTable(optionsJson);
 };
 

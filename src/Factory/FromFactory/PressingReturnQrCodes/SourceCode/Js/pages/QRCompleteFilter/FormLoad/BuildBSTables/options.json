@@ -1,4 +1,5 @@
 {
+    "toolbar": "#toolbar",
     "idfield": "pk",
     "showFooter": "true",
     "search": true,
