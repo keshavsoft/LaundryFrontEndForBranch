@@ -10,7 +10,7 @@
     {
         "name": "DashBoard",
         "icon": "bi bi-columns-gap",
-        "url": "./index.html"
+        "url": "index.html"
     },
     {
         "name": "Parent",
