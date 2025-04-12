@@ -106,9 +106,9 @@
     },
     {
         "name": "Orders",
-        "key": "Orders",
+        "key": "Today",
         "icon": "bi bi-border-style",
-        "url": "../../Today-Orders/HtmlFiles/Orders.html"
+        "url": "../../Today-Orders/HtmlFiles/"
     },
     {
         "name": "QrCodes",
