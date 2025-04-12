@@ -70,7 +70,8 @@
             "field": "Pending",
             "formatter": "",
             "footerFormatter": "",
-            "class": "d-none d-sm-table-cell"
+            "class": "d-none d-sm-table-cell",
+            "visible":false
         }
     ]
 }
