@@ -1,5 +1,5 @@
 let StartFunc = () => {
-    jfDateFunc()
+    jfDateFunc();
     let jVarLocalBranchId = 'BranchNameId';
     let jVarlocalBranch = document.getElementById(jVarLocalBranchId);
     let jVarLocalBranchName = localStorage.getItem("BranchName");

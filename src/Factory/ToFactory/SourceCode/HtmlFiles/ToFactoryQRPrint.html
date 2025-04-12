@@ -30,7 +30,7 @@
         </div>
     </div>
     <div class="col-md-4 d-flex align-items-center justify-content-end">
-        <button class="btn btn-success ShowButtonId">Show</button>
+        <button class="btn btn-success ShowButtonId" id="ShowId">Show</button>
     </div>
 </div>
 <div id="toolbar">
@@ -58,36 +58,6 @@
 {% endblock %}
 
 {% block js %}
-
-<!-- <div class="modal fade" id="ModalForQrCodeOnly" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Dc QrCode</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" id="ModalBodyorQrCodeOnly">
-                <div class="row">
-                    <div style="text-align: center;" class="col">
-                        <canvas id="CanvasId" width=50 height=50
-                            style="border:1px solid #fff;visibility:hidden"></canvas>
-                        <div>
-                            <b id="BranchName">
-                                {{VoucherNumber}}<br>
-                                {{Branch}}
-                            </b>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary"
-                    onclick="printJS('ModalBodyorQrCodeOnly', 'html')">Print</button>
-            </div>
-        </div>
-    </div>
-</div> -->
-
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script
