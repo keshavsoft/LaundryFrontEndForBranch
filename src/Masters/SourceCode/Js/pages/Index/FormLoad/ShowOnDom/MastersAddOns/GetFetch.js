@@ -4,7 +4,7 @@ let StartFunc = async () => {
     let LocalroutePath = UrlJson.routePath;
     let LocalMastersAddOnstableName = UrlJson.MastersAddOnstableName;
 
-    let jVarLocalFetchUrl = `/${LocalroutePath}/${LocalMastersAddOnstableName}/AggrFuncs/Count`;
+    let jVarLocalFetchUrl = `/${LocalroutePath}`;
     let response = await fetch(jVarLocalFetchUrl);
 
     return await response;
