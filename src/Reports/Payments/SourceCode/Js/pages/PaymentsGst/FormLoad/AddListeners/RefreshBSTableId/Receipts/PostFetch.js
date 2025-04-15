@@ -2,6 +2,7 @@ import urlJson from '../../../../url.json' with {type: 'json'};
 
 let StartFunc = async () => {
     let jVarLocalBranchName = localStorage.getItem('BranchName');
+   
     let fromDate = new Date(jFLocalFromDateInputId());
     let toDate = new Date(jFLocalToDateInputId());
 
@@ -16,11 +17,10 @@ let StartFunc = async () => {
     let formattedToDate = formatDate(toDate);
 
     // let jVarLocalFetchUrl = `/${urlJson.StartRoute}/${jVarLocalBranchName}/Show/DataOnly`;
-    let jVarLocalFetchUrl = `/${urlJson.Url}/${jVarLocalBranchName}/${formattedFromDate}/${formattedToDate}`;
+    let jVarLocalFetchUrl = ` /${urlJson.Url}/${jVarLocalBranchName}/${formattedFromDate}/${formattedToDate}`;
     //let jVarLocalFetchUrl = ` /Custom/Clients/Laundry/Orders/Today/WithQrCodes/${jVarLocalBranchName}`;
 
     let response = await fetch(jVarLocalFetchUrl);
-
     return await response;
 };
 
@@ -42,6 +42,7 @@ let jFLocalToDateInputId = () => {
         return jVarLocalHtmlId.value.trim();
     };
 };
+
 
 export { StartFunc };
 
