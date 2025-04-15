@@ -15,7 +15,7 @@
         "url": "../../All-Orders/HtmlFiles/ReportsMenu.html"
     },
     {
-        "name": "All-QrCodes"
+        "name": "ToFactory"
     },
    
     {
@@ -82,6 +82,43 @@
                 "url": "QrToFactoryFilter.html",
                 "icon": "bi bi-circle"
             }
+        ]
+
+    },
+    {
+        "name": "FromFactory"
+    },
+    {
+        "name": "All-",
+        "key": "F_F",
+        "icon": "bi bi-list-ul",
+        "children": [
+          {
+            "name": "Show",
+            "url": "F_F_All.html"
+          }        
+        ]
+      },
+      {
+        "name": "Pending",
+        "key": "QRPending",
+        "icon": "bi bi-hourglass-split",
+        "children": [       
+          {
+            "name": "Filter",
+            "url": "QRPendingFilter.html"
+          }
+        ]
+      },
+      {
+        "name": "Scanned",
+        "key": "QRComplete",
+        "icon": "bi bi-check-circle",
+        "children": [      
+          {
+            "name": "Filter",
+            "url": "QRCompleteFilter.html"
+          }
         ]
     }
 ]
