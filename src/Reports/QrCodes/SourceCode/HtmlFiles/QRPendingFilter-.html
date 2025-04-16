@@ -11,18 +11,15 @@
             <li class="breadcrumb-item">Factory</li>
             <li class="breadcrumb-item">FromFactory</li>
             <li class="breadcrumb-item">EntryReturnQrCodes</li>
-            <li class="breadcrumb-item">All</li>
+            <li class="breadcrumb-item">Pending</li>
             <li class="breadcrumb-item active">Filter</li>
-
         </ol>
     </nav>
 </div>
 <div class="page-heading">
     <!--  Inverse table start -->
 
-
     <section class="section">
-
         <div class="row">
             <div class="col-md-4">
                 <div class="form-group row align-items-centerv">
@@ -48,32 +45,27 @@
             <a id="RefreshATagId" href="#" class="btn btn-outline-gray-600 btn-primary d-inline-flex ShowButtonId">
                 <i class="bi bi-bootstrap-reboot me-2"></i> Refresh
             </a>
+            <div class="spinner-border" id="SpinnerId" role="status" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <table class="table mb-0" id="table">
+                <thead>
+                    <tr>
+                        <th data-formatter="jFGlobalSerialColumn">#</th>
+                    </tr>
 
-            <button id="LoadingButtonId" class="btn btn-primary d-none ms-2" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
-                <span role="status">Loading...</span>
-            </button>
-        </div>
-        <table class="table mb-0" id="table">
-            <thead>
-                <tr>
-                    <th data-formatter="jFGlobalSerialColumn">#</th>
-                </tr>
-
-            </thead>
-        </table>
+                </thead>
+            </table>
     </section>
     <!-- Inverse table end -->
 </div>
-
 {% endblock %}
 
 {% block js %}
-
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.23.5/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
-<!-- <script type="module" src="../Js/pages/QRAllFilter/StartFunc.js"></script> -->
+<!-- <script type="module" src="../Js/pages/QRPendingFilter/StartFunc.js"></script> -->
 <script type="module" src="../Js/pages/QRPendingFilter/StartFunc.js"></script>
 
 

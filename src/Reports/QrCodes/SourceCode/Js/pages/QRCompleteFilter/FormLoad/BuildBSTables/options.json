@@ -6,12 +6,12 @@
     "searchHighlight": true,
     "data": [],
     "onClickRow": "",
-    "pageList": "[5, 10, 25 ]",
-    "pageSize": "5",
     "responseHandler": "",
     "queryParams": "",
-    "rowStyle": "",
+    "rowStyle": "rowStyle",
     "filterControl": "true",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
     "pagination": "true",
     "columns": [
         {
@@ -20,52 +20,40 @@
             "formatter": ""
         },
         {
-            "field": "QrCodeId",
+            "field": "OrderNo",
+            "title": "OrderNo",
+            "filterControl": "select"
+        },
+        {
             "title": "QrCode",
+            "field": "QrCode",
             "filterControl": "select"
-        },
-        {
-            "field": "OrderNumber",
-            "title": "Order #",
-            "filterControl": "select"
-        },
-        
-        {
-            "field": "OrderDate",
-            "title": "Order Date"
-        },
-        {
-            "field": "DeliveryDate",
-            "title": "Delivery Date"
         },
         {
             "field": "ItemName",
-            "title": "ItemName"
+            "title": "ItemName",
+            "filterControl": "select"
         },
         {
             "field": "Rate",
             "title": "Rate",
-            "align":"right",
-            "footerFormatter": ""
-        },
-        {
-            "field": "VoucherNumber",
-            "title": "DC #",
             "filterControl": "select"
         },
         {
-            "title": "DC Date",
-            "field": "DCDate"
+            "field": "DCDate",
+            "title": "DCDate"
         },
         {
-            "title": "FactoryName",
-            "field": "FactoryName",
-            "filterControl": "select"
+            "field": "DeliveryDateTime",
+            "title": "DeliveryDate"
         },
         {
-            "title": "TimeSpan",
             "field": "TimeSpan",
-            "filtercontrol": "select"
+            "title": "TimeSpan"
+        },
+        {
+            "field": "ScanStatus",
+            "title": "ScanStatus"
         }
     ]
 }
