@@ -1,5 +1,5 @@
 {
     "routePath": "binV4",
     "tableName": "MastersAddOns",
-    "Url":"/Custom/Cleaning/Branch/Reports/AllQrcodes/InBranch"
+    "Url":"/Custom/Cleaning/V1/Branch/Reports/ToFactoryQrCodes/InBranch"
 }
