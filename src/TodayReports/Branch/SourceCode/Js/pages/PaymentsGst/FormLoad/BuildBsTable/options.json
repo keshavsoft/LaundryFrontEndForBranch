@@ -18,8 +18,7 @@
         },
         {
             "field": "pk",
-            "title": "Order #",
-            "filterControl": "select"
+            "title": "Order #"
         },
         {
             "field": "CustomerData.CustomerName",
