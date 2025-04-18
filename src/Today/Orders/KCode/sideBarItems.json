@@ -31,8 +31,8 @@
     },
     {
         "name": "OrdersWithUsers",
-        "key": "OrdersWithUsers",
+        "key": "ordersWithUsers",
         "icon": "bi bi-people-fill",
-        "url": "OrdersWithUsers.html"
+        "url": "ordersWithUsers.html"
     }
 ]
